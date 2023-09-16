@@ -76,7 +76,13 @@ const config = {
             position: 'left',
             label: 'Wiki',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'docSidebar',
+            label: 'Tutorial', 
+            position: 'left', 
+            sidebarId: 'tutorial',
+          },
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
             type: 'localeDropdown',
             position: 'right',
@@ -121,9 +127,13 @@ const config = {
             title: 'More',
             items: [
               // {
-              //   label: 'Blog',
-              //   to: '/blog',
+              //   label: 'Tutorial',
+              //   to: '/tutorial',
               // },
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/leicheng42/Voxels-Wiki-Docusaurus',
