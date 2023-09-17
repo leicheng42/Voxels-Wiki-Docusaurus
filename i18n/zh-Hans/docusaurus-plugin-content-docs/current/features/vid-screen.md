@@ -1,36 +1,36 @@
-# VidScreen
+## VidScreen
 
 A VidScreen is a programmable 64x64 screen which you can interact with using the arrow keys, `a` and `b`.
 
 ![vid-screen-example.png](/vid-screen-example.png)
 
-## Scripting Properties
+### Scripting Properties
 
-### feature.screen
+#### feature.screen
 
 This is a 64 wide x 64 high x 3 bytes (r, g, b) array that you can use to draw onto the screen.
 
-### feature.screenWidth
+#### feature.screenWidth
 
-### feature.screenHeight
+#### feature.screenHeight
 
-## Events
+### Events
 
 As well as the events shared between all features, vidscreens have three unique events.
 
-### Keys event: `on('keys', (event) => {})`
+#### Keys event: `on('keys', (event) => {})`
 
 This event triggers whenever a key is pressed or released. The available keys are the arrow keys, A, and B.
 
-### Frame event: `on('frame', (event) => {})`
+#### Frame event: `on('frame', (event) => {})`
 
 This event triggers on every frame (30 fps).
 
-### Start event: `on('start', (event) => {})`
+#### Start event: `on('start', (event) => {})`
 
 This event triggers when the player clicks on the vidscreen to activate it.
 
-# VidScreen example: Breakout
+## VidScreen example: Breakout
 
 This is a simple version of the arcade game Breakout, written for a Cryptovoxels vidscreen. [Full Source code here](https://gist.github.com/moritree/5970fca2a61b3dab1179467a6ffcbe07). You have control over a paddle at the bottom of the screen, which can move left and right. There is an array of blocks at the top of the screen. A ball bounces off of the paddle and walls of the game, and any time it hits a block it not only bounces off but also destroys the block. If the ball hits the bottom of the screen, the game resets.
 

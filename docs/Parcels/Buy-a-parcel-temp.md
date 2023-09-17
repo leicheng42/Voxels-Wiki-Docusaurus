@@ -17,12 +17,14 @@ You can buy parcels from Cryptovoxels (primary) or bid on / buy from someone els
 
 Parcel sales directly from Cryptovoxels will either be listed by [crvox.eth](https://etherscan.io/address/0x084b1c3c81545d370f3634392de611caabff8148) or [bnolan](https://etherscan.io/address/0x2d891ed45c4c3eab978513df4b92a35cf131d2e2).
 
-> **New parcels are usually listed every Wednesday at 9AM [New Zealand time](https://www.worldtimeserver.com/current_time_in_NZ.aspx).**
+:::info
+**New parcels are usually listed every Wednesday at 9AM [New Zealand time](https://www.worldtimeserver.com/current_time_in_NZ.aspx).**
 If no sale is planned, an announcement is made on [Twitter](https://twitter.com/cryptovoxels) or in #announcements on [Discord](https://discord.gg/rQVMQax).
-{.is-info}
+:::
 
-> Make sure your wallet is unlocked and connected to [OpenSea](https://opensea.io/collection/cryptovoxels) as all parcel transactions go through there.
-{.is-warning}
+:::caution
+Make sure your wallet is unlocked and connected to [OpenSea](https://opensea.io/collection/cryptovoxels) as all parcel transactions go through there.
+:::
 
 ## Finding a parcel
 You can see available parcels for sale on the Cryptovoxels site by clicking **[Buy Parcels](https://www.cryptovoxels.com/buy)** on the top bar.
@@ -81,17 +83,19 @@ If you're the highest bidder at the end of the auction, you'll be declared the w
 
 Check out the **[After ownership](/docs/Parcels/Buy-a-parcel-temp#after-ownership)** section once you've acquired your new parcel.
 
-> **Any bids made in the last 10 minutes of an auction will extend the auction by 10 more minutes.**
-{.is-warning}
+:::caution
+**Any bids made in the last 10 minutes of an auction will extend the auction by 10 more minutes.**
+:::
 
-> **Watch out!**
+:::caution
+**Watch out!**
 If you place an offer on a parcel, that offer is still valid even when the parcel is sold via auction (i.e. your offer was not accepted).
 In these circumstances, the new owner can easily **resell** the parcel to you right after purchasing it!
 _For example:_ 
 -You place an offer of 5 ETH on a parcel (offer was not accepted before auction).
 -Parcel goes on auction for 0.9 ETH to 0.6 ETH.
 -Someone can win it at 0.9 ETH and resell it to you for 5 ETH
-{.is-warning}
+:::
 
 ### WETH
 Most Classic auctions use WETH, so if you only have ETH, you'll need to convert it.
@@ -118,8 +122,9 @@ If your offer was placed, you'll see your name under Offers.
 
 ![opensea-makeoffer.png](/buyingparcel/opensea-makeoffer.png)
 
-> You can keep making offers for no fee, but canceling an offer requires paying gas.
-{.is-warning}
+:::caution
+You can keep making offers for no fee, but canceling an offer requires paying gas.
+:::
 
 ## Secondary sales
 If the parcel is **not** being sold by [crvox.eth](https://etherscan.io/address/0x084b1c3c81545d370f3634392de611caabff8148) or [bnolan](https://etherscan.io/address/0x2d891ed45c4c3eab978513df4b92a35cf131d2e2), then it is a secondary sale.
@@ -158,8 +163,9 @@ On your parcel's page, click the **Build...** button and select a template.
 
 ![parcel-build.png](/buyingparcel/parcel-build.png)
 
-> Building templates replace the entire parcel.
-{.is-warning}
+:::caution
+Building templates replace the entire parcel.
+:::
 
 ## Events
 You can now set up an event for your parcel!
@@ -185,8 +191,9 @@ To add a collaborator, go to your parcel's page and click the pen icon under Col
 
 ![parcel-collab.png](/buyingparcel/parcel-collab.png)
 
-> Collaborators cannot change the parcel's name, toggle grid or sandbox mode, use building templates or sell off your parcel.
-{.is-info}
+:::info
+Collaborators cannot change the parcel's name, toggle grid or sandbox mode, use building templates or sell off your parcel.
+:::
 
 ## Sandbox mode
 Sandbox mode makes your parcel editable for everyone.

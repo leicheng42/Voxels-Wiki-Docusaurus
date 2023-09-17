@@ -1,8 +1,9 @@
 # Youtube theater
 Let users share their videos live.
 
-> Since v4.16 the text-input feature is non-existent, therefore this example is not practically doable. However, we are not removing this page as the example could still be useful to curious users.
-{.is-danger}
+:::danger
+Since v4.16 the text-input feature is non-existent, therefore this example is not practically doable. However, we are not removing this page as the example could still be useful to curious users.
+:::
 
 
 ![youtube_theater_example.png](/youtube_theater_example.png)

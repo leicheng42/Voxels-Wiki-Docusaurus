@@ -12,5 +12,6 @@ Units are appartments and tend not to be at ground level. In other words, units 
 ### Commons
 Parcels labelled as "cryptovoxels commons" belong to the Cryptovoxels corporation and are not purchasable. These parcels tend to serve as space to build stairs or elevators.
 
-> All types of land have the same building rights.
-{.is-info}
+:::info
+All types of land have the same building rights.
+:::

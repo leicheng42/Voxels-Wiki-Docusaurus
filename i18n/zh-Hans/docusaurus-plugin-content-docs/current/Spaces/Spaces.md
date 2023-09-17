@@ -6,8 +6,9 @@ You can also [convert a space into a parcel and vice versa](#converting-space-to
 
 ### What can I do in a space?
 Everything you can do in a [parcel](/docs/Parcels/Building), including [scripting](/docs/Scripting/). Multiplayer is limited to 5 people.
-> [Lightmap baking](/docs/Parcels/light-map) is not allowed in spaces yet.
-{.is-warning}
+:::caution
+[Lightmap baking](/docs/Parcels/light-map) is not allowed in spaces yet.
+:::
 
 ### Are spaces free?
 Yes, spaces are 100% free and you can have up to 420 spaces per wallet.
@@ -56,9 +57,10 @@ You can share your space to anyone, and they don't even need to be signed in to 
 All you have to do is share the unique URL of your Space. It should look something like:
 `https://www.cryptovoxels.com/spaces/c9cc778b-8326-45c6-932d-aae4a8f06c84`
 
-> Multiplayer is limited to 5 people in a space. 
+:::caution
+Multiplayer is limited to 5 people in a space. 
 Spaces are also not searchable or browseable. You must know the URL to a space to access it.
-{.is-warning}
+:::
 
 #### Changing your share link (slug)
 On your space's page there is a *Space admin* section on the right side - from there you can edit the slug for that space and save it. 
@@ -74,8 +76,9 @@ On your space's page under *Space admin*, click the checkbox for **Is Sandbox** 
 
 ![spacesandbox.png](/spaces/spacesandbox.png)
 
-> Sandbox is great for collaboration creation, but if you've finalized the space and are linking it out to the public, you may want to turn sandbox mode off so that your creation does not get negatively altered.
-{.is-warning}
+:::caution
+Sandbox is great for collaboration creation, but if you've finalized the space and are linking it out to the public, you may want to turn sandbox mode off so that your creation does not get negatively altered.
+:::
 
 ### Using build templates
 You can use a build template to start off with.
@@ -112,10 +115,11 @@ You can conveniently convert a space to a parcel as long as the height, width & 
 
 This is great for experimenting, or if you want to keep your parcel intact while you work on the next parcel iteration secretly, or if you don't have a parcel yet but are planning to get one in the future.
 
-> Features outside parcel feature bounds will be removed.
+:::caution
+Features outside parcel feature bounds will be removed.
 Imported parcel/space should be of the same size as the in-world parcel.
 Features have to have valid types and valid data.
-{.is-warning}
+:::
 
 #### Method 1
 On your parcel's page (e.g. cryptovoxels.com/parcels/4661), under *Parcel admin*, click **View/Edit parcel content**.

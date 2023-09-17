@@ -565,8 +565,13 @@ print(response.text)
 
 Returns all information about a specific collectible given the parameter `:collection_id` and `:id`.
 
-> Because this API reveals the vox file of the wearable it is not to be abused. Please use in accordance to terms of use.
-{.is-warning}
+:::caution
+Because this API reveals the vox file of the wearable it is not to be abused.
+:::
+
+:::caution
+Because this API reveals the vox file of the wearable it is not to be abused.
+:::
 
 
 ## cURL

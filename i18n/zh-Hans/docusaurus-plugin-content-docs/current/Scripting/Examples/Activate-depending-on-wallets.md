@@ -79,5 +79,6 @@ parcel.on('playerenter',e=>{
 ```
 
 #
-> It is not recommended to use this script with the Grid activated. One player allowed will activate the door for everyone else.
-{.is-warning}
+:::caution
+It is not recommended to use this script with the Grid activated. One player allowed will activate the door for everyone else.
+:::

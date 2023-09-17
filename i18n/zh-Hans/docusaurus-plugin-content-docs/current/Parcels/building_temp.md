@@ -56,8 +56,9 @@ Each Parcel can have 8 different voxel color tints & 16 different textures.
 1. Click **Build**
 1. Place your block(s)
 
-> You can use the number keys to select the first 10 textures and go into build mode, bypassing the menu.
-{.is-info}
+:::info
+You can use the number keys to select the first 10 textures and go into build mode, bypassing the menu.
+:::
 
 
 ### Changing the textures
@@ -65,8 +66,9 @@ Each Parcel can have 8 different voxel color tints & 16 different textures.
 1. Click the **Edit button**
 1. Click a texture you want to change OR drag an image onto one of the slots to replace it
 
-> If you want to revert back to the default textures, click the **Reset** button in the Edit menu next to Customize Voxels.
-{.is-info}
+:::info
+If you want to revert back to the default textures, click the **Reset** button in the Edit menu next to Customize Voxels.
+:::
 
 
 ### Placing colored blocks
@@ -85,8 +87,9 @@ Each Parcel can have 8 different voxel color tints & 16 different textures.
 1. Click one of the 8 colors on the bottom
 1. Modify the color
 
-> If you want to revert back to the default tints, click the **Reset** button in the Edit menu next to color boxes.
-{.is-info}
+:::info
+If you want to revert back to the default tints, click the **Reset** button in the Edit menu next to color boxes.
+:::
 
 ## Painting blocks
 ![blocks-painting.gif](/building/blocks-painting.gif)
@@ -95,8 +98,9 @@ Each Parcel can have 8 different voxel color tints & 16 different textures.
 1. Click **Paint**
 1. Click and drag over the blocks you want to replace
 
-> You can temporarily activate paint mode while in build mode by holding the <kbd>CTRL / CMD</kbd> key.
-{.is-info}
+:::info
+You can temporarily activate paint mode while in build mode by holding the <kbd>CTRL / CMD</kbd> key.
+:::
 
 ## Erasing blocks
 ![blocks-erasing.gif](/building/blocks-erasing.gif)
@@ -104,8 +108,9 @@ Each Parcel can have 8 different voxel color tints & 16 different textures.
 1. Click **Erase**
 1. Click and drag over the blocks you want to erase
 
-> You can temporarily activate erase mode while in build mode by holding the <kbd>SHIFT</kbd> key.
-{.is-info}
+:::info
+You can temporarily activate erase mode while in build mode by holding the <kbd>SHIFT</kbd> key.
+:::
 
 ## Cube (texturable)
 ![blocks-cube.gif](/building/blocks-cube.gif)
@@ -146,8 +151,9 @@ Select a feature from the list, move it to where you want it, and **click** to p
 
 ![features-placing.gif](/building/features-placing.gif)
 
-> There is a limit to how many features can be in a Parcel or Space. Look at the Add Menu for more information.
-{.is-warning}
+:::caution
+There is a limit to how many features can be in a Parcel or Space. Look at the Add Menu for more information.
+:::
 
 ## Editing a feature
 Each feature has its own parameters you can adjust.

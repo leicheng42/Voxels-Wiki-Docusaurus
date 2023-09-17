@@ -35,8 +35,9 @@ The criterias are:
 Once you've chosen your wearable, you can buy it by clicking the `Buy` button in one of the listings.
 ![[how_to_buy_wearable]list_of_prices.png](/tutorials/[how_to_buy_wearable]list_of_prices.png){.align-center}
 
-> Watch out for the quantity and the price. Sometimes items can be sold in other currencies than **Ξ**.
-{.is-warning}
+:::caution
+Watch out for the quantity and the price. Sometimes items can be sold in other currencies than **Ξ**.
+:::
 
 At that moment a Metamask window should popup asking you to confirm the transaction.
 

@@ -11,16 +11,19 @@ Click **Advanced...**
 Enter the name you would like to have and press **Register name**. A window should pop-up from your wallet to confirm the transaction. 
 Once confirmed, the name will be minted and you should have a notification telling you the minting finished successfully.
 
-> **Your first name will be minted 100% for free, with Cryptovoxels covering the gas fees!** Any additional names created afterwards will have gas fees attached.
-{.is-info}
+:::info
+**Your first name will be minted 100% for free, with Cryptovoxels covering the gas fees!** Any additional names created afterwards will have gas fees attached.
+:::
 
 ![name_register_new.png](/username/name_register_new.png)
 
-> If your transaction has been refused, it is highly likely that the name you have entered has already been taken or that it does pass the validation test. You can search for your name on OpenSea to see if someone owns it.
-{.is-warning}
+:::caution
+If your transaction has been refused, it is highly likely that the name you have entered has already been taken or that it does pass the validation test. You can search for your name on OpenSea to see if someone owns it.
+:::
 
-> Make sure it has a maximum length of 16 characters, contains only a-z, A-Z, 0-9, hyphens and underscores.
-{.is-warning}
+:::caution
+Make sure it has a maximum length of 16 characters, contains only a-z, A-Z, 0-9, hyphens and underscores.
+:::
 
 After a successful transaction, refresh the page and you should see your name popup in the **Switch names** section of the page.
 

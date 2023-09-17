@@ -1,43 +1,43 @@
-#  Button
+##  Button
 A button depresses and makes a sound when you click on it. Buttons can be used to trigger scripts.
 
 ![button-feature.png](/button-feature.png)
 
-## Editor
+### Editor
 
 ![button-editor.png](/button-editor.png)
 
-### Color
+#### Color
 
 A button can be either red, green, blue, or white.
 
-### Sound
+#### Sound
 
 There are 14 different button press sounds to choose from.
 
-# Scripting Properties
-# Scripting Properties {.tabset}
-## color
+## Scripting Properties
+## Scripting Properties {.tabset}
+### color
 `String.`; Options are 'white', 'red', 'green', and 'blue'.
 
-### get()
+#### get()
 
 ```js
 feature.get('color')
 // returns: "red"
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'color':"blue"})
 ```
 
-### default
+#### default
 
 `"red"`
 
-## soundId
+### soundId
 `Integer`; can be an integer in the range of 0 - 14.
 
 `'-1'` - None
@@ -58,28 +58,28 @@ feature.set({'color':"blue"})
 `'14'` - miaaaaaa - sounds like a cat being harassed
 `'15'` - miaoowww - sounds like a hungry cat
 
-### get()
+#### get()
 
 ```js
 feature.get('soundId')
 // returns: "0"
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'soundId':"-1"})
 //Remember the soundId has to be a String
 ```
 
-### default
+#### default
 
 `"0"`
 
-## type
+### type
 `String`; 
 
-### get()
+#### get()
 
 ```js
 feature.get('type')
@@ -88,7 +88,7 @@ feature.type
 // returns: "button"
 ```
 
-# How to use
+## How to use
 Using the scripting field, you can listen to clicks with
 
 ```js

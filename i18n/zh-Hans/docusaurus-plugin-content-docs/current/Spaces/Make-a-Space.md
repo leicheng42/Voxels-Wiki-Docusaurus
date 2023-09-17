@@ -18,8 +18,9 @@ Once the space created, you should see it popup in the list of spaces you own.
 
 ![my_spaces_menu_example.png](/tutorials/my_spaces_menu_example.png){.align-center}
 
-> Congratulation, you now have your first space!
-{.is-success}
+:::tip
+Congratulation, you now have your first space!
+:::
 
 ### To enter your space, simply **click on the space name**
 

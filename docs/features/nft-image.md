@@ -1,126 +1,126 @@
-# NFT Image
+## NFT Image
 
 For NFTs you own, the NFT image will appear with a shiny frame.
 
 ![nft-image-example.png](/nft-image-example.png)
 
-## Editor
+### Editor
 
 ![[nft-image]editor_v7.18.png](/features/[nft-image]editor_v7.18.png)
 
-### Opensea Asset URL
+#### Opensea Asset URL
 
 Copy in the asset URL from OpenSea.
 
-### stretch
+#### stretch
 
 Stretches an image to fit the scale.
 
-### Blend Mode
+#### Blend Mode
 
 This is used to determine how the image is blended with the content behind it. The available options are Combine, Multiply, and Screen.
 
-### Transparency mode
+#### Transparency mode
 
 Choose how alpha is treated. (ignored or not)
 
-### EmissiveColor intensity
+#### EmissiveColor intensity
 
 Choose the intensity of brightness.
 
-### Gui
+#### Gui
 
 If ticked, clicking on this NFT will show an HTML UI with information about the NFT
 
-# Scripting Properties
-# Scripting Properties {.tabset}
-## url
+## Scripting Properties
+## Scripting Properties {.tabset}
+### url
 `String`; Links must be `https://`.
 
-### get()
+#### get()
 
 ```js
 feature.get('url')
 // returns: "https://..."
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'url':"https://www.opensea.io/"})
 ```
 
-### default
+#### default
 
 `""`
 
-## stretch
+### stretch
 `Boolean`; 
 
-### get()
+#### get()
 
 ```js
 feature.get('stretch')
 // returns: "https://..."
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'stretch':true})
 ```
 
-### default
+#### default
 
 `false`
 
-## blendMode
+### blendMode
 `ImageMode`; An enum :
 - 'Multiply'
 - 'Screen'
 - 'Combine'
 
-### get()
+#### get()
 
 ```js
 feature.get('blendMode')
 // returns: "Multiply"
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'blendMode':"Combine"})
 ```
 
-### default
+#### default
 
 `Combine`
 
-## emissiveColorIntensity
+### emissiveColorIntensity
 `number`; 
 
-### get()
+#### get()
 
 ```js
 feature.get('emissiveColorIntensity')
 // returns: "0.5"
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'emissiveColorIntensity':0.5})
 ```
 
-### default
+#### default
 
 `0.5`
 
-## type
+### type
 `String`;
 
-### get()
+#### get()
 
 ```js
 feature.get('type')
@@ -130,14 +130,14 @@ feature.type
 // returns: 'nft-image'
 ```
 
-# Scripting Methods
-# Scripting Methods {.tabset}
-## getNftData
+## Scripting Methods
+## Scripting Methods {.tabset}
+### getNftData
 A function that returns the opensea nftData of the specified feature.
 
 - Arguments: callback (optional); a callback function to handle the nft's data.
 
-### example
+#### example
 
 ```js
 feature.getNftData(console.log)
@@ -150,7 +150,7 @@ asset_contract: {...}
 }
 ```
 
-### example 2
+#### example 2
 
 ```js
 

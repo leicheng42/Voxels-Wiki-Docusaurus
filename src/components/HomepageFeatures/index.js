@@ -2,35 +2,46 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
+import Translate, {translate} from '@docusaurus/Translate';
+
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: translate({
+      message: 'Wiki in EN/CN',
+      id: 'homepage.features.Wiki-in-EN/CN.title',
+    }),
+    Svg: require('@site/static/img/index_document.svg').default,
     description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
+      <Translate id="homepage.features.Wiki-in-EN/CN.description">
+        For mainland users, the official Wiki has been translated and organized. 
+        You can read the Wiki smoothly without setting up a network.
+      </Translate>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: translate({
+      message: 'Tutorial from Raiden INST',
+      id: 'homepage.features.Tutorial-from-Raiden-INST.title',
+    }),
+    Svg: require('@site/static/img/index_tutorial.svg').default,
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
+      <Translate id="homepage.features.Tutorial-from-Raiden-INST.description">
+        Voxels tutorial from Raiden INST. This tutorial takes you through a 
+        quick start with Voxels, building your own metaverse space.
+      </Translate>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: translate({
+      message: 'Latest Blog',
+      id: 'homepage.features.Latest-Blog.title',
+    }),
+    Svg: require('@site/static/img/index_blog.svg').default,
     description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
+      <Translate id="homepage.features.Latest-Blog.description">
+        The latest blog sharing. The blog sharing comes from the latest 
+        Voxels trends and excellent metaverse space projects at Raiden INST.
+      </Translate>
     ),
   },
 ];

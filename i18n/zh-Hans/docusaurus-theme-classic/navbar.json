@@ -1,22 +1,26 @@
 {
   "title": {
-    "message": "My Site",
+    "message": "Voxels 维基",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "My Site Logo",
+    "message": "网站 Logo",
     "description": "The alt text of navbar logo"
-  },
-  "item.label.Tutorial": {
-    "message": "Tutorial",
-    "description": "Navbar item with label Tutorial"
-  },
-  "item.label.Blog": {
-    "message": "Blog",
-    "description": "Navbar item with label Blog"
   },
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
+  },
+  "item.label.📚 Wiki": {
+    "message": "📚 维基",
+    "description": "Navbar item with label 📚 Wiki"
+  },
+  "item.label.👨‍🏫 Tutorial": {
+    "message": "👨‍🏫 教程",
+    "description": "Navbar item with label 👨‍🏫 Tutorial"
+  },
+  "item.label.📝 Blog": {
+    "message": "📝 博客",
+    "description": "Navbar item with label 📝 Blog"
   }
 }

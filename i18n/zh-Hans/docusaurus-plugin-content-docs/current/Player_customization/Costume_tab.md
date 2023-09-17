@@ -1,7 +1,8 @@
 The Costumes tab is where you can decide what to wear and how to wear it.
 
-> Each costume can have different [wearables](/docs/Player_customization/Buy-a-Wearable), [skin colors](/docs/Player_customization/Avatar_skin) and have [body parts hidden](/docs/Player_customization/Avatar_skin#transparent-body-part) if you choose to do so. 
-{.is-info}
+:::info
+Each costume can have different [wearables](/docs/Player_customization/Buy-a-Wearable), [skin colors](/docs/Player_customization/Avatar_skin) and have [body parts hidden](/docs/Player_customization/Avatar_skin#transparent-body-part) if you choose to do so. 
+:::
 
 # 1. Make a costume
 Hover over your name or wallet address on the top right bar, then select **[Edit Costume](https://www.cryptovoxels.com/account/costumes)**.
@@ -18,25 +19,28 @@ Click the new costume to select it for editing.
 
 After selecting the costume, you should also see the Wearables & Skin tab.
 
-> You can rename the costume by clicking the 🖊, delete it with ✖ or make it the default with ✔.
-{.is-info}
+:::info
+You can rename the costume by clicking the 🖊, delete it with ✖ or make it the default with ✔.
+:::
 
 # 2. Get a wearable
 Do you have a wearable? Great! Skip to the next step. 
 
 Don't have a wearable? **You can learn how to buy one from [here](/docs/Player_customization/Buy-a-Wearable), or learn how to make one [here](/docs/Player_customization/Create_a_wearable).**
 
-> Cryptovoxels gives one wearable out for free - you should see this link on the bottom of the Wearables tab.
-{.is-info}
+:::info
+Cryptovoxels gives one wearable out for free - you should see this link on the bottom of the Wearables tab.
+:::
 
 # 3. Dress up!
 Each costume can have up to 12 wearables active. You can have many different costumes.
 
 ![costume-camera-ani.gif](/costume/costume-camera-ani.gif)
 
-> You can adjust the camera with the mouse. Left or middle click any empty area and the camera will rotate around your avatar. 
+:::info
+You can adjust the camera with the mouse. Left or middle click any empty area and the camera will rotate around your avatar. 
 Right click will drag the camera up, down, left & right. The scrollwheel will zoom in and out.
-{.is-info}
+:::
 
 ## Pick a wearable
 Click the [costume](https://www.cryptovoxels.com/account/costumes) you want to edit. The costume should have » to the left of it.
@@ -52,8 +56,9 @@ Select a wearable from your list.
 
 ![add-wearable.png](/costume/add-wearable.png)
 
-> **You can only place one of each wearable owned for your outfit**, meaning if you own only one shoe, you can only place one shoe, and you would have to buy the other shoe in order to wear both. Prior to November 2021, you were able to place multiple (Matic) wearables of the same type even if you only own one of them - this has changed. If you have a costume set up beforehand, this will not be affected unless you modify the costume.
-{.is-warning}
+:::caution
+**You can only place one of each wearable owned for your outfit**, meaning if you own only one shoe, you can only place one shoe, and you would have to buy the other shoe in order to wear both. Prior to November 2021, you were able to place multiple (Matic) wearables of the same type even if you only own one of them - this has changed. If you have a costume set up beforehand, this will not be affected unless you modify the costume.
+:::
 
 ## Place the wearable
 After you select a wearable, you'll see it on your avatar.
@@ -64,16 +69,18 @@ To place the wearable where you want it, select the **Bone** dropdown and choose
 
 ![wearable-bone.png](/costume/wearable-bone.png)
 
-> Attaching the wearable to the correct bone is especially important for animations, like walking or dancing. Don't forget to select the right bone!
-{.is-warning}
+:::caution
+Attaching the wearable to the correct bone is especially important for animations, like walking or dancing. Don't forget to select the right bone!
+:::
 
 ![costume-wrong.gif](/costume/costume-wrong.gif)
 
 ## Move, rotate & scale
 You can adjust wearables either using the tools or editor.
 
-> You can quickly place your wearable with the tools, then use the editor to fine-tune it.
-{.is-info}
+:::info
+You can quickly place your wearable with the tools, then use the editor to fine-tune it.
+:::
 
 ### Using the tools
 Click the wearable and the **Position tool** will activate - three arrows will appear.
@@ -97,8 +104,9 @@ To use the **Rotation tool**, click and drag one of the circles.
 To use the **Scale tool**, click and drag one of the squares.
 ![tool-scale.gif](/costume/tool-scale.gif =150x)
 
-> The tools are color coded - red is X, green is Y, blue is Z. 
-{.is-info}
+:::info
+The tools are color coded - red is X, green is Y, blue is Z. 
+:::
 
 
 ### Using the editor
@@ -125,8 +133,9 @@ Select a costume and your avatar will change instantly.
 
 ![costume-change-ani.gif](/costume/costume-change-ani.gif)
 
-> Hit C to put yourself in third person.
-{.is-info}
+:::info
+Hit C to put yourself in third person.
+:::
 
 ### Changing on the Cryptovoxels website
 Go to the [Costumes tab](https://www.cryptovoxels.com/account/costumes) and click the ✔ to the right of the costume you want to change to.

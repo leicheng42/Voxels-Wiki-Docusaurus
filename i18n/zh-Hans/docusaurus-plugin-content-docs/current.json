@@ -14,5 +14,125 @@
   "sidebar.tutorialSidebar.category.Tutorial - Extras": {
     "message": "Tutorial - Extras",
     "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  },
+  "sidebar.docs.category.📦 Parcels": {
+    "message": "📦 地块",
+    "description": "The label for category 📦 Parcels in sidebar docs"
+  },
+  "sidebar.docs.category.⛹ Players": {
+    "message": "⛹ 玩家",
+    "description": "The label for category ⛹ Players in sidebar docs"
+  },
+  "sidebar.docs.category.🧑‍💻 Scripting": {
+    "message": "🧑‍💻 脚本",
+    "description": "The label for category 🧑‍💻 Scripting in sidebar docs"
+  },
+  "sidebar.docs.category.Examples": {
+    "message": "示例",
+    "description": "The label for category Examples in sidebar docs"
+  },
+  "sidebar.docs.category.📋 Features": {
+    "message": "📋 功能",
+    "description": "The label for category 📋 Features in sidebar docs"
+  },
+  "sidebar.docs.doc.🏠 Home": {
+    "message": "🏠 主页",
+    "description": "The label for the doc item 🏠 Home in sidebar docs, linking to the doc home"
+  },
+  "sidebar.docs.doc.📚 Voxel Library": {
+    "message": "📚 Voxel 仓库",
+    "description": "The label for the doc item 📚 Voxel Library in sidebar docs, linking to the doc voxel-library"
+  },
+  "sidebar.docs.doc.📥 Submit to Library": {
+    "message": "📥 提交到仓库",
+    "description": "The label for the doc item 📥 Submit to Library in sidebar docs, linking to the doc features/submit-library"
+  },
+  "sidebar.docs.doc.🥽 Virtual Reality": {
+    "message": "🥽 虚拟现实",
+    "description": "The label for the doc item 🥽 Virtual Reality in sidebar docs, linking to the doc virtual-reality"
+  },
+  "sidebar.docs.doc.🌐 The world": {
+    "message": "🌐 世界",
+    "description": "The label for the doc item 🌐 The world in sidebar docs, linking to the doc The-world/The-world"
+  },
+  "sidebar.docs.doc.☑️ To Do": {
+    "message": "☑️ 待办",
+    "description": "The label for the doc item ☑️ To Do in sidebar docs, linking to the doc admin/todos"
+  },
+  "sidebar.docs.doc.🛒 Buy a parcel": {
+    "message": "🛒 购买地块",
+    "description": "The label for the doc item 🛒 Buy a parcel in sidebar docs, linking to the doc Parcels/Buy-a-parcel"
+  },
+  "sidebar.docs.doc.🏗️ How to build": {
+    "message": "🏗️ 如何建造",
+    "description": "The label for the doc item 🏗️ How to build in sidebar docs, linking to the doc Parcels/Building"
+  },
+  "sidebar.docs.doc.🏮 Light-mapping": {
+    "message": "🏮 光照贴图",
+    "description": "The label for the doc item 🏮 Light-mapping in sidebar docs, linking to the doc Parcels/light-map"
+  },
+  "sidebar.docs.doc.📋 List of Features": {
+    "message": "📋 功能列表",
+    "description": "The label for the doc item 📋 List of Features in sidebar docs, linking to the doc features/features-documents"
+  },
+  "sidebar.docs.doc.🧱 Make Vox Model": {
+    "message": "🧱 制作 Vox 模型",
+    "description": "The label for the doc item 🧱 Make Vox Model in sidebar docs, linking to the doc Parcels/Make-Vox-Model"
+  },
+  "sidebar.docs.doc.🏰 Spaces": {
+    "message": "🏰 空间",
+    "description": "The label for the doc item 🏰 Spaces in sidebar docs, linking to the doc Spaces/Spaces"
+  },
+  "sidebar.docs.doc.Customization": {
+    "message": "自定义",
+    "description": "The label for the doc item Customization in sidebar docs, linking to the doc Player_customization/Player_customization"
+  },
+  "sidebar.docs.doc.Make a wearable": {
+    "message": "制作穿戴品",
+    "description": "The label for the doc item Make a wearable in sidebar docs, linking to the doc Player_customization/Create_a_wearable"
+  },
+  "sidebar.docs.doc.Buy a Wearable": {
+    "message": "购买穿戴品",
+    "description": "The label for the doc item Buy a Wearable in sidebar docs, linking to the doc Player_customization/Buy-a-Wearable"
+  },
+  "sidebar.docs.doc.Username": {
+    "message": "用户名",
+    "description": "The label for the doc item Username in sidebar docs, linking to the doc Player_customization/Username"
+  },
+  "sidebar.docs.doc.Key bindings": {
+    "message": "绑定快捷键",
+    "description": "The label for the doc item Key bindings in sidebar docs, linking to the doc Player_customization/key-controls"
+  },
+  "sidebar.docs.doc.Edit costume": {
+    "message": "编辑服装",
+    "description": "The label for the doc item Edit costume in sidebar docs, linking to the doc Player_customization/Costume_tab"
+  },
+  "sidebar.docs.doc.Edit skin": {
+    "message": "编辑皮肤",
+    "description": "The label for the doc item Edit skin in sidebar docs, linking to the doc Player_customization/Avatar_skin"
+  },
+  "sidebar.docs.doc.Scripting Documentation": {
+    "message": "脚本文档",
+    "description": "The label for the doc item Scripting Documentation in sidebar docs, linking to the doc Scripting/Scripting-Documentation"
+  },
+  "sidebar.docs.doc.Scripting examples": {
+    "message": "脚本示例",
+    "description": "The label for the doc item Scripting examples in sidebar docs, linking to the doc Scripting/Examples/Examples"
+  },
+  "sidebar.docs.doc.Feature scripting cheatsheet": {
+    "message": "功能脚本速查表",
+    "description": "The label for the doc item Feature scripting cheatsheet in sidebar docs, linking to the doc Scripting/all-features-scripting-properties"
+  },
+  "sidebar.docs.doc.The grid": {
+    "message": "网格",
+    "description": "The label for the doc item The grid in sidebar docs, linking to the doc Scripting/TheGrid"
+  },
+  "sidebar.docs.doc.Animation API": {
+    "message": "动画 API",
+    "description": "The label for the doc item Animation API in sidebar docs, linking to the doc Scripting/Animation-API"
+  },
+  "sidebar.docs.doc.Data API": {
+    "message": "数据 API",
+    "description": "The label for the doc item Data API in sidebar docs, linking to the doc External-API"
   }
 }

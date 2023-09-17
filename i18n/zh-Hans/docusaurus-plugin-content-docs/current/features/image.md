@@ -1,213 +1,213 @@
-# Image
+## Image
 
 A two dimensional image from a URL.
 
 ![image-feature.png](/image-feature.png)
 
-## Editor
+### Editor
 
 ![image-editor.png](/image-editor.png)
 
-### URL
+#### URL
 
 The URL of the image. Link has to start with `https://...`
 
-### Hyperlink
+#### Hyperlink
 
 `(Optional)`; makes the image a clickable link.
 
-### Blend mode
+#### Blend mode
 
 This is used to determine how the image is blended with whatever is behind it. The available options are `Combine`, `Multiply`, and `Screen`.
 
-### Keep transparency
+#### Keep transparency
 
 If ticked, any transparency in the image will be converted to black.
 
-### Stretch
+#### Stretch
 
 If ticked, the image will be stretched to fit into the target rectangular area, rather than cropped.
 
-### Update daily
+#### Update daily
 
 If ticked, the image will reload every day. This is useful, for example, if you have a rotating advertisement where the image will change.
 
-### uScale/vScale
+#### uScale/vScale
 
 Helps you tiles an image properly
 
-### Trigger
+#### Trigger
 
 Set whether or not the feature is a trigger.
 
-# Scripting Properties
-# Scripting Properties {.tabset}
-## url
+## Scripting Properties
+## Scripting Properties {.tabset}
+### url
 `String`; Links must be `https://` and must finish with an extension such as `.jpg/.gif/.png`.
 
-### get()
+#### get()
 
 ```js
 feature.get('url')
 // returns: "https://..."
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'url':"https://www.myurl.com/file.png"})
 ```
 
-### default
+#### default
 
 `""`
 
-## link
+### link
 `String`; Links must be `https://`.
 
-### get()
+#### get()
 
 ```js
 feature.get('link')
 // returns: "https://..."
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'link':"https://www.myurl.com/"})
 ```
 
-### default
+#### default
 
 `""`
 
 
-## blendMode
+### blendMode
 `String`
 
-### get()
+#### get()
 
 ```js
 feature.get('blendMode')
 // returns: 'Combine'
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'blendMode': 'Combine'})
 ```
 
-### default
+#### default
 
 `"Multiply"`
 
-## updateDaily
+### updateDaily
 `Boolean.`
 
-### get()
+#### get()
 
 ```js
 feature.get('updateDaily')
 // returns: false
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'updateDaily': true})
 ```
 
-### default
+#### default
 
 `false`
 
-## transparent
+### transparent
 `Boolean.`
 
-### get()
+#### get()
 
 ```js
 feature.get('transparent')
 // returns: false
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'transparent': true})
 ```
 
-### default
+#### default
 
 `false`
 
-## stretched
+### stretched
 `Boolean.`
 
-### get()
+#### get()
 
 ```js
 feature.get('stretched')
 // returns: false
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'stretched': true})
 ```
 
-### default
+#### default
 
 `false`
 
 
-## uScale
+### uScale
 `Integer`
 
-### get()
+#### get()
 
 ```js
 feature.get('uScale')
 // returns: 1
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'uScale': 1})
 ```
 
-### default
+#### default
 
 `1`
 
-## vScale
+### vScale
 `Integer`
 
-### get()
+#### get()
 
 ```js
 feature.get('vScale')
 // returns: 1
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'vScale': 1})
 ```
 
-### default
+#### default
 
 `1`
 
-## type
+### type
 `String`;
 
-### get()
+#### get()
 
 ```js
 feature.get('type')

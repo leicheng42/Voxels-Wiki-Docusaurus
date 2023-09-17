@@ -22,8 +22,9 @@ In the list below, [G] means the scripts needs to run on the grid to properly wo
 * [Basic GUI: simple toggle on click](/docs/Scripting/Examples/basic-gui-simple-example)
 * [Basic GUI: advanced buttons](/docs/Scripting/Examples/basic-gui-advanced-example)
 
-> For examples on the animation API, see [the animation api](/docs/Scripting/Animation-API).
-{.is-info}
+:::info
+For examples on the animation API, see [the animation api](/docs/Scripting/Animation-API).
+:::
 
 Most of these examples are now included in the new Scripting editor:
 ![[scripting_editor]examples_v4.55.png](/features/[scripting_editor]examples_v4.55.png)

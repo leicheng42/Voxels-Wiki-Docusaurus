@@ -1,103 +1,103 @@
-# Slider Input
+## Slider Input
 
 Let users enter a numerical value within a range.
 
 ![[slider_input]example_v5.18.png](/features/[slider_input]example_v5.18.png)
 
-## Editor
+### Editor
 ![[slider_input]editor_7.18.2.png](/features/[slider_input]editor_7.18.2.png)
 
-### Text
+#### Text
 
 A text that will appear above the slider input.
 
-# Scripting Properties
-# Scripting Properties {.tabset}
-## value
+## Scripting Properties
+## Scripting Properties {.tabset}
+### value
 `String`; 
 
-### get()
+#### get()
 
 ```js
 feature.get('value')
 // returns: the value of the slider
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'value':0.2})
 ```
 
-### default
+#### default
 
 `0.25`
 
-## text
+### text
 `String`; 
 
-### get()
+#### get()
 
 ```js
 feature.get('text')
 // returns the text above the slider
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'text':"my text"})
 ```
 
-### default
+#### default
 
 `""`
 
-## minimum
+### minimum
 `number`; 
 
-### get()
+#### get()
 
 ```js
 feature.get('minimum')
 // returns: the minimum value of the slider
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'minimum':0.01}) // a minimum of 0 will not work
 ```
 
-### default
+#### default
 
 `0.01`
 
-## maximum
+### maximum
 `number`; 
 
-### get()
+#### get()
 
 ```js
 feature.get('maximum')
 // returns: the maximum value of the slider
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'maximum':1})
 ```
 
-### default
+#### default
 
 `1`
 
 
-## type
+### type
 `String`;
 
-### get()
+#### get()
 
 ```js
 feature.get('type')

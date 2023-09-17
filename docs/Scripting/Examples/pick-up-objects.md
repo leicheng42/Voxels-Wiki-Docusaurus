@@ -87,8 +87,9 @@ On click, the script creates a new Feature and assigns it the same URL,position 
 It then calculates and repositions the copy given the player's position every x milliseconds.
 
 
-> Enjoy!
+:::caution
+Enjoy!
 Note that this script isn't perfect as it is not properly handling players leaving the parcel. Thus, too many players picking up objects might lead to a saturation of Intervals on the grid. Who knows?
 
 I will be updating this script over time.
-{.is-info}
+:::

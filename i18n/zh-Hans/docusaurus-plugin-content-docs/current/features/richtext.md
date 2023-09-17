@@ -1,93 +1,94 @@
-# Richtext
+## Richtext
 
 The Richtext feature allows you to display multiple lines of formatted text. Unlike [signs](/docs/features/sign), though, they can't be used as a hyperlink.
 
 ![richtext-example.png](/richtext-example.png)
 
-## Editor
+### Editor
 
 ![richtext-editor.png](/richtext-editor.png)
 
-### Text
+#### Text
 
 The text you want to display, in markdown format.
-> It is possible to style text using css by placing something like this after your text:   `{:style="color:red;background:green;font-size:18px"}`
-{.is-info}
+:::info
+It is possible to style text using css by placing something like this after your text:   `{:style="color:red;background:green;font-size:18px"}`
+:::
 
-### Blend mode
+#### Blend mode
 
 This is used to determine how the text is blended with whatever is behind it. The available options are `Combine`, `Multiply`, and `Screen`.
 
-### Inverted
+#### Inverted
 
 When ticked, the text will be white on a black background, rather than the other way around.
 
 
-# Scripting Properties
-# Scripting Properties {.tabset}
-## text
+## Scripting Properties
+## Scripting Properties {.tabset}
+### text
 `String`; 
 
-### get()
+#### get()
 
 ```js
 feature.get('text')
 // returns: "https://..."
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'text':"my paragraph"})
 ```
 
-### default
+#### default
 
 `""`
-## blendMode
+### blendMode
 `String`
 
-### get()
+#### get()
 
 ```js
 feature.get('blendMode')
 // returns: 'Combine'
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'blendMode': 'Combine'})
 ```
 
-### default
+#### default
 
 `"Multiply"`
 
-## inverted
+### inverted
 `Boolean`; 
 
-### get()
+#### get()
 
 ```js
 feature.get('inverted')
 // returns: false
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'inverted': true})
 ```
 
-### default
+#### default
 
 `false`
 
-## type
+### type
 `String`;
 
-### get()
+#### get()
 
 ```js
 feature.get('type')

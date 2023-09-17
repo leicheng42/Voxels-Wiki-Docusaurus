@@ -542,8 +542,9 @@ feature.type
 ### Scripting Properties {.tabset}
 #### url
 `String`; Links must be `https://` and must finish with an extension such as `.jpg/.gif/.png`.
-> If you set an URL, the custom colors color1 and color2 will be ignored.
-{.is-info}
+:::info
+If you set an URL, the custom colors color1 and color2 will be ignored.
+:::
 
 ##### get()
 

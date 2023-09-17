@@ -20,8 +20,9 @@ See [How to buy a wearable](/docs/Player_customization/Buy-a-Wearable)
 ![image](imageLink)
 [file](fileLink)
 ```
-> The reason behind this choice of format is that it will allow easy scraping in the future. We will try to bring this library in-world.
-{.is-info}
+:::info
+The reason behind this choice of format is that it will allow easy scraping in the future. We will try to bring this library in-world.
+:::
 
 
 ## Asset management

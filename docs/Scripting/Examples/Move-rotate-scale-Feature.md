@@ -77,10 +77,11 @@ What it looks like:
 
 # 2. Rotations
 Just like positions, there are several ways you can rotate a feature. Below we will be going through each of them.
-> When using the scripting to obtain or set the rotation of a feature, remember that rotation angles are in Radians whereas rotational measures in the editor are in degrees.
+:::caution
+When using the scripting to obtain or set the rotation of a feature, remember that rotation angles are in Radians whereas rotational measures in the editor are in degrees.
 .
 For reference: **360 degrees** turn is **3.14 in Radians.** and **180 degrees** turn is **~1.57 in Radians.**
-{.is-warning}
+:::
 
 ## A. Get a rotation
 You can get an item's rotation using the following line:

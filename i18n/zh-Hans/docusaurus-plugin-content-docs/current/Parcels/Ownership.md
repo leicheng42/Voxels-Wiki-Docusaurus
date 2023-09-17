@@ -12,8 +12,9 @@ From here you can click the name of the parcel to go on its page, or click **Tel
 
 ![my-parcels.png](/parcels/my-parcels.png)
 
-> If you don't see a parcel you recently purchased, click the **🐙Refresh** button.
-{.is-info}
+:::info
+If you don't see a parcel you recently purchased, click the **🐙Refresh** button.
+:::
 
 # Parcel's page
 Each parcel gets a page that contains information about the parcel, as well as settings to adjust.
@@ -40,8 +41,9 @@ You can also start with a template.  On your parcel's page, click the **Build...
 
 ![parcel-build.png](/buyingparcel/parcel-build.png)
 
-> Building templates replace the entire parcel.
-{.is-warning}
+:::caution
+Building templates replace the entire parcel.
+:::
 
 ## Collaborators
 You can add collaborators to your parcel with two different sets of permissions:
@@ -71,8 +73,9 @@ Click 🗑️ on the user to revoke access, or click **🗑️all** to revoke ev
 
 ![collab-5.png](/parcels/collab-5.png)
 
-> Collaborators CANNOT sell or trade your parcel.
-{.is-info}
+:::info
+Collaborators CANNOT sell or trade your parcel.
+:::
 
 # Parcel admin
 
@@ -156,8 +159,9 @@ Under *Parcel version management*, on the left side click **Download** on the ve
 
 ![json-download.png](/parcels/json-download.png)
 
-> You can also use [snapshots](#parcel-snapshots) to backup and restore your parcel.
-{.is-info}
+:::info
+You can also use [snapshots](#parcel-snapshots) to backup and restore your parcel.
+:::
 
 ## Restore parcel (JSON)
 You can restore your parcel by loading the JSON back.
@@ -165,14 +169,16 @@ In *Parcel version management*, under *Import* on the right side, click the **Ch
 
 ![json-restore.png](/parcels/json-restore.png)
 
-> The JSON file must be a .json with at least the following properties: id, content.
-{.is-warning}
+:::caution
+The JSON file must be a .json with at least the following properties: id, content.
+:::
 
-> **Validation rules:**
+:::caution
+**Validation rules:**
 Features outside parcel feature bounds will be removed.
 Imported parcel/space should be of the same size as the in-world parcel.
 Features have to have valid types and valid data.
-{.is-warning}
+:::
 
 ## Parcel to space
 [Spaces](/docs/Spaces) are free plots of land off-grid that are building volumes similar to parcels and are an excellent way to experiment.
@@ -190,6 +196,7 @@ Scroll down and click the **Clear parcel history** button to erase your parcel h
 
 ![danger-zone.png](/building/danger-zone.png)
 
-> Clicking **Clear parcel history** will completely delete all non-snapshot versions of your parcel.
+:::caution
+Clicking **Clear parcel history** will completely delete all non-snapshot versions of your parcel.
 This process cannot be reversed - once cleared, there is no way to get the history back.
-{.is-warning}
+:::

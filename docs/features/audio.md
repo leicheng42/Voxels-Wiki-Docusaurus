@@ -1,185 +1,185 @@
-# Audio
+## Audio
 
 An audio feature is a little player for mp3s. You can link to any mp3 and we'll try and stream it. 
 
 ![audio-feature.png](/audio-feature.png)
 
-## Editor
+### Editor
 
 ![[audio]editor_v8.1.png](/features/[audio]editor_v8.1.png)
 
-### Sprite
+#### Sprite
 
 Display a smaller audio element
 
-### Streaming
+#### Streaming
 
 Streams the audio directly, without trying to proxy it through our servers. Should make audio play faster, but if you have weird referrer rules on hosting server this might not work.
 
-### Autoplay 
+#### Autoplay 
 
 As soon as someone enters your parcel, start playing this audio. (With great power comes great responsibility).
 
-### Loop
+#### Loop
 
 Loop the audio forever.
 
-### Spatial rolloff factor
+#### Spatial rolloff factor
 
 How quickly the sound fades away as the player moves away from the audio player.
 Value between 0 and 5. 
 
-### Volume
+#### Volume
 
 How loud should the audio play
 Value between 0 and 1. 
 
-### URL
+#### URL
 
 Links must be `https://` since we force https:// for everything.
 
-# Scripting Properties
-# Scripting Properties {.tabset}
-## url
+## Scripting Properties
+## Scripting Properties {.tabset}
+### url
 `String.`; Links must be `https://` and must finish with an audio extension such as `.mp3`
 
-### get()
+#### get()
 
 ```js
 feature.get('url')
 // returns: "https://..."
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'url':"https://www.myurl.com/file.mp3"})
 ```
 
-### default
+#### default
 
 `""`
 
-## sprite
+### sprite
 `Boolean.`
 
-### get()
+#### get()
 
 ```js
 feature.get('sprite')
 // returns: false
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'sprite': true})
 ```
 
-### default
+#### default
 
 `false`
 
-## streaming
+### streaming
 `Boolean.`
 
-### get()
+#### get()
 
 ```js
 feature.get('streaming')
 // returns: false
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'streaming': true})
 ```
-### default
+#### default
 
 `false`
 
-## autoplay
+### autoplay
 `Boolean.`
 
-### get()
+#### get()
 
 ```js
 feature.get('autoplay')
 // returns: false
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'autoplay': true})
 ```
-### default
+#### default
 
 `false`
 
-## loop
+### loop
 `Boolean.`
 
-### get()
+#### get()
 
 ```js
 feature.get('loop')
 // returns: false
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'loop': true})
 ```
 
-### default
+#### default
 
 `false`
 
-## rolloffFactor
+### rolloffFactor
 `double`; Value ranging from 0 to 5
 
-### get()
+#### get()
 
 ```js
 feature.get('rolloffFactor')
 // returns: 1.6
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'rolloffFactor': 1.6})
 ```
 
-### default
+#### default
 `1.6`
 
-## volume
+### volume
 `double`; Value ranging from 0 to 1
 
-### get()
+#### get()
 
 ```js
 feature.get('volume')
 // returns: 0.5
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'volume': 0.5})
 ```
 
-### default
+#### default
 `0.5`
 
-## type
+### type
 `String`;
 
-### get()
+#### get()
 
 ```js
 feature.get('type')
@@ -189,21 +189,21 @@ feature.type
 // returns: 'audio'
 ```
 
-# Scripting Methods
-# Scripting Methods {.tabset}
-## play()
+## Scripting Methods
+## Scripting Methods {.tabset}
+### play()
 ```js
 feature.play()
 ```
 plays the audio
 
-## pause()
+### pause()
 ```js
 feature.pause()
 ```
 pauses the audio
 
-## stop()
+### stop()
 ```js
 feature.stop()
 ```

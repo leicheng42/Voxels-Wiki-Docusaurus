@@ -1,72 +1,72 @@
-# Video
+## Video
 
 Add short videos that can be played by clicking.
 
 ![video-feature.png](/video-feature.png)
 
-## Editor
+### Editor
 
 ![video_editor_v4.25.png](/video_editor_v4.25.png)
 
-### URL
+#### URL
 
 The URL of the video to play. Has to start with `https://` and has to end with a video extension such as `.mp4`.
 
-### Image preview
+#### Image preview
 
 `(Optional)` Let's the user set a customized thumbnail for the video.
 
-### Blend mode
+#### Blend mode
 
 This is used to determine how the image is blended with whatever is behind it. The available options are `Combine`, `Multiply`, and `Screen`.
 
 
-# Scripting Properties
-# Scripting Properties {.tabset}
-## url
+## Scripting Properties
+## Scripting Properties {.tabset}
+### url
 `String`; Has to start with `https://` and has to end with a video extension such as `.mp4`.
 
-### get()
+#### get()
 
 ```js
 feature.get('url')
 // returns: "https://..."
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'url':"https://..."})
 ```
 
-### default
+#### default
 
 `""`
 
-## previewUrl
+### previewUrl
 `String`; Links must be `https://` and must either be a `.png,.gif,.jpg`.
 
-### get()
+#### get()
 
 ```js
 feature.get('previewUrl')
 // returns: "https://..."
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'previewUrl':"https://..."})
 ```
 
-### default
+#### default
 
 `""`
 
-## type
+### type
 `String`;
 
-### get()
+#### get()
 
 ```js
 feature.get('type')
@@ -77,23 +77,23 @@ feature.type
 ```
 
 
-# Scripting methods
-# Scripting methods {.tabset}
+## Scripting methods
+## Scripting methods {.tabset}
 
-## play()
+### play()
 
 ```js
 feature.play()
 ```
 plays the video
 
-## pause()
+### pause()
 ```js
 feature.pause()
 ```
 pauses the video
 
-## stop()
+### stop()
 ```js
 feature.stop()
 ```

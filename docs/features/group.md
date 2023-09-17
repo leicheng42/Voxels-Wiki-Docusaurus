@@ -1,10 +1,10 @@
-# Group
+## Group
 
-## Group features
+### Group features
 You can group [features](/docs/features) [e.g. Images, VOXes, Videos, etc.] together while working in a parcel.
 This can help keep your parcel organized and save time when making adjustments to multiple features.
 
-## Adding features to a group
+### Adding features to a group
 You can easily add features to a group.
 1. Get to a Cryptovoxels parcel you own or have collaboration rights to
 1. Get close to the features you want to group up
@@ -14,7 +14,7 @@ You can easily add features to a group.
 
 ![group_adding.gif](/features/group_adding.gif)
 
-## Finding and selecting a group
+### Finding and selecting a group
 In order to make any changes to the group, you'll have to select it in the Parcel Features list.
 
 1. Get close to the group *(the Parcel Features list sorts by proximity)*
@@ -23,7 +23,7 @@ In order to make any changes to the group, you'll have to select it in the Parce
 
 ![group_finding.gif](/features/group_finding.gif)
 
-## Adjustments to a group
+### Adjustments to a group
 You can modify the group, which will affect every feature inside it.
 
 1. Find and select the group you want to adjust
@@ -31,10 +31,11 @@ You can modify the group, which will affect every feature inside it.
 
 ![group_adjusting.gif](/features/group_adjusting.gif)
 
-> If you make adjustments to a group and then dissolve said group, the features inside will revert back to their actual position, scale & rotation.
-{.is-warning}
+:::caution
+If you make adjustments to a group and then dissolve said group, the features inside will revert back to their actual position, scale & rotation.
+:::
 
-## Removing features from a group
+### Removing features from a group
 You can remove individual features from a group.
 
 1. Find and select the group you want to adjust
@@ -43,7 +44,7 @@ You can remove individual features from a group.
 
 ![group_adjusting.gif](/features/group_removing.gif)
 
-## Dissolving a group
+### Dissolving a group
 Dissolving a group removes just the group and leaves the features intact.
 
 1. Find and select the group you want to adjust
@@ -52,10 +53,11 @@ Dissolving a group removes just the group and leaves the features intact.
 
 ![group_dissolving.gif](/features/group_dissolving.gif)
 
-## Deleting a group
+### Deleting a group
 Deleting a group will remove the group and ALL features that were in the group.
 
 ![group_deleting.gif](/features/group_deleting.gif)
 
-> If you wish to remove *just* the group and leave the features alone, read the prior section.
-{.is-warning}
+:::caution
+If you wish to remove *just* the group and leave the features alone, read the prior section.
+:::

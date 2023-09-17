@@ -24,10 +24,11 @@ If baking doesn't start, there might be a problem with the software that runs on
 
 We're going to make baking more reliable and robust with time.
 
-> Everytime you edit your parcel the baked lightmap will be cleared and will require a new bake!
+:::caution
+Everytime you edit your parcel the baked lightmap will be cleared and will require a new bake!
 You can also manually clear a lightmap using the same editor:
 ![baking_menu_editor_clear_v4.25.png](/baking_menu_editor_clear_v4.25.png)
-{.is-warning}
+:::
 
 
 ## Using Lanterns

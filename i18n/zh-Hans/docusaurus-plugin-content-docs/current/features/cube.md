@@ -1,93 +1,93 @@
-# Cube
+## Cube
 
 The cube feature is a simple cube mesh that you can texture or color.
 
 ![[cube-feature]example.png](/features/[cube-feature]example.png)
 
-## Editor
+### Editor
 
 ![[cube-feature]editor_5.57.png](/features/[cube-feature]editor_5.57.png){.align-center}
 
-### URL
+#### URL
 
 The URL of the image that will be used as texture.
 
-### Collidable
+#### Collidable
 
 `(Optional)`; Make the cube a collidable object.
 
-### Colors
+#### Colors
 
 `(Optional)`;
 Allows you to change the color of your cube.
 
 
-# Scripting Properties
-# Scripting Properties {.tabset}
-## url
+## Scripting Properties
+## Scripting Properties {.tabset}
+### url
 `String`; Links must be `https://` and must finish with an image extension.
 
-### get()
+#### get()
 
 ```js
 feature.get('url')
 // returns: "https://..."
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'url':"https://www.myurl.com/file.png"})
 ```
 
-### default
+#### default
 
 `""`
 
-## Color
+### Color
 `String`; An Hex color string such as `#000`.
 
-### get()
+#### get()
 
 ```js
 feature.get('color')
 // returns: "#ffffff"...
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'color':"#4287f5"})
 ```
 
-### default
+#### default
 
 `"#000000"`
 
-## collidable
+### collidable
 `Boolean`
 
-### get()
+#### get()
 
 ```js
 feature.get('collidable')
 // returns: false
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'collidable': true})
 ```
 
-### default
+#### default
 
 `false`
 
-## type
+### type
 `String`;
 
-### get()
+#### get()
 
 ```js
 feature.get('type')

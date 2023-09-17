@@ -55,7 +55,9 @@ Your logs are written to redis and persisted. They are publicly viewable (don't 
 
 ## Available APIs
 
-> APIs are very basic as of version 1.1.2, more will become available over time {.is-warning}
+:::caution
+APIs are very basic as of version 1.1.2, more will become available over time 
+:::
 
 The grid server has it's own versioning  info. See the currently released version at https://grid.cryptovoxels.com/
 

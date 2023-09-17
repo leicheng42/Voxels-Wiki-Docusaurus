@@ -12,5 +12,6 @@ You are also limited to 1 spawn-point per parcel.
 
 ## Scripting properties
 
-> Although spawn-points have a scripting field, it has not been tested yet.
-{.is-warning}
+:::caution
+Although spawn-points have a scripting field, it has not been tested yet.
+:::

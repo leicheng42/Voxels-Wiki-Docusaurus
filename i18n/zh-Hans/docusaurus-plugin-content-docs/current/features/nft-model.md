@@ -1,13 +1,13 @@
-# NFT-model
+## NFT-model
 
 Lets you display a 3d vox model in-world using an Opensea link. It has a built-in GUI menu that displays information about the nft.
 
 
-## Editor
+### Editor
 
 ![[nft-model]editor_5.57.png](/features/[nft-model]editor_5.57.png){.align-center}
 
-### URL
+#### URL
 
 The Opensea URL of the nft.
 
@@ -15,33 +15,33 @@ If the collectible is a collectible minted on the cryptovoxels website, it will 
 
 If not, it will display a menu with less information.
 
-# Scripting Properties
-# Scripting Properties {.tabset}
-## url
+## Scripting Properties
+## Scripting Properties {.tabset}
+### url
 `String`; Links must be `https://` and must be a link from opensea.
 eg: `https://opensea.io/assets/0xa58b5224e2fd94020cb2837231b2b0e4247301a6/3247`
 
-### get()
+#### get()
 
 ```js
 feature.get('url')
 // returns: "https://..."
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'url':"https://opensea.io/assets/0xa58b5224e2fd94020cb2837231b2b0e4247301a6/3247"})
 ```
 
-### default
+#### default
 
 `""`
 
-## type
+### type
 `String`;
 
-### get()
+#### get()
 
 ```js
 feature.get('type')

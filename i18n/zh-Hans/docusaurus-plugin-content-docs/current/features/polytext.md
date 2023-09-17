@@ -1,72 +1,72 @@
-# Polytext
+## Polytext
 
 ![polytext-example.png](/polytext-example.png)
 
-## Editor
+### Editor
 
 ![polytext-editor.png](/polytext-editor.png)
 
-### Text
+#### Text
 
 The text of the polytext. Simple.
 
-### Color
+#### Color
 
 The color of the polytext. Straightforward.
 
-### Edges
+#### Edges
 
 Whether or not the polytext will be outlined with black edges.
 
 ![polytext-edges.png](/polytext-edges.png)
 
-# Scripting Properties
-# Scripting Properties {.tabset}
-## url
+## Scripting Properties
+## Scripting Properties {.tabset}
+### url
 `String`; 
 
-### get()
+#### get()
 
 ```js
 feature.get('text')
 // returns: "My new text"
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'text':"My new text"})
 ```
 
-### default
+#### default
 
 `""`
 
 
-## edges
+### edges
 `Boolean`
 
-### get()
+#### get()
 
 ```js
 feature.get('edges')
 // returns: false
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'edges': true})
 ```
 
-### default
+#### default
 
 `false`
 
-## type
+### type
 `String`; 
 
-### get()
+#### get()
 
 ```js
 feature.get('type')

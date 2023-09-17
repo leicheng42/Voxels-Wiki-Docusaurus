@@ -1,89 +1,89 @@
-# Megavox
+## Megavox
 
 Megavoxes are large (126x126x126) .vox models, currently limited to 5 per parcel.
 
 ![megavox-example.png](/megavox-example.png)
 
-## Editor
+### Editor
 
 ![megavox-editor.png](/megavox-editor.png)
 
-### URL
+#### URL
 
 The URL of the .vox file.
 
-### Hyperlink
+#### Hyperlink
 
 `(Optional)`; makes the megavox a clickable link.
 
 
-# Scripting Properties
-# Scripting Properties {.tabset}
-## url
+## Scripting Properties
+## Scripting Properties {.tabset}
+### url
 `String`; Links must be `https://` and must finish with a vox extension `.vox`
 Has to link to a 126x126x126 vox model.
 
-### get()
+#### get()
 
 ```js
 feature.get('url')
 // returns: "https://..."
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'url':"https://www.myurl.com/file.vox"})
 ```
 
-### default
+#### default
 
 `""`
 
-## link
+### link
 `String`; Links must be `https://`.
 
-### get()
+#### get()
 
 ```js
 feature.get('link')
 // returns: "https://..."
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'link':"https://www.myurl.com/"})
 ```
 
-### default
+#### default
 
 `""`
 
-## collidable
+### collidable
 `Boolean`
 
-### get()
+#### get()
 
 ```js
 feature.get('collidable')
 // returns: false
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'collidable': true})
 ```
 
-### default
+#### default
 
 `false`
 
-## type
+### type
 `String`;
 
-### get()
+#### get()
 
 ```js
 feature.get('type')

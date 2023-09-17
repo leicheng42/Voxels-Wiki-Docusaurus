@@ -1,8 +1,9 @@
 # 1. Requirements
 Wearables live inside a [collection](/docs/Player_customization/temp#h-3-collections), and in order to create a collection, you need to own a [parcel](/docs/Parcels/Buy-a-parcel).
 If you don’t own a parcel, you’ll either need to [submit to a public collection](/docs/Player_customization/temp#submit-to-a-public-collection) or ask someone that owns a parcel to make a collection for you. 
-> You're allowed to create ONE collection PER parcel owned.
-{.is-warning}
+:::caution
+You're allowed to create ONE collection PER parcel owned.
+:::
 
 You'll also need Matic or ETH (depending on collection) for every transaction.
 Lastly, there are community guidelines for the wearables - they can’t contain offensive racist, discriminatory, violence-endorsing or NSFW content.
@@ -17,8 +18,9 @@ The first step is to set the size to 32x32x32 - you can do this by selecting the
 
 You are now ready to use MagicaVoxel to create your own hat, snowboard, t-shirt, etc.
 
-> When making your item, the size and rotation are not really important since owners will be able to rescale and rotate the wearable when they want to wear it - [click here to see how users can wear and customize their wearables](/docs/Player_customization/Costume_tab).
-{.is-info}
+:::info
+When making your item, the size and rotation are not really important since owners will be able to rescale and rotate the wearable when they want to wear it - [click here to see how users can wear and customize their wearables](/docs/Player_customization/Costume_tab).
+:::
 
 ## Saving your vox
 
@@ -83,9 +85,10 @@ Having your collection created and whitelisted in cryptovoxels means you can cre
 
 You can have players wear or place the collectibles of that collection in-world. They will also be able to find your collection and collectibles on the Cryptovoxels website and OpenSea. You'll also be able to manage aspects of your collection from Cryptovoxels & OpenSea.
 
-> You're allowed one collection per parcel owned. If you do not own a parcel, you will have to submit to a public collection. 
+:::caution
+You're allowed one collection per parcel owned. If you do not own a parcel, you will have to submit to a public collection. 
 The size of the parcel owned does NOT dictate the amount of wearables you can have in a collection.
-{.is-warning}
+:::
 
 ## Creating a collection
 1. Go to https://www.cryptovoxels.com/collections
@@ -219,8 +222,9 @@ If you want to sell your wearable, you’ll have to price it on OpenSea. Go to a
 
 ![selling_wearable.png](/createawearable/selling_wearable.png)
 
-> On your listing in OpenSea, if you DO NOT see your wearable rotating around, you may have to click the **Refresh metadata** button. If it’s still not visible after waiting a minute, you may have to report this as a bug on the Cryptovoxel’s forum, or possibly wait a little longer.
-{.is-warning}
+:::caution
+On your listing in OpenSea, if you DO NOT see your wearable rotating around, you may have to click the **Refresh metadata** button. If it’s still not visible after waiting a minute, you may have to report this as a bug on the Cryptovoxel’s forum, or possibly wait a little longer.
+:::
 
 You should now be on the OpenSea page with your wearable rotating around. Click the Sell button.
 
@@ -238,8 +242,9 @@ You can also set an end date to the sale, in case you want it listed for a limit
 
 Click the **Complete listing** button when ready and your wearable will be listed for sale.
 
-> For Matic/Polygon collections, the ETH you receive will be PoS-WETH. If you don't see it on your wallet, switch networks or go [here](https://wallet.polygon.technology/wallet).
-{.is-warning}
+:::caution
+For Matic/Polygon collections, the ETH you receive will be PoS-WETH. If you don't see it on your wallet, switch networks or go [here](https://wallet.polygon.technology/wallet).
+:::
 
 
 ## Customization & royalties
@@ -307,8 +312,9 @@ Go to the wearable’s page on Cryptovoxels and scroll down, then add the info a
 
 ![attributes4.png](/createawearable/attributes4.png)
 
-> If you do not want to use one of the attributes for the wearable, click the **Ignore** checkbox in the attribute box.
-{.is-warning}
+:::caution
+If you do not want to use one of the attributes for the wearable, click the **Ignore** checkbox in the attribute box.
+:::
 
 ### Applying attributes to new wearables
 After custom attributes are set in the collection, attributes can be added during the wearable upload process.

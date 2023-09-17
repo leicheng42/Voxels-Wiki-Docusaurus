@@ -1,5 +1,5 @@
 To place a feature, you have to be in a parcel with building rights and then press TAB.
-# List of features
+## List of features
 
 | Feature | Description | Feature | Description |
 | ------ | ------ | ------ | ------ |
@@ -16,6 +16,6 @@ To place a feature, you have to be in a parcel with building rights and then pre
 <img width='16' src='https://www.cryptovoxels.com/icons/cube.png' /> [Cube](/docs/features/cube) |A texturable cube. |<img width='16' src='https://www.cryptovoxels.com/icons/portal.png' /> [Portal](/docs/features/portal) |A Portal that uses womps
 <img width='16' src='https://www.cryptovoxels.com/icons/slider-input.png' /> [Slider Input](/docs/features/slider-input) |Allow users to input a number within a range
 
-### Group features
+#### Group features
 When handling a multitude of features, you may want to group them together to quicken your creative process.
 **To learn more about grouping features, go [here](/docs/features/group).**

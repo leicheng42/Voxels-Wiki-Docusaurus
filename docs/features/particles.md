@@ -1,162 +1,163 @@
-# Particles
+## Particles
 
 ![particles-example.png](/particles-example.png)
 
-## Editor
+### Editor
 
 ![particles-editor.png](/particles-editor.png)
 
-### Emit rate
+#### Emit rate
 
 How often new particles will be spawned. 0 - 100
 
-### Minimum size
+#### Minimum size
 
 The minimum size of new particles.
 
-### Maximum size
+#### Maximum size
 
 The maximum size of new particles.
 
-### URL
+#### URL
 
 The URL of a custom particle image; if none is provided then the default particle image (a grey square) will be used.
 
-### Color 1 and Color 2
+#### Color 1 and Color 2
 
 The initial color of new particles depends on the value of these parameters - the color will be somewhere in the range between the two given colors.
 
-# Scripting Properties
-# Scripting Properties {.tabset}
-## url
+## Scripting Properties
+## Scripting Properties {.tabset}
+### url
 `String`; Links must be `https://` and must finish with an extension such as `.jpg/.gif/.png`.
-> If you set an URL, the custom colors color1 and color2 will be ignored.
-{.is-info}
+:::info
+If you set an URL, the custom colors color1 and color2 will be ignored.
+:::
 
-### get()
+#### get()
 
 ```js
 feature.get('url')
 // returns: "https://..."
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'url':"https://www.myurl.com/file.png"})
 ```
 
-### default
+#### default
 
 `""`
 
-## emitRate
+### emitRate
 `Double`; Must be a number between 0 and 100.
 
-### get()
+#### get()
 
 ```js
 feature.get('emitRate')
 // returns: 50.0
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'emitRate':52})
 ```
 
-### default
+#### default
 
 `50`
 
 
-## minSize
+### minSize
 `Double`; Must be a number between 0 and 1.
 
-### get()
+#### get()
 
 ```js
 feature.get('minSize')
 // returns: 0.5
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'minSize':0.5})
 ```
 
-### default
+#### default
 
 `0.5`
 
 
-## maxSize
+### maxSize
 `Double`; Must be a number between 0 and 1.
 
-### get()
+#### get()
 
 ```js
 feature.get('maxSize')
 // returns: 0.5
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'maxSize':0.5})
 ```
 
-### default
+#### default
 
 `0.5`
 
-## color1
+### color1
 `String`- hexadecimal; 
 
-### get()
+#### get()
 
 ```js
 feature.get('color1')
 // returns: "#4cb844"
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'color1':"#4cb844"})
 ```
 
-### default
+#### default
 
 `#000000`
 
-## color2
+### color2
 `String`- hexadecimal; 
 
-### get()
+#### get()
 
 ```js
 feature.get('color2')
 // returns: "#4cb888"
 ```
 
-### set()
+#### set()
 
 ```js
 feature.set({'color2':"#4cb844"})
 ```
 
-### default
+#### default
 
 `"#000000"`
 
 
-## type
+### type
 `String`;
 
-### get()
+#### get()
 
 ```js
 feature.get('type')
@@ -166,9 +167,9 @@ feature.type
 // returns: 'particles'
 ```
 
-# Deprecations
+## Deprecations
 for information on versioning [click here](/docs/versioning-and-deprecations)
 
-## 5.7.0
+### 5.7.0
 
 The particle feature can now be rotated in the X-axis instead of being hard-coded to 90 deegres. This means that the next time a particle system is edited, it will use the X-axis rotation set by the owner which most likey look weird, but can be easily corrected at that time.

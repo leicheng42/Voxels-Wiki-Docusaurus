@@ -1,4 +1,4 @@
-# Portal
+## Portal
 
 Let users teleport to in-world locations. Portals use womps taken in the past. This gives incentive for the player to go explore the world and take womps.
 
@@ -7,13 +7,13 @@ Let users teleport to in-world locations. Portals use womps taken in the past. T
 When entered, the following chat messages will appear:
 ![[portal]system_message.png](/features/[portal]system_message.png){.align-center}
 
-## Editor
+### Editor
 
 ![[portal]editor5.57.png](/features/[portal]editor5.57.png){.align-center}
 
-### URL
+#### URL
 
 A womp url. Obtained by selecting a womp in the womp explorer.
 
-# Scripting Properties
+## Scripting Properties
 None
