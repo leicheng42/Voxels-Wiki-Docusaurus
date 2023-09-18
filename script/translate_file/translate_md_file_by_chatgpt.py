@@ -38,9 +38,16 @@ def translate_by_chatgpt(content):
     """
     由chatgpt翻译
     """
-    prompt = "请帮我翻译以下文本（不要输出额外的提示）：" + content
+    prompt = "请帮我翻译以下文本（不要输出额外的提示）：\n" + content
+
+    print("prompt:\n", prompt)
+
+    print("开始翻译！")
 
     response = get_completion(prompt, model="gpt-3.5-turbo-16k-0613")
+
+    
+    print("response:\n", response)
 
     # # create variables to collect the stream of events
     # completion_text = ''
@@ -73,6 +80,7 @@ def translate_by_chatgpt(content):
 markdown_files = find_markdown_files('docs/Player_customization')
 
 # markdown_files = ["docs/home.md"]
+# markdown_files = ["docs/features/submit-library.md"]
 
 base_folder = "docs_translate"
 

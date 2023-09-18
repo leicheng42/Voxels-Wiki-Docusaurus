@@ -1,0 +1,233 @@
+\chapter{The Basics of Geometry} \label{osn9Geom}
+
+\documentclass[11pt]{book}
+
+%PAPER - US TRADE
+\paperwidth 15.24cm
+\paperheight 22.86cm
+
+%TEXT
+\textwidth 11.9cm \textheight 19.4cm
+\oddsidemargin=-0.5cm
+\evensidemargin=-1.2cm
+\topmargin=-15mm
+
+\headheight=13.86pt
+
+%\usepackage[slovene]{babel}
+\usepackage[english]{babel}
+
+%\usepackage[cp1250]{inputenc}
+\usepackage[utf8]{inputenc}
+
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{amsfonts}
+\usepackage{makeidx}
+\usepackage{calc}
+\usepackage{gclc}
+%\usepackage[dvips]{hyperref}
+\usepackage{amssymb}
+\usepackage[dvips]{graphicx}
+\usepackage{fancyhdr}
+
+%for images
+\usepackage{caption}
+\DeclareCaptionFormat{empty}
+
+\def\contentsname{Contents}
+
+\makeindex
+
+\newcommand{\ch}{\mathop {\mathrm{ch}}}
+\newcommand{\sh}{\mathop {\mathrm{sh}}}
+\newcommand{\tgh}{\mathop {\mathrm{th}}}
+\newcommand{\tg}{\mathop {\mathrm{tg}}}
+\newcommand{\ctg}{\mathop {\mathrm{ctg}}}
+\newcommand{\arctg}{\mathop {\mathrm{arctg}}}
+\newcommand{\arctgh}{\mathop {\mathrm{arcth}}}
+
+\def\indexname{Index}
+
+\definecolor{green1}{rgb}{0,0.5,0}
+\definecolor{viol}{rgb}{0.5,0,0.5}
+\definecolor{viol1}{rgb}{0.2,0,0.9}
+\definecolor{viol3}{rgb}{0.3,0,0.6}
+\definecolor{viol4}{rgb}{0.6,0,0.6}
+\definecolor{grey}{rgb}{0.5,0.5,0.5}
+
+ \def\qed{$\hfill\Box$}
+\newcommand{\kdokaz}{\color{red}\qed\vspace*{2mm}\normalcolor}
+
+\newcommand{\res}[1]{\color{green1}\textit{#1}\normalcolor}
+
+\newtheorem{izrek}{Theorem}[section]
+\newtheorem{lema}{Lemma}[section]
+\newtheorem{definicija}{Definition}[section]
+\newtheorem{aksiom}{Axiom}[section]
+newtheorem{zgled}{Exercise}[section]
+\newtheorem{naloga}{Problem}
+\newtheorem{trditev}{Proposition}[section]
+\newtheorem{postulat}{Postulate}
+\newtheorem{ekv}{E}
+
+%COLOR
+
+\newcommand{\pojem}[1]{\color{viol4}\textit{#1}\normalcolor}
+
+%\newcommand{\pojemFN}[1]{\textit{#1}}
+
+\newcommand{\blema}{\color{blue}\begin{lema}}
+\newcommand{\elema}{\end{lema}\normalcolor}
+
+\newcommand{\bizrek}{\color{blue}\begin{izrek}}
+\newcommand{\eizrek}{\end{izrek}\normalcolor}
+
+\newcommand{\bdefinicija}{\begin{definicija}}
+\newcommand{\edefinicija}{\end{definicija}}
+
+\newcommand{\baksiom}{\color{viol3}\begin{aksiom}}
+\newcommand{\eaksiom}{\end{aksiom}\normalcolor}
+
+\newcommand{\bzgled}{\color{green1}\begin{zgled}}
+\newcommand{\ezgled}{\end{zgled}\normalcolor}
+
+Chapter 1: The Basics of Geometry
+
+This chapter introduces the fundamentals of geometry.
+
+\chapter{The Basics of Geometry} \label{osn9Geom}
+The first two chapters deal with the history and axiomatic design of geometry.
+The consequences of the axioms of incidence, congruence, and parallelism are discussed in detail, while in the other two groups (axioms of order and continuity), the consequences are mostly not proven.
+Chapters three and four deal with the relation of the congruence of figures, the use of the triangle congruence theorems, and a circle.
+In the fifth chapter, vectors are defined. Thales's theorem of proportion is proven.
+Chapter six deals with isometries and their use. Their classification has been performed.
+Chapters 7 and 8 deal with similarity transformations, figure similarity relation, and area of figures. The ninth chapter presents the inversion.
+At the end of each chapter (except the introductory one) are exercises. Solutions and instructions can be found in the last, tenth chapter.
+
+The book contains 341 theorems, 247 examples, and 418 solved problems (28 of them from the IMO). In this sense, the book in front of you is at the same time a preparing guide for the IMO.
+
+For some well-known theorems and problems, brief historical remarks are given. That can help high school and college students to better understand the development of geometry over the centuries.
+
+A lot of help in writing the book was selflessly offered to me by Prof. Roman Drstvenšek, who read the manuscript in its entirety. With his professional and linguistic comments, he made a great contribution to the final version of the book.
+In that work, he was assisted by Prof. Ana Kretič Mamič. I kindly thank both of them for the effort and time they have generously devoted to this book.
+
+I would especially like to thank Prof. Kristjan Kocbek, who read the partial manuscript
+and with his critical remarks contributed to
+significant improvement of the book.
+
+I also thank Prof. Dr. Predrag Janičić, who wrote the wonderful software package \textit{GCLC} for \LaTeX{}. Almost all pictures in this book were made with this package.
+
+Last but not least, I would like to thank the students of the Bežigrad Grammar School, the 1st Grammar School in Celje, and the Brežice Grammar School for their inspiration and support. Students from these schools attended the renewed course of geometry which I have already taken before
+years in Belgrade.
+
+\thispagestyle{empty}
+
+\vspace*{12mm} Sevnica, December 2013 \hfill Milan
+Mitrović
+%\newpage
+
+%________________________________________________________________________
+
+\tableofcontents
+
+%\thispagestyle{empty}
+
+%\newpage
+
+% DEL 1 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%________________________________________________________________________________
+% O DEDUKTIVNI IN INDUKTIVNI METODI
+%________________________________________________________________________________
+
+\part{Introduction} \label{pogUVOD}
+
+%________________________________________________________________________________
+\chapter{Deductive and Inductive Method} \label{odd1DEDUKT}
+
+In primary school, we encounter many geometric concepts, such as a triangle, a circle, a right angle, etc. Later, we also learn some theorems: theorems about triangle congruence, the Pythagorean theorem, and Thales' theorem. Initially, we do not prove the theorems but establish facts based on several individual examples. This method of reasoning is called the inductive method. Inductive reasoning (Latin: inductio - introduction) is a way of reasoning in which we derive general conclusions from individual cases. Later on, we start proving individual theorems. Through these proofs, we first encounter the so-called deductive method or deduction. Deduction (Latin: deductio - deriving) is a way of reasoning in which we derive specific conclusions from general principles. The idea behind this method is to deduce a general conclusion through proof and then apply it in individual cases. Since in the inductive method, we cannot verify all cases, as their number is usually infinite, this method can lead to incorrect conclusions. With the deductive method, we always obtain correct conclusions as long as the assumptions used in the proof are correct. In the following example, let's analyze both of these methods. Let's try to reach the following conclusion:
+ \btrditev \label{TalesUvod}
+ The diameter of a circle subtends a right angle to any point on the circle.
+ \etrditev
+
+\begin{figure}[!htb]
+\centering
+\input{sl.1.2.1.6.pic}
+\caption{} \label{sl.sl.1.2.1.6.pic}
+\end{figure}
+
+If we were to use the inductive method, we would verify whether this statement holds in certain individual cases, for example, in the case where the apex of the angle is the center of a semicircle, and so on (Figure \ref{sl.sl.1.2.1.6.pic}). If we were to derive a general conclusion from these individual cases alone, we would, of course, not be able to be sure that this statement does not hold in one of the cases we have not checked.
+
+\poglavje{The Basics of Geometry} \label{osn9Geom}
+Now we will use the deductive method. Let $AB$ be a radius of a circle with center $O$, and let $L$ be any point on this circle, different from points $A$ and $B$ (Figure \ref{sl.sl.1.2.1.6.pic}). Let's prove that angle $ALB$ is a right angle. Since $OA\cong OB\cong OL$, it follows that triangles $AOL$ and $BOL$ are isosceles, so $\angle ALO\cong\angle LAO=\alpha$ and $\angle BLO\cong\angle LBO=\beta$. Therefore, $\angle ALB=\alpha+\beta$. The sum of the interior angles in triangle $ALB$ is equal to $180^0$, so $2\alpha+2\beta=180^0$. From this, it follows that:
+$$\angle ALB=\alpha+\beta=90^0$$
+
+We notice that in the case of using the deductive method or when proving a statement, we did not consider a specific point $L$ on the circle but rather an arbitrary point (in a general position). This means that the statement holds for every point on the circle (except for $A$ and $B$), provided the proof is correct. But is the proof correct? In this proof, we used the following two statements:
+\begin{statement}
+If two sides in a triangle are congruent, then the angles opposite the congruent sides are congruent angles.
+\end{statement}
+\begin{statement}
+The sum of the interior angles of a triangle is equal to $180^\circ$.
+\end{statement}
+We also used concepts such as: isosceles triangle, congruence of angles; and in the statement itself, we used concepts such as diameter, circle, angle above the diameter, and right angle. To be sure whether the statement we were proving is accurate, we must be certain that the two statements we used in the proof are also accurate. In our case, we assume that we have already proven these two statements and introduced all the mentioned concepts. It is clear that this problem arises with every statement, even with the two we referred to in the proof. This requires a certain systematization of the entire geometry. The question arises of how to start if in the proof of each statement, we again refer to previously proven ones. This process could then continue infinitely. Thus, we come to the need for initial statements — axioms. The same applies to concepts — we need so-called initial concepts. In this way, every geometry (there can be several) that we consider depends on the choice of initial concepts and axioms. This approach to building a geometry is called the synthetic method, and the geometry itself is called synthetic geometry.
+
+%________________________________________________________________________________
+\poglavje{Basic Terms and Basic Theorems} \label{odd1POJMI}
+
+\chapter{The Basics of Geometry} \label{osn9Geom}
+In some theory (such as geometry), every introduction of a new concept is made through a \index{definition} \emph{definition}, which describes this concept using some initial or already defined terms. The connections between concepts and their respective properties are given by statements known as \emph{theory propositions}. As mentioned earlier, initial propositions are called \index{axioms} \emph{axioms}, and propositions derived from them are called \emph{theorems} of that theory. Formally, a \emph{proof} of a theorem $\tau$ is a sequence of statements that logically follow from one another, where each statement is either an axiom or a derived proposition (theorem), and the last statement in this sequence is precisely the proposition $\tau$.
+
+Although the choice of axioms is not unique, it cannot be arbitrary. When choosing axioms, one must ensure that they do not lead to contradictory statements, i.e., there are no contradictions. This means that for a given set of axioms, there should not exist a proposition and its negation that are both theorems in that theory. It is also necessary to have enough axioms to determine the truth or falsehood of any proposition that can be formulated in that theory. This means that either a proposition or its negation is a theorem in that theory. A set of axioms that satisfies the first requirement is called \index{axiom system!consistent} \emph{consistent}, and one that satisfies the second requirement is called \index{axiom system!complete} \emph{complete}. Regarding the choice of axioms, there is also a third requirement, which is that the axiom system should be \index{axiom system!minimal} \emph{minimal}, meaning that none of the axioms can be derived from the others. It should be noted that the last requirement is not as important as the first two.
+
+Furthermore, it should be added that Euclidean geometry is not constructed independently of algebra and logic. We will use concepts such as sets, functions, and relations, which have properties associated with them. We will also use rules of inference, such as the method of contradiction. Mathematical disciplines that are used in this way during the construction of geometry are called \emph{assumed theories}.
+
+Chapter{The Basics of Geometry} \label{osn9Geom}
+%________________________________________________________________________________
+\chapter{A Brief Historical Overview of the Development of Geometry}
+\label{odd1ZGOD}
+
+People began to engage with geometry in early history. Initially, it was merely the observation of characteristic shapes, such as a circle or square. Based on drawings discovered on the walls of ancient caves, it can be inferred that people in prehistoric times were interested in the symmetry of figures.
+
+In further development, humans explored various properties of geometric shapes. This was driven by practical needs, such as measuring land areas – hence the origin of the word "geometry." During this period, geometry evolved as an inductive science. This means that geometric propositions were derived from experience – through measurements and verification in individual cases. In this sense, geometry was developed in all ancient civilizations, including the Chinese, Indian, and especially the Egyptian civilizations.
+
+In Egypt, geometry mainly developed as the science of measurement. Due to the frequent flooding of the Nile River, it was necessary to frequently remeasure lands. Additionally, knowledge of geometry was used in construction. They were aware of formulas for calculating the volume of a pyramid and a truncated pyramid, although they arrived at them empirically. Thus, for the Egyptians, geometry was primarily a pragmatic discipline. The oldest records of this date back to around 1700 BC.
+
+In Mesopotamia, they also had developed geometry for measuring areas. Three-dimensional geometry was not as extensively explored as in Egypt.
+
+There is not as much information available about Chinese geometry as there is about Egyptian geometry, although it is known to have been highly developed. In the oldest surviving records, descriptions of calculations of the volumes of prisms, pyramids, cylinders, cones, truncated pyramids, and truncated cones can be found.
+
+Indian geometry is relatively younger than the previous three. It dates back to around the fifth century BC. In it, we can already see the first attempts at proving theorems. Later, it developed in parallel with ancient Greek geometry.
+
+Chapter 1: The Basics of Geometry \label{FundamentalsGeom}
+
+The transformation in the development of geometry occurred in Ancient Greece. It was then that deductive reasoning was first used in the history of geometry. The first geometric proofs are associated with Thales\footnote{Ancient Greek philosopher and mathematician \textit{Thales} \index{Thales} of Miletus (640–546 BC).}. His name is linked to the famous theorem about the proportionality of line segments with parallel lines. He also proved the theorem that angles formed by a diameter of a circle are right angles, although this statement was known to the Babylonians 1000 years before. Other ancient Greek philosophers continued this way of developing geometry, with Pythagoras\footnote{Ancient Greek philosopher and mathematician \textit{Pythagoras} \index{Pythagoras} from the island of Samos (c. 580–490 BC)} being one of the most important. He is, of course, famous for his \index{theorem!Pythagorean}\textit{Pythagorean theorem}. However, this theorem was known as a fact to the Egyptians 3000 years before Pythagoras (perhaps even earlier), but Pythagoras provided the first known proof. Archimedes\footnote{Ancient Greek philosopher and mathematician \textit{Archimedes} \index{Archimedes} of Syracuse (287–212 BC)} was the first to present a theoretical calculation of the number $\pi$, by considering polygons inscribed in and circumscribed around a circle, with 96 sides. Theorems regarding the similarity of triangles were also proven. With the rapid advancement of geometry, reflected in the large number of proven theorems, the need for systematization and the introduction of axioms became apparent. The need for axioms was first described by Plato\footnote{Ancient Greek philosopher and mathematician \textit{Plato} \index{Plato} (427–347 BC)} and Aristotle\footnote{Ancient Greek philosopher and mathematician \textit{Aristotle} \index{Aristotle} from Athens (384–322 BC)}. Plato is also known in mathematics for his study of regular polyhedra: the tetrahedron, cube, octahedron, dodecahedron, and icosahedron. They are also called Platonic solids after him.
+
+\chapter{The Basics of Geometry} \label{osn9Geom}
+One of the first attempts at an axiomatic foundation of geometry – and the only one from that time that has survived – was made by the most famous geometer of his time, Plato's student Euclid\footnote{Ancient Greek philosopher and mathematician \textit{Euclid} \index{Euclid} of Alexandria (circa 330–270 BC).}, in his renowned work \textit{Elements}, which consists of 13 books. In it, he systematized all the existing knowledge of geometry. He divided the initial propositions into axioms and so-called postulates, of which the latter contain purely geometric content (today, we also call them axioms). \textit{Elements} became one of the most important and influential books in the history of mathematics. The geometry he developed in this way, with minor insignificant changes, is the one still taught in schools today. Proofs, such as that of the central and inscribed angles, have remained practically unchanged. Let us state the postulates as Euclid presented them (Figure \ref{sl.sl.1.3.1.9.pic}):
+\color{purple3}
+\begin{postulate}
+  We can draw a straight line from any point to any point.
+ \end{postulate}
+ \begin{postulate}
+We can produce a finite straight line continuously in a straight line.
+ \end{postulate}
+ \begin{postulate}
+We can describe a circle with any center and distance.
+ \end{postulate}
+  \begin{postulate}
+All right angles are equal to one another.
+ \end{postulate}
+ \begin{postulate}
+If a straight line falling on two straight lines makes the interior angles on the same side less than two right angles, the straight lines, if produced indefinitely, will meet on that side on which the angles are less than two right angles.
+ \end{postulate}
+\normalcolor
+
+\begin{figure}[!htb]
+\centering
+\input{sl.1.3.1.9.pic}
+\caption{} \label{sl.sl.1.3.1.9.pic}
+\end{figure}
+
+However, the system of axioms presented by Euclid was not fully complete.
