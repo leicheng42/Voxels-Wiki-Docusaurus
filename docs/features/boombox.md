@@ -1,3 +1,6 @@
+# Boombox
+A boombox allows you to stream audio from your computer out into the world.
+
 ## Boombox
 A boombox allows you to stream audio from your computer into the world. To use a boombox, simply click on it and then select `Start Broadcasting` from the pop-up.
 

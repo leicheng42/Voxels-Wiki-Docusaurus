@@ -1,4 +1,6 @@
-# Spotlight effect
+# Spotlight
+
+## Spotlight effect
 ![spotlight_example.png](/spotlight_example.png)
 
 **Step one**

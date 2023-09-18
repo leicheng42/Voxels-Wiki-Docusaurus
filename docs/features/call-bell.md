@@ -1,3 +1,6 @@
+# Call Bell
+A special type of button that will send discord DMs when activated.
+
 :::danger
 Feature has been nerfed since v 4.16 and is no more available.
 :::

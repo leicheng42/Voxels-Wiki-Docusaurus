@@ -1,3 +1,6 @@
+# NFT Image
+2D image of a non-fungible token (NFT).
+
 ## NFT Image
 
 For NFTs you own, the NFT image will appear with a shiny frame.

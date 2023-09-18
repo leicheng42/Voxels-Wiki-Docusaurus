@@ -1,3 +1,5 @@
+# Slider Input
+
 ## Slider Input
 
 Let users enter a numerical value within a range.

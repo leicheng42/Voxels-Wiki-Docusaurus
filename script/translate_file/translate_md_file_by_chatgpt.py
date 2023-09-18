@@ -8,9 +8,8 @@ with open('script/translate_file/config.yaml', 'r') as yaml_file:
     data = yaml.safe_load(yaml_file)
 
 # 读取配置
-access_token_list = data['access_token_list']
-access_token = access_token_list[0]
-BASE_URL = data['BASE_URL']
+access_token = data['access_token_list'][1]
+BASE_URL = data['BASE_URL'][1]
 
 # openai.api_key = "这里填 access token，不是 api key"
 openai.api_base = BASE_URL
@@ -25,6 +24,15 @@ def find_markdown_files(folder):
                 markdown_files.append(os.path.join(root, file))
     return markdown_files
 
+def get_completion(prompt, model="gpt-3.5-turbo"):
+    messages = [{"role": "user", "content": prompt}]
+    response = openai.ChatCompletion.create(
+        model=model,
+        messages=messages,
+        temperature=0, # this is the degree of randomness of the model's output
+    )
+    return response.choices[0].message["content"]
+
 
 def translate_by_chatgpt(content):
     """
@@ -32,31 +40,33 @@ def translate_by_chatgpt(content):
     """
     prompt = "请帮我翻译以下文本（不要输出额外的提示）：" + content
 
-    # create variables to collect the stream of events
-    completion_text = ''
+    response = get_completion(prompt, model="gpt-3.5-turbo-16k-0613")
 
-    response = openai.ChatCompletion.create(
-        model='gpt-3.5-turbo',
-        messages=[
-            {'role': 'user', 'content': prompt},
-        ],
-        stream=True,
-        allow_fallback=True,
-        temperature=0,
-    )
+    # # create variables to collect the stream of events
+    # completion_text = ''
 
-    for chunk in response:
-        chunk_text = chunk.choices[0].delta.get("content", "")  # extract the text
-        completion_text += chunk_text  # append the text
+    # response = openai.ChatCompletion.create(
+    #     model='gpt-3.5-turbo',
+    #     messages=[
+    #         {'role': 'user', 'content': prompt},
+    #     ],
+    #     stream=True,
+    #     allow_fallback=True,
+    #     temperature=0,
+    # )
 
-        # 将换行符替换为空格，避免意外换行
-        print_completion_text = completion_text[-50:].replace("\n", " ")
+    # for chunk in response:
+    #     chunk_text = chunk.choices[0].delta.get("content", "")  # extract the text
+    #     completion_text += chunk_text  # append the text
 
-        print(print_completion_text + " "*15, end="\r", flush=True)
+    #     # 将换行符替换为空格，避免意外换行
+    #     print_completion_text = completion_text[-50:].replace("\n", " ")
 
-    print("\n")
+    #     print(print_completion_text + " "*15, end="\r", flush=True)
 
-    return completion_text
+    # print("\n")
+
+    return response
 
 
 # 递归查找Markdown文件

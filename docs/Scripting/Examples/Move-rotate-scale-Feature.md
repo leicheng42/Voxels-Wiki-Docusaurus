@@ -1,9 +1,12 @@
+# Move/rotate/Scale a feature
+A quick tutorial on how to move,rotate or scale a feature.
+
 A page on how to change the position of a Feature and how to rotate it.
 ![script-example_move-feature.gif](/script-example_move-feature.gif)
-# 1. Positions
+## 1. Positions
 There are several ways you can move a feature. Below we will be going through each of them. 
 
-## A. Get a position
+### A. Get a position
 You can get an item's position using the following line:
 ```js
 feature.position
@@ -20,7 +23,7 @@ feature.position.z
 ```
 
 
-## B. Set a position
+### B. Set a position
 You can set an item's position using the following line:
 ```js
 feature.position.set(x,y,z)
@@ -54,7 +57,7 @@ feature.position.y = 0.5 // if you would like to change y to 0.5
 feature.position.z = 6 // if you would like to change z to 6
 ```
 
-## C. Practical example
+### C. Practical example
 
 In this quick example, we make an item go left and right (or north/south) every 1 seconds.
 
@@ -75,7 +78,7 @@ setInterval(()=>{ // Starts intervals
 What it looks like:
 ![script-example_practical_position_example.gif](/script-example_practical_position_example.gif)
 
-# 2. Rotations
+## 2. Rotations
 Just like positions, there are several ways you can rotate a feature. Below we will be going through each of them.
 :::caution
 When using the scripting to obtain or set the rotation of a feature, remember that rotation angles are in Radians whereas rotational measures in the editor are in degrees.
@@ -83,7 +86,7 @@ When using the scripting to obtain or set the rotation of a feature, remember th
 For reference: **360 degrees** turn is **3.14 in Radians.** and **180 degrees** turn is **~1.57 in Radians.**
 :::
 
-## A. Get a rotation
+### A. Get a rotation
 You can get an item's rotation using the following line:
 ```js
 feature.rotation
@@ -99,7 +102,7 @@ feature.rotation.y
 feature.rotation.z
 ```
 
-## B. Set a rotation
+### B. Set a rotation
 You can set an item's rotation using the following line:
 ```js
 feature.rotation.set(x,y,z)
@@ -132,7 +135,7 @@ feature.rotation.y = 3.14 // if you would like to change y to pi (360 degrees)
 feature.rotation.z = 0.5 // if you would like to change z to 0.5 radians
 ```
 
-## C. Practical example
+### C. Practical example
 
 In this quick example, we make an item turn clockwise and anti-clockwise every 1 seconds.
 
@@ -152,11 +155,11 @@ setInterval(()=>{ // Starts intervals
 ```
 ![script-example_practical_rotation_example.gif](/script-example_practical_rotation_example.gif)
 
-# 3. Scaling
+## 3. Scaling
 
 The scale property of a feature is very similar to position and rotation.
 
-## A. Get a scale
+### A. Get a scale
 You can get an item's rotation using the following line:
 ```js
 feature.scale
@@ -173,7 +176,7 @@ feature.scale.z
 ```
 
 
-## B. Set a scale
+### B. Set a scale
 You can set an item's scale using the following line:
 ```js
 feature.scale.set(x,y,z)
@@ -206,7 +209,7 @@ feature.rotation.y = 6 // if you would like to change y to 6
 feature.rotation.z = 6 // if you would like to change z to 6
 ```
 
-## C. Practical example
+### C. Practical example
 
 In this quick example, we make an item become large every 1 seconds.
 
@@ -227,7 +230,7 @@ setInterval(()=>{ // Starts intervals
 ![script-example_practical_scale_example.gif](/script-example_practical_scale_example.gif)
 
 
-# 4. Other methods.
+## 4. Other methods.
 
 To set the property (position,rotation or scale) of a feature you can also use the following lines:
 

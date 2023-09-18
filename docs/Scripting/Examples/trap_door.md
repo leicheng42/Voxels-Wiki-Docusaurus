@@ -1,8 +1,11 @@
 # Trap door
+Change the collidable property of a vox
+
+## Trap door
 In this example, we make an object with a dynamic collidable property
 
 ![wooden_trap_door_example.png](/wooden_trap_door_example.png)
-## Process
+### Process
 1. Place a vox model ([you can use this trap door model ](/wooden_trap_door.vox)) and a button.
 2. Set the id of the vox model to "trapdoor"
 3. Add the script below on the button.
@@ -27,7 +30,7 @@ feature.on('click',e=>{
 **What is does:**
 The trapdoor is initially collidable and pressing the button will switch the collidable state of the vox.
 
-### How about a timer?
+#### How about a timer?
 Say we want to the door to be non-collidable for a short while before going back to being a collidable. Now that's a real trap!
 
 ```js
@@ -45,7 +48,7 @@ feature.on('click',e=>{
 ```
 Just change the variable `timeNonCollidable` to the number of seconds the trapdoor should be non-collidable.
 
-### The grid
+#### The grid
 Now this is fun, but it won't be fun if you can't see your target being traped.
 For that, it is recommended to go to your parcel settings and check the `Grid` box.
 ![grid-settings.png](/grid-settings.png)

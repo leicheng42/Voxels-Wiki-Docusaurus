@@ -1,4 +1,6 @@
-# Tricks and visual effects
+# Tricks
+
+## Tricks and visual effects
 A list of visual effects you can easily achieve using the features at your disposition.
 
 **1. [Background Lighting](/docs/Parcels/Tricks/Background_Lighting)**

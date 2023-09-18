@@ -1,3 +1,6 @@
+# Spaces
+isolated parcels
+
 ## What is a space?
 Spaces are free plots of land off-grid. They are building volumes similar to [parcels](/docs/Parcels/Building) and are an excellent way to test the building tools of Cryptovoxels. 
 You can also [convert a space into a parcel and vice versa](#converting-space-to-parcel), making experimenting easy.

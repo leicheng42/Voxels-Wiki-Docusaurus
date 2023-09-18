@@ -1,9 +1,12 @@
-# Simple keypad lock example
+# Simple keypad
+a six digit keypad example
+
+## Simple keypad lock example
 Here is a quick example on how to make a keypad with 6 digits.
 
 ![keypad-6.png](/keypad-6.png)
 
-## Process
+### Process
 1. Place 6 buttons in a grid and set their id as "b1","b2",...
 2. Place one more button at the bottom, this will act as a "Enter/Clear" button.
 3. Copy/paste the code below into the Enter button.

@@ -1,3 +1,5 @@
+# Spawn-point
+
 ## Spawn point
 
 Feature that lets you set a default spawn-point when spawning in the parcel.

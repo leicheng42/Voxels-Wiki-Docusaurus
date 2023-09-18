@@ -1,3 +1,5 @@
+# Key controls
+
 In this page we go over the key bindings of Cryptovoxels!
 
 ## Key controls

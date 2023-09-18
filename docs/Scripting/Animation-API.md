@@ -1,4 +1,6 @@
 # Animation API
+
+## Animation API
 Make buttery smooth looking animations.
 ![animation_example_movement.gif](/animation_example_movement.gif)
 Call `Feature#createAnimation('position' or 'rotation' or 'scale')` to create an animation object. Call `setKeys` to specify the keyframes. The first keyframe will be created at `frame: 0` with the current position of the object.
@@ -11,7 +13,7 @@ ps: Don't try and animation your features by calling `feature.position.x += 0.1`
 
 pps: Animations run at the native screen refresh rate (60 / 90 / 144 / 240hz), even though we specify keyframes at 30fps.
 
-## Animation on position
+### Animation on position
 
 The following example moves the rocket vox model 10 voxels high in 1 second
 
@@ -28,7 +30,7 @@ r1.setKeys([{
 rocket.startAnimations( [r1] ) //Starts the animation
 ```
 
-## Animation on rotation
+### Animation on rotation
 
 This code snippet makes it spin on the y axis. Rotations are in [radians](https://en.wikipedia.org/wiki/Radian).
 
@@ -43,7 +45,7 @@ r2.setKeys([{
 rocket.startAnimations( [r2] ) //Starts the animation
 ```
 
-## Multiple animations
+### Multiple animations
 
 Using the two previous examples:
 
@@ -51,7 +53,7 @@ Using the two previous examples:
 rocket.startAnimations( [r1, r2] )
 ```
 
-## Center of rotation
+### Center of rotation
 
 When using the rotation animation, you might notice that vox models don't really spin around their natural center.
 

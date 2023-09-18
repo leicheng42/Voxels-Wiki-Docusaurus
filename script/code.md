@@ -5,6 +5,8 @@
 npm run start
 npm run build
 npm run serve
+
+npm run start -- --locale zh-Hans
 ```
 
 翻译markdown文件 [link](https://docusaurus.io/zh-CN/docs/i18n/tutorial#translate-markdown-files)

@@ -1,4 +1,6 @@
-# 1. Requirements
+# Create a wearable
+
+## 1. Requirements
 Wearables live inside a [collection](/docs/Player_customization/Create_a_wearable#h-3-collections), and in order to create a collection, you need to own a [parcel](/docs/Parcels/Buy-a-parcel).
 If you don’t own a parcel, you’ll either need to [submit to a public collection](/docs/Player_customization/Create_a_wearable#submit-to-a-public-collection) or ask someone that owns a parcel to make a collection for you. 
 :::caution
@@ -8,8 +10,8 @@ You're allowed to create ONE collection PER parcel owned.
 You'll also need Matic or ETH (depending on collection) for every transaction.
 Lastly, there are community guidelines for the wearables - they can’t contain offensive racist, discriminatory, violence-endorsing or NSFW content.
 
-# 2. Creating a vox model
-## Using MagicaVoxel
+## 2. Creating a vox model
+### Using MagicaVoxel
 To create a vox model, you need [MagicaVoxel](https://ephtracy.github.io/). Download the latest version, install it, then open it up.
 
 The first step is to set the size to 32x32x32 - you can do this by selecting the 40s on the top right, typing 32 and hitting enter.
@@ -22,7 +24,7 @@ You are now ready to use MagicaVoxel to create your own hat, snowboard, t-shirt,
 When making your item, the size and rotation are not really important since owners will be able to rescale and rotate the wearable when they want to wear it - [click here to see how users can wear and customize their wearables](/docs/Player_customization/Costume_tab).
 :::
 
-## Saving your vox
+### Saving your vox
 
 Once you've made your wearable, save it.
 
@@ -30,7 +32,7 @@ Once you've made your wearable, save it.
 
 Make sure the canvas is 32x32x32!
 
-## Uploading your wearable
+### Uploading your wearable
 Your item is created and it is now time to upload it for review!
 
 **You have two choices:**
@@ -40,10 +42,10 @@ Your item is created and it is now time to upload it for review!
 The pros of chosing option 2 instead of 1 is that you let someone else manage the collection and that person has to pay the minting fees. 
 However, the collection owner is also eligible for royalty fees from OpenSea transactions.
 
-## Tips, scripts & tutorials
+### Tips, scripts & tutorials
 MagicaVoxel allows the use of scripts (shaders), has the ability to import certain file types to ease the creation process and can load color palettes, as well as easily create gradients.
 
-### Importing
+#### Importing
 To import a PNG or JPG, just drag it into MagicaVoxel (clear it beforehand though). You could, for example, import a pixel art face and then extrude it to your liking. If you go this route, you might want to downscale it to 32x32 beforehand (and if you do it in Photoshop, make sure to use Nearest Neighbor for the resample type).
 
 ![magica_import_png.gif](/createawearable/magica_import_png.gif)
@@ -52,7 +54,7 @@ To import an OBJ, drag it into MagicaVoxel. When you import the file, MagicaVoxe
 
 ![magica_import_obj.gif](/createawearable/magica_import_obj.gif)
 
-### Shaders and colors
+#### Shaders and colors
 Shaders go into the shader folder and palettes go into the palette folder. After you've loaded some shaders, they can be accessed either from the right panel or via the console on the bottom. [This site](https://mode-vis.gumroad.com/?sort=newest) offers a lot of different shaders to play with.
 
 ![magica_shaders.png](/createawearable/magica_shaders.png)
@@ -61,7 +63,7 @@ In order to create gradients, hold CTRL+ALT, then click/hold the starting color 
 
 ![magica_gradient.gif](/createawearable/magica_gradient.gif)
 
-### Trying it on before minting
+#### Trying it on before minting
 Although there is no official feature to try the wearable on first before minting, you can place the vox in your parcel (or a sandbox parcel) and walk into it to somewhat emulate it.
 
 After dropping the vox in and adjusting the position/scale/rotation, hit C to go into third person and walk into it. It's not perfect, but it works.
@@ -70,7 +72,7 @@ After dropping the vox in and adjusting the position/scale/rotation, hit C to go
 
 Check out the [customization](/docs/Player_customization/Costume_tab) section to see all the ways a player can attach wearables on themselves.
 
-### Having others try it on
+#### Having others try it on
 If you have the wearable already minted and is in your wallet, you can allow others to try it on before purchasing.
 
 1. Hit *TAB* or click the cubes near the top right
@@ -83,12 +85,12 @@ If you have the wearable already minted and is in your wallet, you can allow oth
 
 ![trying_it2.gif](/createawearable/trying_it2.gif)
 
-### Glitched face
+#### Glitched face
 [Stella](https://www.cryptovoxels.com/avatar/0xf1182c5e5bcd7c90b04eb14eb4f971c52f510d47) figured out a way to make awesome glitched out wearables in Cryptovoxels. 😸
 ![glitchedface.gif](/createawearable/glitchedface.gif)
 To replicate this crazy effect, check out the tutorial [here](https://www.youtube.com/watch?v=Frn3JCyWHY4)!
 
-### Flat wearable
+#### Flat wearable
 If you're planning on making a flat or thin wearable, you will have to create it a certain way in MagicaVoxel, otherwise scaling might look off. Below you can see three different VOXes that appear similar, but when scaled, one of them is clearly off (and moves as a result).
 
 ![flat3.gif](/createawearable/flat3.gif)
@@ -97,7 +99,7 @@ To make sure your flat wearable doesn't look funky while scaled, either make it 
 
 ![flat.png](/createawearable/flat.png)
 
-### Tutorials
+#### Tutorials
 If you're completely new to MagicaVoxel, or just want to go more in depth, check out these resources:
 
 - [Written guide for beginners](https://www.raywenderlich.com/375-magicavoxel-3d-art-tutorial)
@@ -105,7 +107,7 @@ If you're completely new to MagicaVoxel, or just want to go more in depth, check
 - [Detailed video](https://www.youtube.com/watch?v=uKOBIHSgIwI) (ignore the render part)
 - [Official resources](https://ephtracy.github.io/index.html?page=mv_resource) (lots of good stuff)
 
-# 3. Collections
+## 3. Collections
 A collection is a group of 3D NFTs that are spawnable in-world or wearable.
 
 Having your collection created and whitelisted in cryptovoxels means you can create your own brand of collectibles (in this case wearables) based on the blockchain.
@@ -117,7 +119,7 @@ You're allowed one collection per parcel owned. If you do not own a parcel, you 
 The size of the parcel owned does NOT dictate the amount of wearables you can have in a collection.
 :::
 
-## Creating a collection
+### Creating a collection
 1. Log into CV with your wallet and click [Marketplace](https://www.cryptovoxels.com/marketplace) on the top bar 
 1. Click [Collections](https://www.cryptovoxels.com/collections)
 1. Click **Make your own!**
@@ -169,7 +171,7 @@ Congrats - you now have a collection!
 All of your collections (and collectibles) can be found on [here](https://www.cryptovoxels.com/account/collectibles).
 :::
 
-## Minting a wearable
+### Minting a wearable
 Now you're ready to mint! Head to your collection page and make sure you’re signed in (it’ll be something like https://www.cryptovoxels.com/collections/1). 
 If you're submitting to a public collection, skip the next section.
 
@@ -177,12 +179,12 @@ If you're submitting to a public collection, skip the next section.
 Plan on minting shoes or something that requires the user to own two of them? Keep in mind that **users will need to own two of your wearables then** (meaning you may have to mint double the amount). This change was made around November 2021.
 :::
 
-### Polygon/Matic RPC
+#### Polygon/Matic RPC
 To ensure stability, we recommend switching your wallet's RPC for Polygon/Matic to https://rpc-mainnet.maticvigil.com/.
 
 ![rpc.png](/createawearable/rpc.png)
 
-### Upload to your collection
+#### Upload to your collection
 ![mint.png](/createawearable/mint.png)
 
 1. Click the **🏭Mint** button.
@@ -226,7 +228,7 @@ Go to [here](/docs/Player_customization/Costume_tab) to learn how to put on wear
 :::
 
 
-### Submit to a public collection
+#### Submit to a public collection
 If you don’t own a Parcel, you can always submit to a public collection.
 
 1. Head over to https://www.cryptovoxels.com/collections
@@ -240,10 +242,10 @@ If you don’t own a Parcel, you can always submit to a public collection.
 6. You’ll now have to wait for it to get approved by the collection owner — you may want to send them a message through Cryptovoxels / Discord
 7. Once the wearable is minted by the collection owner, you’ll get a message on Cryptovoxels (you’ll see a red dot next to **Inbox** on the top if you get it)
 
-## Trading a wearable
+### Trading a wearable
 You can transfer wearables either on the Cryptovoxels website or on OpenSea.
 
-### Trading on Cryptovoxels
+#### Trading on Cryptovoxels
 To transfer using the Cryptovoxels website, head to the wearable you want to send [e.g. https://www.cryptovoxels.com/collections/1/1] and click the Transfer button on the bottom. If you don’t see the Transfer button, it either means you need to switch networks on your wallet or that you do not possess any amount of that wearable.
 
 ![transfer_wearable.png](/createawearable/transfer_wearable.png)
@@ -254,14 +256,14 @@ A dialog will pop up asking who to transfer to and how many. Fill that out and h
 
 It’ll then ask to confirm the address - if it looks good, click the **OK** button. Your wallet will pop-up asking to confirm the transaction (Matic or ETH gas), click the **Confirm** button to continue. A dialog will show the transfer in process and then close.
 
-### Trading on OpenSea
+#### Trading on OpenSea
 If you’d prefer to send it over OpenSea, you can do so as well. Head to the wearable on OpenSea and click the Transfer button located on the top right.
 
 ![transfer_opensea.png](/createawearable/transfer_opensea.png)
 
 If you don't see the transfer button, make sure you're logged in.
 
-## Selling on OpenSea
+### Selling on OpenSea
 
 If you want to sell your wearable, you’ll have to price it on OpenSea. Go to an item in your collection on the Cryptovoxels page, then hit the **Buy Now** button.
 
@@ -291,10 +293,10 @@ Click the **Complete listing** button when ready and your wearable will be liste
 For Matic/Polygon collections, the ETH you receive will be PoS-WETH. If you don't see it on your wallet, switch networks or go [here](https://wallet.polygon.technology/wallet).
 :::
 
-## Customization & royalties
+### Customization & royalties
 You can customize your collection on Cryptovoxels & on OpenSea. You'll also be able to set up royalties for your collection.
 
-### Customizing your collection in Cryptovoxels
+#### Customizing your collection in Cryptovoxels
 Go to your collection page and click the **⚙Admin** button.
 
 Under *Settings* you get the ability to change your **Collection Name**, **Description**, **Cover Color** and **Logo**. 
@@ -305,7 +307,7 @@ Under *Social and interactions* you can add your **Twitter handle**, **OpenSea s
 
 ![customize_collection2.png](/createawearable/customize_collection2.png)
 
-### Customizing your collection in OpenSea
+#### Customizing your collection in OpenSea
 Before we start customizing on OpenSea, we have to let them know you are the actual owner, which won't be instantaneous. Copy the address from your collection’s Admin page.
 
 ![customize_opensea1.png](/createawearable/customize_opensea1.png)
@@ -332,10 +334,10 @@ If you scroll down you’ll get to the Royalites section. From here, you can put
 
 Have fun customizing your collection!
 
-## Wearable attributes
+### Wearable attributes
 You can add up to three attributes to your wearables. This is optional but useful and fun.
 
-### Setting up attributes
+#### Setting up attributes
 
 Go to your collection page and click the **⚙Admin** button, scroll down and go to the *Custom Attributes* section, then click **Add a trait**.
 
@@ -349,7 +351,7 @@ Once you have your attribute(s) set up, click **Save changes**.
 
 ![attributes3.png](/createawearable/attributes3.png)
 
-### Applying attributes to existing wearables
+#### Applying attributes to existing wearables
 
 After custom attributes are set in the collection, attributes can be added to existing wearables.
 Go to the wearable’s page on Cryptovoxels and scroll down, then add the info and hit the **Save Attribute** button.
@@ -360,12 +362,12 @@ Go to the wearable’s page on Cryptovoxels and scroll down, then add the info a
 If you do not want to use one of the attributes for the wearable, click the **Ignore** checkbox in the attribute box.
 :::
 
-### Applying attributes to new wearables
+#### Applying attributes to new wearables
 After custom attributes are set in the collection, attributes can be added during the wearable upload process.
 
 ![attributes5.png](/createawearable/attributes5.png)
 
-### What it looks like on OpenSea
+#### What it looks like on OpenSea
 Below you can see how it looks like on OpenSea. The **AUTHOR**, **RARITY** & **VOX** Properties were automatically inputted by Cryptovoxels and **TYPE** was manually added by an attribute. Under Stats you can see the **#** & **Generation** that was manually added as well.
 
 ![attributes6.png](/createawearable/attributes6.png)
@@ -374,7 +376,7 @@ The other benefit of adding attributes is helping people filter and sort through
 
 ![attributes7.png](/createawearable/attributes7.png)
 
-## Rarity levels
+### Rarity levels
 The number of issues of your wearable will dictate its rarity.
 
 **Common** = Greater or equal to 1000 issues

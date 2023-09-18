@@ -1,8 +1,11 @@
-# Voxels Wiki
+# Home
+This is the starting page of the wiki
+
+## Voxels Wiki
 
 This is the wiki for Voxels. You can ask a modulator / moderator on Discord to get write access to this wiki.
 
-## Quick links
+### Quick links
 
 | Tutorials |  / |Scripting examples|
 |------|------|------|
@@ -14,22 +17,22 @@ This is the wiki for Voxels. You can ask a modulator / moderator on Discord to g
 |[Buy a parcel](./Parcels/Buy-a-parcel)|/|[Welcome/Goobye message](./Scripting/Examples/welcome_message)|
 | [Buy a Wearable](./Player_customization/Buy-a-Wearable) |/|[A simple door](./Scripting/Examples/Simple-Door)|
 
-## Events
+### Events
 
 📅 Hosting events on Voxels is a really fun way for a group of people to get together. [Read our tips](./Events) for how you can live stream your DJ, keeping your group together, and how to communicate in world. 🎉
 
-## Baking
+### Baking
 
 Instructions for [baking](./Parcels/light-map). Baking is an option you can enable on your parcel to make our servers calculate the shadows and lighting inside your parcel. You can add strip lights, colored lights, skylights, windows and we will accurately calculate all the lighting. It makes your parcel look much more realistic.
 
-## Scripting
+### Scripting
 
 Here is the docs about the [Scripting](./Scripting/) system, and here are some docs on [Animation-API](./Scripting/Animation-API). The scripting system can be used to animate and make your parcels interactive. Scripts run in your browser (using a webworker on `untrusted.Voxels.com`), but if you enable 'grid scripting' under parcel settings - they'll run on [The Grid](./Scripting/TheGrid), our multiplayer server.
 
 
-## Features you can put on your parcel
+### Features you can put on your parcel
 To place a feature, you have to be in a parcel with building rights and then press TAB.
-# List of features
+## List of features
 
 | Feature | Description | Feature | Description |
 | ------ | ------ | ------ | ------ |

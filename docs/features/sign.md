@@ -1,3 +1,6 @@
+# Sign
+A single line of text
+
 ## Sign
 
 The Sign feature allows you to display one line of text. Unlike [Richtext](/docs/features/richtext), though, they can be used as a hyperlink.

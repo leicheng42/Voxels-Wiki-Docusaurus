@@ -1,3 +1,5 @@
+# Collectible Model
+
 ## Collectible model
 
 Lets you display the 3d representation of your cryptovoxels collectible. It has a built-in UI window that displays information about the nft.

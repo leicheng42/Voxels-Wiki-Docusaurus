@@ -1,3 +1,5 @@
+# External APIs
+
 Cryptovoxels has a few APIs that you can use for your own analysis or to show on your website.
 
 **Here is a list of APIs you can obtain, as of v 4.25:**
@@ -13,20 +15,20 @@ Cryptovoxels has a few APIs that you can use for your own analysis or to show on
 
 **Extra**: Obtain the leaflet map.
 
-# 1. Parcels info
+## 1. Parcels info
 
-# All Parcels info {.tabset}
-## Description
+## All Parcels info {.tabset}
+### Description
 
 Returns owner, collaborators, parcel description, parcel geometry and more for every single parcels of Cryptovoxels.
 
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/api/parcels.json'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -41,7 +43,7 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -50,7 +52,7 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### response
 ```json
 {"success":true,
  "parcels":[
@@ -85,21 +87,21 @@ print(response.text)
    ...
 ```
 
-# 2. Single parcel
+## 2. Single parcel
 
-# Single parcel info {.tabset}
-## Description
+## Single parcel info {.tabset}
+### Description
 
 Returns basic parcel info for a specific parcel given the parameter `:id`.
 
 
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/p/:id'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -114,7 +116,7 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -123,7 +125,7 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### response
 ```json
 request "https://www.cryptovoxels.com/p/5" =>
 {
@@ -145,20 +147,20 @@ request "https://www.cryptovoxels.com/p/5" =>
 }
 ```
 
-# 3. All features in a parcel
+## 3. All features in a parcel
 
-# Single parcel features {.tabset}
-## Description
+## Single parcel features {.tabset}
+### Description
 
 Returns all features inside a specific parcel given the parameter `:id`.
 
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/grid/parcels/:id'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -173,7 +175,7 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -182,7 +184,7 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### response
 ```json
 request "https://www.cryptovoxels.com/grid/parcels/670" =>
 {"success":true,
@@ -231,19 +233,19 @@ request "https://www.cryptovoxels.com/grid/parcels/670" =>
 ```
 
 
-# 4. Suburbs
-# Suburbs {.tabset}
-## Description
+## 4. Suburbs
+## Suburbs {.tabset}
+### Description
 
 Returns informations about all suburbs .
 
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/api/suburbs.json'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -258,7 +260,7 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -267,7 +269,7 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### response
 ```json
 {"success":true,
  "suburbs":[
@@ -285,19 +287,19 @@ print(response.text)
 ```
 
 
-# 5. Islands
-# Suburbs {.tabset}
-## Description
+## 5. Islands
+## Suburbs {.tabset}
+### Description
 
 Returns a list of all islands and their geometry.
 
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/api/islands.json'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -312,7 +314,7 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -321,7 +323,7 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### response
 ```json
 {"success":true,
  "islands":[
@@ -346,19 +348,19 @@ print(response.text)
    ...
 ```
 
-# 6. Womps
-# Womps {.tabset}
-## Description
+## 6. Womps
+## Womps {.tabset}
+### Description
 
 Returns the last 100 womps and their info.
 
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/api/womps.json'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -373,7 +375,7 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -382,7 +384,7 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### response
 ```json
 {"success":true,
  "womps":[
@@ -398,24 +400,24 @@ print(response.text)
    },
    ...
 ```
-## Rss feed:
+### Rss feed:
 ```
 https://www.cryptovoxels.com/womps.rss
 ```
 
-# 7. Avatars
-# Avatars {.tabset}
-## Description
+## 7. Avatars
+## Avatars {.tabset}
+### Description
 
 Returns avatars informations and their corresponding parcels.
 
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/api/avatars.json'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -430,7 +432,7 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -439,7 +441,7 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### response
 ```json
 {"id":645,
  "owner":"0x0fa074262d6af761fb57751d610dc92bac82aef9",
@@ -453,19 +455,19 @@ print(response.text)
    ...
 ```
 
-# 8. Collectibles
-# Collectibles {.tabset}
-## Description
+## 8. Collectibles
+## Collectibles {.tabset}
+### Description
 
 Returns all collectibles and their info.
 
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/api/collectibles.json'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -480,7 +482,7 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -489,7 +491,7 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### response
 ```json
 {"success":true,
  "collectibles":[
@@ -505,21 +507,21 @@ print(response.text)
    ...
 ```
 
-# 9. Collectibles of one collections
-# Collection's collectibles {.tabset}
-## Description
+## 9. Collectibles of one collections
+## Collection's collectibles {.tabset}
+### Description
 
 Returns all collectibles and their info from one specific collection
 
 Replace `:id` by the collection id.
 
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/api/collections/:id/collectibles.json'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -534,7 +536,7 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -543,7 +545,7 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### response
 ```json
 {"success":true,
  "collectibles":[
@@ -559,9 +561,9 @@ print(response.text)
    ...
 ```
 
-# 10. Single collectible
-# Single collectible {.tabset}
-## Description
+## 10. Single collectible
+## Single collectible {.tabset}
+### Description
 
 Returns all information about a specific collectible given the parameter `:collection_id` and `:id`.
 
@@ -574,13 +576,13 @@ Because this API reveals the vox file of the wearable it is not to be abused.
 :::
 
 
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/c/:collection_id/:id'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -595,7 +597,7 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -604,7 +606,7 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### response
 ```json
 request "https://www.cryptovoxels.com/c/1/5" =>
 {"name":"Royal Edge",
@@ -623,10 +625,10 @@ request "https://www.cryptovoxels.com/c/1/5" =>
 
 
 
-# Show the leaflet map on your website.
+## Show the leaflet map on your website.
 The map is generated using the free [leaflet library](https://leafletjs.com/).
 
-### Add leaflet to your page
+#### Add leaflet to your page
 Via your favorite mean.
 Below we load up leaflet from the CDN using the `link` and `script` element at the top of the page.
 ```html
@@ -639,14 +641,14 @@ Below we load up leaflet from the CDN using the `link` and `script` element at t
 
 ```
 
-### Have a div ready
+#### Have a div ready
 here we add a `div` element that will contain our map.
 ```html
 <div id="cvmap" style="height: 700px; position: relative; outline: none;">
 <!-- It is important that the leaflet map is in a "defined" size container Or that it has a defined size.-->
 ```
 
-### Add the javascript
+#### Add the javascript
 In a `<script></script>` element we add the following code.
 ```js
        var CVmap = L.map('cvmap').setView([1.80, 0.98], 9);
@@ -661,7 +663,7 @@ In a `<script></script>` element we add the following code.
 It loads up the leaflet layer, which is available from:
 `https://map.cryptovoxels.com/tile?z={z}&x={x}&y={y}`.
 
-## Example:
+### Example:
 [CV interactive map](https://benjythebee.github.io/CV_interactive_map/index.html)
 and the repo of the example:
 https://github.com/Benjythebee/CV_interactive_map

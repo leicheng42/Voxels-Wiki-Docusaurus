@@ -1,3 +1,6 @@
+# Particles
+Add a particle emitter.
+
 ## Particles
 
 ![particles-example.png](/particles-example.png)

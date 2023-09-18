@@ -1,3 +1,5 @@
+# NFT-model
+
 ## NFT-model
 
 Lets you display a 3d vox model in-world using an Opensea link. It has a built-in GUI menu that displays information about the nft.

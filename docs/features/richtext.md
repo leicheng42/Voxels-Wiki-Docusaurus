@@ -1,3 +1,6 @@
+# Richtext
+Multiple lines of Markdown formatted text.
+
 ## Richtext
 
 The Richtext feature allows you to display multiple lines of formatted text. Unlike [signs](/docs/features/sign), though, they can't be used as a hyperlink.

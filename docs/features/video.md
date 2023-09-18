@@ -1,3 +1,6 @@
+# Video
+Add short videos.
+
 ## Video
 
 Add short videos that can be played by clicking.

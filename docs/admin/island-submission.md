@@ -1,8 +1,11 @@
 # Island Submission
+Genesis of new islands
+
+## Island Submission
 
 It is possible to submit your own islands designs for minting on Cryptovoxels. We haven't worked out how ownership / sales / minting process will work, but we are making the tools available so people can start experimenting with islands and thinking about how the process might work.
 
-## Blender
+### Blender
 
 Youy need to use [Blender](https://www.blender.org/) to create your sample Island. Open this sample island:
 

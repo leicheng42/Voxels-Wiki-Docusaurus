@@ -1,7 +1,9 @@
-# GUI with buttons
+# Basic GUI: advanced example
+
+## GUI with buttons
 Use the [basicGUI api](/docs/Scripting/basic-gui-api) to show a GUI onclick
 
-### Process
+#### Process
 
 1. Place a button for the sake of this example
 2. Place the following script on the feature:
@@ -44,6 +46,6 @@ feature.on('click',e=>{
 
 3. if you want this to happen on a trigger instead of click, replace the first 'click' with 'trigger'
 
-### What happens
+#### What happens
 The scripts listens for a click and toggles a graphic interface on/off when clicked on. It also shows two buttons and reacts accordingly.
 ![[basicgui]buttonsexample.png](/scripting/[basicgui]buttonsexample.png)

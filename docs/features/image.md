@@ -1,3 +1,6 @@
+# Image
+A flat image.
+
 ## Image
 
 A two dimensional image from a URL.

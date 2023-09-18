@@ -1,3 +1,6 @@
+# Text Input
+Let users enter a message.
+
 :::info
 Feature has been reintroduced since v 5.0
 :::

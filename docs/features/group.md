@@ -1,3 +1,6 @@
+# Group
+Learn how to group features together
+
 ## Group
 
 ### Group features

@@ -1,3 +1,6 @@
+# Megavox
+Large (126x126x126) .vox models.
+
 ## Megavox
 
 Megavoxes are large (126x126x126) .vox models, currently limited to 5 per parcel.

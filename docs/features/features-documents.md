@@ -1,3 +1,6 @@
+# Features
+All features of Cryptovoxels
+
 To place a feature, you have to be in a parcel with building rights and then press TAB.
 ## List of features
 

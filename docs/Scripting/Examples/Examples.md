@@ -1,4 +1,6 @@
 # Scripting examples
+
+## Scripting examples
 Find small and easy scripts premade for you! We try our best to make these scripts easy to use!
 
 

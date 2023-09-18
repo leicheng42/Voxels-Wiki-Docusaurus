@@ -1,3 +1,5 @@
+# Lantern
+
 ## Lantern
 
 Feature that emits light in your parcel. The color of the light is customizable.

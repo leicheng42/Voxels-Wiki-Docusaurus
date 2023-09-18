@@ -1,4 +1,6 @@
 # Youtube theater
+
+## Youtube theater
 Let users share their videos live.
 
 :::danger
@@ -8,7 +10,7 @@ Since v4.16 the text-input feature is non-existent, therefore this example is no
 
 ![youtube_theater_example.png](/youtube_theater_example.png)
 
-## Process
+### Process
 
 1. Place a Youtube feature and scale it
 2. Place a button somewhere and a text input on the wall

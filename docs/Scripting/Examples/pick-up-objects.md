@@ -1,12 +1,14 @@
-# Let player pick up a vox model
+# Make vox model grabbable
+
+## Let player pick up a vox model
 The following script will let a feature be "grabbable". Double quotes because we're technically employing the art of **deception** to make it look like we grabbed it.  For example:
 
 ![pick-up-bottle.gif](/pick-up-bottle.gif)
 
-## 1. Place a vox model.
+### 1. Place a vox model.
 And give it the URL you want.
 
-## 2. Copy and paste this script
+### 2. Copy and paste this script
 ```js
 //Makes an object grabbable v1.1 - Fayelure
 
@@ -73,16 +75,16 @@ let refresh_rate = 50 			// Number of milliseconds. Please avoid a refresh rate 
 let clone = true; // change this to false if you want to not clone the object.
 
 ```
-## 3. Refresh
+### 3. Refresh
 And the script should work once the parcel is fully loaded.
 
-## 4. (Optional) Activate the grid
+### 4. (Optional) Activate the grid
 [Activating the grid](/docs/Scripting/TheGrid) will let you see when others pick up objects and will let others see you interact with Features too.
 
 Cause what's the point if others can't see your drinking addiction?
 
 
-# What does it do?
+## What does it do?
 On click, the script creates a new Feature and assigns it the same URL,position and rotation and the original.
 It then calculates and repositions the copy given the player's position every x milliseconds.
 

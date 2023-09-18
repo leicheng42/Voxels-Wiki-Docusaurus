@@ -1,3 +1,6 @@
+# VidScreen
+A programmable 64x64 screen.
+
 ## VidScreen
 
 A VidScreen is a programmable 64x64 screen which you can interact with using the arrow keys, `a` and `b`.

@@ -1,6 +1,8 @@
+# Verifying your contract
+
 How to verify your collection on etherscan/polygonscan
 
-# 1. Go to your explorer's verify page
+## 1. Go to your explorer's verify page
 Just replace the `[YOUR_CONTRACT_ADDRESS]` with your collection's contract address (you can find it in your collection's admin page.
 
 **For etherscan :**
@@ -8,7 +10,7 @@ Just replace the `[YOUR_CONTRACT_ADDRESS]` with your collection's contract addre
 **For polygonscan:**
 `https://polygonscan.com/verifyContract?a=[YOUR_CONTRACT_ADDRESS]`
 
-# 2. Enter compiler parameters
+## 2. Enter compiler parameters
 On the verify page, edit the following:
 **Compiler type: Solidity - Single File
 Compiler version: 0.8.0
@@ -17,14 +19,14 @@ License: MIT**
 
 Press **continue**;
 
-# 3. Enter solidity code
+## 3. Enter solidity code
 **A.** Set **Optimization = true**
 **B.** Open a new tab and go to Cryptovoxel's [CV/contracts on github](https://github.com/cryptovoxels/contracts/blob/master/contracts/cvCollectibles.sol) and copy the code of the contract `cvCollectible.sol`
 **C.** Paste the code inside the text area `Enter the Solidity Contract Code below`
 
 ![[collections]how_to_verify_contract_step2_.png](/tutorials/[collections]how_to_verify_contract_step2_.png)
 
-# 3. Parse Contract ABI
+## 3. Parse Contract ABI
 **A.** Go to [https://abi.hashex.org/](https://abi.hashex.org/), it's a website that will help generate the constructor parameters for you.
 
 **B.** Open in a new tab [The ABI of the contract](https://raw.githubusercontent.com/cryptovoxels/contracts/master/abis/cvCollectible.abi) and copy the code (<kbd>CTRL/CMD+A</kbd> and <kbd>CTRL/CMD+C</kbd> ).
@@ -33,7 +35,7 @@ Press **continue**;
 
 ![[collections]how_to_abiencoder.png](/tutorials/[collections]how_to_abiencoder.png)
 
-# 4. Enter constructor parameters
+## 4. Enter constructor parameters
 Now our goal is to fill up the two inputs that appeared under the text area.
 
 **A.** For the `uri_` field, enter `https://www.cryptovoxels.com/c/[MY_COLLECTION_ID]/{id}`; replace `[MY_COLLECTION_ID]` with your collection ID.
@@ -51,7 +53,7 @@ The url shown in the picture above hints that the contract of this collection wa
 
 ![[collections]example_enter_parameter_abi_encode.png](/tutorials/[collections]example_enter_parameter_abi_encode.png)
 
-# 4. Verify contract
+## 4. Verify contract
 
 **A.** Head back to your etherscan and paste the bytecode you copied in step **3** into the constructor arguments field.
 
@@ -59,6 +61,6 @@ The url shown in the picture above hints that the contract of this collection wa
 
 ![[collections]paste_bytecode_constructor.png](/tutorials/[collections]paste_bytecode_constructor.png)
 
-# 5. Retry on error?
+## 5. Retry on error?
 
 If your verification failed, it is very likely because the name of the contract in step 3 is wrong.

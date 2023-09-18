@@ -1,6 +1,9 @@
-# Snippets:
+# Snippets
+Snippets available for inserting into the script editor
 
-## Set sign on click
+## Snippets:
+
+### Set sign on click
 ```js
 /* for more info go to 
 /docs/Scripting/Examples/Click-trigger
@@ -13,7 +16,7 @@ feature.on('click',e=>{
 })
 ```
 
-## is Wearing a wearable
+### is Wearing a wearable
 
 ```js
 /*
@@ -31,7 +34,7 @@ parcel.on('playerenter',e=>{
 
 ```
 
-## Play on player enter
+### Play on player enter
 
 ```js
 // Unnecessary, videos and audio have an `autoplay` function
@@ -40,7 +43,7 @@ parcel.on('playerenter', () => {
 })
 ```
 
-## Pause on player leave
+### Pause on player leave
 
 ```js
 parcel.on('playerleave', () => {
@@ -48,7 +51,7 @@ parcel.on('playerleave', () => {
 })
 ```
 
-## Welcome/Goodbye message
+### Welcome/Goodbye message
 
 ```js
 /* for more info go to 
@@ -72,7 +75,7 @@ parcel.on('playerleave', event => {
 })
 ```
 
-## Change feature url on timer
+### Change feature url on timer
 ```js
 
 /* for more info go to 
@@ -98,7 +101,7 @@ setInterval(()=>{
 },numSecs*1000)
 ```
 
-## Delete on click
+### Delete on click
 
 ```js
 feature.on('click', () => {
@@ -106,7 +109,7 @@ feature.on('click', () => {
 })
 ```
 
-## Youtube theater
+### Youtube theater
 ```js
 /* for more info go to 
 /docs/Scripting/Examples/Youtube_theater
@@ -141,7 +144,7 @@ if(validateYouTubeUrl(newurl)){
 })
 ```
 
-## Collidable - button toggle
+### Collidable - button toggle
 
 ```js
 /* for more info go to 
@@ -165,7 +168,7 @@ feature.on('click',e=>{
 })
 ```
 
-## Collidable - button trigger and revert
+### Collidable - button trigger and revert
 
 ```js
 /* for more info go to 
@@ -187,7 +190,7 @@ feature.on('click',e=>{
 })
 ```
 
-## Pressure plate
+### Pressure plate
 
 ```js
 /* Place a vox model and give it the following url: */
@@ -202,7 +205,7 @@ feature.on('trigger',e=>{
 })
 ```
 
-## Teleport on click
+### Teleport on click
 
 ```js
 
@@ -211,7 +214,7 @@ feature.on('click',e=>{
 })
 ```
 
-## get collectibles
+### get collectibles
 
 ```js
 /*

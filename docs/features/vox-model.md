@@ -1,3 +1,6 @@
+# Vox model
+A small vox model
+
 ## Vox
 
 Voxes are small (32x32x32) .vox models, currently limited to 200 per parcel. These are usually made using [Magicavoxel](https://ephtracy.github.io/).

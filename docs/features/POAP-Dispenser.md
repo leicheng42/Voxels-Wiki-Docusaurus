@@ -1,3 +1,6 @@
+# POAP Dispenser
+Give POAPs to your parcels event attendees
+
 ## POAP Dispenser
 
 POAP stands for Proof of Attendence Protocol and are badges on the XDai network given to attendees of virtual and real world events. Use this feature to give out POAPs to parcel vistitors coming to an event you host. 

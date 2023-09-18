@@ -1,7 +1,9 @@
-# Show hide a basic GUI on click
+# Basic GUI: simple example
+
+## Show hide a basic GUI on click
 Use the [basicGUI api](/docs/Scripting/basic-gui-api) to show a GUI onclick
 
-### Process
+#### Process
 
 1. Place a button for the sake of this example
 2. Place the following script on the feature:
@@ -27,6 +29,6 @@ feature.on('click',e=>{
 
 3. if you want this to happen on a trigger instead of click, replace 'click' with 'trigger'
 
-### What happens
+#### What happens
 The scripts listens for a click and toggles a graphic interface on/off when clicked on.
 

@@ -1,3 +1,5 @@
+# Cube
+
 ## Cube
 
 The cube feature is a simple cube mesh that you can texture or color.

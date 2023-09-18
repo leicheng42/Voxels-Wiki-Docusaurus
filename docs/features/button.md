@@ -1,3 +1,6 @@
+# Button
+A button, used to trigger scripts.
+
 ##  Button
 A button depresses and makes a sound when you click on it. Buttons can be used to trigger scripts.
 
