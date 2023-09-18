@@ -1,42 +1,45 @@
+# VidScreen
+可编程的64x64屏幕。
+
 ## VidScreen
 
-A VidScreen is a programmable 64x64 screen which you can interact with using the arrow keys, `a` and `b`.
+VidScreen是一个可编程的64x64屏幕，您可以使用箭头键、`a` 和 `b` 进行交互。
 
 ![vid-screen-example.png](/vid-screen-example.png)
 
-### Scripting Properties
+### 脚本属性
 
 #### feature.screen
 
-This is a 64 wide x 64 high x 3 bytes (r, g, b) array that you can use to draw onto the screen.
+这是一个64宽 x 64高 x 3字节（r、g、b）的数组，您可以用来在屏幕上绘制图像。
 
 #### feature.screenWidth
 
 #### feature.screenHeight
 
-### Events
+### 事件
 
-As well as the events shared between all features, vidscreens have three unique events.
+除了所有功能共享的事件之外，vidscreens 还具有三个独特的事件。
 
-#### Keys event: `on('keys', (event) => {})`
+#### 按键事件：`on('keys', (event) => {})`
 
-This event triggers whenever a key is pressed or released. The available keys are the arrow keys, A, and B.
+每当按键被按下或释放时触发此事件。可用的按键包括箭头键、A 和 B。
 
-#### Frame event: `on('frame', (event) => {})`
+#### 帧事件：`on('frame', (event) => {})`
 
-This event triggers on every frame (30 fps).
+此事件在每帧（30 fps）上触发。
 
-#### Start event: `on('start', (event) => {})`
+#### 启动事件：`on('start', (event) => {})`
 
-This event triggers when the player clicks on the vidscreen to activate it.
+当玩家点击vidscreen以激活它时触发此事件。
 
-## VidScreen example: Breakout
+## VidScreen 示例：打砖块
 
-This is a simple version of the arcade game Breakout, written for a Cryptovoxels vidscreen. [Full Source code here](https://gist.github.com/moritree/5970fca2a61b3dab1179467a6ffcbe07). You have control over a paddle at the bottom of the screen, which can move left and right. There is an array of blocks at the top of the screen. A ball bounces off of the paddle and walls of the game, and any time it hits a block it not only bounces off but also destroys the block. If the ball hits the bottom of the screen, the game resets.
+这是一个为Cryptovoxels vidscreen编写的街机游戏Breakout的简化版本。[完整的源代码在此](https://gist.github.com/moritree/5970fca2a61b3dab1179467a6ffcbe07)。您可以控制屏幕底部的挡板，它可以左右移动。屏幕顶部有一排方块。球会从挡板和游戏的墙壁上反弹，每当它击中一个方块时，它不仅会反弹，还会销毁方块。如果球击中屏幕底部，游戏将重置。
 
-Let's demonstrate how the vidscreen's unique events and attributes are used.
+让我们演示一下vidscreen的独特事件和属性如何使用。
 
-```
+```javascript
 feature.on('keys', e => {
     if (e.keys.left) {
         paddle.moveLeft()
@@ -46,17 +49,17 @@ feature.on('keys', e => {
 })
 ```
 
-Whenever a key press is detected, we move the paddle left or right if one of the left or right arrow keys are pressed.
+每当检测到按键按下时，如果按下左或右箭头键之一，我们就会将挡板向左或向右移动。
 
-```
+```javascript
 feature.on('start', e => {
     reset()
 })
 ```
 
-When the vid screen is opened, reset() is called, which sets up the game from the start.
+当打开vidscreen时，将调用reset()，它会从头开始设置游戏。
 
-```
+```javascript
 feature.on('frame', e => {
     frame += 1
     update()
@@ -64,11 +67,11 @@ feature.on('frame', e => {
 })
 ```
 
-This is the main game loop - on every frame, we update the position of the ball, and then draw everything on the screen.
+这是游戏的主要循环 - 在每一帧上，我们会更新球的位置，然后在屏幕上绘制所有内容。
 
-Let's take a closer look at the draw() method.
+让我们更仔细地看一下draw()方法。
 
-```
+```javascript
 function draw() {
     feature.screen.fill(0)
 
@@ -80,9 +83,9 @@ function draw() {
 }
 ```
 
-Here we are drawing into feature.screen, first filling it with a black background, then drawing the objects on top.
+在这里，我们在feature.screen上绘制，首先用黑色背景填充它，然后在上面绘制对象。
 
-```
+```javascript
 class Ball {
     draw() {
         for (let i = 0; i < 3; i ++) {
@@ -92,4 +95,4 @@ class Ball {
 }
 ```
 
-The ball is drawn as a single white pixel. This means that the three bytes for R, G, and B, all have to be set to 255 on that pixel. This code snippet demonstrates filling in a single pixel at (this.xPos, this.yPos).
+球被绘制为一个白色的单个像素。这意味着该像素的R、G和B的三个字节都必须设置为255。这段代码片段演示了在(this.xPos, this.yPos)处填充单个像素。

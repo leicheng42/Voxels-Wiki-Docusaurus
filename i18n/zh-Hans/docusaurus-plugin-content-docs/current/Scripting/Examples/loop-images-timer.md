@@ -1,8 +1,10 @@
-# Feature looped on a timer
+# Feature looped on timer
+
+## Feature looped on a timer
 This script allows you to loop through a list of urls given an amount of seconds.
 ![timer_loop.png](/timer_loop.png)
 
-## Fixed amount of seconds
+### Fixed amount of seconds
 ```js
 var url =["URL1",
 "URL2",
@@ -38,7 +40,7 @@ var url =["URL1",
 
 
 
-## Variable amount of seconds
+### Variable amount of seconds
 ```js
 var url =["URL1",
 "URL2",

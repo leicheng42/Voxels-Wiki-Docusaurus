@@ -1,3 +1,5 @@
+# Username
+
 Your username is the name that will appear above your avatar in-world. It is also the name that will appear on the website once you are logged-in.
 Usernames are registered in the $NAME contract on chain and are therefore Non-Fungible tokens.
 

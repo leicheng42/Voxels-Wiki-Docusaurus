@@ -1,77 +1,78 @@
+# Polytext
+3D文本。
+
 ## Polytext
 
 ![polytext-example.png](/polytext-example.png)
 
-### Editor
+### 编辑器
 
 ![polytext-editor.png](/polytext-editor.png)
 
-#### Text
+#### 文本
 
-The text of the polytext. Simple.
+Polytext的文本内容。简单明了。
 
-#### Color
+#### 颜色
 
-The color of the polytext. Straightforward.
+Polytext的颜色。直截了当。
 
-#### Edges
+#### 边缘
 
-Whether or not the polytext will be outlined with black edges.
+指定Polytext是否用黑色边缘描边。
 
 ![polytext-edges.png](/polytext-edges.png)
 
-## Scripting Properties
-## Scripting Properties {.tabset}
-### url
-`String`; 
+## 脚本属性
+## 脚本属性 {.tabset}
+### 文本
+`String`;
 
-#### get()
+#### 获取（get）
 
 ```js
 feature.get('text')
-// returns: "My new text"
+// 返回："My new text"
 ```
 
-#### set()
+#### 设置（set）
 
 ```js
 feature.set({'text':"My new text"})
 ```
 
-#### default
+#### 默认值
 
 `""`
 
-
-### edges
+### 边缘
 `Boolean`
 
-#### get()
+#### 获取（get）
 
 ```js
 feature.get('edges')
-// returns: false
+// 返回：false
 ```
 
-#### set()
+#### 设置（set）
 
 ```js
 feature.set({'edges': true})
 ```
 
-#### default
+#### 默认值
 
 `false`
 
-### type
-`String`; 
+### 类型
+`String`;
 
-#### get()
+#### 获取（get）
 
 ```js
 feature.get('type')
-/* or */
+/* 或 */
 feature.type
-// returns: "polytext"
+// 返回："polytext"
 ```
-

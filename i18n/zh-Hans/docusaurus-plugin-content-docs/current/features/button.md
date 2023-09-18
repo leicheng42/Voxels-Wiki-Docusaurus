@@ -1,106 +1,40 @@
-##  Button
-A button depresses and makes a sound when you click on it. Buttons can be used to trigger scripts.
+# 音响盒
+音响盒允许您将计算机上的音频流传送到世界上。
 
-![button-feature.png](/button-feature.png)
+## 音响盒
+音响盒允许您将计算机上的音频流传送到世界上。要使用音响盒，只需单击它，然后从弹出窗口中选择“开始广播”。
 
-### Editor
+![boombox-feature-double.png](/boombox-feature-double.png)
+### 编辑器
+![boombox_editor_v4.25.png](/boombox_editor_v4.25.png)
 
-![button-editor.png](/button-editor.png)
+#### 空间衰减
 
-#### Color
+当玩家远离音频播放器时，声音逐渐消失的速度。
+值介于0和5之间。
 
-A button can be either red, green, blue, or white.
+## 脚本属性
+## 脚本属性 {.tabset}
+### 空间衰减系数
+`Double`; 取值范围从0到5
 
-#### Sound
-
-There are 14 different button press sounds to choose from.
-
-## Scripting Properties
-## Scripting Properties {.tabset}
-### color
-`String.`; Options are 'white', 'red', 'green', and 'blue'.
-
-#### get()
+#### 获取()
 
 ```js
-feature.get('color')
-// returns: "red"
+feature.get('rolloffFactor')
+// 返回值: 1.6
 ```
 
-#### set()
+#### 设置()
 
 ```js
-feature.set({'color':"blue"})
+feature.set({'rolloffFactor':1.6})
 ```
 
-#### default
+#### 默认值
 
-`"red"`
+`1`
 
-### soundId
-`Integer`; can be an integer in the range of 0 - 14.
-
-`'-1'` - None
-`'0'` - ding dong
-`'1'` - pong
-`'2'` - pshlick - sounds like a hydraulic trigger
-`'3'` - breet - sounds like a PC attempting to connect to internet
-`'4'` - claclack - sounds like a someone spamming a keyboard
-`'5'` - tpow Cling - sounds like a ball hitting a racket and then a metal pole
-`'6'` - traarz - sounds like a printer
-`'7'` - wuwuwuwu - sounds like a UFO
-`'8'` - flickfli - sounds like someone going through a paper tray
-`'9'` - pshing dong - sounds like a cymbal and a ding dong
-`'10'` - bzing - sounds like a quick zing (honestly)
-`'11'` - tadaw - sounds like a clown noise
-`'12'` - shplow - sounds like a PVC pipe being hit
-`'13'` - tshlshlsh - sounds like a notes counter
-`'14'` - miaaaaaa - sounds like a cat being harassed
-`'15'` - miaoowww - sounds like a hungry cat
-
-#### get()
-
-```js
-feature.get('soundId')
-// returns: "0"
-```
-
-#### set()
-
-```js
-feature.set({'soundId':"-1"})
-//Remember the soundId has to be a String
-```
-
-#### default
-
-`"0"`
-
-### type
-`String`; 
-
-#### get()
-
-```js
-feature.get('type')
-/* or */
-feature.type
-// returns: "button"
-```
-
-## How to use
-Using the scripting field, you can listen to clicks with
-
-```js
-feature.on('click',e=>{
-Your action when click here
-})
-```
-
-You can also know who clicked the button by doing:
-
-```js
-feature.on('click',e=>{
-console.log(e.player)
-})
-```
+## 如何使用？
+单击音响盒，然后点击“开始广播”
+![boombox-broadcast.png](/boombox-broadcast.png)

@@ -1,7 +1,9 @@
-# Teleport player on click.
+# Teleport player on click
+
+## Teleport player on click.
 Welcome your visitors as they enter/leave your parcel!
 
-### Process
+#### Process
 
 1. Place a vox model for the sake of this example
 2. place the following script on the feature:
@@ -14,6 +16,6 @@ feature.on('click',e=>{
 
 3. if you want this to happen on a trigger instead of click, replace 'click' with 'trigger'
 
-### What happens
+#### What happens
 The scripts obtains the player from the click and teleports it to the coordinates.
 

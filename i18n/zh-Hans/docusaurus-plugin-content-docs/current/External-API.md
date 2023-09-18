@@ -1,32 +1,34 @@
-Cryptovoxels has a few APIs that you can use for your own analysis or to show on your website.
+# 外部API
 
-**Here is a list of APIs you can obtain, as of v 4.25:**
-1. Parcels info
-2. Single parcel info
-3. All features inside a parcel
-4. Suburbs
-5. Islands
-6. Womps
-7. Avatars
-8. Wearables
-9. Single wearable
+Cryptovoxels有一些API，您可以用它们进行自己的分析，或在您的网站上展示。
 
-**Extra**: Obtain the leaflet map.
+**以下是截止到v 4.25的API列表：**
+1. 地块信息
+2. 单个地块信息
+3. 地块内的所有功能
+4. 郊区
+5. 岛屿
+6. Womps（即社交信息）
+7. 头像
+8. 服饰
+9. 单个服饰
 
-# 1. Parcels info
+**额外**: 获取Leaflet地图。
 
-# All Parcels info {.tabset}
-## Description
+## 1. 地块信息
 
-Returns owner, collaborators, parcel description, parcel geometry and more for every single parcels of Cryptovoxels.
+## 所有地块信息 {.tabset}
+### 描述
 
-## cURL
+返回Cryptovoxels的每个单独地块的所有者、合作者、地块描述、地块几何信息等。
+
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/api/parcels.json'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -36,12 +38,12 @@ const options = {
 };
 
 request(options, function (error, response, body) {
-  if (error) throw new Error(error);
+  if (error) throw an Error(error);
 
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -50,7 +52,7 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### 响应
 ```json
 {"success":true,
  "parcels":[
@@ -85,21 +87,20 @@ print(response.text)
    ...
 ```
 
-# 2. Single parcel
+## 2. 单个地块
 
-# Single parcel info {.tabset}
-## Description
+## 单个地块信息 {.tabset}
+### 描述
 
-Returns basic parcel info for a specific parcel given the parameter `:id`.
+根据参数`:id`返回特定地块的基本信息。
 
-
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/p/:id'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -109,12 +110,12 @@ const options = {
 };
 
 request(options, function (error, response, body) {
-  if (error) throw new Error(error);
+  if (error) throw an Error(error);
 
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -123,9 +124,9 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### 响应
 ```json
-request "https://www.cryptovoxels.com/p/5" =>
+请求 "https://www.cryptovoxels.com/p/5" =>
 {
   "name":"76 Block Fork",
  "image":"https://map.cryptovoxels.com/tile/parcel?x=0.07&y=-0.24",
@@ -145,20 +146,21 @@ request "https://www.cryptovoxels.com/p/5" =>
 }
 ```
 
-# 3. All features in a parcel
+## 3. 地块内的所有功能
 
-# Single parcel features {.tabset}
-## Description
+## 单个地块功能 {.tabset}
+### 描述
 
-Returns all features inside a specific parcel given the parameter `:id`.
+根据参数`:id`返回特定地块内的所有功能。
 
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/grid/parcels/:id'
 ```
-## Nodejs
+
+### Nodejs
 ```js
 const request = require('request');
 
@@ -173,7 +175,8 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 ```
-## Python
+
+### Python
 ```python
 import requests
 
@@ -182,9 +185,10 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+
+### 响应
 ```json
-request "https://www.cryptovoxels.com/grid/parcels/670" =>
+请求 "https://www.cryptovoxels.com/grid/parcels/670" =>
 {"success":true,
   "parcel":{
     "id":670,
@@ -231,19 +235,19 @@ request "https://www.cryptovoxels.com/grid/parcels/670" =>
 ```
 
 
-# 4. Suburbs
-# Suburbs {.tabset}
-## Description
+## 4. 郊区
+## 郊区 {.tabset}
+### 描述
 
-Returns informations about all suburbs .
+返回有关所有郊区的信息。
 
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/api/suburbs.json'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -258,7 +262,7 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -267,7 +271,7 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### 响应
 ```json
 {"success":true,
  "suburbs":[
@@ -285,19 +289,19 @@ print(response.text)
 ```
 
 
-# 5. Islands
-# Suburbs {.tabset}
-## Description
+## 5. 岛屿
+## 岛屿 {.tabset}
+### 描述
 
-Returns a list of all islands and their geometry.
+返回所有岛屿及其几何信息的列表。
 
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/api/islands.json'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -312,7 +316,7 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -321,7 +325,7 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### 响应
 ```json
 {"success":true,
  "islands":[
@@ -346,19 +350,19 @@ print(response.text)
    ...
 ```
 
-# 6. Womps
-# Womps {.tabset}
-## Description
+## 6. Womps
+## Womps {.tabset}
+### 描述
 
-Returns the last 100 womps and their info.
+返回最新的100个“Womp”以及它们的信息。
 
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/api/womps.json'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -373,7 +377,7 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -382,7 +386,7 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### 响应
 ```json
 {"success":true,
  "womps":[
@@ -398,24 +402,24 @@ print(response.text)
    },
    ...
 ```
-## Rss feed:
+### Rss订阅:
 ```
 https://www.cryptovoxels.com/womps.rss
 ```
 
-# 7. Avatars
-# Avatars {.tabset}
-## Description
+## 7. Avatars
+## Avatars {.tabset}
+### 描述
 
-Returns avatars informations and their corresponding parcels.
+返回有关头像的信息以及它们对应的地块。
 
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/api/avatars.json'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -425,12 +429,12 @@ const options = {
 };
 
 request(options, function (error, response, body) {
-  if (error) throw new Error(error);
+  if (error) throw an Error(error);
 
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -439,7 +443,7 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### 响应
 ```json
 {"id":645,
  "owner":"0x0fa074262d6af761fb57751d610dc92bac82aef9",
@@ -453,19 +457,19 @@ print(response.text)
    ...
 ```
 
-# 8. Collectibles
-# Collectibles {.tabset}
-## Description
+## 8. 收藏品
+## 收藏品 {.tabset}
+### 描述
 
-Returns all collectibles and their info.
+返回所有收藏品及其信息。
 
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/api/collectibles.json'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -475,12 +479,12 @@ const options = {
 };
 
 request(options, function (error, response, body) {
-  if (error) throw new Error(error);
+  if (error) throw an Error(error);
 
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -489,13 +493,13 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### 响应
 ```json
 {"success":true,
  "collectibles":[
    {
      "id":"492622e7-4588-45e3-9ca9-f96fb59ed3f9",
-     "name":"Black Spray Paint",
+     "name":"黑色喷漆",
      "token_id":59,
      "description":"",
      "issues":8,
@@ -505,21 +509,21 @@ print(response.text)
    ...
 ```
 
-# 9. Collectibles of one collections
-# Collection's collectibles {.tabset}
-## Description
+## 9. 一个收藏品的收藏品
+## 收藏品的收藏品 {.tabset}
+### 描述
 
-Returns all collectibles and their info from one specific collection
+返回来自一个特定收藏品的所有收藏品和它们的信息
 
-Replace `:id` by the collection id.
+用收藏品的ID替换 `:id`。
 
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/api/collections/:id/collectibles.json'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -534,7 +538,7 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 ```
-## Python
+### Python
 ```python
 import requests
 
@@ -543,13 +547,13 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+### 响应
 ```json
 {"success":true,
  "collectibles":[
    {
      "id":"492622e7-4588-45e3-9ca9-f96fb59ed3f9",
-     "name":"Black Spray Paint",
+     "name":"黑色喷漆",
      "token_id":59,
      "description":"",
      "issues":8,
@@ -559,28 +563,27 @@ print(response.text)
    ...
 ```
 
-# 10. Single collectible
-# Single collectible {.tabset}
-## Description
+## 10. 单个收藏品
+## 单个收藏品 {.tabset}
+### 描述
 
-Returns all information about a specific collectible given the parameter `:collection_id` and `:id`.
+返回有关特定收藏品的所有信息，给定参数 `:collection_id` 和 `:id`。
 
 :::caution
-Because this API reveals the vox file of the wearable it is not to be abused.
+由于此API会公开可穿戴物品的vox文件，因此请勿滥用。
 :::
 
 :::caution
-Because this API reveals the vox file of the wearable it is not to be abused.
+由于此API会公开可穿戴物品的vox文件，因此请勿滥用。
 :::
 
-
-## cURL
+### cURL
 
 ```js
 cURL --request GET \
   --url 'https://www.cryptovoxels.com/c/:collection_id/:id'
 ```
-## Nodejs
+### Nodejs
 ```js
 const request = require('request');
 
@@ -595,7 +598,9 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 ```
-## Python
+以下是您提供的代码的翻译：
+
+### Python
 ```python
 import requests
 
@@ -604,31 +609,30 @@ response = requests.request("GET", url)
 
 print(response.text)
 ```
-## response
+
+### 响应
 ```json
-request "https://www.cryptovoxels.com/c/1/5" =>
+请求 "https://www.cryptovoxels.com/c/1/5" =>
 {"name":"Royal Edge",
  "image":"https://www.cryptovoxels.com/w/3e67f51d6c17281963c948456b7032d3f7f3f9bb/png",
- "description":"A short sword designed for the Royal Guards and worn as a medal of prestige rather than a combat weapon. While its main purpose is symbolic, do not underestimate the damage it can deliver to a piece of crusty loaf.",
+ "description":"这是为皇家卫兵设计的短剑，作为威望的勋章而不是战斗武器佩戴。尽管其主要目的是象征性的，但不要低估它对一块发硬的面包造成的伤害。",
  "attributes":{
   "vox":"https://www.cryptovoxels.com/w/3e67f51d6c17281963c948456b7032d3f7f3f9bb/vox",
   "author":"topper",
    "issues":32,
-   "rarity":"epic"
+   "rarity":"史诗"
  },
  "external_url":"https://www.cryptovoxels.com/wearables/5",
  "background_color":"FAD961"
 }
 ```
 
+## 在您的网站上显示leaflet地图。
+该地图是使用免费的[leaflet库](https://leafletjs.com/)生成的。
 
-
-# Show the leaflet map on your website.
-The map is generated using the free [leaflet library](https://leafletjs.com/).
-
-### Add leaflet to your page
-Via your favorite mean.
-Below we load up leaflet from the CDN using the `link` and `script` element at the top of the page.
+#### 将leaflet添加到您的页面
+通过您喜欢的方式进行添加。
+在下面的示例中，我们使用`link`和`script`元素从CDN加载leaflet库，并将它们放在页面顶部。
 ```html
     <!--  JQUERY -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -636,32 +640,31 @@ Below we load up leaflet from the CDN using the `link` and `script` element at t
     <!-- LEAFLET-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="">
     <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
-
 ```
 
-### Have a div ready
-here we add a `div` element that will contain our map.
+#### 准备一个div
+在这里，我们添加一个`div`元素，该元素将包含我们的地图。
 ```html
 <div id="cvmap" style="height: 700px; position: relative; outline: none;">
-<!-- It is important that the leaflet map is in a "defined" size container Or that it has a defined size.-->
+<!-- 非常重要的是leaflet地图位于一个"已定义"大小的容器中，或者它本身具有已定义的大小。-->
 ```
 
-### Add the javascript
-In a `<script></script>` element we add the following code.
+#### 添加JavaScript代码
+在`<script></script>`元素中，我们添加以下代码。
 ```js
        var CVmap = L.map('cvmap').setView([1.80, 0.98], 9);
-      /* Load the tileLayer x and y*/
+      /* 加载tileLayer x 和 y */
       L.tileLayer(`https://map.cryptovoxels.com/tile?z={z}&x={x}&y={y}`, {
         minZoom: 3,
         maxZoom: 20,
-        attribution: 'Map data &copy; Cryptovoxels',
+        attribution: '地图数据 &copy; Cryptovoxels',
         id: 'cryptovoxels'
       }).addTo(CVmap)
 ```
-It loads up the leaflet layer, which is available from:
-`https://map.cryptovoxels.com/tile?z={z}&x={x}&y={y}`.
+它加载了leaflet图层，该图层可从以下地址获得：
+`https://map.cryptovoxels.com/tile?z={z}&x={x}&y={y}`。
 
-## Example:
-[CV interactive map](https://benjythebee.github.io/CV_interactive_map/index.html)
-and the repo of the example:
+### 示例：
+[CV交互地图](https://benjythebee.github.io/CV_interactive_map/index.html)
+示例的仓库：
 https://github.com/Benjythebee/CV_interactive_map

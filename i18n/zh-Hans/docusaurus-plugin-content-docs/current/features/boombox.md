@@ -1,38 +1,40 @@
-## Boombox
-A boombox allows you to stream audio from your computer into the world. To use a boombox, simply click on it and then select `Start Broadcasting` from the pop-up.
+# 音响盒
+音响盒允许您将计算机上的音频流传送到世界上。
+
+## 音响盒
+音响盒允许您将计算机上的音频流传送到世界上。要使用音响盒，只需单击它，然后从弹出窗口中选择“开始广播”。
 
 ![boombox-feature-double.png](/boombox-feature-double.png)
-### Editor
+### 编辑器
 ![boombox_editor_v4.25.png](/boombox_editor_v4.25.png)
 
-#### Spatial roll off
+#### 空间衰减
 
-How quickly the sound fades away as the player moves away from the audio player.
-Value between 0 and 5.
+当玩家远离音频播放器时，声音逐渐消失的速度。
+值介于0和5之间。
 
-## Scripting Properties
-## Scripting Properties {.tabset}
-### rollOffFactor
-`Double`; Value ranging from 0 to 5
+## 脚本属性
+## 脚本属性 {.tabset}
+### 空间衰减系数
+`Double`; 取值范围从0到5
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('rolloffFactor')
-// returns: 1.6
+// 返回值: 1.6
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'rolloffFactor':1.6})
 ```
 
-#### default
+#### 默认值
 
 `1`
 
-## How to use?
-Click on the Boombox and hit start Broadcasting
+## 如何使用？
+单击音响盒，然后点击“开始广播”
 ![boombox-broadcast.png](/boombox-broadcast.png)
-

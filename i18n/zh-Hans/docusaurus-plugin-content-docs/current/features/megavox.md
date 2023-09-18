@@ -1,33 +1,35 @@
+# Megavox
+大型（126x126x126）.vox模型。
+
 ## Megavox
 
-Megavoxes are large (126x126x126) .vox models, currently limited to 5 per parcel.
+Megavox是大型（126x126x126）的.vox模型，每个地块目前限制最多5个。
 
 ![megavox-example.png](/megavox-example.png)
 
-### Editor
+### 编辑器
 
 ![megavox-editor.png](/megavox-editor.png)
 
 #### URL
 
-The URL of the .vox file.
+.vox文件的URL。
 
-#### Hyperlink
+#### 超链接
 
-`(Optional)`; makes the megavox a clickable link.
+（可选）；使Megavox成为可点击的链接。
 
-
-## Scripting Properties
-## Scripting Properties {.tabset}
+## 脚本属性
+## 脚本属性 {.tabset}
 ### url
-`String`; Links must be `https://` and must finish with a vox extension `.vox`
-Has to link to a 126x126x126 vox model.
+`String`；链接必须以`https://`开头，并且必须以.vox扩展名结尾。
+必须链接到一个126x126x126的vox模型。
 
 #### get()
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回："https://..."
 ```
 
 #### set()
@@ -36,18 +38,18 @@ feature.get('url')
 feature.set({'url':"https://www.myurl.com/file.vox"})
 ```
 
-#### default
+#### 默认值
 
 `""`
 
 ### link
-`String`; Links must be `https://`.
+`String`；链接必须以`https://`开头。
 
 #### get()
 
 ```js
 feature.get('link')
-// returns: "https://..."
+// 返回："https://..."
 ```
 
 #### set()
@@ -56,7 +58,7 @@ feature.get('link')
 feature.set({'link':"https://www.myurl.com/"})
 ```
 
-#### default
+#### 默认值
 
 `""`
 
@@ -67,7 +69,7 @@ feature.set({'link':"https://www.myurl.com/"})
 
 ```js
 feature.get('collidable')
-// returns: false
+// 返回：false
 ```
 
 #### set()
@@ -76,19 +78,19 @@ feature.get('collidable')
 feature.set({'collidable': true})
 ```
 
-#### default
+#### 默认值
 
 `false`
 
 ### type
-`String`;
+`String`；
 
 #### get()
 
 ```js
 feature.get('type')
-/* or */
+/* 或 */
 feature.type
 
-// returns: 'megavox'
+// 返回：'megavox'
 ```

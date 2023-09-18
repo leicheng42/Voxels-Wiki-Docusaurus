@@ -1,53 +1,55 @@
-## Audio
+# 音频功能
 
-An audio feature is a little player for mp3s. You can link to any mp3 and we'll try and stream it. 
+## 音频
+
+音频功能是一个用于播放mp3文件的小型播放器。您可以链接到任何mp3文件，我们将尝试进行流媒体播放。
 
 ![audio-feature.png](/audio-feature.png)
 
-### Editor
+### 编辑器
 
 ![[audio]editor_v8.1.png](/features/[audio]editor_v8.1.png)
 
-#### Sprite
+#### 精灵
 
-Display a smaller audio element
+显示一个较小的音频元素
 
-#### Streaming
+#### 流媒体
 
-Streams the audio directly, without trying to proxy it through our servers. Should make audio play faster, but if you have weird referrer rules on hosting server this might not work.
+直接流媒体播放音频，无需尝试通过我们的服务器代理。应该能使音频播放更快，但如果您在托管服务器上有奇怪的引用者规则，可能无法正常工作。
 
-#### Autoplay 
+#### 自动播放
 
-As soon as someone enters your parcel, start playing this audio. (With great power comes great responsibility).
+一旦有人进入您的地块，就开始播放这个音频。（伴随着强大的功能，也伴随着伟大的责任）。
 
-#### Loop
+#### 循环
 
-Loop the audio forever.
+永久循环播放音频。
 
-#### Spatial rolloff factor
+#### 空间衰减因子
 
-How quickly the sound fades away as the player moves away from the audio player.
-Value between 0 and 5. 
+当玩家远离音频播放器时，声音消失的速度有多快。
+取值范围在0到5之间。
 
-#### Volume
+#### 音量
 
-How loud should the audio play
-Value between 0 and 1. 
+音频播放的音量有多大。
+取值范围在0到1之间。
 
-#### URL
+#### 链接
 
-Links must be `https://` since we force https:// for everything.
+链接必须以 `https://` 开头，因为我们强制所有链接使用https。
 
-## Scripting Properties
-## Scripting Properties {.tabset}
+## 脚本属性
+## 脚本属性 {.tabset}
 ### url
-`String.`; Links must be `https://` and must finish with an audio extension such as `.mp3`
+`字符串.`；链接必须以 `https://` 开头，并且必须以音频扩展名结尾，例如 `.mp3`
 
 #### get()
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
 #### set()
@@ -56,155 +58,159 @@ feature.get('url')
 feature.set({'url':"https://www.myurl.com/file.mp3"})
 ```
 
-#### default
+#### 默认
 
 `""`
 
-### sprite
-`Boolean.`
+### 精灵
+`布尔值.`
 
 #### get()
 
 ```js
 feature.get('sprite')
-// returns: false
+// 返回: false
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'sprite': true})
 ```
 
-#### default
+#### 默认值
 
 `false`
 
-### streaming
-`Boolean.`
+### 流媒体
+`布尔值.`
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('streaming')
-// returns: false
+// 返回: false
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'streaming': true})
 ```
-#### default
+
+#### 默认值
 
 `false`
 
-### autoplay
-`Boolean.`
+### 自动播放
+`布尔值.`
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('autoplay')
-// returns: false
+// 返回: false
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'autoplay': true})
 ```
-#### default
+
+#### 默认值
 
 `false`
 
-### loop
-`Boolean.`
+### 循环
+`布尔值.`
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('loop')
-// returns: false
+// 返回: false
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'loop': true})
 ```
 
-#### default
+#### 默认值
 
 `false`
 
-### rolloffFactor
-`double`; Value ranging from 0 to 5
+### 空间衰减因子
+`双精度`; 取值范围在0到5之间
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('rolloffFactor')
-// returns: 1.6
+// 返回: 1.6
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'rolloffFactor': 1.6})
 ```
 
-#### default
+#### 默认值
+
 `1.6`
 
-### volume
-`double`; Value ranging from 0 to 1
+### 音量
+`双精度`; 取值范围在0到1之间
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('volume')
-// returns: 0.5
+// 返回: 0.5
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'volume': 0.5})
 ```
 
-#### default
+#### 默认值
+
 `0.5`
 
-### type
-`String`;
+### 类型
+`字符串`;
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或 */
 feature.type
 
-// returns: 'audio'
+// 返回: 'audio'
 ```
 
-## Scripting Methods
-## Scripting Methods {.tabset}
-### play()
+## 脚本方法
+## 脚本方法 {.tabset}
+### 播放()
 ```js
 feature.play()
 ```
-plays the audio
+播放音频
 
-### pause()
+### 暂停()
 ```js
 feature.pause()
 ```
-pauses the audio
+暂停音频
 
-### stop()
+### 停止()
 ```js
 feature.stop()
 ```
-stops the audio
+停止音频

@@ -1,26 +1,28 @@
+# 呼叫铃
+一种特殊类型的按钮，当激活时将发送Discord私信消息。
+
 :::danger
-Feature has been nerfed since v 4.16 and is no more available.
+此功能自版本4.16以来已被削弱，并不再可用。
 :::
 
+## 呼叫铃
 
-## Call Bell
-
-Similar in appearance to a [button](/docs/features/button), a call bell will send a message to a Discord user when pressed.
+呼叫铃在外观上类似于[按钮](/docs/features/button)，当按下时，它将向Discord用户发送一条消息。
 
 ![call-bell-feature.png](/call-bell-feature.png)
 
-### Editor
+### 编辑器
 
 #### Discord ID
 
-The discord ID of the user to ping.
+要ping的Discord用户的Discord ID。
 
-### Properties
+### 属性
 
 #### feature.discordId
 
-String.
+字符串。
 
 #### feature.soundId
 
-Integer; the ID of the sound the button makes when clicked. This can be an integer in the range of 0 - 14.
+整数；按钮在点击时发出的声音的ID。这可以是0到14范围内的整数。

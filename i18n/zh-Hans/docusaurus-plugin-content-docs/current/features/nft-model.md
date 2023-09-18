@@ -1,52 +1,53 @@
-## NFT-model
+# NFT 模型
 
-Lets you display a 3d vox model in-world using an Opensea link. It has a built-in GUI menu that displays information about the nft.
+## NFT 模型
 
+允许您在虚拟世界中使用Opensea链接显示一个3D vox模型。它具有内置的GUI菜单，显示有关NFT的信息。
 
-### Editor
+### 编辑器
 
 ![[nft-model]editor_5.57.png](/features/[nft-model]editor_5.57.png){.align-center}
 
 #### URL
 
-The Opensea URL of the nft.
+NFT的Opensea链接。
 
-If the collectible is a collectible minted on the cryptovoxels website, it will display a GUI menu with a button `Buy on Opensea`.
+如果这个可收藏品是在cryptovoxels网站上铸造的可收藏品，它将显示一个带有“在Opensea上购买”的按钮的GUI菜单。
 
-If not, it will display a menu with less information.
+如果不是，则会显示一个包含较少信息的菜单。
 
-## Scripting Properties
-## Scripting Properties {.tabset}
+## 脚本属性
+## 脚本属性 {.tabset}
 ### url
-`String`; Links must be `https://` and must be a link from opensea.
-eg: `https://opensea.io/assets/0xa58b5224e2fd94020cb2837231b2b0e4247301a6/3247`
+`String`；链接必须以`https://`开头，并且必须是Opensea的链接。
+例如：`https://opensea.io/assets/0xa58b5224e2fd94020cb2837231b2b0e4247301a6/3247`
 
-#### get()
+#### 获取（get）
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回："https://..."
 ```
 
-#### set()
+#### 设置（set）
 
 ```js
 feature.set({'url':"https://opensea.io/assets/0xa58b5224e2fd94020cb2837231b2b0e4247301a6/3247"})
 ```
 
-#### default
+#### 默认值
 
 `""`
 
-### type
-`String`;
+### 类型
+`String`；
 
-#### get()
+#### 获取（get）
 
 ```js
 feature.get('type')
-/* or */
+/* 或 */
 feature.type
 
-// returns: 'nft-model'
+// 返回：'nft-model'
 ```

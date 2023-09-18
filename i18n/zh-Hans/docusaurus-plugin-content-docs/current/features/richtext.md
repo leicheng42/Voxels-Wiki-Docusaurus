@@ -1,101 +1,101 @@
-## Richtext
+# 富文本
+多行Markdown格式的文本。
 
-The Richtext feature allows you to display multiple lines of formatted text. Unlike [signs](/docs/features/sign), though, they can't be used as a hyperlink.
+## 富文本
+
+富文本功能允许您显示多行格式化的文本。不过，与[标志](/docs/features/sign)不同，它们不能用作超链接。
 
 ![richtext-example.png](/richtext-example.png)
 
-### Editor
+### 编辑器
 
 ![richtext-editor.png](/richtext-editor.png)
 
-#### Text
+#### 文本
 
-The text you want to display, in markdown format.
+您要显示的文本，采用Markdown格式。
 :::info
-It is possible to style text using css by placing something like this after your text:   `{:style="color:red;background:green;font-size:18px"}`
+您可以通过在文本后添加类似以下内容来使用CSS样式：`{:style="color:red;background:green;font-size:18px"}`
 :::
 
-#### Blend mode
+#### 混合模式
 
-This is used to determine how the text is blended with whatever is behind it. The available options are `Combine`, `Multiply`, and `Screen`.
+这用于确定文本与其后的任何内容混合的方式。可用的选项包括 `组合`，`相乘` 和 `屏幕`。
 
-#### Inverted
+#### 反相
 
-When ticked, the text will be white on a black background, rather than the other way around.
+选中后，文本将以白色显示在黑色背景上，而不是相反。
 
+## 脚本属性
+## 脚本属性 {.tabset}
+### 文本
+`字符串`; 
 
-## Scripting Properties
-## Scripting Properties {.tabset}
-### text
-`String`; 
-
-#### get()
+#### 获取()
 
 ```js
 feature.get('text')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-#### set()
+#### 设置()
 
 ```js
-feature.set({'text':"my paragraph"})
+feature.set({'text':"我的段落"})
 ```
 
-#### default
+#### 默认值
 
 `""`
-### blendMode
-`String`
+### 混合模式
+`字符串`
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('blendMode')
-// returns: 'Combine'
+// 返回: '组合'
 ```
 
-#### set()
+#### 设置()
 
 ```js
-feature.set({'blendMode': 'Combine'})
+feature.set({'blendMode': '组合'})
 ```
 
-#### default
+#### 默认值
 
-`"Multiply"`
+`"相乘"`
 
-### inverted
-`Boolean`; 
+### 反相
+`布尔值`; 
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('inverted')
-// returns: false
+// 返回: false
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'inverted': true})
 ```
 
-#### default
+#### 默认值
 
 `false`
 
-### type
-`String`;
+### 类型
+`字符串`;
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或 */
 feature.type
 
-// returns: 'richtext'
+// 返回: 'richtext'
 ```
-
-

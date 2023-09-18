@@ -1,18 +1,21 @@
-# Versioning and deprecations
+# 版本控制和废弃
 
-## Versioning
+描述了CryptoVoxels的版本控制和废弃功能的工作方式。
 
-The versioning of CryptoVoxels might seem a bit weird if you are used to other softwares systems. The version looks like `5.6.2`.
+## 版本控制和废弃
 
-`5.x.x` is the major version number and is changed whenever Ben thinks it's a time to, maybe once or twice per year.
+### 版本控制
 
-`x.6.x` is the minor version number and is increased every day there is a release done. 
+如果您习惯了其他软件系统，CryptoVoxels的版本控制可能看起来有点奇怪。版本看起来像是`5.6.2`。
 
-`x.x.2` is the patch version number and is increased for every release that is created on the same day.
+- `5.x.x`是主要版本号，每当Ben认为是时候的时候，它就会更改，可能每年一两次。
 
-## Deprecations
+- `x.6.x`是次要版本号，每天进行发布时都会增加。
 
-### Features
+- `x.x.2`是补丁版本号，每次在同一天创建发布时都会增加。
 
-Feature data contains a reference to which version they were last changed by the owner. This version is used by the devs to migrate and deprecate feature functionality without changing the current data and having to change/migrate all the data in one step. This can be thought of as a [feature flag](https://martinfowler.com/articles/feature-toggles.html) triggered by the version.
- 
+### 废弃
+
+#### 功能
+
+功能数据包含一个引用，指出它们最后由所有者更改的版本。开发人员使用此版本来迁移和废弃功能功能，而不会更改当前数据并不得不一次性更改/迁移所有数据。这可以被视为由版本触发的[功能标志](https://martinfowler.com/articles/feature-toggles.html)。

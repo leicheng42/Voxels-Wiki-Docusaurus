@@ -1,19 +1,21 @@
-## Portal
+# 传送门
 
-Let users teleport to in-world locations. Portals use womps taken in the past. This gives incentive for the player to go explore the world and take womps.
+## 传送门
 
-![[portal]example.5.57.png](/features/[portal]example.5.57.png){.align-center}
+允许用户传送到虚拟世界中的不同位置。传送门使用过去获取的"Womps"（一种虚拟世界的位置标记）。这激励玩家去探索世界并获取"Womps"。
 
-When entered, the following chat messages will appear:
-![[portal]system_message.png](/features/[portal]system_message.png){.align-center}
+![portal-example.5.57.png](/features/[portal]example.5.57.png){.align-center}
 
-### Editor
+进入传送门后，将显示以下聊天消息：
+![portal-system_message.png](/features/[portal]system_message.png){.align-center}
 
-![[portal]editor5.57.png](/features/[portal]editor5.57.png){.align-center}
+### 编辑器
+
+![portal-editor5.57.png](/features/[portal]editor5.57.png){.align-center}
 
 #### URL
 
-A womp url. Obtained by selecting a womp in the womp explorer.
+一个"Womp"的URL。通过在"Womp"资源管理器中选择"Womp"来获取。
 
-## Scripting Properties
-None
+## 脚本属性
+无

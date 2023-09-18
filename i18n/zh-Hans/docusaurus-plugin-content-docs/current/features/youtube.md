@@ -1,55 +1,58 @@
-## YouTube / Twitch
+# 视频
+添加短视频。
 
-Embed YouTube videos/streams, or Twitch streams.
+## 视频
 
-![youtube-example.png](/youtube-example.png)
+添加可以通过点击播放的短视频。
 
-### Editor
+![video-feature.png](/video-feature.png)
 
-![youtube_editor_v4.25.png](/youtube_editor_v4.25.png)
+### 编辑器
 
-#### Screen ratio
-
-The screen ratio of the video: `16:9` or `4:3`
+![video_editor_v4.25.png](/video_editor_v4.25.png)
 
 #### URL
 
-The YouTube/Twitch URL of the video to play.
+要播放的视频的URL。必须以 `https://` 开头，必须以视频扩展名（如 `.mp4`）结尾。
 
-#### Thumbnail url
+#### 图像预览
 
-`(Optional)` Let's the user set a customized thumbnail for the video.
+（可选）允许用户为视频设置自定义缩略图。
 
-## Scripting Properties
-## Scripting Properties {.tabset}
+#### 混合模式
+
+用于确定图像与其后面的内容混合的方式。可用的选项包括 `Combine`、`Multiply` 和 `Screen`。
+
+## 脚本属性
+## 脚本属性 {.tabset}
 ### url
-`String`; Links must be `https://` and must either be a `youtube, twitch, soundcloud, spotify`.
+`String`；必须以 `https://` 开头，必须以视频扩展名（如 `.mp4`）结尾。
 
 #### get()
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
 #### set()
 
 ```js
-feature.set({'url':"https://www.youtube.com/?v=..."})
+feature.set({'url':"https://..."})
 ```
 
-#### default
+#### 默认值
 
 `""`
 
 ### previewUrl
-`String`; Links must be `https://` and must either be a `.png,.gif,jpg`.
+`String`；链接必须是 `https://`，并且必须是 `.png`、`.gif` 或 `.jpg`。
 
 #### get()
 
 ```js
 feature.get('previewUrl')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
 #### set()
@@ -58,55 +61,41 @@ feature.get('previewUrl')
 feature.set({'previewUrl':"https://..."})
 ```
 
-#### default
+#### 默认值
 
 `""`
 
-### screenRatio
-`String`; Links must be `https://` and must either be a `.png,.gif,jpg`.
-
-#### get()
-
-```js
-feature.get('screenRatio')
-// returns: "43"
-```
-
-#### set()
-
-```js
-feature.set({'screenRatio':"169"})
-```
-
-#### default
-
-`"169"`
-
-### type
-`String`;
+### 类型
+`String`；
 
 #### get()
 
 ```js
 feature.get('type')
-/* or */
+/* 或 */
 feature.type
 
-// returns: 'youtube'
+// 返回: 'video'
 ```
 
-## Scripting methods
-## Scripting methods {.tabset}
+## 脚本方法
+## 脚本方法 {.tabset}
 
-### play()
+### 播放()
 
 ```js
 feature.play()
 ```
-plays the video
+播放视频
 
-### feature.pause()
+### 暂停()
 ```js
 feature.pause()
 ```
-pauses the video
+暂停视频
+
+### 停止()
+```js
+feature.stop()
+```
+停止视频

@@ -1,72 +1,76 @@
-:::info
-Feature has been reintroduced since v 5.0
-:::
-## Text Input
+# 文本输入
+允许用户输入消息。
 
-Let users enter a message.
+:::info
+该功能自版本5.0以来已重新引入。
+:::
+
+## 文本输入
+
+允许用户输入消息。
 
 ![text-input-feature.png](/text-input-feature.png)
 
-### Editor
+### 编辑器
 
 ![text-input-editor.png](/text-input-editor.png)
 
-#### Placeholder
+#### 占位符
 
-The text that appears as a placeholder when there is no user input.
+当没有用户输入时出现的占位符文本。
 
 
-## Scripting Properties
-## Scripting Properties {.tabset}
-### text
-`String`; 
+## 脚本属性
+## 脚本属性 {.tabset}
+### 文本
+`字符串`; 
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('text')
-// returns: "my text"
+// 返回: "我的文本"
 ```
 
-#### set()
+#### 设置()
 
 ```js
-feature.set({'text':"my text"})
+feature.set({'text':"我的文本"})
 ```
 
-#### default
+#### 默认值
 
 `""`
 
-### placeholder
-`String`; 
+### 占位符
+`字符串`; 
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('placeholder')
-// returns: "my text"
+// 返回: "我的文本"
 ```
 
-#### set()
+#### 设置()
 
 ```js
-feature.set({'placeholder':"my text"})
+feature.set({'placeholder':"我的文本"})
 ```
 
-#### default
+#### 默认值
 
-`"placeholder"`
+`"占位符"`
 
-### type
-`String`;
+### 类型
+`字符串`;
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或 */
 feature.type
 
-// returns: 'text-input'
+// 返回: 'text-input'
 ```

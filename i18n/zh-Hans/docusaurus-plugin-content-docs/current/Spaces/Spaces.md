@@ -1,201 +1,204 @@
-## What is a space?
-Spaces are free plots of land off-grid. They are building volumes similar to [parcels](/docs/Parcels/Building) and are an excellent way to test the building tools of Cryptovoxels. 
-You can also [convert a space into a parcel and vice versa](#converting-space-to-parcel), making experimenting easy.
+# 空间
+孤立的地块
+
+## 什么是空间？
+空间是离网格的免费土地。它们是类似于[地块](/docs/Parcels/Building)的建筑体积，是测试Cryptovoxels建筑工具的绝佳方式。
+您还可以[将空间转换为地块，反之亦然](#将空间转换为地块)，以便轻松进行实验。
 
 ![blankspaces.png](/spaces/blankspaces.png)
 
-### What can I do in a space?
-Everything you can do in a [parcel](/docs/Parcels/Building), including [scripting](/docs/Scripting/). Multiplayer is limited to 5 people.
-:::caution
-[Lightmap baking](/docs/Parcels/light-map) is not allowed in spaces yet.
+### 我可以在空间中做什么？
+您可以在[地块](/docs/Parcels/Building)中可以做的一切，包括[脚本编写](/docs/Scripting/)。多人游戏限制为5人。
+:::警告
+尚不允许在空间中进行[光照图烘焙](/docs/Parcels/light-map)。
 :::
 
-### Are spaces free?
-Yes, spaces are 100% free and you can have up to 420 spaces per wallet.
+### 空间是免费的吗？
+是的，空间是100%免费的，您可以拥有多达420个空间。
 
-### How do I make a space?
-On the Cryptovoxels website, click [Spaces](https://www.cryptovoxels.com/account/spaces) on the top.
+### 我如何创建一个空间？
+在Cryptovoxels网站上，点击顶部的[Spaces](https://www.cryptovoxels.com/account/spaces)。
 
 ![spacebutton.png](/spaces/spacebutton.png)
 
-Enter the name and adjust the width/height/depth to your liking, then click **Create!**.
+输入名称并根据您的喜好调整宽度/高度/深度，然后点击**创建！**。
 
 ![myspace.png](/spaces/myspacecreate.png)
 
-You will now be on your space's page. Click **Visit** to go to your space.
+现在您将进入您的空间页面。单击**访问**以进入您的空间。
 
 ![visitspacesmallest.png](/spaces/visitspacesmallest.png)
 
-Congrats, you're in your new space! Click [here](/docs/Parcels/Building) to learn how to build.
+恭喜，您已进入您的新空间！单击[此处](/docs/Parcels/Building)以了解如何进行建设。
 
-### How can I see my spaces?
-On the Cryptovoxels website, click [Spaces](https://www.cryptovoxels.com/account/spaces) on the top. On the left side, a list of your spaces will appear.
-From here you can click **Teleport to** and be sent to the space.
+### 如何查看我的空间？
+在Cryptovoxels网站上，点击顶部的[Spaces](https://www.cryptovoxels.com/account/spaces)。在左侧，将显示您的空间列表。
+从这里，您可以单击**传送到**并前往空间。
 
 ![spaces.png](/spaces/spacessmall.png)
 
-You can get more settings by clicking the space's row.
-From here you can view the space's page, download the JSON or erase the space.
+您可以通过单击空间行来获取更多设置。
+从这里，您可以查看空间页面、下载JSON或删除空间。
 
 ![spacesettings.gif](/spaces/spaceadjustments.gif)
-You can also just click the name of the space to bring you to its page.
+您还可以只需单击空间的名称，即可进入其页面。
 
-## Space's page
-From the space's page, you can change the name, share the space and adjust settings.
-To view your space's page, go [here](https://www.cryptovoxels.com/account/spaces), then click the name of the space you want to go to.
+## 空间页面
+在空间页面上，您可以更改名称、共享空间并调整设置。
+要查看您的空间页面，[点击这里](https://www.cryptovoxels.com/account/spaces)，然后单击要进入的空间的名称。
 
 ![spacename.png](/spaces/spacename.png)
 
-### Editing space's info
-On the space's page, click the pen icon to edit the name & description of the space.
+### 编辑空间信息
+在空间页面上，单击笔图标以编辑空间的名称和描述。
 
 ![editinfo.png](/spaces/editinfo.png)
 
-### Sharing your space
-You can share your space to anyone, and they don't even need to be signed in to enter! For example, [here is our space!](https://www.cryptovoxels.com/spaces/c9cc778b-8326-45c6-932d-aae4a8f06c84)
+### 分享您的空间
+您可以与任何人分享您的空间，而且他们甚至不需要登录即可进入！例如，[这是我们的空间的链接！](https://www.cryptovoxels.com/spaces/c9cc778b-8326-45c6-932d-aae4a8f06c84)
 
-All you have to do is share the unique URL of your Space. It should look something like:
+您只需分享空间的唯一URL。它应该看起来像：
 `https://www.cryptovoxels.com/spaces/c9cc778b-8326-45c6-932d-aae4a8f06c84`
 
-:::caution
-Multiplayer is limited to 5 people in a space. 
-Spaces are also not searchable or browseable. You must know the URL to a space to access it.
+:::警告
+每个空间的多人游戏限制为5人。
+空间也无法进行搜索或浏览。您必须知道空间的URL才能访问它。
 :::
 
-#### Changing your share link (slug)
-On your space's page there is a *Space admin* section on the right side - from there you can edit the slug for that space and save it. 
-This will generate a shareable link that will make it easy for you to share your space. See the preview underneath for the URL.
+#### 更改您的共享链接（别名）
+在您的空间页面上，右侧有一个*Space admin*部分 - 从那里，您可以编辑该空间的别名并保存。 
+这将生成一个可共享的链接，使您能够轻松分享您的空间。在URL下方看到预览。
 
 ![changeslug.gif](/spaces/changeslug.gif)
 
-### Allowing others to edit
-Just like a parcel, you can convert your space to a sandbox and make it editable by anyone with the link.
-The person editing will need to be signed into Cryptovoxels to make changes. Click [here](https://www.cryptovoxels.com/spaces/4707ddd3-fd1b-4ee1-856b-08284f1ecc11/play) to see/edit our sandbox space.
+### 允许其他人编辑
+与地块一样，您可以将您的空间转换为沙盒，并使任何拥有链接的人都可以编辑。
+进行编辑的人需要登录到Cryptovoxels才能进行更改。点击[这里](https://www.cryptovoxels.com/spaces/4707ddd3-fd1b-4ee1-856b-08284f1ecc11/play)查看/编辑我们的沙盒空间。
 
-On your space's page under *Space admin*, click the checkbox for **Is Sandbox** to enable sandbox mode.
+在空间页面上的*Space admin*下，勾选**是沙盒**以启用沙盒模式。
 
 ![spacesandbox.png](/spaces/spacesandbox.png)
 
-:::caution
-Sandbox is great for collaboration creation, but if you've finalized the space and are linking it out to the public, you may want to turn sandbox mode off so that your creation does not get negatively altered.
+:::警告
+沙盒非常适合协作创作，但如果您已经完成了空间并将其链接给公众，您可能希望关闭沙盒模式，以防止您的创作受到负面影响。
 :::
 
-### Using build templates
-You can use a build template to start off with.
-On your space's page, click **Build...**, then select a build material & one of the templates.
+### 使用构建模板
+您可以使用构建模板来开始。
+在您的空间页面上，单击**建造...**，然后选择一个建筑材料和一个模板。
 
 ![spacebuild.png](/spaces/spacebuild.png)
 
-### Backup your space
-Spaces do not automatically take snapshots like parcels do, so you will have to manually backup your space.
-Luckily backing up is straightforward, as it just involves saving a JSON file, and there are two ways to do this.
+### 备份您的空间
+空间不像地块那样自动拍摄快照，因此您需要手动备份您的空间。
+幸运的是，备份非常简单，只涉及保存一个JSON文件，有两种方法可以做到这一点。
 
-#### Method 1
-You can backup the space on the space's page. In the *Space admin* section on the right side, click **Download content as JSON**.
-Keep your JSON file in a safe place.
+#### 方法1
+您可以在空间页面上备份空间。在右侧的*Space admin*部分中，单击**将内容下载为JSON**。
+将您的JSON文件保存在安全的位置。
 
 ![spacebackup1.png](/spaces/spacebackupa.png)
 
-#### Method 2
-You can also backup from your [list of spaces page](https://www.cryptovoxels.com/account/spaces).
-Click the space you want to save, then click **Download Json**.
+#### 方法2
+您还可以从您的[空间列表页面](https://www.cryptovoxels.com/account/spaces)备份。
+单击要保存的空间，然后单击**下载Json**。
 
-![spacebackupb.png](/spaces/spacebackupb.png)
+![spacebackupb.png](/spaces/space
 
-### Restore your space
-On the space's page you can upload the backed-up JSON file.
-In the *Space admin* section on the right side, click **Upload JSON** and select the file.
+backupb.png)
+
+### 恢复您的空间
+在空间页面上，您可以上传备份的JSON文件。
+在右侧的*Space admin*部分下，单击**上传JSON**，然后选择文件。
 
 ![spacerestore.png](/spaces/spacerestore.png)
 
-You can also create a new space [here](https://www.cryptovoxels.com/account/spaces) and upload the JSON file afterwards, just make sure the dimensions are the same.
+您还可以创建一个新的空间[在此处](https://www.cryptovoxels.com/account/spaces)上传JSON文件，只需确保尺寸相同。
 
-## Converting space to parcel
-You can conveniently convert a space to a parcel as long as the height, width & depth are the same.
+## 将空间转换为地块
+只要高度、宽度和深度相同，您就可以方便地将空间转换为地块。
 
-This is great for experimenting, or if you want to keep your parcel intact while you work on the next parcel iteration secretly, or if you don't have a parcel yet but are planning to get one in the future.
+这非常适合进行实验，或者如果您希望在秘密地工作的下一个地块迭代上保持地块完整，或者如果您尚未拥有地块，但计划将来获得地块。
 
-:::caution
-Features outside parcel feature bounds will be removed.
-Imported parcel/space should be of the same size as the in-world parcel.
-Features have to have valid types and valid data.
+:::警告
+地块特征超出地块特征边界的部分将被删除。
+导入的地块/空间必须与虚拟世界地块的尺寸相同。
+特征必须具有有效的类型和有效的数据。
 :::
 
-#### Method 1
-On your parcel's page (e.g. cryptovoxels.com/parcels/4661), under *Parcel admin*, click **View/Edit parcel content**.
+#### 方法1
+在您的地块页面（例如cryptovoxels.com/parcels/4661）上，在*地块管理员*下，单击**查看/编辑地块内容**。
 
 ![spacetoparcel1.png](/spaces/spacetoparcel1.png)
 
-On the *Parcel version management* page, click **Import** on the space you want to use.
+在*地块版本管理*页面上，单击要使用的空间上的**导入**。
 
 ![spacetoparcel2b.png](/spaces/spacetoparcel2b.png)
 
-Click **OK** and enjoy your different parcel!
+单击**确定**，享受不同的地块！
 
 ![spacetoparcel4.png](/spaces/spacetoparcel4.png)
 
-#### Method 2
-On your space's page (e.g. [cryptovoxels.com/spaces/89ba33af](https://www.cryptovoxels.com/spaces/c9cc778b-8326-45c6-932d-aae4a8f06c84)), under *Space admin*, click **Download content as JSON**.
-(You can also save the JSON of the space from the spaces list page [here](https://www.cryptovoxels.com/account/spaces).)
+#### 方法2
+在您的空间页面（例如[cryptovoxels.com/spaces/89ba33af](https://www.cryptovoxels.com/spaces/c9cc778b-8326-45c6-932d-aae4a8f06c84)）上，在*空间管理员*下，单击**将内容下载为JSON**。
+（您还可以从[这里](https://www.cryptovoxels.com/account/spaces)的空间列表页面保存空间的JSON。）
 
 ![spacebackup1.png](/spaces/spacebackupa.png)
 
-After getting the space's JSON, go to your parcel's page, and under *Parcel admin*, click **View/Edit parcel content**.
-
-![spacetoparcel1.png](/spaces/spacetoparcel1.png)
-
-Click **Choose File** under *Import* and select the JSON of the space, and that's it!
+获取空间的JSON后，转到您的地块页面，然后在*地块管理员*下，单击**选择文件**，然后选择空间的JSON文件，就这样！
 
 ![spacetoparcel3.png](/spaces/spacetoparcel3.png)
 
-## Converting parcel to space
-You can seamlessly convert a parcel to a space.
+享受您的空间！
 
-#### Method 1
+## 将地块转换为空间
+您可以无缝地将地块转换为空间。
 
-On your parcel's page (e.g. cryptovoxels.com/parcels/1), under *Parcel admin*, click **View/Edit parcel content**.
+#### 方法1
+在您的地块页面（例如cryptovoxels.com/parcels/1）上，在*地块管理员*下，单击**查看/编辑地块内容**。
 
 ![spacetoparcel1.png](/spaces/spacetoparcel1.png)
 
-Under *Parcel Versions*, click **Create space** on the version you want to convert (sorted by newest on top).
+在*地块版本*下，单击要转换的版本上的**创建空间**（按最新的排序在顶部）。
 
 ![spacetoparcel5.png](/spaces/parceltospace1.png)
 
-You should now see your space's page, titled something like *Copy of X of parcel X*.
+现在您应该看到您的空间页面，标题类似于*X的副本，地块X*。
 
-#### Method 2
-
-On your parcel's page, under *Parcel admin*, click **View/Edit parcel content**.
+#### 方法2
+在您的地块页面上，在*地块管理员*下，单击**查看/编辑地块内容**。
 
 ![spacetoparcel1.png](/spaces/spacetoparcel1.png)
 
-Under *Parcel Versions*, click **Download** on the version you want to convert and save the JSON.
+在*地块版本*下，单击要转换的版本上的**下载**并保存JSON。
 
 ![spacetoparcel5.png](/spaces/parceltospace2.png)
 
-Go on your space's page and click **Upload JSON** under *Space admin* and select the JSON file.
+进入您的空间页面，然后在*空间管理员*下，单击**上传JSON**，然后选择JSON文件。
 
 ![parceltospace3.png](/spaces/parceltospace3b.png)
 
-Enjoy your space!
+享受您的空间！
 
-## Examples of spaces
-Below are some great examples of what you can do with a space.
+## 空间示例
+以下是使用空间可以做的一些很好的示例。
 
-[ZeroPointer's Solar](https://www.cryptovoxels.com/spaces/5f439817-8122-4dbf-8330-913e84600d74)
+[ZeroPointer的Solar](https://www.cryptovoxels.com/spaces/5f439817-8122-4dbf-8330-913e84600d74)
 
-[uttermelon's Halloween Party](https://www.cryptovoxels.com/spaces/dfee9c8d-6256-469f-896b-8a76ab1be45c)
+[uttermelon的万圣节派对](https://www.cryptovoxels.com/spaces/dfee9c8d-6256-469f-896b-8a76ab1be45c)
 
-[CV Underworld](https://www.cryptovoxels.com/spaces/c547f9c7-fa28-4a4e-8cec-4076ded9468a)
+[CV地下世界](https://www.cryptovoxels.com/spaces/c547f9c7-fa28-4a4e-8cec-4076ded9468a)
 
-[uttermelon's fan art for Mr misang](https://www.cryptovoxels.com/spaces/4d8a4b9b-19e6-408c-b03f-f87567067adc)
+[uttermelon为Mr misang制作的粉丝艺术](https://www.cryptovoxels.com/spaces/4d8a4b9b-19e6-408
 
-[airbag's game](https://www.cryptovoxels.com/spaces/d0a82c2b-e9cd-4c24-93a5-a9d106b4cdfe)
+c-b03f-f87567067adc)
 
-[uttermelon's DEEKAYverse_made](https://www.cryptovoxels.com/spaces/483aa303-bdce-4f98-8a73-5d63e7048098)
+[airbag的游戏](https://www.cryptovoxels.com/spaces/d0a82c2b-e9cd-4c24-93a5-a9d106b4cdfe)
 
-[sorryaboutyourcats' fractals for imnotArt](https://www.cryptovoxels.com/spaces/e82c3962-f2e8-4ca1-a30d-703f5f69cdc5)
+[uttermelon的DEEKAYverse_made](https://www.cryptovoxels.com/spaces/483aa303-bdce-4f98-8a73-5d63e7048098)
 
-If you're starting out with Cryptovoxels for the first time and want to make a space, [this guide](https://medium.com/p/759947c7c546) can help.
+[sorryaboutyourcats为imnotArt制作的分形](https://www.cryptovoxels.com/spaces/e82c3962-f2e8-4ca1-a30d-703f5f69cdc5)
 
-Have fun creating!
+如果您是第一次开始使用Cryptovoxels并想创建一个空间，[这个指南](https://medium.com/p/759947c7c546)可以帮助您。
+
+玩得开心，创作愉快！

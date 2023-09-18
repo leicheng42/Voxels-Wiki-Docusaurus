@@ -1,5 +1,8 @@
-## Screen
+# 屏幕
+实时演示屏幕。
 
-A screen allows you to make live PDF presentations inworld. Drag and drop a PDF file onto a screen to present.
+## 屏幕
+
+屏幕允许您在虚拟世界中进行实时PDF演示。将PDF文件拖放到屏幕上以进行演示。
 
 ![screen-feature.png](/screen-feature.png)

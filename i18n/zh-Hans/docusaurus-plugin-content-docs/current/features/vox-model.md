@@ -1,108 +1,111 @@
-## Vox
+# Vox模型
+一个小的Vox模型
 
-Voxes are small (32x32x32) .vox models, currently limited to 200 per parcel. These are usually made using [Magicavoxel](https://ephtracy.github.io/).
+## Vox模型
+
+Vox模型是小型的（32x32x32）.vox模型，每个地块目前限制为200个。通常使用[MagicaVoxel](https://ephtracy.github.io/)制作。
 
 ![vox-example.png](/vox-example.png)
 
-### Editor
+### 编辑器
 
 ![vox-model-editor_v4.13.png](/vox-model-editor_v4.13.png)
 
-#### URL
+#### 链接
 
-The URL of the .vox file.
+.vox文件的URL。
 
-#### Hyperlink
+#### 超链接
 
-`(Optional)`; makes the .vox a clickable link.
+（可选）；使.vox文件成为可点击的链接。
 
-#### Scale to fit
+#### 缩放以适应
 
-`(Optional)`; fit the size of the vox to fit the grid.
+（可选）；将vox的大小调整以适应网格。
 
-#### Collidable
+#### 可碰撞的
 
-`(Optional)`; Make the vox model a collidable object.
+（可选）；使vox模型成为可碰撞的对象。
 
-#### Colors
+#### 颜色
 
-`(Optional)`;
-Allows you to change the color of your vox model.
-*This option will not appear if your vox has more than 5 colors.*
+（可选）；
+允许您更改vox模型的颜色。
+*如果您的vox模型具有超过5种颜色，则不会显示此选项。*
 
 
-## Scripting Properties
-## Scripting Properties {.tabset}
-### url
-`String`; Links must be `https://` and must finish with a vox extension `.vox`
-Has to link to a 32x32x32 vox model or smaller.
+## 脚本属性
+## 脚本属性 {.tabset}
+### 链接
+`字符串`; 链接必须以 `https://` 开头，并且必须以.vox扩展名结尾。
+必须链接到一个32x32x32的vox模型或更小的模型。
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'url':"https://www.myurl.com/file.vox"})
 ```
 
-#### default
+#### 默认值
 
 `""`
 
-### link
-`String`; Links must be `https://`.
+### 超链接
+`字符串`; 链接必须以 `https://` 开头。
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('link')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'link':"https://www.myurl.com/"})
 ```
 
-#### default
+#### 默认值
 
 `""`
 
-### collidable
-`Boolean`
+### 可碰撞的
+`布尔值`
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('collidable')
-// returns: false
+// 返回: false
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'collidable': true})
 ```
 
-#### default
+#### 默认值
 
 `false`
 
-### type
-`String`;
+### 类型
+`字符串`;
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或 */
 feature.type
 
-// returns: 'vox-model'
+// 返回: 'vox-model'
 ```

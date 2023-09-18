@@ -1,36 +1,38 @@
-## Video
+# 视频
+添加短视频。
 
-Add short videos that can be played by clicking.
+## 视频
+
+添加可以通过点击播放的短视频。
 
 ![video-feature.png](/video-feature.png)
 
-### Editor
+### 编辑器
 
 ![video_editor_v4.25.png](/video_editor_v4.25.png)
 
 #### URL
 
-The URL of the video to play. Has to start with `https://` and has to end with a video extension such as `.mp4`.
+要播放的视频的URL。必须以 `https://` 开头，必须以视频扩展名（如 `.mp4`）结尾。
 
-#### Image preview
+#### 图像预览
 
-`(Optional)` Let's the user set a customized thumbnail for the video.
+（可选）允许用户为视频设置自定义缩略图。
 
-#### Blend mode
+#### 混合模式
 
-This is used to determine how the image is blended with whatever is behind it. The available options are `Combine`, `Multiply`, and `Screen`.
+用于确定图像与其后面的内容混合的方式。可用的选项包括 `Combine`、`Multiply` 和 `Screen`。
 
-
-## Scripting Properties
-## Scripting Properties {.tabset}
+## 脚本属性
+## 脚本属性 {.tabset}
 ### url
-`String`; Has to start with `https://` and has to end with a video extension such as `.mp4`.
+`String`；必须以 `https://` 开头，必须以视频扩展名（如 `.mp4`）结尾。
 
 #### get()
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
 #### set()
@@ -39,18 +41,18 @@ feature.get('url')
 feature.set({'url':"https://..."})
 ```
 
-#### default
+#### 默认值
 
 `""`
 
 ### previewUrl
-`String`; Links must be `https://` and must either be a `.png,.gif,.jpg`.
+`String`；链接必须是 `https://`，并且必须是 `.png`、`.gif` 或 `.jpg`。
 
 #### get()
 
 ```js
 feature.get('previewUrl')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
 #### set()
@@ -59,42 +61,41 @@ feature.get('previewUrl')
 feature.set({'previewUrl':"https://..."})
 ```
 
-#### default
+#### 默认值
 
 `""`
 
-### type
-`String`;
+### 类型
+`String`；
 
 #### get()
 
 ```js
 feature.get('type')
-/* or */
+/* 或 */
 feature.type
 
-// returns: 'video'
+// 返回: 'video'
 ```
 
+## 脚本方法
+## 脚本方法 {.tabset}
 
-## Scripting methods
-## Scripting methods {.tabset}
-
-### play()
+### 播放()
 
 ```js
 feature.play()
 ```
-plays the video
+播放视频
 
-### pause()
+### 暂停()
 ```js
 feature.pause()
 ```
-pauses the video
+暂停视频
 
-### stop()
+### 停止()
 ```js
 feature.stop()
 ```
-stops the videos
+停止视频

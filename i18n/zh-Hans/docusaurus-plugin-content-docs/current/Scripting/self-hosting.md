@@ -1,14 +1,16 @@
 # Self hosting scripts
 
+## Self hosting scripts
+
 Since June 2022 we introduced the ability for users to host their own scripting server.
 
-## What is a scripting server?
+### What is a scripting server?
 
 It is a process that runs a websocket and uses event-based triggers to interact with the Cryptovoxels client.
 
 **NOTE**: Creating a VSS is OPTIONAL for scripting; by default parcel will have `wss://grid.cryptovoxels.com/grid/{Your parcel id}` as host, which is the official hosted service by Cryptovoxels.
 
-## How to make a Voxels Scripting Server (VSS)?
+### How to make a Voxels Scripting Server (VSS)?
 The following steps are an example to make a VSS using replit.com;
 
 1. **Go to `replit.com` and create app**
@@ -49,6 +51,6 @@ Copy the address given by Replit (for example for me, the address is `https://te
 
 Hit save, and tadaa, your parcel now runs scripts on a hosted server.
 
-#### Things to know
+##### Things to know
 Replit does not keep your server alive by default. To keep your replit server alive, you have to upgrade your account and select the "Always on" feature in your settings.
 ![[vss]replit_tutorial.png](/tutorials/[vss]replit_tutorial.png)

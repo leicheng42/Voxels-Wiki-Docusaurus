@@ -1,175 +1,178 @@
-## Particles
+# 粒子
+添加一个粒子发射器。
+
+## 粒子
 
 ![particles-example.png](/particles-example.png)
 
-### Editor
+### 编辑器
 
 ![particles-editor.png](/particles-editor.png)
 
-#### Emit rate
+#### 发射速率
 
-How often new particles will be spawned. 0 - 100
+新粒子生成的频率。0 - 100
 
-#### Minimum size
+#### 最小尺寸
 
-The minimum size of new particles.
+新粒子的最小尺寸。
 
-#### Maximum size
+#### 最大尺寸
 
-The maximum size of new particles.
+新粒子的最大尺寸。
 
-#### URL
+#### 链接
 
-The URL of a custom particle image; if none is provided then the default particle image (a grey square) will be used.
+自定义粒子图像的URL；如果未提供，则将使用默认粒子图像（灰色方块）。
 
-#### Color 1 and Color 2
+#### 颜色1和颜色2
 
-The initial color of new particles depends on the value of these parameters - the color will be somewhere in the range between the two given colors.
+新粒子的初始颜色取决于这些参数的值 - 颜色将在两种给定颜色之间的范围内。
 
-## Scripting Properties
-## Scripting Properties {.tabset}
-### url
-`String`; Links must be `https://` and must finish with an extension such as `.jpg/.gif/.png`.
+## 脚本属性
+## 脚本属性 {.tabset}
+### 链接
+`字符串`；链接必须以 `https://` 开头，并且必须以扩展名结尾，例如 `.jpg/.gif/.png`。
 :::info
-If you set an URL, the custom colors color1 and color2 will be ignored.
+如果设置了URL，自定义颜色color1和color2将被忽略。
 :::
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'url':"https://www.myurl.com/file.png"})
 ```
 
-#### default
+#### 默认值
 
 `""`
 
-### emitRate
-`Double`; Must be a number between 0 and 100.
+### 发射速率
+`双精度`；必须是0到100之间的数字。
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('emitRate')
-// returns: 50.0
+// 返回: 50.0
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'emitRate':52})
 ```
 
-#### default
+#### 默认值
 
 `50`
 
 
-### minSize
-`Double`; Must be a number between 0 and 1.
+### 最小尺寸
+`双精度`；必须是0到1之间的数字。
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('minSize')
-// returns: 0.5
+// 返回: 0.5
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'minSize':0.5})
 ```
 
-#### default
+#### 默认值
 
 `0.5`
 
 
-### maxSize
-`Double`; Must be a number between 0 and 1.
+### 最大尺寸
+`双精度`；必须是0到1之间的数字。
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('maxSize')
-// returns: 0.5
+// 返回: 0.5
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'maxSize':0.5})
 ```
 
-#### default
+#### 默认值
 
 `0.5`
 
-### color1
-`String`- hexadecimal; 
+### 颜色1
+`字符串`- 十六进制；
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('color1')
-// returns: "#4cb844"
+// 返回: "#4cb844"
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'color1':"#4cb844"})
 ```
 
-#### default
+#### 默认值
 
 `#000000`
 
-### color2
-`String`- hexadecimal; 
+### 颜色2
+`字符串`- 十六进制；
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('color2')
-// returns: "#4cb888"
+// 返回: "#4cb888"
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'color2':"#4cb844"})
 ```
 
-#### default
+#### 默认值
 
 `"#000000"`
 
 
-### type
-`String`;
+### 类型
+`字符串`;
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或 */
 feature.type
 
-// returns: 'particles'
+// 返回: 'particles'
 ```
 
-## Deprecations
-for information on versioning [click here](/docs/versioning-and-deprecations)
+## 弃用
+有关版本信息，请[点击此处](/docs/versioning-and-deprecations)
 
 ### 5.7.0
 
-The particle feature can now be rotated in the X-axis instead of being hard-coded to 90 deegres. This means that the next time a particle system is edited, it will use the X-axis rotation set by the owner which most likey look weird, but can be easily corrected at that time.
+粒子特性现在可以在X轴上旋转，而不是硬编码为90度。这意味着下次编辑粒子系统时，它将使用所有者设置的X轴旋转，这可能看起来奇怪，但可以在那时轻松更正。

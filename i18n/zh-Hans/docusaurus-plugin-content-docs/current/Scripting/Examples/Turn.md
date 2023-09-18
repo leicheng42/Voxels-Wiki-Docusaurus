@@ -1,17 +1,19 @@
-# Turn vox to face player
+# Turn Vox to Face Player
+
+## Turn vox to face player
 
 A vox model will pick up the first player in the parcel and turn to follow them.
 
 ![turn-to-face.png](/turn-to-face.png)
 
-### How to use
+#### How to use
 
 1. Create a vox model
 2. Assign a url (sample alien: `https://cdn.discordapp.com/attachments/573736707984457738/733461614107426836/aliem.vox`)
 3. Add this script
 4. Reload the parcel
 
-### Script
+#### Script
 
 ```js
 setInterval(() => {
@@ -29,7 +31,7 @@ setInterval(() => {
 }, 200)
 ```
 
-### Improvements
+#### Improvements
 
 Refactor to run at 2hz and use the animation API to smoothly animate between rotations.
 

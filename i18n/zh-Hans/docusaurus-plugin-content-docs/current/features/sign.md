@@ -1,159 +1,158 @@
-## Sign
+# 标牌
+一行文本。
 
-The Sign feature allows you to display one line of text. Unlike [Richtext](/docs/features/richtext), though, they can be used as a hyperlink.
+## 标牌
+
+标牌功能允许您显示一行文本。不同于[Richtext](/docs/features/richtext)，它们可以用作超链接。
 
 ![sign-example.png](/sign-example.png)
 
-### Editor
+### 编辑器
 
 ![sign-editor.png](/sign-editor.png)
 
-#### Text
+#### 文本
 
-The text you want to display.
+您想要显示的文本。
 
-#### Font Size
+#### 字体大小
 
-The size of the font.
+字体的大小。
 
-#### Blend mode
+#### 混合模式
 
-This is used to determine how the text is blended with whatever is behind it. The available options are `Combine`, `Multiply`, and `Screen`.
+用于确定文本与其后面的内容混合方式。可用选项包括`Combine`（合并）、`Multiply`（相乘）和`Screen`（屏幕）。
 
-#### Inverted
+#### 反色
 
-When ticked, the text will be white on a black background, rather than the other way around.
+选中后，文本将显示在黑色背景上，而不是相反。
 
-#### Hyperlink
+#### 超链接
 
-A link that, when clicked on, will popup a warning message before letting the player go to the desired link.
+一个链接，点击后将弹出警告消息，然后允许玩家转到所需的链接。
 
-#### Font Size
+#### 字体大小
 
-Self-explanatory
+不言自明。
 
-#### Color
+#### 颜色
 
-Color of the font
+字体颜色。
 
-#### Font Size
+#### 背景颜色
 
-Color of the background
+背景的颜色。
 
-## Scripting Properties
-## Scripting Properties {.tabset}
-### text
-`String`; 
+## 脚本属性
+## 脚本属性 {.tabset}
+### 文本
+`String`； 
 
-#### get()
+#### 获取（get）
 
 ```js
 feature.get('text')
-// returns: "my line of text"
+// 返回："我要显示的文本"
 ```
 
-#### set()
+#### 设置（set）
 
 ```js
-feature.set({'text':"my line of text"})
+feature.set({'text':"我要显示的文本"})
 ```
 
-#### default
+#### 默认值
 
 `""`
 
-### link
-`String`; 
+### 超链接
+`String`； 
 
-#### get()
+#### 获取（get）
 
 ```js
 feature.get('link')
-// returns: "https://..."
+// 返回："https://..."
 ```
 
-#### set()
+#### 设置（set）
 
 ```js
 feature.set({'link':"https://..."})
 ```
 
-#### default
+#### 默认值
 
 `""`
 
-### fontSize
-`Integer`; 
+### 字体大小
+`Integer`； 
 
-#### get()
+#### 获取（get）
 
 ```js
 feature.get('fontSize')
-// returns: 25
+// 返回：25
 ```
 
-#### set()
+#### 设置（set）
 
 ```js
 feature.set({'fontSize':25})
 ```
 
-#### default
+#### 默认值
 
 `25`
 
-### color
-`String`-hexadecimal; 
+### 颜色
+`String`-十六进制； 
 
-#### get()
+#### 获取（get）
 
 ```js
 feature.get('color')
-// returns: "#00000"
+// 返回："#00000"
 ```
 
-#### set()
+#### 设置（set）
 
 ```js
 feature.set({'color':"#fcba03"})
 ```
 
-#### default
+#### 默认值
 
 `"#00000"`
 
-### background
-`String`-hexadecimal; 
+### 背景颜色
+`String`-十六进制； 
 
-#### get()
+#### 获取（get）
 
 ```js
 feature.get('background')
-// returns: "#00000"
+// 返回："#00000"
 ```
 
-#### set()
+#### 设置（set）
 
 ```js
 feature.set({'background':"#fcba03"})
 ```
 
-#### default
+#### 默认值
 
 `"#fffff"`
 
-### type
+### 类型
 `String`;
 
-#### get()
+#### 获取（get）
 
 ```js
 feature.get('type')
-/* or */
+/* 或 */
 feature.type
-
-// returns: 'sign'
+// 返回："sign"
 ```
-
-
-

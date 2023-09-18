@@ -1,42 +1,43 @@
-# Island Submission
+# 岛屿提交
+新岛屿的起源
 
-It is possible to submit your own islands designs for minting on Cryptovoxels. We haven't worked out how ownership / sales / minting process will work, but we are making the tools available so people can start experimenting with islands and thinking about how the process might work.
+## 岛屿提交
 
-## Blender
+您可以将自己设计的岛屿提交以在Cryptovoxels上铸造。我们尚未确定所有权/销售/铸造流程如何运作，但我们正在提供工具，以便人们可以开始尝试岛屿并思考流程可能如何运作。
 
-Youy need to use [Blender](https://www.blender.org/) to create your sample Island. Open this sample island:
+### Blender
+
+您需要使用[Blender](https://www.blender.org/)来创建您的示例岛屿。打开此示例岛屿：
 
 [island-template.blend](/island-template.blend)
 
-Inside this island you'll see a bunch of cubes with a semi parcel layout.
+在这个岛屿内，您将看到一堆带有半宅地布局的立方体。
 
 ![screen_shot_2021-04-14_at_11.26.58_am.png](/screen_shot_2021-04-14_at_11.26.58_am.png)
 
-When you're editing, make sure you have snapping turned on. Parcels need to be an integer number of meters in size. 
+在编辑时，请确保启用了捕捉（Snapping）。宅地的大小必须是整数米。
 
-Snapping:
+捕捉：
 
 ![screen_shot_2021-04-14_at_11.25.22_am.png](/screen_shot_2021-04-14_at_11.25.22_am.png)
 
-You can use the dimensions pop out (press `n`) to see the size of your parcels:
+您可以使用尺寸弹出窗口（按 `n` 键）查看您的宅地的大小：
 
 ![blender-dimensions.png](/blender-dimensions.png)
 
-Duplicate, delete and resize your parcels until they're all good. Then save your blend file. Then `.obj` export your blend. Make sure you tick `triangulate faces`. Then you can use this with the island preview tool to see what your island will look like. When you import your obj to the island previe tool, it'll convert anything called `plot-...` or `unit-...` into a parcel, and `island` will become your island. It'll also alert you if any of your parcels seem degenerate or intersect with another parcel.
+复制、删除和调整宅地的大小，直到它们都合适为止。然后保存您的.blend文件。然后导出您的.blend文件为.obj格式。确保选中“三角化面”。然后您可以使用岛屿预览工具查看您的岛屿将会是什么样子。当您将.obj导入到岛屿预览工具时，它将会将任何称为“plot-...”或“unit-...”的东西转化为宅地，而“island”将成为您的岛屿。如果您的宅地中有任何异常或与其他宅地相交，它还会提醒您。
 
-(The island preview is not deployed yet, we'll update this page when we do)
+（岛屿预览尚未部署，我们将在此页面更新时通知您）
 
 ![island-preview.png](/island-preview.png)
 
-Limits:
+限制：
 
-* Parcels must be at least 4x4x4.
-* Islands must have less than 128 parcels
-* Parcels may not be bigger than 96 meters sum of dimensions (32+32+32)
+* 宅地的最小尺寸必须为4x4x4。
+* 岛屿的宅地数量不能超过128个。
+* 宅地的尺寸总和不得超过96米（32+32+32）。
 
-Submission:
+提交：
 
-* We do not guarantee any island will be submitted
-* We don't have a process for this yet, it's all experimental
-
-
+* 我们不保证任何岛屿将被提交。
+* 目前我们还没有这方面的流程，一切都是实验性的。

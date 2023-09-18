@@ -1,19 +1,20 @@
-## Collectible model
+# 收藏品模型
 
-Lets you display the 3d representation of your cryptovoxels collectible. It has a built-in UI window that displays information about the nft.
+## 收藏品模型
+
+允许您显示Cryptovoxels收藏品的3D表示。它具有内置的UI窗口，显示有关NFT的信息。
 
 ![[collectible_model]example_v7.18.png](/features/[collectible_model]example_v7.18.png)
 
-### Editor
+### 编辑器
 
 ![[collectible_model]editor_v7.18.png](/features/[collectible_model]editor_v7.18.png)
 
-
-## Scripting Properties
-## Scripting Properties {.tabset}
-### collectible
-`Object`; An object with multiple properties.
-Properties:
+## 脚本属性
+## 脚本属性 {.tabset}
+### 收藏品
+`对象`；一个带有多个属性的对象。
+属性：
 ```js
 {
   chain_id: number
@@ -30,33 +31,33 @@ Properties:
 }
 ```
 
-The hash is used to render the vox-model.
-#### get()
+哈希值用于呈现体素模型。
+#### 获取()
 
 ```js
 feature.get('collectible')
-// returns: [Object Collectible]
+// 返回值：[收藏品对象 Collectible]
 ```
 
-#### set()
+#### 设置()
 
 ```js
-feature.set({'collectible':myCollectible}) // myCollectible being a collectible object.
+feature.set({'collectible':myCollectible}) // myCollectible是一个收藏品对象。
  ```
 
-#### default
+#### 默认值
 
 `null`
 
-### type
-`String`;
+### 类型
+`字符串`；
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或者 */
 feature.type
 
-// returns: 'collectible-model'
+// 返回值：'collectible-model'
 ```

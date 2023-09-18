@@ -1,10 +1,13 @@
 
+# How to buy a wearable.
+Discover wearables, and purchase your own!
+
 ![[how_to_buy_wearable]wearable.png](/tutorials/[how_to_buy_wearable]wearable.png)
 
-# 1. Browse
+## 1. Browse
 There are two ways you can browse wearables.
 
-## Cryptovoxels website
+### Cryptovoxels website
 You can browse wearables on the Cryptovoxels website via the [Wearables](https://www.cryptovoxels.com/wearables) tab.
 
 ![[how_to_buy_a_wearable]cryptovoxels_browse_page_v4.55.gif](/tutorials/[how_to_buy_a_wearable]cryptovoxels_browse_page_v4.55.gif){.align-center}
@@ -13,7 +16,7 @@ Clicking on a wearable will take you to its wearable page where you can find mor
 
 ![[how_to_buy_a_wearable]cryptovoxels_wearable_page_v4.55.gif](/tutorials/[how_to_buy_a_wearable]cryptovoxels_wearable_page_v4.55.gif){.align-center}
 
-## Opensea
+### Opensea
 
 You can also browse wearables on [Opensea](https://opensea.io/assets/cryptovoxel-wearables).
 
@@ -28,7 +31,7 @@ The criterias are:
 
 
 
-# 2. Purchase
+## 2. Purchase
 
 ![[how_to_buy_wearable]buying_a_wearable.gif](/tutorials/[how_to_buy_wearable]buying_a_wearable.gif){.align-center}
 
@@ -44,7 +47,7 @@ At that moment a Metamask window should popup asking you to confirm the transact
 **You should know:**
 - When buying a wearable, you have to pay for transaction fees, so watch your total balance!
 
-# 3. Wear it
+## 3. Wear it
 
 To wear your wearable, you can go to your [Costumer](/docs/Player_customization/Costume_tab).
 

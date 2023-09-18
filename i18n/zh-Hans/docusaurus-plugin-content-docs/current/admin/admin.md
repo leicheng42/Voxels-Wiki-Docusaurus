@@ -1,57 +1,58 @@
-**Quick links:** [Admin todo list](/docs/admin/todos) ; [Competition page](/docs/competitions)
+# 管理员
 
-# Standardization
-Every wiki pages attempt to be as standardized as possible to improve readability from page to page.
+**快速链接:** [管理员待办事项](/docs/admin/todos) ; [比赛页面](/docs/competitions)
 
-## Page styling
+## 标准化
+每个维基页面都尽量保持标准化，以提升页面之间的可读性。
 
-### Tutorials
+### 页面样式
 
-- Tutorials usually have a title that starts with `How to` as it is intuitive and it catches the attention of a "newbie".
-- Tutorials also have a Step-like structure, as it makes it easy to follow.
-See [How to buy a wearable](/docs/Player_customization/Buy-a-Wearable)
+#### 教程
 
-### Voxel library
- - The voxel library tries to be **ordered alphabetically**; Categories range from A to B and items within the categories will be ordered alphabetically as well.
- - The voxel library has a very simple format:
+- 教程通常以 `如何` 开头，因为这是直观的，可以吸引“新手”的注意。
+- 教程也通常采用类似步骤的结构，以便于跟随。
+参见 [如何购买可穿戴设备](/docs/Player_customization/Buy-a-Wearable)
+
+#### 体素库
+ - 体素库力求**按字母顺序排列**；类别从A到B，类别内的项目也将按字母顺序排列。
+ - 体素库的格式非常简单：
 ```
-## Category
-### Item
-![image](imageLink)
-[file](fileLink)
+### 类别
+#### 项目
+![图片](图片链接)
+[文件](文件链接)
 ```
 :::info
-The reason behind this choice of format is that it will allow easy scraping in the future. We will try to bring this library in-world.
+采用这种格式的原因是为了方便将来进行简单的抓取。我们将尝试将此库引入虚拟世界中。
 :::
 
+### 资产管理
+上传资产（如图片、GIF等）时，您会发现资产管理器可能会变得相当混乱。我们现在尝试通过文件夹和文件版本管理来保持整洁。如果您没有看到与您的资产特定相关的文件夹，请随时创建一个。
 
-## Asset management
-When uploading an asset (an image,gif,...) you will see that the asset manager is fairly crowded. We now try to keep it tidy with folders and file versioning. Feel free to create a folder if you do not see a folder specific to your asset.
+**如果您的资产是为特定页面准备的**；请使用您的页面名称作为前缀，放在括号中，例如：`[我的特定页面]你的图片名称.png` 或 `[我的-特定-页面]你的-图片-名称.png`。
 
-**If your asset is for a specific page**; name the asset with the name of your page as a prefix in brackets, for example: `[my_specific_page]your_image_name.png` or `[my-specific-page]your-image-name.png`
+**如果您的资产可能会在将来的CV版本中发生变化**；请在文件名的末尾添加版本号。例如：`[我的-特定-页面]你的-图片-名称-v4.32.png` 或 `...-v4_32.png`，例如编辑器或功能的屏幕截图。
 
-**If your asset is likely to change in future versions of CV**; add the version at the end of the file name. For example: `[my-specific-page]your-image-name-v4.32.png` or `...-v4_32.png`
-This is the case for screenshots of editors or features for example.
+## 跟踪最新动态
+我们有一个[待办事项列表](/docs/admin/todos)，我们定期更新。请随时处理任何未完成的任务，如果您不确定如何处理，请随时在页面底部进行评论。
+如果您没有时间处理，请随时将任务添加到列表中。
 
-# Keep track of what's going on
-We have [a to-do list](/docs/admin/todos) that we update regularly. Feel free to take care of any undone tasks and feel free to comment at the bottom of the page if you're unsure of yourself.
-You can also add items to the list if you don't have the time to work on it.
+## Markdown备忘单
 
-# Markdown cheatsheet
+有关markdown的信息：[点击这里](https://docs.requarks.io/en/editors/markdown)。 Wikijs的markdown文档是完整的并且可靠的。
 
-For information on markdown: [click here](https://docs.requarks.io/en/editors/markdown). The wikijs markdown documentation is complete and is reliable.
-
-To make a table use:
+制作表格使用：
 ```
-|header1 | header2 |
+|标题1 | 标题2 |
 |------|------|
-|Value1| value2|
+|数值1| 数值2|
 ```
 
-To position an image:
+定位图片：
 ```
-![myImage](myimage.png){.align-center}
-![myImage](myimage.png){.align-right}
-![myImage](myimage.png){.align-left}
+![我的图片](我的图片.png){.居中对齐}
+![我的图片](我的图片.png){.右对齐}
+![我的图片](我的图片.png){.左对齐}
 ```
 
+希望对您有所帮助！

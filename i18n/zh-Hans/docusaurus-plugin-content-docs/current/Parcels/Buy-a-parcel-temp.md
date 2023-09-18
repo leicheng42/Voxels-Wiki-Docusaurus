@@ -1,4 +1,6 @@
-# What is a parcel?
+# How to buy a parcel (temp)
+
+## What is a parcel?
 A parcel is a plot of land that lives inside the Cryptovoxels metaverse.
 Each parcel resides in a different [neighborhood](/docs/The-world) and has different dimensions.
 
@@ -7,11 +9,11 @@ Each parcel resides in a different [neighborhood](/docs/The-world) and has diffe
 For information on what you can build on your parcel, go [here](/docs/Parcels/Building).
 You can also experiment beforehand using [spaces](/docs/Spaces), which is free.
 
-# Requirements
+## Requirements
 A digital wallet, such as [Metamask](https://metamask.io/).
 You'll also need cryptocurrency to make the purchase (usually ETH or WETH).
 
-# Purchasing
+## Purchasing
 You can buy parcels from Cryptovoxels (primary) or bid on / buy from someone else (secondary).
 **Cryptovoxels has primary sales every week via Dutch auctions.**
 
@@ -26,7 +28,7 @@ If no sale is planned, an announcement is made on [Twitter](https://twitter.com/
 Make sure your wallet is unlocked and connected to [OpenSea](https://opensea.io/collection/cryptovoxels) as all parcel transactions go through there.
 :::
 
-## Finding a parcel
+### Finding a parcel
 You can see available parcels for sale on the Cryptovoxels site by clicking **[Buy Parcels](https://www.cryptovoxels.com/buy)** on the top bar.
 If there are any available, you can sort by ID, area, height, closing status & price.
 
@@ -41,7 +43,7 @@ If you want to check the parcel out in Cryptovoxels, click the address link, the
 
 Once you're ready to buy, click the **Buy** button on Cryptovoxels or on OpenSea.
 
-### Marketplace
+#### Marketplace
 You can also find parcels in Cryptovoxel's [Marketplace](https://www.cryptovoxels.com/marketplace/parcels), though this includes both primary and secondary parcels.
 If the parcel is available for sale, you'll see a **For sale!** sign to the left of it.
 
@@ -52,7 +54,7 @@ Click the address to visit the parcel in Cryptovoxels and click the link under A
 For the parcels that are not listed for sale, but are owned by either crvox.eth or bnolan, you can try making an offer.
 Jump to the [Making an offer](/docs/Parcels/Buy-a-parcel-temp#making-an-offer) section for more information.
 
-## Dutch auctions
+### Dutch auctions
 **A Dutch auction is an auction that starts at a high price and decreases over time.**
 There are usually about **15 to 30 parcels** listed for auction every Wednesday.
 
@@ -63,11 +65,11 @@ Your wallet should pop-up, and once the transaction is confirmed, you have the p
 
 Check out the **[After ownership](/docs/Parcels/Buy-a-parcel-temp#after-ownership)** section once you've acquired your new parcel.
 
-## Classic auctions
+### Classic auctions
 **A Classic auction starts at a low price and increases with bids. The winner is the person who bid the highest at the end of auction.**
 If there is an active auction on a parcel you are interested in, you'll need to place a bid.
 
-### Placing a bid
+#### Placing a bid
 If a parcel is currently being auctioned, its page on OpenSea will show time left and the current price.
 To place a bid, click the **Place bid** button.
 
@@ -97,7 +99,7 @@ _For example:_
 -Someone can win it at 0.9 ETH and resell it to you for 5 ETH
 :::
 
-### WETH
+#### WETH
 Most Classic auctions use WETH, so if you only have ETH, you'll need to convert it.
 Luckily OpenSea has a converter you can use (there is a slight fee for this).
 
@@ -108,7 +110,7 @@ From there, click the **⋮** to the right of **ETH**, then click **Wrap** and c
 
 More information on converting to WETH can be found [here](https://support.opensea.io/hc/en-us/articles/360063498293-What-s-WETH-How-do-I-get-it-).
 
-## Making an offer
+### Making an offer
 crvox.eth/bnolan will **randomly** accept offers on new parcels just before the auctions start.
 
 You can try making an offer for the parcels that have **Coming soon!** in the closing status [here](https://www.cryptovoxels.com/buy).
@@ -126,19 +128,19 @@ If your offer was placed, you'll see your name under Offers.
 You can keep making offers for no fee, but canceling an offer requires paying gas.
 :::
 
-## Secondary sales
+### Secondary sales
 If the parcel is **not** being sold by [crvox.eth](https://etherscan.io/address/0x084b1c3c81545d370f3634392de611caabff8148) or [bnolan](https://etherscan.io/address/0x2d891ed45c4c3eab978513df4b92a35cf131d2e2), then it is a secondary sale.
 You can find secondary sales listed on the Cryptovoxels site via Marketplace or OpenSea.
 
 Functionally speaking, there is no difference in the parcel if you buy it from the secondary market.
 
-### OpenSea
+#### OpenSea
 Go [here](https://opensea.io/collection/cryptovoxels?search[sortAscending]=true&search[sortBy]=PRICE&search[toggles][0]=BUY_NOW) to see what's available for sale, and go [here](https://opensea.io/collection/cryptovoxels?search[sortAscending]=true&search[sortBy]=PRICE&search[toggles][0]=ON_AUCTION) to see what parcels are currently being auctioned (via Classic).
 
-### Cryptovoxels Marketplace
+#### Cryptovoxels Marketplace
 On the [Cryptovoxels Marketplace](https://www.cryptovoxels.com/marketplace/parcels), you can find both primary and secondary parcels.
 
-# After ownership
+## After ownership
 **Congratulations!**
 
 Now we have to update the parcel's ownership! To do that, go to the parcel's page by clicking on **View on Cryptovoxels** in the top right-hand corner in OpenSea.
@@ -153,11 +155,11 @@ Under Details on the right side of the parcel page, it should now list your name
 
 ![parcel-name.png](/buyingparcel/parcel-name.png)
 
-## Building
+### Building
 Click the **Visit** button on your parcel's page to go to your parcel in Cryptovoxels.
 Learn how to build, place features (including NFTs), and modify the parcel's name / info [here](/docs/Parcels/Building).
 
-### Building template
+#### Building template
 You can also start with a template. 
 On your parcel's page, click the **Build...** button and select a template.
 
@@ -167,7 +169,7 @@ On your parcel's page, click the **Build...** button and select a template.
 Building templates replace the entire parcel.
 :::
 
-## Events
+### Events
 You can now set up an event for your parcel!
 Parcel events automatically show up on the front page of the Cryptovoxels site and Explorer.
 
@@ -183,7 +185,7 @@ A window will pop up asking for event details - fill those out.
 
 Have a great event!
 
-## Collaborators
+### Collaborators
 You can add collaborators to your parcel, granting them the ability to add/edit/erase blocks and features on your parcel.
 They also have the ability to create/edit events.
 
@@ -195,7 +197,7 @@ To add a collaborator, go to your parcel's page and click the pen icon under Col
 Collaborators cannot change the parcel's name, toggle grid or sandbox mode, use building templates or sell off your parcel.
 :::
 
-## Sandbox mode
+### Sandbox mode
 Sandbox mode makes your parcel editable for everyone.
 To turn this on, click the **Is Sandbox** checkbox in the Parcel admin settings on the right side in your parcel's page.
 

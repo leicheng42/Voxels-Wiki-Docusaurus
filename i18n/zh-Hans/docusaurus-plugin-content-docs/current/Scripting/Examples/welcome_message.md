@@ -1,9 +1,11 @@
-# Welcome Goodbye sign.
+# Welcome/goodbye sign
+
+## Welcome Goodbye sign.
 Welcome your visitors as they enter/leave your parcel!
 
 ![welcome-goodbye_example.png](/welcome-goodbye_example.png)
 
-### Process
+#### Process
 
 1. Place two signs and set the first sign's ID to `welcometxt`
 2. place the following script on the second sign:
@@ -26,7 +28,7 @@ parcel.on('playerleave', event => {
 })
 ```
 
-### What happens
+#### What happens
 The scripts detects when a user gets in/out of the parcel and retrieve the player's name.
 It will display "Welcome Playername" or "Goodbye Playername"
 

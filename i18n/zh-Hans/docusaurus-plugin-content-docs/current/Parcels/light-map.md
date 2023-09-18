@@ -1,4 +1,7 @@
-# Lightmap Baking
+# Baking
+Lightmap baking
+
+## Lightmap Baking
 
 Lightmapping is the act of using a renderer to accurately measure how light enters and bounces around inside your parcel, and then calculates a 'lightmap', an image that can be rendered in realtime when exploring your parcel. 
 
@@ -6,12 +9,12 @@ The lightmap is expensive (computer speak for slow) to calculate, so we generate
 
 That means that all computers (including our favourite potatos) can render high quality lighting inside a parcel.
 
-## Examples
+### Examples
 
 ![baking.png](/baking.png)
 ![baking-2.png](/baking-2.png)
 
-## How to enable
+### How to enable
 
 1. Go to your parcel in-world
 2. Hit <kbd>Tab</kbd> and go to Tiles
@@ -31,16 +34,16 @@ You can also manually clear a lightmap using the same editor:
 :::
 
 
-## Using Lanterns
+### Using Lanterns
 
 [Lanterns](/docs/features/lantern) are small emitting blocks. You can scale the emitters to make area lights or strip lights. You can use the strength slider to change the intensity. You can change the color of the emitter too. Light is modelled additively, so if you put a strong red and green light side by side, the combined light will be orange.
 
 Activating light-mapping is necessary for this feature.
 
-## Using glass
+### Using glass
 
 Light flows through glass with no attentuation. We plan to add colored (stained) glass later.
 
-## What is calculated
+### What is calculated
 
 Currently we only calculate the lighting from the voxel field in your parcel. We ignore any .vox models, polytext, or images. We may add support for baking these in the future, or at least considering them when calculating the lighting.

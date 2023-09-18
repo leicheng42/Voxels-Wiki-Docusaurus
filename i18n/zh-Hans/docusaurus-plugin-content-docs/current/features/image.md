@@ -1,219 +1,221 @@
-## Image
+# 图片
+一张平面图片。
 
-A two dimensional image from a URL.
+## 图片
+
+来自URL的二维图像。
 
 ![image-feature.png](/image-feature.png)
 
-### Editor
+### 编辑器
 
 ![image-editor.png](/image-editor.png)
 
 #### URL
 
-The URL of the image. Link has to start with `https://...`
+图像的URL。链接必须以 `https://...` 开头。
 
-#### Hyperlink
+#### 超链接
 
-`(Optional)`; makes the image a clickable link.
+（可选）；使图像成为可点击的链接。
 
-#### Blend mode
+#### 混合模式
 
-This is used to determine how the image is blended with whatever is behind it. The available options are `Combine`, `Multiply`, and `Screen`.
+用于确定图像与其背后的任何内容混合的方式。可用选项为`合并`、`叠加`和`筛选`。
 
-#### Keep transparency
+#### 保留透明度
 
-If ticked, any transparency in the image will be converted to black.
+如果选中，图像中的任何透明部分将转换为黑色。
 
-#### Stretch
+#### 拉伸
 
-If ticked, the image will be stretched to fit into the target rectangular area, rather than cropped.
+如果选中，图像将被拉伸以适应目标矩形区域，而不是被裁剪。
 
-#### Update daily
+#### 每日更新
 
-If ticked, the image will reload every day. This is useful, for example, if you have a rotating advertisement where the image will change.
+如果选中，图像将每天重新加载。这对于具有轮播广告的情况很有用，其中图像会更改。
 
 #### uScale/vScale
 
-Helps you tiles an image properly
+帮助您正确平铺图像
 
-#### Trigger
+#### 触发器
 
-Set whether or not the feature is a trigger.
+设置功能是否为触发器。
 
-## Scripting Properties
-## Scripting Properties {.tabset}
+## 脚本属性
+## 脚本属性 {.tabset}
 ### url
-`String`; Links must be `https://` and must finish with an extension such as `.jpg/.gif/.png`.
+`字符串`；链接必须以 `https://` 开头，并且必须以 `.jpg/.gif/.png` 等扩展名结尾。
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'url':"https://www.myurl.com/file.png"})
 ```
 
-#### default
+#### 默认
 
 `""`
 
-### link
-`String`; Links must be `https://`.
+### 链接
+`字符串`；链接必须以 `https://` 开头。
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('link')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'link':"https://www.myurl.com/"})
 ```
 
-#### default
+#### 默认
 
 `""`
 
 
-### blendMode
-`String`
+### 混合模式
+`字符串`
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('blendMode')
-// returns: 'Combine'
+// 返回: '合并'
 ```
 
-#### set()
+#### 设置()
 
 ```js
-feature.set({'blendMode': 'Combine'})
+feature.set({'blendMode': '合并'})
 ```
 
-#### default
+#### 默认
 
-`"Multiply"`
+`"叠加"`
 
-### updateDaily
-`Boolean.`
+### 每日更新
+`布尔值`
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('updateDaily')
-// returns: false
+// 返回: false
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'updateDaily': true})
 ```
 
-#### default
+#### 默认
 
 `false`
 
-### transparent
-`Boolean.`
+### 透明
+`布尔值`
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('transparent')
-// returns: false
+// 返回: false
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'transparent': true})
 ```
 
-#### default
+#### 默认
 
 `false`
 
-### stretched
-`Boolean.`
+### 拉伸
+`布尔值`
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('stretched')
-// returns: false
+// 返回: false
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'stretched': true})
 ```
 
-#### default
+#### 默认
 
 `false`
 
 
 ### uScale
-`Integer`
+`整数`
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('uScale')
-// returns: 1
+// 返回: 1
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'uScale': 1})
 ```
 
-#### default
+#### 默认
 
 `1`
 
 ### vScale
-`Integer`
+`整数`
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('vScale')
-// returns: 1
+// 返回: 1
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'vScale': 1})
 ```
 
-#### default
+#### 默认
 
 `1`
 
-### type
-`String`;
+### 类型
+`字符串`;
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或 */
 feature.type
 
-// returns: 'image'
+// 返回: 'image'
 ```
-

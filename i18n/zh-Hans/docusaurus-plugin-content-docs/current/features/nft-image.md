@@ -1,147 +1,150 @@
-## NFT Image
+# NFT 图像
+非同质代币（NFT）的二维图像。
 
-For NFTs you own, the NFT image will appear with a shiny frame.
+## NFT 图像
+
+对于您拥有的NFT，NFT图像将显示为带有闪亮边框的图像。
 
 ![nft-image-example.png](/nft-image-example.png)
 
-### Editor
+### 编辑器
 
 ![[nft-image]editor_v7.18.png](/features/[nft-image]editor_v7.18.png)
 
-#### Opensea Asset URL
+#### Opensea 资产 URL
 
-Copy in the asset URL from OpenSea.
+复制来自OpenSea的资产URL。
 
 #### stretch
 
-Stretches an image to fit the scale.
+将图像拉伸以适应比例。
 
-#### Blend Mode
+#### 混合模式
 
-This is used to determine how the image is blended with the content behind it. The available options are Combine, Multiply, and Screen.
+用于确定图像与其后面的内容混合方式。可用选项包括合并（Combine）、相乘（Multiply）和屏幕（Screen）。
 
-#### Transparency mode
+#### 透明度模式
 
-Choose how alpha is treated. (ignored or not)
+选择如何处理 alpha 通道（是否忽略）。
 
-#### EmissiveColor intensity
+#### 自发光颜色强度
 
-Choose the intensity of brightness.
+选择亮度的强度。
 
-#### Gui
+#### GUI
 
-If ticked, clicking on this NFT will show an HTML UI with information about the NFT
+如果勾选，单击此NFT将显示有关NFT的HTML界面信息。
 
-## Scripting Properties
-## Scripting Properties {.tabset}
+## 脚本属性
+## 脚本属性 {.tabset}
 ### url
-`String`; Links must be `https://`.
+`String`；链接必须以`https://`开头。
 
-#### get()
+#### 获取（get）
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回："https://..."
 ```
 
-#### set()
+#### 设置（set）
 
 ```js
 feature.set({'url':"https://www.opensea.io/"})
 ```
 
-#### default
+#### 默认值
 
 `""`
 
 ### stretch
-`Boolean`; 
+`Boolean`；
 
-#### get()
+#### 获取（get）
 
 ```js
 feature.get('stretch')
-// returns: "https://..."
+// 返回：true 或 false
 ```
 
-#### set()
+#### 设置（set）
 
 ```js
 feature.set({'stretch':true})
 ```
 
-#### default
+#### 默认值
 
 `false`
 
 ### blendMode
-`ImageMode`; An enum :
-- 'Multiply'
-- 'Screen'
-- 'Combine'
+`ImageMode`；枚举：
+- 'Multiply'（相乘）
+- 'Screen'（屏幕）
+- 'Combine'（合并）
 
-#### get()
+#### 获取（get）
 
 ```js
 feature.get('blendMode')
-// returns: "Multiply"
+// 返回："Multiply" 或其他选项
 ```
 
-#### set()
+#### 设置（set）
 
 ```js
 feature.set({'blendMode':"Combine"})
 ```
 
-#### default
+#### 默认值
 
 `Combine`
 
 ### emissiveColorIntensity
-`number`; 
+`number`；
 
-#### get()
+#### 获取（get）
 
 ```js
 feature.get('emissiveColorIntensity')
-// returns: "0.5"
+// 返回：0.5 或其他值
 ```
 
-#### set()
+#### 设置（set）
 
 ```js
 feature.set({'emissiveColorIntensity':0.5})
 ```
 
-#### default
+#### 默认值
 
 `0.5`
 
 ### type
-`String`;
+`String`；
 
-#### get()
+#### 获取（get）
 
 ```js
 feature.get('type')
-/* or */
+/* 或 */
 feature.type
 
-// returns: 'nft-image'
+// 返回：'nft-image'
 ```
 
-## Scripting Methods
-## Scripting Methods {.tabset}
+## 脚本方法
+## 脚本方法 {.tabset}
 ### getNftData
-A function that returns the opensea nftData of the specified feature.
+返回指定特征的opensea nftData 的函数。
 
-- Arguments: callback (optional); a callback function to handle the nft's data.
+- 参数：callback（可选）；用于处理NFT数据的回调函数。
 
-#### example
+#### 示例
 
 ```js
 feature.getNftData(console.log)
-/* returns: 
+/* 返回：
 {
 animation_original_url: "https://ipfsga..."
 animation_url: "https://stora..."
@@ -150,7 +153,7 @@ asset_contract: {...}
 }
 ```
 
-#### example 2
+#### 示例 2
 
 ```js
 
@@ -159,7 +162,6 @@ function showContractAddress(data){
 }
 
 feature.getNftData(showContractAddress)
-/* returns: 0x1das1rs6dfv...
+/* 返回：0x1das1rs6dfv...
 
 ```
-

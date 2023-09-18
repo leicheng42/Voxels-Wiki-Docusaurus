@@ -1,3 +1,4 @@
+# How to build (temp)
 
 In Cryptovoxels you can place voxels (blocks) similar to Minecraft.
 
@@ -7,13 +8,13 @@ You can also use a [Megavox](/docs/features/megavox) as the building structure, 
 
 ![building-examples.gif](/building/building-examples.gif)
 
-# Where can you build?
+## Where can you build?
 - In a Parcel that you [own](/docs/Parcels/Buy-a-parcel)
 - In a Parcel that you're a collaborator on
 - In a sandbox Parcel
 - In a free [Space](/docs/Spaces)
 
-# Building tools (sidebar)
+## Building tools (sidebar)
 Once inside or around a Parcel you can build on, tools will slide in on the right side.
 
 ![build-sidebar.png](/building/build-sidebar.png)
@@ -23,7 +24,7 @@ Once inside or around a Parcel you can build on, tools will slide in on the righ
 **Snapshots** - Save and load states of the Parcel, used as a backup feature or to change the structure
 **Parcel Features** - List of features in the parcel sorted by proximity
 
-# Voxels (blocks)
+## Voxels (blocks)
 Each Parcel has a maximum amount of blocks that can be placed, and is listed on the [Parcel's page](https://www.cryptovoxels.com/parcels/1).
 
 ![parcel-info.png](/building/parcel-info.png)
@@ -33,23 +34,23 @@ The parcel should be highlighted and the *Add menu* should pop up.
 
 ![highlighted-parcel-edit.png](/building/highlighted-parcel-edit.png)
 
-## Placing blocks
+### Placing blocks
 ![blocks-placing.gif](/building/blocks-placing.gif)
 
 1. **Right click** (...or press <kbd>TAB</kbd> or click the **Add button**) to open the *Add menu*
 1. Click **Build**
 1. Place your block (click and drag to place multiple blocks)
 
-### Placing blocks the quick way
+#### Placing blocks the quick way
 ![blocks-quick.gif](/building/blocks-quick.gif)
 You can bypass the menu and go straight into build mode with the number keys.
 1. Hit a **number key** on your keyboard to select the texture and activate build mode 
 *(1 activates the first texture, 2 activates the second, etc.)*
 1. Place your block(s)
 
-## Textures & colors
+### Textures & colors
 Each Parcel can have 8 different voxel color tints & 16 different textures.
-### Placing blocks with different textures
+#### Placing blocks with different textures
 ![blocks-texture.gif](/building/blocks-texture.gif)
 1. **Right click**
 1. Select a texture under Voxels
@@ -61,7 +62,7 @@ You can use the number keys to select the first 10 textures and go into build mo
 :::
 
 
-### Changing the textures
+#### Changing the textures
 ![blocks-texture-change.gif](/building/blocks-texture-change.gif)
 1. Click the **Edit button**
 1. Click a texture you want to change OR drag an image onto one of the slots to replace it
@@ -71,7 +72,7 @@ If you want to revert back to the default textures, click the **Reset** button i
 :::
 
 
-### Placing colored blocks
+#### Placing colored blocks
 ![blocks-tint.gif](/building/blocks-tint.gif)
 
 1. **Right click**
@@ -81,7 +82,7 @@ If you want to revert back to the default textures, click the **Reset** button i
 1. Click **Build**
 1. Place your block(s)
 
-### Editing the tint color
+#### Editing the tint color
 ![blocks-tint-edit.gif](/building/blocks-tint-edit.gif)
 1. Click the **Edit button** (hit <kbd>ESC</kbd> or **right click** to get cursor)
 1. Click one of the 8 colors on the bottom
@@ -91,7 +92,7 @@ If you want to revert back to the default textures, click the **Reset** button i
 If you want to revert back to the default tints, click the **Reset** button in the Edit menu next to color boxes.
 :::
 
-## Painting blocks
+### Painting blocks
 ![blocks-painting.gif](/building/blocks-painting.gif)
 1. **Right click**
 1. Choose tint and texture
@@ -102,7 +103,7 @@ If you want to revert back to the default tints, click the **Reset** button in t
 You can temporarily activate paint mode while in build mode by holding the <kbd>CTRL / CMD</kbd> key.
 :::
 
-## Erasing blocks
+### Erasing blocks
 ![blocks-erasing.gif](/building/blocks-erasing.gif)
 1. **Right click**
 1. Click **Erase**
@@ -112,11 +113,11 @@ You can temporarily activate paint mode while in build mode by holding the <kbd>
 You can temporarily activate erase mode while in build mode by holding the <kbd>SHIFT</kbd> key.
 :::
 
-## Cube (texturable)
+### Cube (texturable)
 ![blocks-cube.gif](/building/blocks-cube.gif)
 A [Cube](/docs/features/cube) is not actually a voxel, but a [feature](/docs/Parcels/building_temp#features) - which means you place it and modify it like a feature.
 This means that the build/paint/erase tools used for other blocks do not work on these.
-### What makes the Cube different?
+#### What makes the Cube different?
 - You can pull images from the web or womps and use as the texture
 - You can toggle collision (if off, avatars can walk through it)
 - Tints and textures can be different per every Cube used
@@ -125,14 +126,14 @@ This means that the build/paint/erase tools used for other blocks do not work on
 - You can rotate a Cube
 - You can resize a Cube
 
-## Hotkeys - Building
+### Hotkeys - Building
 ![blocks-numberkeys.gif](/building/blocks-numberkeys.gif)
 - **Right click** / <kbd>TAB</kbd> / <kbd>B</kbd> **-** Activate build mode
 - <kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd> / <kbd>4</kbd> / <kbd>5</kbd> / <kbd>6</kbd> / <kbd>7</kbd> / <kbd>8</kbd> / <kbd>9</kbd> / <kbd>0</kbd> **-** Activate build mode using the first 10 textures
 
 ![blocks-numbers.png](/building/blocks-numbers.png)
 
-### In build mode
+#### In build mode
 ![blocks-hotkeys.gif](/building/blocks-hotkeys.gif)
 - **Click** **-** Place block
 - **Click and drag** **-** Place multiple blocks
@@ -141,11 +142,11 @@ This means that the build/paint/erase tools used for other blocks do not work on
 - <kbd>CTRL / CMD</kbd> + **Click** **-** Paint block
 - <kbd>CTRL / CMD</kbd> + **Click and drag** **-** Paint multiple blocks
 
-# Features
+## Features
 Ranging from [NFTs](/docs/features/nft-image) to [VOX models](/docs/features/vox-model), features play a very important role in your Parcel or Space.
 For the complete list of features, go [here](/docs/features).
 
-## Placing a feature
+### Placing a feature
 In a Parcel/Space you own or have collaboration access to, open the *Add menu*.
 Select a feature from the list, move it to where you want it, and **click** to place it.
 
@@ -155,37 +156,37 @@ Select a feature from the list, move it to where you want it, and **click** to p
 There is a limit to how many features can be in a Parcel or Space. Look at the Add Menu for more information.
 :::
 
-## Editing a feature
+### Editing a feature
 Each feature has its own parameters you can adjust.
 **Right click** (or hit <kbd>e</kbd> and **click**) the feature to edit it, then make any adjustments you need to make. You can also find & edit the feature via [Parcel Features](/docs/Parcels/building_temp#parcel-features-menu).
 
 ![features-editing.gif](/building/features-editing.gif)
 
-### Using the 3D gizmo
+#### Using the 3D gizmo
 After clicking an object, a 3D gizmo will appear next to it.
 With the 3D gizmo, you can move the object around and rotate it.
 
 (bugged)
 
-## Replicating a feature
+### Replicating a feature
 **Right click** the feature and click the **Replicate** button, then **click** where you want the replicated feature to be.
 You can also hit <kbd>R</kbd>, then **click** the feature, move the cursor and **click** where you want to replicate it.
 
 ![features-replicating.gif](/building/features-replicating.gif)
 
-## Moving a feature
+### Moving a feature
 **Right click** the feature, click **Move**, move the cursor and **click** where you want to place it.
 You can also hit <kbd>M</kbd>, then **click** the feature, move the cursor and **click** where you want to move it.
 
 ![features-moving.gif](/building/features-moving.gif)
 
-## Erasing a feature
+### Erasing a feature
 You can erase a feature through the feature's edit menu or through [Parcel Features](/docs/Parcels/building_temp#parcel-features-menu).
 **Right click** the feature, then click **Delete**.
 
 ![features-deleting.gif](/building/features-deleting.gif)
 
-## Asset library
+### Asset library
 There is a library of user-generated content that you can pull from. 
 To see what's available, open the *Add menu* and click **Browse Asset Library**.
 
@@ -199,7 +200,7 @@ If you'd like to add to the library (it can be public or private), edit the feat
 
 ![features-library3.png](/building/features-library3.png)
 
-## Hotkeys - Features
+### Hotkeys - Features
 These hotkeys make it easy to replicate, move or edit features.
 Hit the hotkey and then click the feature to use it.
 
@@ -209,7 +210,7 @@ Hit the hotkey and then click the feature to use it.
 
 ![features-hotkeys.gif](/building/features-hotkeys.gif)
 
-# Parcel Features menu
+## Parcel Features menu
 
 The Parcel Features menu is a list of all features currently placed in your Parcel, sorted by proximity by default.
 This is an extremely useful tool when your parcel gets filled with features!
@@ -226,7 +227,7 @@ You can also change to ascending or descending sorting by clicking the *Ascendin
 
 ![parcel-features-sort.png](/building/parcel-features-sort.png)
 
-# Parcel Snapshots
+## Parcel Snapshots
 Snapshots are user-selected states of your Parcel that you can chose to come back to later.
 Use this to backup (take snapshot) & restore (revert) your Parcel during major changes or to swap your Parcel around for events.
 
@@ -245,9 +246,9 @@ You can also view the list of snapshots and revert to a different state from you
 
 To learn more about the Parcel admin section and snapshots, go [here](/docs/Parcels/Ownership).
 
-# Your NFTs
+## Your NFTs
 
 (add info about Your NFTs here)
 
-# Parcel ownership
+## Parcel ownership
 Head over [here](/docs/Parcels/Ownership) to learn about other things you can tweak and do on your parcel.

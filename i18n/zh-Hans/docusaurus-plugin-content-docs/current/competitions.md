@@ -1,60 +1,62 @@
+# 竞赛
+有关竞赛以及如何参与的信息。
+
 ![competition_cv.png](/competitions/competition_cv.png)
 
-Cryptovoxels often hosts competitions to bring the community together and allow builders display their creativity to the rest of world. At Cryptovoxels we also seek to reward creativity!
+Cryptovoxels经常举办竞赛，以汇集社区，并允许建筑者展示他们的创意给世界其他地方。在Cryptovoxels，我们也寻求奖励创造力！
 
-# [September '21] Scripting competition: Games!
+## [2021年9月] 编程竞赛：游戏！
 
-## What is the goal?
-The end goal of the competition is to make the world more interactive and more fun!
+### 目标是什么？
+竞赛的最终目标是使世界更加互动和有趣！
 
-## When is it?
-The competition is in September 2021 with the due date being the 16th of September
+### 什么时候开始？
+竞赛将于2021年9月举行，截止日期为9月16日。
 
-## What do I win?
-|Place|Reward|
-|----|----|
-|First Place| A relatively large parcel and 0.2 eth|
-|Second Place| A parcel and 0.1 eth |
-|Third Place| A parcel and 0.1 eth |
+### 我可以赢得什么？
+| 名次 | 奖励 |
+| ---- | ---- |
+| 第一名 | 一个相对较大的地块和0.2以太币 |
+| 第二名 | 一个地块和0.1以太币 |
+| 第三名 | 一个地块和0.1以太币 |
 
-## How do I win?
-|Place|How to win|
-|----|----|
-|First Place| Have the best working game using scripting, best parcel interactivity, best parcel design and environment. Complexity is encouraged but not necessary.  |
-|Second Place| Have the second best working game using scripting and second best parcel interactivity |
-|Third Place| Third best parcel interactivity |
+### 我如何获胜？
+| 名次 | 如何获胜 |
+| ---- | ---- |
+| 第一名 | 制作使用脚本的最佳工作游戏，最佳地块互动，最佳地块设计和环境。鼓励复杂性，但不是必需的。 |
+| 第二名 | 制作使用脚本的次佳工作游戏和次佳地块互动。 |
+| 第三名 | 第三佳地块互动。 |
 
-## How do I join?
-This competition is now closed :( 
+### 如何加入？
+这个竞赛现在已经关闭了 :(
 
-If you do not own a parcel, it's ok! Since just recently **spaces can now have scripts!**, just submit one space before the due date. **Note**: "the grid" or the hosted service for multiplayer scripting is not supported in spaces, but don't let that stop you!
+如果你没有拥有地块，没关系！因为最近**空间现在可以有脚本！**只需在截止日期之前提交一个空间。**注意：**空间不支持“网格”或多人游戏脚本的托管服务，但不要让这阻止你！
 
-## What are the rules?
+### 什么是规则？
 
-- Your entry must abide to the Cryptovoxels [rules and terms and conditions](https://www.cryptovoxels.com/terms), and must follow the [community guidelines](https://www.cryptovoxels.com/conduct).
+- 你的作品必须遵守Cryptovoxels的[规则和条款](https://www.cryptovoxels.com/terms)，并且必须遵循[社区准则](https://www.cryptovoxels.com/conduct)。
 
-- You may not plagiarise anyone else's work and you may not claim someone else's work as yours unless given the appropriate permission.
+- 你不能抄袭其他人的作品，也不能在未经适当许可的情况下声称别人的作品为你自己的。
 
-- You may submit one and only one parcel or space as an entry.
+- 你只能提交一个地块或空间作为参赛作品。
 
-When judging entries, we will grade entries in favor of those respectful of their parcel boundaries and neighbors.
+在评判作品时，我们将更青睐那些尊重他们的地块界限和邻居的作品。
 
-## Who do I contact for help?
-The [Scripting Support](https://support.cryptovoxels.com/c/scripting-help/7) category is your best bet in terms of support. You can also ask for help in the `#player-help` channel of the [Cryptovoxels discord](https://discord.gg/TqsSGVtSba).
+### 我应该联系谁寻求帮助？
+[脚本支持](https://support.cryptovoxels.com/c/scripting-help/7)类别是您在支持方面的最佳选择。您还可以在[Cryptovoxels Discord](https://discord.gg/TqsSGVtSba)的`#player-help`频道中寻求帮助。
 
+## 谁来评审？
 
-# Who will judge?
+评审团将由管理员`Fayelure`和社区知名的3名用户组成。他们的身份将保密，直到评分完成。
 
-The panel of judge will be Admin `Fayelure` and 3 more users known by the community. The identity of which will remain secret until the scoring is done.
+## 什么是Cryptovoxels？
+### 什么是Cryptovoxels？
+Cryptovoxels是一个在以太坊区块链上运行的用户拥有的虚拟世界。玩家可以买卖自己的土地地块，并在世界中与其他玩家互动。
 
-# What is Cryptovoxels?
-## What is Cryptovoxels?
-Cryptovoxels is a user-owned world that runs on the Ethereum blockchain. Player can buy/sell their own plots of land and can interact with each others in the world.
+### 什么是脚本？
+脚本是指使用编程语言自动化任务的过程。在Cryptovoxels中，您可以使用JavaScript（JS）进行脚本编写。通过这种方式，玩家可以创建门、动画和游戏！
 
-## What is Scripting?
-Scripting refers to the automation of tasks using a programming language. In Cryptovoxels you can script using JavaScript (JS) in-world. This way players can make doors, animations and games!
-
-Here is an example script for a door that opens and closes:
+以下是一个门的示例脚本，可打开和关闭：
 
 ```js
 let closed = true
@@ -71,4 +73,4 @@ feature.on('click',e => {
 
 ```
 
-By default your scripts run locally in the users browser, but with a single click, you can run your scripts on our `grid` server, and enable multiplayer games.
+默认情况下，您的脚本在用户的浏览器上本地运行，但只需单击一下，您就可以在我们的“网格”服务器上运行您的脚本，启用多人游戏。

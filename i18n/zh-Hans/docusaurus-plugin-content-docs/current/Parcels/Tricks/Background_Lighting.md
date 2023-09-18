@@ -1,4 +1,6 @@
-# Background lighting
+# Background ligthing
+
+## Background lighting
 Say you have an item against the wall. A backlit background could greatly improve your wearable presentation.
 For example:
 ![light-effect-example.png](/light-effect-example.png)

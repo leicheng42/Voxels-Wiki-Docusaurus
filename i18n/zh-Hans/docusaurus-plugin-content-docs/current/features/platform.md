@@ -1,15 +1,18 @@
-## Header
+# 平台
+使角色动画化。
+
+## 头部
 
 ![platform-feature.png](/platform-feature.png)
 
-### Editor
+### 编辑器
 
 ![platform-editor.png](/platform-editor.png)
 
-#### Animation name
+#### 动画名称
 
-The name of the animation, which will float above the platform.
+动画的名称，将显示在平台上方。
 
-#### Animation URL
+#### 动画 URL
 
-WIP.
+正在制作中（WIP）。

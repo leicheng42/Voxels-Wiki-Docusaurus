@@ -1,63 +1,66 @@
-## Group
+# 分组
+学习如何将功能分组在一起
 
-### Group features
-You can group [features](/docs/features) [e.g. Images, VOXes, Videos, etc.] together while working in a parcel.
-This can help keep your parcel organized and save time when making adjustments to multiple features.
+## 分组
 
-### Adding features to a group
-You can easily add features to a group.
-1. Get to a Cryptovoxels parcel you own or have collaboration rights to
-1. Get close to the features you want to group up
-1. Click the **Parcel Features** button on the right side
-1. Click the checkbox to the right of each feature you want to add
-1. On the bottom, click the **Create Group** button
+### 分组功能
+在地块上工作时，您可以将[功能](/docs/features)（例如图片、VOX、视频等）分组在一起。
+这可以帮助保持您的地块有序，并在对多个功能进行调整时节省时间。
+
+### 将功能添加到组
+您可以轻松将功能添加到组中。
+1. 进入您拥有或具有协作权限的Cryptovoxels地块
+1. 靠近您想要分组的功能
+1. 单击右侧的**地块功能**按钮
+1. 单击要添加的每个功能右侧的复选框
+1. 在底部，单击**创建组**按钮
 
 ![group_adding.gif](/features/group_adding.gif)
 
-### Finding and selecting a group
-In order to make any changes to the group, you'll have to select it in the Parcel Features list.
+### 查找和选择组
+为了对组进行任何更改，您必须在地块功能列表中选择它。
 
-1. Get close to the group *(the Parcel Features list sorts by proximity)*
-1. Click the **Parcel Features** button on the right side
-1. Find and select the group *(it should be near the top)*
+1. 靠近组（地块功能列表按距离排序）
+1. 单击右侧的**地块功能**按钮
+1. 查找并选择组（它应该在顶部附近）
 
 ![group_finding.gif](/features/group_finding.gif)
 
-### Adjustments to a group
-You can modify the group, which will affect every feature inside it.
+### 对组进行调整
+您可以修改组，这将影响组内的每个功能。
 
-1. Find and select the group you want to adjust
-1. Modify the position, scale or rotation, OR replicate, move or delete it
+1. 查找并选择要调整的组
+1. 修改位置、比例或旋转，或者复制、移动或删除它
 
 ![group_adjusting.gif](/features/group_adjusting.gif)
 
-:::caution
-If you make adjustments to a group and then dissolve said group, the features inside will revert back to their actual position, scale & rotation.
+:::警告
+如果您对组进行调整，然后解散该组，组内的功能将恢复到其实际位置、比例和旋转。
 :::
 
-### Removing features from a group
-You can remove individual features from a group.
+### 从组中删除功能
+您可以从组中删除单个功能。
 
-1. Find and select the group you want to adjust
-1. Under the *Group Features* section, click the checkbox of the feature you want to remove
-1. Click the **Remove from Group** button on the bottom
+1. 查找并选择要调整的组
+1. 在*组功能*部分，单击要删除的功能的复选框
+1. 在底部，单击**从组中删除**按钮
 
-![group_adjusting.gif](/features/group_removing.gif)
+![group_removing.gif](/features/group_removing.gif)
 
-### Dissolving a group
-Dissolving a group removes just the group and leaves the features intact.
+### 解散组
+解散组仅会删除组，保留功能不变。
 
-1. Find and select the group you want to adjust
-1. Under the *Group Features* section, click the *Select All* checkbox 
-1. Click the **Dissolve Group** button
+1. 查找并选择要调整的组
+1. 在*组功能*部分，单击*全选*复选框 
+1. 单击**解散组**按钮
 
 ![group_dissolving.gif](/features/group_dissolving.gif)
 
-### Deleting a group
-Deleting a group will remove the group and ALL features that were in the group.
+### 删除组
+删除组将删除组和组中的所有功能。
 
 ![group_deleting.gif](/features/group_deleting.gif)
 
-:::caution
-If you wish to remove *just* the group and leave the features alone, read the prior section.
+:::警告
+如果您只想删除组而保留功能，请阅读前面的部分。
 :::

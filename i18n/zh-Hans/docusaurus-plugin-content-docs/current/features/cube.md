@@ -1,98 +1,100 @@
-## Cube
+# 立方体
 
-The cube feature is a simple cube mesh that you can texture or color.
+## 立方体
+
+立方体功能是一个简单的立方体网格，您可以对其进行纹理或上色。
 
 ![[cube-feature]example.png](/features/[cube-feature]example.png)
 
-### Editor
+### 编辑器
 
 ![[cube-feature]editor_5.57.png](/features/[cube-feature]editor_5.57.png){.align-center}
 
 #### URL
 
-The URL of the image that will be used as texture.
+将用作纹理的图像的URL。
 
-#### Collidable
+#### 可碰撞性
 
-`(Optional)`; Make the cube a collidable object.
+`(可选)`；将立方体设置为可碰撞对象。
 
-#### Colors
+#### 颜色
 
-`(Optional)`;
-Allows you to change the color of your cube.
+`(可选)`；
+允许您更改立方体的颜色。
 
 
-## Scripting Properties
-## Scripting Properties {.tabset}
-### url
-`String`; Links must be `https://` and must finish with an image extension.
+## 脚本属性
+## 脚本属性 {.tabset}
+### URL
+`字符串`；链接必须以 `https://` 开头并以图像扩展名结尾。
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回值: "https://..."
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'url':"https://www.myurl.com/file.png"})
 ```
 
-#### default
+#### 默认值
 
 `""`
 
-### Color
-`String`; An Hex color string such as `#000`.
+### 颜色
+`字符串`；一个十六进制颜色字符串，例如 `#000`。
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('color')
-// returns: "#ffffff"...
+// 返回值: "#ffffff"...
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'color':"#4287f5"})
 ```
 
-#### default
+#### 默认值
 
 `"#000000"`
 
-### collidable
-`Boolean`
+### 可碰撞性
+`布尔值`
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('collidable')
-// returns: false
+// 返回值: false
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'collidable': true})
 ```
 
-#### default
+#### 默认值
 
 `false`
 
-### type
-`String`;
+### 类型
+`字符串`;
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或者 */
 feature.type
 
-// returns: 'cube'
+// 返回值: 'cube'
 ```

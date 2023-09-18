@@ -1,19 +1,22 @@
-## POAP Dispenser
+# POAP 发放器
+向您地块的活动参与者发放POAP。
 
-POAP stands for Proof of Attendence Protocol and are badges on the XDai network given to attendees of virtual and real world events. Use this feature to give out POAPs to parcel vistitors coming to an event you host. 
+## POAP 发放器
+
+POAP代表出席证明协议（Proof of Attendence Protocol），是分发给虚拟和现实世界活动参与者的XDai网络徽章。使用此功能，您可以向前来参加您主持的活动的地块访客分发POAP。
 
 ![POAP-Dispenser.png](https://cdn.discordapp.com/attachments/431671342044020749/976201122337423390/unknown.png)
 
-### Editor
+### 编辑器
 
 ![POAP-editor.png](https://cdn.discordapp.com/attachments/469095615654002688/976929932708040806/unknown.png)
 
-Left click the PAOP Dispenser to redeem your poap. A success or error message will appear. You can also check the status of your poap redeem by going to https://app.poap.xyz/scan/[YOUR WALLET ADDRESS HERE]
+左键单击PAOP发放器以兑换您的POAP。将显示成功或错误消息。您还可以通过访问 https://app.poap.xyz/scan/[您的钱包地址] 来检查POAP兑换的状态。
 
-#### Event ID
+#### 活动ID
 
-After creating your event on POAP.xyz and being approved, you will be given an event id that you will place here.
+在POAP.xyz上创建您的活动并获得批准后，您将获得一个活动ID，您需要将其放在这里。
 
-#### POAP Edit Code
+#### POAP编辑代码
 
-When you create an event on POAP.xyz, you will be given an Edit Code which you will need to provide us with. Be sure to hit the save and encrypt button to keep that information secret!
+当您在POAP.xyz上创建活动时，将会获得一个编辑代码，您需要向我们提供此代码。确保点击保存和加密按钮以保持此信息的机密性！

@@ -1,108 +1,110 @@
-## Slider Input
+# 滑块输入
 
-Let users enter a numerical value within a range.
+## 滑块输入
+
+允许用户在一个范围内输入数值。
 
 ![[slider_input]example_v5.18.png](/features/[slider_input]example_v5.18.png)
 
-### Editor
+### 编辑器
 ![[slider_input]editor_7.18.2.png](/features/[slider_input]editor_7.18.2.png)
 
-#### Text
+#### 文本
 
-A text that will appear above the slider input.
+将显示在滑块输入框上方的文本。
 
-## Scripting Properties
-## Scripting Properties {.tabset}
-### value
-`String`; 
+## 脚本属性
+## 脚本属性 {.tabset}
+### 值
+`字符串`; 
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('value')
-// returns: the value of the slider
+// 返回：滑块的值
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'value':0.2})
 ```
 
-#### default
+#### 默认值
 
 `0.25`
 
-### text
-`String`; 
+### 文本
+`字符串`; 
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('text')
-// returns the text above the slider
+// 返回：滑块上方的文本
 ```
 
-#### set()
+#### 设置()
 
 ```js
-feature.set({'text':"my text"})
+feature.set({'text':"我的文本"})
 ```
 
-#### default
+#### 默认值
 
 `""`
 
-### minimum
-`number`; 
+### 最小值
+`数字`; 
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('minimum')
-// returns: the minimum value of the slider
+// 返回：滑块的最小值
 ```
 
-#### set()
+#### 设置()
 
 ```js
-feature.set({'minimum':0.01}) // a minimum of 0 will not work
+feature.set({'minimum':0.01}) // 最小值为0将不起作用
 ```
 
-#### default
+#### 默认值
 
 `0.01`
 
-### maximum
-`number`; 
+### 最大值
+`数字`; 
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('maximum')
-// returns: the maximum value of the slider
+// 返回：滑块的最大值
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'maximum':1})
 ```
 
-#### default
+#### 默认值
 
 `1`
 
 
-### type
-`String`;
+### 类型
+`字符串`;
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或 */
 feature.type
 
-// returns: 'slider-input'
+// 返回: 'slider-input'
 ```

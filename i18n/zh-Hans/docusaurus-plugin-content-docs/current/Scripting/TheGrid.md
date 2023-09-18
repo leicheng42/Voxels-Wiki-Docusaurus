@@ -1,6 +1,9 @@
 # The Grid
+Multiplayer server
 
-> One day, I got in. - Kevin Flynn
+## The Grid
+
+One day, I got in. - Kevin Flynn
 
 The grid is the multiplayer server that runs your parcel scripts on the Cryptovoxels infrastructure. It runs the exact same API as the normal scripting engine, but it keeps track of the state on the server and sends changes to everyone connected. This means if you click a door and it opens, it will open for everyone else who is standing near you. It also means you can play multiplayer games with other players, and the server will maintain the state of the game.
 
@@ -18,7 +21,7 @@ Disadvantages:
 * It can be tricky to debug
 * You have to fit your experience into 8MB of rams
 
-## How to Activate
+### How to Activate
 1. Go to your parcel in the [Parcels tab](https://www.cryptovoxels.com/account/parcels). Be sure to be logged in!
 
 2. If you own the parcel, and if you're logged in, you should see an admin panel like the one below:
@@ -29,7 +32,7 @@ Disadvantages:
 
 Done! Your scripts are now multiplayers.
 
-## What happens
+### What happens
 
 (Example for [parcel #78](https://www.cryptovoxels.com/parcels/78) - put in your own parcel ID to follow along)
 
@@ -47,13 +50,13 @@ Done! Your scripts are now multiplayers.
 
 The grid server currently dispatches messages instantly from your script back to the client, but this will be throttled to 5 or 10 hz in a future version, because sending realtime 60hz updates over a websocket over the public internet causes lots of lag and bunching up of packets.
 
-## Viewing logs
+### Viewing logs
 
 Your logs are written to redis and persisted. They are publicly viewable (don't put any secrets in your logs ok) at:
 
 `https://grid.cryptovoxels.com/grid/78/logs`
 
-## Available APIs
+### Available APIs
 
 :::caution
 APIs are very basic as of version 1.1.2, more will become available over time 

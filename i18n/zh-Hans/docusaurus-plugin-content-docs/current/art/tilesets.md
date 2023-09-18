@@ -1,22 +1,24 @@
-# Tileset bounties
+# 地砖集
 
-Tilesets are composed of 16 512x512 pngs. These are used as the textures for the voxel field that you build in voxels.
+## 地砖奖励
 
-There are currently bounties for the following island tilesets:
+地砖由16个512x512的PNG图像组成。这些图像用作您在体素中构建的体素场的纹理。
 
- * Future - closes August 31st - dark, cyberpunk, neon lit, dense, exciting, robots
- * Anhedonia - Closes September 8th - grey, nihilist, empty, monochrome, windswept, brutalist
+目前有以下岛屿地砖的奖励：
+
+ * 未来 - 截止日期为8月31日 - 黑暗、赛博朋克、霓虹灯光、密集、令人兴奋、机器人
+ * 无欲 - 截止日期为9月8日 - 灰色、虚无主义、空旷、单色、风吹草动、野蛮主义
  
-### Process:
+#### 过程：
 
-To test and build your tileset, create a free space and upload your tiles into the tile editor. Build a nice example build to show off your tiles.
+要测试和构建您的地砖集，请创建一个自由空间，并将您的地砖上传到地砖编辑器中。建立一个漂亮的示例建筑来展示您的地砖。
 
- * Stake your claim to build an island tileset by posting a comment below `i YOURNAME am making a tileset for future`
- * Post a screenshot, and a link to your space and the message `i YOURNAME agree to the voxels art contributor license agreement`
- * We will review the comments and close entries upon selecting an entry
+ * 通过在下面发布一条评论，宣布您要为未来制作一个岛屿地砖集，来宣告您的权利，评论内容如下：`我 YOURNAME 正在为未来制作一个地砖集`
+ * 发布一张屏幕截图，以及一个指向您的空间的链接，同时附上以下消息：`我 YOURNAME 同意遵守体素艺术贡献者许可协议`
+ * 我们将审核评论，并在选择获胜作品后关闭参赛通道
  
- Any entries that are not accepted for voxels retain the complete works of the author and may be remixed or resubmitted for a future bounty.
- 
-### Acceptance:
+ 任何未被接受的作品将保留作者的全部权利，可以在未来进行混音或重新提交以获取奖励。
 
-Upon your tileset being accepted, your tileset is transferred to voxels and you will recieve a parcel of our choosing. Full terms to be provided...
+#### 接受条件：
+
+一旦您的地砖集被接受，它将被转移到体素中，您将获得我们选择的一块地皮。具体条款将会提供...

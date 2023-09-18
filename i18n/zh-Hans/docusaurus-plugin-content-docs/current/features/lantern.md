@@ -1,29 +1,30 @@
-## Lantern
+# 灯笼
 
-Feature that emits light in your parcel. The color of the light is customizable.
-This feature was added in version v4.6.0.
-**For lanterns to work you must activate [light-mapping](/docs/Parcels/light-map) on your parcel**
+## 灯笼
 
-:::info
-Lanterns are still in Beta.
+在您的地块中发出光的功能。光的颜色可以自定义。
+此功能是在版本v4.6.0中添加的。
+**要使灯笼正常工作，您必须在您的地块上激活[光映射](/docs/Parcels/light-map)**
+
+:::信息
+灯笼仍然处于测试阶段。
 :::
 
 ![lantern_purple.png](/lantern_purple.png)
 
-
-## Editor
+## 编辑器
 ![lantern_editor_v4.10.png](/lantern_editor_v4.10.png)
 
-### Color
+### 颜色
 
-Color of the light
+光的颜色
 
-### Strength
+### 强度
 
-Strength of the light emission.
+光发射的强度。
 
-## Scripting properties
+## 脚本属性
 
-:::caution
-Lanterns are not scriptable yet!
+:::警告
+灯笼尚不支持脚本！
 :::
