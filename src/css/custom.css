@@ -28,3 +28,14 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.comment-area {
+  margin: 2em 0;
+
+  .v[data-class=v] {
+    .vcomment .vpanel, .vcount {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
