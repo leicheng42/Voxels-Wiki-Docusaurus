@@ -1,34 +1,37 @@
-# How to features
+# 如何使用功能
 
-Cryptovoxels has more than just tiles. We also have a range a features you can place in your parcel.
+Cryptovoxels 不仅仅是瓷砖。我们还提供了一系列可以放置在您地块上的功能。
 
-## Feature editor
-Once inside or around a parcel you can build on, you can open the feature editor by pressing <kbd>TAB</kbd>. the `add feature` menu will be open by default.
+## 功能编辑器
+一旦您进入或周围可以建造的地块，您可以通过按下 <kbd>TAB</kbd> 键来打开功能编辑器。`添加功能` 菜单将默认打开。
 
-![[how_to_edit_features]add_features.png](/tutorials/[how_to_edit_features]add_features.png)
+![添加功能](/tutorials/[how_to_edit_features]add_features.png)
 
-![[how_to_edit_features]feature_description.png](/tutorials/[how_to_edit_features]feature_description.png)
+![功能描述](/tutorials/[how_to_edit_features]feature_description.png)
 
-For a complete list of feature, <a href="/docs/features" target="_blank">see list of features</a>.
+要获取功能的完整列表，请<a href="/docs/features" target="_blank">查看功能列表</a>。
 
-### Placing a feature
-In the Feature `add` menu (press <kbd>TAB</kbd>), select any feature you'd like to place in your parcel followed by a click where you want the feature to be.
-![[how_to_edit_features]place_feature.gif](/tutorials/[how_to_edit_features]place_feature.gif)
+### 放置功能
+在功能 `添加` 菜单中（按下 <kbd>TAB</kbd> 键），选择您想放置在您地块上的任何功能，然后点击您想要放置功能的位置。
+![放置功能](/tutorials/[how_to_edit_features]place_feature.gif)
 
-### Editing a feature
-If you want to edit a feature, you can simply hit the <kbd>E</kbd> key to enter edit mode and then select the feature you would like to edit.
-Once <kbd>E</kbd> is pressed, hovering over any features should highlight it.
-![[how_to_edit_features]edit_feature.gif](/tutorials/[how_to_edit_features]edit_feature.gif)
-### Removing a feature
-To remove a feature, hit the <kbd>E</kbd> key to enter edit mode, select the feature you want to delete and click the `Delete` button in the editor.
+### 编辑功能
+如果您想编辑一个功能，您可以简单地按下 <kbd>E</kbd> 键进入编辑模式，然后选择您想要编辑的功能。
+一旦按下 <kbd>E</kbd> 键，将鼠标悬停在任何功能上都应该会突显它。
+![编辑功能](/tutorials/[how_to_edit_features]edit_feature.gif)
 
-![[how_to_edit_features]remove_feature.gif](/tutorials/[how_to_edit_features]remove_feature.gif)
-### Copying a feature
-To copy a feature, hit the <kbd>R</kbd> key and select the feature you would like to copy. On click, the feature will be automatically copied and you can place it wherever you want.
-![[how_to_edit_features]duplicate_feature.gif](/tutorials/[how_to_edit_features]duplicate_feature.gif)
+### 移除功能
+要删除一个功能，按下 <kbd>E</kbd> 键进入编辑模式，选择您想要删除的功能，然后点击编辑器中的 `删除` 按钮。
 
-### Debugging a feature
-Sometimes some features are hard to select or far away. You can debug them by entering the build menu (hit <kbd>TAB</kbd>) and select the `☰` tab. There you will find a list of features sorted by how close they are to your position.
-Note that as you hover over the features you will see your in-world features hightlight one by one. 
-Select the feature you would like to edit and the edit menu will open.
-![[how_to_edit_features]debugging_feature.gif](/tutorials/[how_to_edit_features]debugging_feature.gif)
+![移除功能](/tutorials/[how_to_edit_features]remove_feature.gif)
+
+### 复制功能
+要复制一个功能，按下 <kbd>R</kbd> 键并选择您想要复制的功能。单击后，功能将自动复制，您可以将其放置在任何位置。
+![复制功能](/tutorials/[how_to_edit_features]duplicate_feature.gif)
+
+### 调试功能
+有时候一些功能很难选择或距离很远。您可以通过进入建造菜单（按下 <kbd>TAB</kbd> 键）并选择 `☰` 选项卡来对它们进行调试。在那里，您将找到一个按照它们距离您位置的远近排序的功能列表。
+请注意，当您将鼠标悬停在这些功能上时，您将逐个看到您在世界中的功能被突显。
+选择您想要编辑的功能，编辑菜单将打开。
+
+![调试功能](/tutorials/[how_to_edit_features]debugging_feature.gif)

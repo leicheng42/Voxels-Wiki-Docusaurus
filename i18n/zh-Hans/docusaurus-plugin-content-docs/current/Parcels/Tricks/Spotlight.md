@@ -1,23 +1,23 @@
-# Spotlight
+# 聚光灯
 
-## Spotlight effect
+## 聚光灯效果
 ![spotlight_example.png](/spotlight_example.png)
 
-**Step one**
-Download [this gradient](https://i.imgur.com/xyXO4op.png) for a white light effect or [this gradient](https://www.dropbox.com/s/dbs78no00a0lkga/red%20gradient.png?dl=0) for a red light effect.
+**第一步**
+下载[这个渐变](https://i.imgur.com/xyXO4op.png)以获得白色光效果，或者[这个渐变](https://www.dropbox.com/s/dbs78no00a0lkga/red%20gradient.png?dl=0)以获得红色光效果。
 
-Or to achieve this effect on your own, you will need an advanced image editor such as [GIMP](https://www.gimp.org/) (open-source) or [Photoshop](https://www.adobe.com/nz/products/photoshop.html), and create a linear gradient. 
-For a white light effect, it is recommended to create a black and white gradient. Whereas for a colored light effect, you have to create a white and *color* gradient.
+或者要在你自己的作品中实现这个效果，你需要一个高级的图像编辑器，比如[GIMP](https://www.gimp.org/)（开源）或[Photoshop](https://www.adobe.com/nz/products/photoshop.html），并创建一个线性渐变。 
+对于白色光效果，建议创建一个黑白渐变。而对于彩色光效果，你需要创建一个白色和*颜色*渐变。
 
-**Step two**
-Upload your work on a server. Free image hosts include [CV Discord](https://discord.gg/rQVMQax) or [Dropbox](https://www.dropbox.com/).
+**第二步**
+将你的作品上传到一个服务器上。免费的图像托管服务包括[CV Discord](https://discord.gg/rQVMQax)或[Dropbox](https://www.dropbox.com/)。
 
-**Step three**
-Insert your image in-world using the image feature.
-If you want a white effect light, use the `screen` option in `Blend mode`.
+**第三步**
+使用图像功能将你的图像插入到虚拟世界中。
+如果你想要一个白色光效果，请在“混合模式”中选择“screen”。
 
-**Step four**
-Resize, reposition and scale the image as you desire.
+**第四步**
+根据你的需要调整图像的大小、位置和比例。
 
-**Optional**
-For the spotlight vox model shown in the example above click [here](/spotlight.vox).
+**可选**
+要获取上面示例中显示的聚光灯体素模型，请单击[此处](/spotlight.vox)。

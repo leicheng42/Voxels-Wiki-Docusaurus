@@ -1,43 +1,44 @@
-# Username
+# 用户名
 
-Your username is the name that will appear above your avatar in-world. It is also the name that will appear on the website once you are logged-in.
-Usernames are registered in the $NAME contract on chain and are therefore Non-Fungible tokens.
+您的用户名是在虚拟世界中显示在您角色头顶上方的名称。同时，一旦您登录，它也将显示在网站上。
+用户名在链上的 $NAME 合约中注册，因此它们是不可替代的代币（NFT）。
 
-## How to create a name
-From the main Cryptovoxels page, log in with your wallet, then hover over your address on the top right bar and click **Change Name**. You can also just go [here](https://www.cryptovoxels.com/account/names).
+## 如何创建用户名
+
+从 Cryptovoxels 主页面登录您的钱包，然后将鼠标悬停在右上角的地址上，并单击 **更改名称**。您也可以直接前往[此处](https://www.cryptovoxels.com/account/names)。
 
 ![name_dropdown.png](/username/name_dropdown.png)
 
-Click **Advanced...**
+点击 **高级设置...**
 
-Enter the name you would like to have and press **Register name**. A window should pop-up from your wallet to confirm the transaction. 
-Once confirmed, the name will be minted and you should have a notification telling you the minting finished successfully.
+输入您想要的名称，然后点击 **注册名称**。一个窗口应该会从您的钱包弹出以确认交易。
+一旦确认，该名称将被铸造，您应该会收到一个通知，告诉您铸造已成功完成。
 
 :::info
-**Your first name will be minted 100% for free, with Cryptovoxels covering the gas fees!** Any additional names created afterwards will have gas fees attached.
+**您的第一个名称将完全免费铸造，Cryptovoxels 将支付燃气费！** 之后创建的额外名称将附带燃气费。
 :::
 
 ![name_register_new.png](/username/name_register_new.png)
 
 :::caution
-If your transaction has been refused, it is highly likely that the name you have entered has already been taken or that it does pass the validation test. You can search for your name on OpenSea to see if someone owns it.
+如果您的交易被拒绝，很可能是您输入的名称已经被占用，或者它未通过验证测试。您可以在 OpenSea 上搜索您的名称，以查看是否有人拥有它。
 :::
 
 :::caution
-Make sure it has a maximum length of 16 characters, contains only a-z, A-Z, 0-9, hyphens and underscores.
+请确保它的最大长度为 16 个字符，只包含 a-z、A-Z、0-9、连字符和下划线。
 :::
 
-After a successful transaction, refresh the page and you should see your name popup in the **Switch names** section of the page.
+成功交易后，刷新页面，您应该会在页面的 **切换名称** 部分看到您的名称弹出。
 
 ![name_switch.png](/username/name_switch.png)
 
-To change your name, click the radio button to the left of the name and it will automatically switch.
-You should see your name change on the top right bar as well.
+要更改您的名称，请单击名称左侧的单选按钮，它将自动切换。
+您还应该在右上角看到您的名称已更改。
 
-## Troubleshooting
-If you get an error when minting your name, changing the Polygon/Matic RPC in your wallet may resolve it.
+## 故障排除
 
-We recommended using https://rpc-mainnet.maticvigil.com/
+如果在铸造您的名称时遇到错误，更改您钱包中的 Polygon/Matic RPC 可能会解决问题。
+
+我们建议使用 https://rpc-mainnet.maticvigil.com/
 
 ![rpc.png](/createawearable/rpc.png)
-

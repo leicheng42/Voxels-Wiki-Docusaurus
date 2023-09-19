@@ -1,26 +1,26 @@
-# Make vox model grabbable
+# 使 vox 模型可抓取
 
-## Let player pick up a vox model
-The following script will let a feature be "grabbable". Double quotes because we're technically employing the art of **deception** to make it look like we grabbed it.  For example:
+## 让玩家拿起一个 vox 模型
+以下脚本将使一个特性变得“可抓取”。之所以加上双引号是因为我们在技术上采用了**欺骗**的艺术，使它看起来像我们抓取了它。例如：
 
 ![pick-up-bottle.gif](/pick-up-bottle.gif)
 
-### 1. Place a vox model.
-And give it the URL you want.
+### 1. 放置一个 vox 模型。
+并赋予它您想要的 URL。
 
-### 2. Copy and paste this script
+### 2. 复制并粘贴此脚本
 ```js
-//Makes an object grabbable v1.1 - Fayelure
+// 让对象可抓取 v1.1 - Fayelure
 
-let Distance_to_player=0.5 // How far the object is relative to the player (negative will be behind)
-let up_down_constant= -0.65  // Positive object will go higher, negative will go lower. eg: -0.65 places the object where your hands are, approximately. 0 will place the object right above your eyes.
-let refresh_rate = 50 			// Number of milliseconds. Please avoid a refresh rate < 30 as it could crash the grid.
+let Distance_to_player=0.5 // 物体相对于玩家的距离（负数将在后方）
+let up_down_constant= -0.65  // 正数会使物体抬高，负数会使物体降低。例如：-0.65 将物体放在您的手所在的位置，大致上。0 将使物体放在您眼睛的正上方。
+let refresh_rate = 50 			// 毫秒数。请避免刷新速率小于 30，因为它可能会导致网格崩溃。
 
-let clone = true; // change this to false if you want to not clone the object.
+let clone = true; // 如果您不想克隆物体，请将此值更改为 false。
 
-//-------------- Do not touch ---------------------------
+//-------------- 不要触碰 ---------------------------
 
-function moveObject(object,player){ // calculates new position of object
+function moveObject(object,player){ // 计算物体的新位置
 
   let spherePos = object.position;
   let playerRotation = player.rotation;
@@ -38,7 +38,7 @@ function moveObject(object,player){ // calculates new position of object
 return positionRell
 }
 
-function setPosition(newobject,e){ // refreshes the positions
+function setPosition(newobject,e){ // 刷新位置
 	newobject.set({position:moveObject(newobject,e.player)})
   if(!newobject.position || !newobject.rotation){
   	parcel.removeFeature(newobject)
@@ -49,7 +49,7 @@ function setPosition(newobject,e){ // refreshes the positions
   }
 }
 
-feature.on('click',e=>{ // On click, create new object and start refreshing the position
+feature.on('click',e=>{ // 单击时，创建新物体并开始刷新位置
 let newobject = feature
 if(clone){
 newobject = parcel.createFeature('vox-model')
@@ -66,32 +66,29 @@ setPosition(newobject,e)
 
 ```
 
-To make this script easy to implement you only have to edit the first four lines:
+为了使这个脚本易于实施，您只需编辑前四行：
 ```js
 
-let Distance_to_player=0.5 // How far the object is relative to the player (negative will be behind)
-let up_down_constant= -0.65  // Positive object will go higher, negative will go lower. eg: -0.65 places the object where your hands are, approximately
-let refresh_rate = 50 			// Number of milliseconds. Please avoid a refresh rate < 30 as it could crash the grid.
-let clone = true; // change this to false if you want to not clone the object.
+let Distance_to_player=0.5 // 物体相对于玩家的距离（负数将在后方）
+let up_down_constant= -0.65  // 正数会使物体抬高，负数会使物体降低。例如：-0.65 将物体放在您的手所在的位置，大致上
+let refresh_rate = 50 			// 毫秒数。请避免刷新速率小于 30，因为它可能会导致网格崩溃。
+let clone = true; // 如果您不想克隆物体，请将此值更改为 false。
 
 ```
-### 3. Refresh
-And the script should work once the parcel is fully loaded.
+### 3. 刷新
+然后，一旦 parce 完全加载，脚本就会起作用。
 
-### 4. (Optional) Activate the grid
-[Activating the grid](/docs/Scripting/TheGrid) will let you see when others pick up objects and will let others see you interact with Features too.
+### 4.（可选）激活网格
+[激活网格](/docs/Scripting/TheGrid)将使您能够看到其他人拿起物体，并让其他人看到您与特性互动。
 
-Cause what's the point if others can't see your drinking addiction?
+因为如果别人看不到您的酗酒问题，那有什么意义呢？
 
+## 它是做什么的？
+在单击时，脚本会创建一个新特性，并为其分配相同的 URL、位置和旋转以及原始特性。
+然后，它会根据玩家的位置每隔 x 毫秒重新定位副本。
 
-## What does it do?
-On click, the script creates a new Feature and assigns it the same URL,position and rotation and the original.
-It then calculates and repositions the copy given the player's position every x milliseconds.
+:::警告
+尽情享受！请注意，这个脚本并不完美，因为它没有正确处理玩家离开 parce。因此，太多玩家拿起物体可能会导致网格的间隔饱和。谁知道呢？
 
-
-:::caution
-Enjoy!
-Note that this script isn't perfect as it is not properly handling players leaving the parcel. Thus, too many players picking up objects might lead to a saturation of Intervals on the grid. Who knows?
-
-I will be updating this script over time.
+我将随着时间的推移更新这个脚本。
 :::

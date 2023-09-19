@@ -1,32 +1,32 @@
-# Key controls
+# 按键控制
 
-In this page we go over the key bindings of Cryptovoxels!
+在本页中，我们将介绍Cryptovoxels的按键绑定！
 
-## Key controls
-|The key | What it does |
-|-----|-----|
-|`H`| Toggle help window |
-|`WASD`| Movement keys (forward,left,backward,right)|
-|`Shift`| Running|
-|`Space`| Space |
-|`Enter`| Open chat menu|
-|`F`| Toggle Flying|
-|`V`| Push to talk - voice chat|
-|`I`| Toggle inspect mode|
-|`G`| Toggle emote menu|
-|`C`| 3rd person camera view|
-|`Z`| Toggle Zoom|
+## 按键控制
+| 按键 | 功能 |
+| ---- | ---- |
+| `H` | 切换帮助窗口 |
+| `WASD` | 移动键（前进、左、后退、右） |
+| `Shift` | 奔跑 |
+| `Space` | 空格键 |
+| `Enter` | 打开聊天菜单 |
+| `F` | 切换飞行模式 |
+| `V` | 按住说话 - 语音聊天 |
+| `I` | 切换检查模式 |
+| `G` | 切换表情菜单 |
+| `C` | 第三人称相机视图 |
+| `Z` | 切换缩放 |
 
-## Buildings
-|The key | What it does |
-|-----|-----|
-|`TAB`| Toggle building menu |
-|`1-9`| Select block tile|
-|`Click`| Place block|
-|`Click + Drag`| Place multiple blocks |
-|`SHIFT + Click`| Delete block |
-|`CTRL + Click`| Paint block |
-|`SHIFT + Click + Drag`| Delete multiple|
-|`R`| Replicate Feature|
-|`E`| Edit Feature |
-|`M`| Move Feature|
+## 建筑
+| 按键 | 功能 |
+| ---- | ---- |
+| `TAB` | 切换建筑菜单 |
+| `1-9` | 选择方块瓦片 |
+| `单击` | 放置方块 |
+| `单击 + 拖动` | 放置多个方块 |
+| `Shift + 单击` | 删除方块 |
+| `Ctrl + 单击` | 绘制方块 |
+| `Shift + 单击 + 拖动` | 删除多个方块 |
+| `R` | 复制功能 |
+| `E` | 编辑功能 |
+| `M` | 移动功能 |

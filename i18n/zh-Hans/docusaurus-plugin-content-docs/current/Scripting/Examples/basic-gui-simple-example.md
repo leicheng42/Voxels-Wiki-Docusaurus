@@ -1,34 +1,33 @@
-# Basic GUI: simple example
+# 基本GUI：简单示例
 
-## Show hide a basic GUI on click
-Use the [basicGUI api](/docs/Scripting/basic-gui-api) to show a GUI onclick
+## 单击时显示或隐藏基本GUI
+使用[basicGUI API](/docs/Scripting/basic-gui-api)在单击时显示GUI
 
-#### Process
+#### 过程
 
-1. Place a button for the sake of this example
-2. Place the following script on the feature:
+1. 为了本示例，请放置一个按钮
+2. 在特性上放置以下脚本：
 
 ```js
-// Create GUI
+// 创建GUI
 let gui  = feature.createBasicGui()
 feature.on('click',e=>{
 	if(gui.showing){
-    // if GUI is showing, hide it. (act like a toggle)
+    // 如果GUI已显示，则隐藏它（像切换一样）
   	gui.destroy()
     return
   }
   
-  // Add our first control:
-  gui.addText('Hello!')
+  // 添加我们的第一个控件：
+  gui.addText('你好！')
   
-  // Call the GUI to show.
+  // 调用GUI来显示。
   gui.show()
   
 })
 ```
 
-3. if you want this to happen on a trigger instead of click, replace 'click' with 'trigger'
+3. 如果您想要在触发而不是单击时执行此操作，请将'click'替换为'trigger'
 
-#### What happens
-The scripts listens for a click and toggles a graphic interface on/off when clicked on.
-
+#### 发生了什么
+脚本会监听单击事件，并在单击时切换图形界面的显示/隐藏。

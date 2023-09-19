@@ -1,86 +1,85 @@
-# Limit interaction to some wallets
+# 限制与某些钱包的交互
 
-Here we go over the possibility that you want to limit access to some features to a limited number of people, or to one specific address.
-In contrast, you can also easily modify this script to block a specific address.
+在这里，我们将讨论您可能希望将对一些功能的访问限制在有限数量的人员或一个特定地址上。与此相反，您也可以轻松修改此脚本以阻止特定地址的访问。
 
-## 1. How it works.
-Here is a quick diagram on how the script works:
+## 1. 工作原理
+以下是脚本如何工作的简要图示：
 
 ```mermaid
 graph TD
-    A[Sign feature: <br> Power Box initialize] -->|Player enter| C(is wallet of player allowed?)
-    C --> D{yes}
-    C --> E{no}
-    D --> F[set door <br>non-collidable]
-    D --> G[other <br> actions]
+    A[标志功能: <br> 电源箱初始化] -->|玩家进入| C(玩家的钱包是否允许？)
+    C --> D{是}
+    C --> E{否}
+    D --> F[设置门 <br> 不可碰撞]
+    D --> G[其他 <br> 操作]
             
 ```
-This scripts pretty much requires you to write all your script within one feature. Ideally a feature that loads fast, such as a sign.
+这个脚本几乎要求您将所有脚本都写在一个功能内。最好是一个加载速度快的功能，比如一个标志。
 
-The reason you see no other action after the `No` node, is because I made this script assuming the features would be non-accessible (or collidable) by default.
+您在“否”节点之后看不到其他操作的原因是，我制作此脚本时假设这些功能默认是不可访问（或不可碰撞）的。
 
-## 2. The scripts
-## Scripts {.tabset}
-### Allow multiple address
+## 2. 脚本
+## 脚本 {.tabset}
+### 允许多个地址
 ```js
-let AllowedPlayers=["0x0fA074262d6AF761FB57751d610dc92Bac82AEf9","..."] // list of allowed players
+let AllowedPlayers=["0x0fA074262d6AF761FB57751d610dc92Bac82AEf9","..."] // 允许的玩家列表
 
-//get features
+// 获取功能
 let door = parcel.getFeatureById('door')
 
-//Capitalize the addresses because the addresses will never match.
+// 大写地址，因为地址将永远不匹配。
 AllowedPlayers.forEach((p,i)=>{
   AllowedPlayers[i]=p.toUpperCase() 
 })
 
-//start listening for players
+// 开始监听玩家
 parcel.on('playerenter',e=>{
   if(AllowedPlayers.includes(e.player.wallet.toUpperCase())){ 
-    // If wallet is included, set door to not collidable
+    // 如果包含钱包，将门设置为不可碰撞
     door.set({collidable:false})
-    /* Do other actions here */
+    /* 在这里执行其他操作 */
   }
 })
 ```
-### Allow one address
+### 允许一个地址
 ```js
-let AllowedPlayers="0x0fA074262d6AF761FB57751d610dc92Bac82AEf9" // list of allowed players
+let AllowedPlayers="0x0fA074262d6AF761FB57751d610dc92Bac82AEf9" // 允许的玩家列表
 
-//get features
+// 获取功能
 let door = parcel.getFeatureById('door')
 
-//start listening for players
+// 开始监听玩家
 parcel.on('playerenter',e=>{
   if(AllowedPlayers.toUpperCase()==e.player.wallet.toUpperCase()){ 
-    // If wallet is included, set door to not collidable
+    // 如果包含钱包，将门设置为不可碰撞
     door.set({collidable:false})
-    /* Do other actions here */
+    /* 在这里执行其他操作 */
   }
 })
 ```
-### Ban addresses
+### 禁止地址
 ```js
-let banPlayers=["0x0fA074262d6AF761FB57751d610dc92Bac82AEf9","..."] // list of banned players
+let banPlayers=["0x0fA074262d6AF761FB57751d610dc92Bac82AEf9","..."] // 禁止的玩家列表
 
-//get features player is not allowed to interact with
+// 获取功能，玩家不能与之交互
 let door = parcel.getFeatureById('door')
 
-//Capitalize the addresses because the addresses will never match.
+// 大写地址，因为地址将永远不匹配。
 banPlayers.forEach((p,i)=>{
   banPlayers[i]=p.toLowerCase() 
 })
 
-//start listening for players
+// 开始监听玩家
 parcel.on('playerenter',e=>{
   if(banPlayers.includes(e.player.wallet.toLowerCase())){ 
-    // If wallet is included, set door to collidable
+    // 如果包含钱包，将门设置为可碰撞
     door.set({collidable:true})
-    /* Do other actions here */
+    /* 在这里执行其他操作 */
   }
 })
 ```
 
 #
-:::caution
-It is not recommended to use this script with the Grid activated. One player allowed will activate the door for everyone else.
+:::警告
+不建议在激活了网格的情况下使用此脚本。允许一个玩家将为其他所有人激活门。
 :::

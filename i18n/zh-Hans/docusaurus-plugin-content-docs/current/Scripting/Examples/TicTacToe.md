@@ -1,20 +1,20 @@
-# Tic Tac Toe
+# 井字游戏
 
-## Tic Tac Toe
+## 井字游戏
 
-A game of Tic Tac Toe
+一局井字游戏
 
 ![tictactoe.png](/tictactoe.png)
 
-#### How to use
+#### 如何使用
 
-1. Create tic tac toe vox model with [this url](https://cdn.discordapp.com/attachments/573736707984457738/733838799150514276/ttt-board.vox)
-2. Add cross vox model with [this url](https://cdn.discordapp.com/attachments/573736707984457738/733842407073775616/cross.vox) and set the id `cross`
-3. Add nought vox model with [this url](https://cdn.discordapp.com/attachments/573736707984457738/733842416276340798/nought.vox) and set the id `nought`
-3. Add this script to the tic tac toe board
-4. Reload the parcel
+1. 使用[此链接](https://cdn.discordapp.com/attachments/573736707984457738/733838799150514276/ttt-board.vox)创建井字游戏 Vox 模型。
+2. 添加十字 Vox 模型，使用[此链接](https://cdn.discordapp.com/attachments/573736707984457738/733842407073775616/cross.vox)，并设置 ID 为 `cross`。
+3. 添加零 Vox 模型，使用[此链接](https://cdn.discordapp.com/attachments/573736707984457738/733842416276340798/nought.vox)，并设置 ID 为 `nought`。
+4. 将此脚本添加到井字游戏板上。
+5. 刷新地块。
 
-#### Script
+#### 脚本
 
 ```js
 let o = parcel.getFeatureById('nought')
@@ -37,8 +37,7 @@ feature.on('click', e => {
 })
 ```
 
-#### Improvements
+#### 改进
 
-* Detect the winner and draw a line
-* Require two players (once multiplayer is implemented)
-
+* 检测胜者并画一条线
+* 需要两名玩家（一旦多人游戏得以实现）

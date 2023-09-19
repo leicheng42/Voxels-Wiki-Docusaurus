@@ -1,460 +1,464 @@
-# Feature scripting cheatsheet
-All features properties and methods in one page
+# 特性脚本速查表
+包含所有特性属性和方法的一页
 
-## Table of content
-- [Audio](#audio)
-- [Button](#button)
-- [Image](#image)
+## 目录
+- [音频](#音频)
+- [按钮](#按钮)
+- [图像](#图像)
 - [Megavox](#megavox)
-- [particles](#particles)
+- [粒子](#粒子)
 - [Polytext](#polytext)
-- [Text input](#text-input-currently-nerfed)
+- [文本输入](#文本输入-目前已被限制)
 - [YouTube / Twitch](#youtube-twitch)
 - [Boombox](#boombox)
-- [NFT image](#nft-image)
-- [Richtext](#richtext)
-- [Sign](#sign)
-- [Video](#video)
-- [.VOX](#vox)
+- [NFT 图像](#nft-图像)
+- [富文本](#富文本)
+- [标志](#标志)
+- [视频](#视频)
+- [.VOX 模型](#vox)
 <hr />
 
-## <img width='32' src='https://www.cryptovoxels.com/icons/audio.png' />   Audio {#audio} 
-### Scripting Properties
-### Scripting Properties {.tabset}
+## <img width='32' src='https://www.cryptovoxels.com/icons/audio.png' /> 音频 {#音频} 
+### 脚本属性
+### 脚本属性 {.tabset}
 #### url
-`String.`; Links must be `https://` and must finish with an audio extension such as `.mp3`
+`字符串`; 链接必须以 `https://` 开头，必须以音频文件扩展名结尾，如 `.mp3`
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'url':"https://www.myurl.com/file.mp3"})
 ```
 
-##### default
+##### 默认值
 
 `""`
 
 #### sprite
-`Boolean.`
+`布尔值`
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('sprite')
-// returns: false
+// 返回: false
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'sprite': true})
 ```
 
-##### default
+##### 默认值
 
 `false`
 
 #### streaming
-`Boolean.`
+`布尔值`
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('streaming')
-// returns: false
+// 返回: false
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'streaming': true})
 ```
-##### default
+##### 默认值
 
 `false`
 
 #### autoplay
-`Boolean.`
+`布尔值`
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('autoplay')
-// returns: false
+// 返回: false
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'autoplay': true})
 ```
-##### default
+##### 默认值
 
 `false`
 
 #### loop
-`Boolean.`
+`布尔值`
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('loop')
-// returns: false
+// 返回: false
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'loop': true})
 ```
 
-##### default
+##### 默认值
 
 `false`
 
 #### rolloffFactor
-`double`; Value ranging from 0 to 5
+`双精度`; 取值范围从 0 到 5
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('rolloffFactor')
-// returns: 1.6
+// 返回: 1.6
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'rolloffFactor': 1.6})
 ```
 
-##### default
+##### 默认值
+
 `1.6`
 
 #### volume
-`double`; Value ranging from 0 to 1
+`双精度`; 取值范围从 0 到 1
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('volume')
-// returns: 0.5
+// 返回: 0.5
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'volume': 0.5})
 ```
 
-##### default
+##### 默认值
+
 `0.5`
 
 #### type
-`String`;
+`字符串`
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或者 */
 feature.type
 
-// returns: 'audio'
+// 返回: 'audio'
 ```
 
-### Scripting Methods
-### Scripting Methods {.tabset}
+### 脚本方法
+### 脚本方法 {.tabset}
 #### play()
 ```js
 feature.play()
 ```
-plays the audio
+播放音频
 
 #### pause()
 ```js
 feature.pause()
 ```
-pauses the audio
+暂停音频
 
-## <img width='32' src='https://www.cryptovoxels.com/icons/button.png' /> Button {#button}
+## <img width='32' src='https://www.cryptovoxels.com/icons/button.png' /> 按钮 {#按钮}
 
 
-### Scripting Properties
-### Scripting Properties {.tabset}
+### 脚本属性
+### 脚本属性 {.tabset}
 #### color
-`String.`; Options are 'white', 'red', 'green', and 'blue'.
+`字符串`; 选项为 'white', 'red', 'green', 和 'blue'。
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('color')
-// returns: "red"
+// 返回: "red"
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'color':"blue"})
 ```
 
-##### default
+##### 默认值
 
 `"red"`
 
 #### soundId
-`Integer`; can be an integer in the range of 0 - 14.
+`整数`; 可以是范围在 0 到 14 的整数。
 
-`'-1'` - None
-`'0'` - ding dong
-`'1'` - pong
-`'2'` - pshlick - sounds like a hydraulic trigger
-`'3'` - breet - sounds like a PC attempting to connect to internet
-`'4'` - claclack - sounds like a someone spamming a keyboard
-`'5'` - tpow Cling - sounds like a ball hitting a racket and then a metal pole
-`'6'` - traarz - sounds like a printer
-`'7'` - wuwuwuwu - sounds like a UFO
-`'8'` - flickfli - sounds like someone going through a paper tray
-`'9'` - pshing dong - sounds like a cymbal and a ding dong
-`'10'` - bzing - sounds like a quick zing (honestly)
-`'11'` - tadaw - sounds like a clown noise
-`'12'` - shplow - sounds like a PVC pipe being hit
-`'13'` - tshlshlsh - sounds like a notes counter
-`'14'` - miaaaaaa - sounds like a cat being harassed
-`'15'` - miaoowww - sounds like a hungry cat
+`'-1'` - 无
+`'0'` - 叮咚
+`'1'` - 乒乓
+`'2'` - pshlick - 声音像液压触发器
+`'3'` - breet - 声音像 PC 尝试连接互联网
+`'4'` - claclack - 声音像有人疯狂敲击键盘
+`'5'` - tpow Cling - 声音像球击中球拍然后撞到金属杆
+`'6'` - traarz - 声音像打印机
+`'7'` - wuwuwuwu - 声音像不明飞行物
+`'8'` - flickfli - 声音像有人在纸盒中翻找东西
+`'9'` - pshing dong - 声音像铙钹和叮咚
+`'10'` - bzing - 声音像快速的嗡嗡声（老实说）
+`'11'` - tadaw - 声音像小丑的噪音
+`'12'` - shplow - 声音像 PVC 管子被击中
+`'13'` - tshlshlsh - 声音像票据计数器
+`'14'` - miaaaaaa - 声音像一只被骚扰的猫
+`'15'` - miaoowww - 声音像一只饥饿的猫
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('soundId')
-// returns: "0"
+// 返回: "0"
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'soundId':"-1"})
-//Remember the soundId has to be a String
+//请记住，soundId 必须是字符串
 ```
 
-##### default
+##### 默认值
 
 `"0"`
 
 #### type
-`String`; 
+`字符串`; 
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或者 */
 feature.type
-// returns: "button"
+// 返回: "button"
 ```
 
-#### How to use
-Using the scripting field, you can listen to clicks with
+#### 如何使用
+通过脚本字段，您可以监听点击事件：
 
 ```js
-feature.on('click',e=>{
-Your action when click here
+feature.on('click', e => {
+    // 在此处执行单击操作
 })
 ```
 
-You can also know who clicked the button by doing:
+您还可以通过以下方式知道谁点击了按钮：
 
 ```js
-feature.on('click',e=>{
-console.log(e.player)
+feature.on('click', e => {
+    console.log(e.player)
 })
 ```
 
-## <img width='32' src='https://www.cryptovoxels.com/icons/image.png' /> Image {#image}
+## <img width='32' src='https://www.cryptovoxels.com/icons/image.png' /> 图像 {#图像}
 
 
-### Scripting Properties
-### Scripting Properties {.tabset}
+### 脚本属性
+### 脚本属性 {.tabset}
 #### url
-`String`; Links must be `https://` and must finish with an extension such as `.jpg/.gif/.png`.
+`字符串`; 链接必须以 `https://` 开头，必须以扩展
 
-##### get()
+名结尾，如 `.jpg/.gif/.png`。
+
+##### 获取()
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'url':"https://www.myurl.com/file.png"})
 ```
 
-##### default
+##### 默认值
 
 `""`
 
 #### link
-`String`; Links must be `https://`.
+`字符串`; 链接必须以 `https://` 开头。
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('link')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'link':"https://www.myurl.com/"})
 ```
 
-##### default
+##### 默认值
 
 `""`
 
 
 #### blendMode
-`String`
+`字符串`
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('blendMode')
-// returns: 'Combine'
+// 返回: 'Combine'
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'blendMode': 'Combine'})
 ```
 
-##### default
+##### 默认值
 
 `"Multiply"`
 
 #### updateDaily
-`Boolean.`
+`布尔值`
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('updateDaily')
-// returns: false
+// 返回: false
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'updateDaily': true})
 ```
 
-##### default
+##### 默认值
 
 `false`
 
 #### transparent
-`Boolean.`
+`布尔值`
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('transparent')
-// returns: false
+// 返回: false
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'transparent': true})
 ```
 
-##### default
+##### 默认值
 
 `false`
 
 #### stretched
-`Boolean.`
+`布尔值`
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('stretched')
-// returns: false
+// 返回: false
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'stretched': true})
 ```
 
-##### default
+##### 默认值
 
 `false`
 
 
 #### uScale
-`Integer`
+`整数`
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('uScale')
-// returns: 1
+// 返回: 1
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'uScale': 1})
 ```
 
-##### default
+##### 默认值
 
 `1`
 
 #### vScale
-`Integer`
+`整数`
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('vScale')
-// returns: 1
+// 返回: 1
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'vScale': 1})
 ```
 
-##### default
+##### 默认值
 
 `1`
 
 #### type
-`String`;
+`字符串`;
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或者 */
 feature.type
 
-// returns: 'image'
+// 返回: 'image'
 ```
 
 
@@ -462,224 +466,224 @@ feature.type
 ## <img width='32' src='https://www.cryptovoxels.com/icons/megavox.png' /> Megavox {#megavox}
 
 
-### Scripting Properties
-### Scripting Properties {.tabset}
+### 脚本属性
+### 脚本属性 {.tabset}
 #### url
-`String`; Links must be `https://` and must finish with a vox extension `.vox`
-Has to link to a 126x126x126 vox model.
+`字符串`; 链接必须以 `https://` 开头，必须以 `.vox` 扩展名结尾。
+链接到一个 126x126x126 的 vox 模型。
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'url':"https://www.myurl.com/file.vox"})
 ```
 
-##### default
+##### 默认值
 
 `""`
 
 #### link
-`String`; Links must be `https://`.
+`字符串`; 链接必须以 `https://` 开头。
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('link')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'link':"https://www.myurl.com/"})
 ```
 
-##### default
+##### 默认值
 
 `""`
 
 #### collidable
-`Boolean`
+`布尔值`
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('collidable')
-// returns: false
+// 返回: false
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'collidable': true})
 ```
 
-##### default
+##### 默认值
 
 `false`
 
 #### type
-`String`;
+`字符串`;
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或者 */
 feature.type
 
-// returns: 'megavox'
+// 返回: 'megavox'
 ```
 
-## <img width='32' src='https://www.cryptovoxels.com/icons/particle.png'/> Particles {#particles}
+## <img width='32' src='https://www.cryptovoxels.com/icons/particle.png'/> 粒子 {#粒子}
 
 
-### Scripting Properties
-### Scripting Properties {.tabset}
+### 脚本属性
+### 脚本属性 {.tabset}
 #### url
-`String`; Links must be `https://` and must finish with an extension such as `.jpg/.gif/.png`.
+`字符串`; 链接必须以 `https://` 开头，必须以扩展名结尾，如 `.jpg/.gif/.png`。
 :::info
-If you set an URL, the custom colors color1 and color2 will be ignored.
+如果您设置了 URL，自定义颜色 color1 和 color2 将被忽略。
 :::
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'url':"https://www.myurl.com/file.png"})
 ```
 
-##### default
+##### 默认值
 
 `""`
 
 #### emitRate
-`Double`; Must be a number between 0 and 100.
+`双精度`; 必须是介于 0 和 100 之间的数字。
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('emitRate')
-// returns: 50.0
+// 返回: 50.0
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'emitRate':52})
 ```
 
-##### default
+##### 默认值
 
 `50`
 
 
 #### minSize
-`Double`; Must be a number between 0 and 1.
+`双精度`; 必须是介于 0 和 1 之间的数字。
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('minSize')
-// returns: 0.5
+// 返回: 0.5
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'minSize':0.5})
 ```
 
-##### default
+##### 默认值
 
 `0.5`
 
 
 #### maxSize
-`Double`; Must be a number between 0 and 1.
+`双精度`; 必须是介于 0 和 1 之间的数字。
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('maxSize')
-// returns: 0.5
+// 返回: 0.5
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'maxSize':0.5})
 ```
 
-##### default
+##### 默认值
 
 `0.5`
 
 #### color1
-`String`- hexadecimal; 
+`字符串`- 十六进制; 
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('color1')
-// returns: "#4cb844"
+// 返回: "#4cb844"
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'color1':"#4cb844"})
 ```
 
-##### default
+##### 默认值
 
 `#000000`
 
 #### color2
-`String`- hexadecimal; 
+`字符串`- 十六进制; 
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('color2')
-// returns: "#4cb888"
+// 返回: "#4cb888"
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'color2':"#4cb844"})
 ```
 
-##### default
+##### 默认值
 
 `"#000000"`
 
 
 #### type
-`String`;
+`字符串`;
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或者 */
 feature.type
 
-// returns: 'particles'
+// 返回: 'particles'
 ```
 
 
@@ -688,643 +692,676 @@ feature.type
 
 ## <img width='32' src='//www.cryptovoxels.com/icons/polytext.png' /> PolyText {#polytext}
 
-### Scripting Properties
-### Scripting Properties {.tabset}
+### 脚本属性
+### 脚本属性 {.tabset}
 #### url
-`String`; 
+`字符串`; 
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('text')
-// returns: "My new text"
+// 返回: "My new text"
 ```
 
-##### set()
+##### 设置()
 
 ```js
-feature.set({'text':"My new text"})
+feature.set({'text':"My new
+
+ text"})
 ```
 
-##### default
+##### 默认值
 
 `""`
 
 
 #### edges
-`Boolean`
+`布尔值`
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('edges')
-// returns: false
+// 返回: false
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'edges': true})
 ```
 
-##### default
+##### 默认值
 
 `false`
 
 #### type
-`String`; 
+`字符串`; 
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或者 */
 feature.type
-// returns: "polytext"
+// 返回: "polytext"
 ```
 
 
 
 ## <img width='32' src='//www.cryptovoxels.com/icons/text-input.png' /> Text input {#text-input-currently-nerfed}
 
-### Scripting Properties
-### Scripting Properties {.tabset}
+### 脚本属性
+### 脚本属性 {.tabset}
 #### text
-`String`; 
+`字符串`; 
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('text')
-// returns: "my text"
+// 返回: "my text"
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'text':"my text"})
 ```
 
-##### default
+##### 默认值
 
 `""`
 
 #### placeholder
-`String`; 
+`字符串`; 
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('placeholder')
-// returns: "my text"
+// 返回: "my text"
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'placeholder':"my text"})
 ```
 
-##### default
+##### 默认值
 
 `"placeholder"`
 
 #### type
-`String`;
+`字符串`;
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或者 */
 feature.type
 
-// returns: 'text-input'
+// 返回: 'text-input'
 ```
 
 
 
 ## <img width='16' src='//www.cryptovoxels.com/icons/youtube.png' /> YouTube / Twitch {#youtube-twitch}
 
-### Scripting Properties
-### Scripting Properties {.tabset}
+### 脚本属性
+### 脚本属性 {.tabset}
 #### url
-`String`; Links must be `https://` and must either be a `youtube, twitch, soundcloud, spotify`.
+`字符串`; 链接必须以 `https://` 开头，必须是 `youtube, twitch, soundcloud, spotify` 之一。
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'url':"https://www.youtube.com/?v=..."})
 ```
 
-##### default
+##### 默认值
 
 `""`
 
 #### previewUrl
-`String`; Links must be `https://` and must either be a `.png,.gif,jpg`.
+`字符串`; 链接必须以 `https://` 开头，必须以 `.png,.gif,jpg` 之一结尾。
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('previewUrl')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'previewUrl':"https://..."})
 ```
 
-##### default
+##### 默认值
 
 `""`
 
 #### screenRatio
-`String`; Links must be `https://` and must either be a `.png,.gif,jpg`.
+`字符串`; 链接必须以 `https://` 开头，必须以 `.png,.gif,jpg` 之一结尾。
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('screenRatio')
-// returns: "43"
+// 返回: "43"
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'screenRatio':"169"})
 ```
 
-##### default
+##### 默认值
 
 `"169"`
 
 #### type
-`String`;
+`字符串`;
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或者 */
 feature.type
 
-// returns: 'youtube'
+// 返回: 'youtube'
 ```
 
-### Scripting methods
-### Scripting methods {.tabset}
+### 脚本方法
+### 脚本方法 {.tabset}
 
 #### play()
 
 ```js
 feature.play()
 ```
-plays the video
+播放视频
 
 #### feature.pause()
 ```js
 feature.pause()
 ```
-pauses the video
+暂停视频
 
 ## <img width='32' src='https://www.cryptovoxels.com/icons/audio.png' /> Boombox {#boombox}
 
-### Scripting Properties
-### Scripting Properties {.tabset}
+### 脚本属性
+### 脚本属性 {.tabset}
 #### rollOffFactor
-`Double`; Value ranging from 0 to 5
+`双精度`; 取值范围从 0 到 5
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('rolloffFactor')
-// returns: 1.6
+// 返回: 1.6
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'rolloffFactor':1.6})
 ```
 
-##### default
+##### 默认值
 
 `1`
 
 
 ## <img width='32' src='https://www.cryptovoxels.com/icons/nft-image.png'/> Nft image {#nft-image}
-### Scripting Properties
-### Scripting Properties {.tabset}
+### 脚本属性
+### 脚本属性 {.tabset}
 #### url
-`String`; Links must be `https://`.
+`字符串`; 链接必须以 `https://` 开头。
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'url':"https://www.opensea.io/"})
 ```
 
-##### default
+##### 默认值
 
 `""`
 
 #### stretch
-`Boolean`; 
+`布尔值`; 
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('stretch')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'stretch':true})
 ```
 
-##### default
+##### 默认值
 
 `false`
 
 #### type
-`String`;
+`字符串`;
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或者 */
 feature.type
 
-// returns: 'nft-image'
+// 返回: 'nft-image'
 ```
 
 ## <img width='32' src='//www.cryptovoxels.com/icons/richtext.png' /> Richtext {#richtext}
 
-### Scripting Properties
-### Scripting Properties {.tabset}
+### 脚本属性
+### 脚本属性 {.tabset}
 #### text
-`String`; 
+`字符串`; 
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('text')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'text':"my paragraph"})
 ```
 
-##### default
+##### 默认值
 
 `""`
 #### blendMode
-`String`
+`字符串`
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('blendMode')
-// returns: 'Combine'
+// 返回: 'Combine'
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'blendMode': 'Combine'})
 ```
 
-##### default
+##### 默认值
 
 `"Multiply"`
 
 #### inverted
-`Boolean`; 
+`布尔值`; 
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('inverted')
-// returns: false
+// 返回: false
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'inverted': true})
 ```
 
-##### default
+##### 默认值
 
 `false`
 
 #### type
-`String`;
+`字符串`;
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或者 */
 feature.type
 
-// returns: 'richtext'
+// 返回: 'richtext'
 ```
 
 
 
 
 ## <img width='32' src='//www.cryptovoxels.com/icons/sign.png' /> Sign {#sign}
-### Scripting Properties
-### Scripting Properties {.tabset}
+### 脚本属性
+### 脚本属性 {.tabset}
 #### text
-`String`; 
+`字符串`; 
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('text')
-// returns: "my line of text"
+// 返回: "my line of text"
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'text':"my line of text"})
 ```
 
-##### default
+##### 默认值
 
 `""`
 
 #### link
-`String`; 
+`字符串`; 
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('link')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'link':"https://..."})
 ```
 
-##### default
+##### 默认值
 
 `""`
 
 #### fontSize
-`Integer`; 
+`整数`; 
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('fontSize')
-// returns: 25
+// 返回: 25
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'fontSize':25})
 ```
 
-##### default
+##### 默认值
 
 `25`
 
 #### color
-`String`-hexadecimal; 
+`字符串`- 十六进制; 
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('color')
-// returns: "#00000"
+// 返回: "#00000"
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'color':"#fcba03"})
 ```
 
-##### default
+##### 默认值
 
 `"#00000"`
 
 #### background
-`String`-hexadecimal; 
+`字符串`- 十六进制; 
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('background')
-// returns: "#00000"
+// 返回: "#00000"
 ```
 
-##### set()
+##### 设置()
 
 ```js
-feature.set({'background':"#fcba03"})
+feature.set({'
+
+background':"#fcba03"})
 ```
 
-##### default
+##### 默认值
 
-`"#fffff"`
+`"transparent"`
 
 #### type
-`String`;
+`字符串`;
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或者 */
 feature.type
 
-// returns: 'sign'
+// 返回: 'sign'
 ```
 
 
 
+## <img width='32' src='https://www.cryptovoxels.com/icons/video.png' /> 视频 {#video}
 
-
-## <img width='32' src='//www.cryptovoxels.com/icons/video.png' /> Video {#video}
-
-### Scripting Properties
-### Scripting Properties {.tabset}
+### 脚本属性
+### 脚本属性 {.tabset}
 #### url
-`String`; Has to start with `https://` and has to end with a video extension such as `.mp4`.
+`字符串`; 链接必须以 `https://` 开头，必须以 `.mp4` 扩展名结尾。
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-##### set()
+##### 设置()
 
 ```js
-feature.set({'url':"https://..."})
+feature.set({'url':"https://www.myurl.com/file.mp4"})
 ```
 
-##### default
+##### 默认值
 
 `""`
 
-#### previewUrl
-`String`; Links must be `https://` and must either be a `.png,.gif,.jpg`.
+#### transparent
+`布尔值`
 
-##### get()
-
-```js
-feature.get('previewUrl')
-// returns: "https://..."
-```
-
-##### set()
+##### 获取()
 
 ```js
-feature.set({'previewUrl':"https://..."})
+feature.get('transparent')
+// 返回: false
 ```
 
-##### default
+##### 设置()
 
-`""`
+```js
+feature.set({'transparent': true})
+```
+
+##### 默认值
+
+`false`
+
+#### stretched
+`布尔值`
+
+##### 获取()
+
+```js
+feature.get('stretched')
+// 返回: false
+```
+
+##### 设置()
+
+```js
+feature.set({'stretched': true})
+```
+
+##### 默认值
+
+`false`
+
+#### uScale
+`整数`
+
+##### 获取()
+
+```js
+feature.get('uScale')
+// 返回: 1
+```
+
+##### 设置()
+
+```js
+feature.set({'uScale': 1})
+```
+
+##### 默认值
+
+`1`
+
+#### vScale
+`整数`
+
+##### 获取()
+
+```js
+feature.get('vScale')
+// 返回: 1
+```
+
+##### 设置()
+
+```js
+feature.set({'vScale': 1})
+```
+
+##### 默认值
+
+`1`
 
 #### type
-`String`;
+`字符串`;
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或者 */
 feature.type
 
-// returns: 'video'
+// 返回: 'video'
 ```
 
 
-### Scripting methods
-### Scripting methods {.tabset}
 
-#### play()
 
-```js
-feature.play()
-```
-plays the video
+## <img width='32' src='https://www.cryptovoxels.com/icons/vox.png' /> .VOX 模型 {#vox}
 
-#### pause()
-```js
-feature.pause()
-```
-pauses the video
-
-## <img width='32' src='//www.cryptovoxels.com/icons/vox-model.png' /> .VOX {#vox}
-
-### Scripting Properties
-### Scripting Properties {.tabset}
+### 脚本属性
+### 脚本属性 {.tabset}
 #### url
-`String`; Links must be `https://` and must finish with a vox extension `.vox`
-Has to link to a 32x32x32 vox model or smaller.
+`字符串`; 链接必须以 `https://` 开头，必须以 `.vox` 扩展名结尾。
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('url')
-// returns: "https://..."
+// 返回: "https://..."
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'url':"https://www.myurl.com/file.vox"})
 ```
 
-##### default
-
-`""`
-
-#### link
-`String`; Links must be `https://`.
-
-##### get()
-
-```js
-feature.get('link')
-// returns: "https://..."
-```
-
-##### set()
-
-```js
-feature.set({'link':"https://www.myurl.com/"})
-```
-
-##### default
+##### 默认值
 
 `""`
 
 #### collidable
-`Boolean`
+`布尔值`
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('collidable')
-// returns: false
+// 返回: false
 ```
 
-##### set()
+##### 设置()
 
 ```js
 feature.set({'collidable': true})
 ```
 
-##### default
+##### 默认值
 
 `false`
 
 #### type
-`String`;
+`字符串`;
 
-##### get()
+##### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或者 */
 feature.type
 
-// returns: 'vox-model'
+// 返回: 'vox'
 ```
+
+
+
+<hr />
+
+以上是特性脚本的速查表，其中包含了每种特性的属性和方法。您可以根据需要查找相应的特性，以便在构建 Cryptovoxels 场景时进行参考和使用。如果您需要特定的帮助或示例代码，请随时询问！

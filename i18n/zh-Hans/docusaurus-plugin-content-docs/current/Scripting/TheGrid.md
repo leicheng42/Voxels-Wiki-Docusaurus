@@ -1,80 +1,80 @@
-# The Grid
-Multiplayer server
+# 网格
+多人服务器
 
-## The Grid
+## 网格
 
-One day, I got in. - Kevin Flynn
+有一天，我进入了这里。- 凯文·弗林
 
-The grid is the multiplayer server that runs your parcel scripts on the Cryptovoxels infrastructure. It runs the exact same API as the normal scripting engine, but it keeps track of the state on the server and sends changes to everyone connected. This means if you click a door and it opens, it will open for everyone else who is standing near you. It also means you can play multiplayer games with other players, and the server will maintain the state of the game.
+网格是在 Cryptovoxels 基础设施上运行您分区脚本的多人服务器。它运行与普通脚本引擎完全相同的 API，但它会跟踪服务器上的状态并将更改发送给所有连接的用户。这意味着如果您点击一个门并打开它，那么站在您附近的所有其他人也将看到门打开。这还意味着您可以与其他玩家一起玩多人游戏，并且服务器将维护游戏的状态。
 
-The multiplayer server is free to use, and is hosted by the Cryptovoxels Corporation. Your scripts are spun up on demand, have a strict memory limit of 8MB of heap, are CPU time limited, and are killed when your parcel is idle.
+多人服务器是免费使用的，由 Cryptovoxels Corporation 托管。您的脚本会按需启动，具有 8MB 堆内存的严格限制，CPU 时间受限，并且在您的分区处于空闲状态时会被终止。
 
-The advantages of using The Grid:
+使用网格的优势：
 
-* Your scripts are multiplayer
-* Your scripts run in a trusted environment
-* Your scripts are always available
-* You don't have to pay for hosting, or wait for your hosting provider to spin up your scripts
+* 您的脚本是多人脚本
+* 您的脚本在受信任的环境中运行
+* 您的脚本始终可用
+* 您不必支付托管费用，也不必等待托管提供商启动您的脚本
 
-Disadvantages:
+缺点：
 
-* It can be tricky to debug
-* You have to fit your experience into 8MB of rams
+* 调试可能有些棘手
+* 您必须将您的体验适应 8MB 的内存
 
-### How to Activate
-1. Go to your parcel in the [Parcels tab](https://www.cryptovoxels.com/account/parcels). Be sure to be logged in!
+### 如何激活
+1. 转到[分区选项卡](https://www.cryptovoxels.com/account/parcels)中的您的分区。确保已登录！
 
-2. If you own the parcel, and if you're logged in, you should see an admin panel like the one below:
+2. 如果您拥有该分区，并且已登录，您应该看到一个如下所示的管理员面板：
 
 ![admin_panel_parcel_v4.55.png](/tutorials/admin_panel_parcel_v4.55.png){.align-center}
 
-1. Check the `on Grid` checkbox.
+3. 勾选“on Grid”复选框。
 
-Done! Your scripts are now multiplayers.
+完成！您的脚本现在支持多人游戏。
 
-### What happens
+### 发生了什么
 
-(Example for [parcel #78](https://www.cryptovoxels.com/parcels/78) - put in your own parcel ID to follow along)
+（以 [分区 #78](https://www.cryptovoxels.com/parcels/78) 为例 - 请放入您自己的分区 ID 进行参考）
 
-1. You enter a parcel
-2. The parcel is set to `grid: true` (set this in parcel settings)
+1. 您进入一个分区
+2. 分区设置为 `grid: true`（在分区设置中设置）
 
-![[how_to_grid]adming_panel_grid_activated_v4.55.png](/tutorials/[how_to_grid]adming_panel_grid_activated_v4.55.png){.align-center}
+![how_to_grid]adming_panel_grid_activated_v4.55.png](/tutorials/[how_to_grid]adming_panel_grid_activated_v4.55.png){.align-center}
 
-1. The web client connects to `wss://grid.cryptovoxels.com/grid/78`
-2. The grid server spins up a v8 [isolated-vm](https://www.npmjs.com/package/isolated-vm?activeTab=readme)
-3. The isolate loads up the [scripting host](http://github.com/cryptovoxels/scripting)
-4. The isolate fetches your javascripts from `https://untrusted.cryptovoxels.com/grid/parcels/78/scripts.js` and evaluates it
-5. The websocket connection is accepted and your client starts communicating with your grid server
-6. All clients disconnect and the isolate is destroyed
+3. Web 客户端连接到 `wss://grid.cryptovoxels.com/grid/78`
+4. 网格服务器启动了一个 v8 [isolated-vm](https://www.npmjs.com/package/isolated-vm?activeTab=readme)
+5. 隔离加载了 [脚本主机](http://github.com/cryptovoxels/scripting)
+6. 隔离从 `https://untrusted.cryptovoxels.com/grid/parcels/78/scripts.js` 获取并评估了您的 JavaScript
+7. WebSocket 连接被接受，您的客户端开始与您的网格服务器通信
+8. 所有客户端断开连接，隔离被销毁
 
-The grid server currently dispatches messages instantly from your script back to the client, but this will be throttled to 5 or 10 hz in a future version, because sending realtime 60hz updates over a websocket over the public internet causes lots of lag and bunching up of packets.
+目前，网格服务器会立即从您的脚本发送消息回到客户端，但在将来的版本中，这将被限制为每秒 5 或 10 次，因为在公共互联网上通过 WebSocket 发送实时的 60Hz 更新会导致大量的延迟和数据包堆积。
 
-### Viewing logs
+### 查看日志
 
-Your logs are written to redis and persisted. They are publicly viewable (don't put any secrets in your logs ok) at:
+您的日志将写入 Redis 并持久保存。它们是公开可见的（请不要在您的日志中放入任何机密信息），网址为：
 
 `https://grid.cryptovoxels.com/grid/78/logs`
 
-### Available APIs
+### 可用的 API
 
-:::caution
-APIs are very basic as of version 1.1.2, more will become available over time 
+:::警告
+截至版本 1.1.2，API 非常基础，随着时间的推移将提供更多功能。
 :::
 
-The grid server has it's own versioning  info. See the currently released version at https://grid.cryptovoxels.com/
+网格服务器有自己的版本信息。请查看当前发布的版本：https://grid.cryptovoxels.com/
 
-* [Scripting API](/docs/Scripting/)
-* [Built ins](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+* [脚本 API](/docs/Scripting/)
+* [内置功能](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 * `setTimeout`
 * `setInterval`
 * `console.log`
 
-Roadmap:
+路线图：
 
 * `clearTimeout`
 * `clearInterval`
 * [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 * [`AsyncStorage`](https://reactnative.dev/docs/asyncstorage.html)
 * [`importScripts`](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/importScripts)
-* [Physics](https://schteppe.github.io/cannon.js/)
+* [物理学](https://schteppe.github.io/cannon.js/)

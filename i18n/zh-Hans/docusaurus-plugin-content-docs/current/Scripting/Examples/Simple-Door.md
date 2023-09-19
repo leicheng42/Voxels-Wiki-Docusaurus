@@ -1,23 +1,23 @@
-# Simple door
+# 简单的门
 
-A simple door which opens and closes on click.
+一个简单的门，通过点击打开和关闭。
 ![simple_door_example.gif](/simple_door_example.gif)
 
-## 1. Get your door vox model.
+## 1. 获取您的门 Vox 模型。
 
-**First things first, when making a vox model make sure you make it so that the center of rotation is at the right place.**
+**首先，在制作 Vox 模型时，请确保使旋转中心位于正确的位置。**
 
-- [Learn how to make a vox-model](/docs/Parcels/Make-Vox-Model)
-- [Learn about the real center of rotation](/docs/Scripting/Animation-API#center-of-rotation)
+- [了解如何制作 Vox 模型](/docs/Parcels/Make-Vox-Model)
+- [了解真实的旋转中心](/docs/Scripting/Animation-API#center-of-rotation)
 
-To make your life easier, feel free to use and modify [the door I use in the gif above.](/door_edited_centered.vox)
+为了让您的生活更轻松，您可以随时使用和修改[我在上面的 GIF 中使用的门。](/door_edited_centered.vox)
 
-When editing the model, you have to make sure to keep the rotational axis on `x:20` and `y:15`. In the door model I share, it is marked by the black voxels.
+在编辑模型时，您必须确保保持旋转轴在 `x:20` 和 `y:15` 上。在我分享的门模型中，它由黑色体素标记。
 ![simple_door_centered_script_example.png](/simple_door_centered_script_example.png)
 
-## 2. Place and add the script
+## 2. 放置并添加脚本
 
-Place your .vox feature in-world, (See [here](/docs/Parcels/Make-Vox-Model), to learn how to place in-world or host your model) and add the following script:
+将您的 .vox 特性放置在世界中（请参阅[这里](/docs/Parcels/Make-Vox-Model)以了解如何放置在世界中或托管您的模型），然后添加以下脚本：
 ```js
 let closed = true
 
@@ -33,9 +33,9 @@ closed=!closed
 })
 ```
 
-## 3. Customize
-- If the script in **2.** opens your door instead of closing it, just switch the `closed` to `false` in line 1.
+## 3. 自定义
+- 如果 **2.** 中的脚本打开而不是关闭您的门，请在第 1 行将 `closed` 更改为 `false`。
 
-- If you want to partially open your door, and not fully open it, change the `open` angle. So if your door is open when the radian angle is 0, change it to 0.5 or -0.5, depending on whether it's a pull/push door. It might require a bit of trial and error.
+- 如果您想部分打开门，而不是完全打开门，请更改 `open` 角度。因此，如果您的门在弧度角为 0 时打开，请将其更改为 0.5 或 -0.5，具体取决于它是拉门还是推门。这可能需要一些试错。
 
-Have fun!
+玩得开心！

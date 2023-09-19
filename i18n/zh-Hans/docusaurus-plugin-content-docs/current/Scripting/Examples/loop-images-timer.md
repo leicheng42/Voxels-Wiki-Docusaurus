@@ -1,10 +1,10 @@
-# Feature looped on timer
+# 基于定时器的特性循环
 
-## Feature looped on a timer
-This script allows you to loop through a list of urls given an amount of seconds.
+## 基于定时器的特性循环
+此脚本允许您在给定的时间间隔内循环播放一系列URL。
 ![timer_loop.png](/timer_loop.png)
 
-### Fixed amount of seconds
+### 固定秒数
 ```js
 var url =["URL1",
 "URL2",
@@ -13,7 +13,7 @@ var url =["URL1",
 
 let numSecs=2
 
-//-----------Nothing to touch here-----------
+//-----------这里不需要更改-----------
 i=0
 setInterval(()=>{
   if(i!=url.length){
@@ -25,11 +25,11 @@ setInterval(()=>{
 },numSecs*1000)
 
 ```
-1. Place this script on an image, nft or vox-model
-2. Replace `URL1`,`URL2`,... with your URLs. And set `numSecs` to the desired number of seconds.
+1. 将此脚本放置在图像、NFT 或 Vox 模型上。
+2. 用您的 URL 替换 `URL1`、`URL2`，并将 `numSecs` 设置为所需的秒数。
 
-If you have less than 4 URLs, simply remove the extra `,"URL.."`. If you have more than 4 URLs, simply add a comma to the list followed by your URLs.
-For example:
+如果您的 URL 少于 4 个，请简单地删除额外的 `,"URL.."`。如果您的 URL 多于 4 个，请在列表后面加上逗号，然后添加您的 URL。
+例如：
 ```js
 var url =["URL1",
 "URL2",
@@ -38,18 +38,16 @@ var url =["URL1",
 "URL5"]
 ```
 
-
-
-### Variable amount of seconds
+### 可变秒数
 ```js
 var url =["URL1",
 "URL2",
 "URL3",
-"URL4"] // list of URLs
+"URL4"] // URL 列表
 
-let numMilliSecs=[2500,2000,3000,1500] // list of numbers of milliseconds
+let numMilliSecs=[2500,2000,3000,1500] // 毫秒数列表
 
-//-----------Nothing to touch here-----------
+//-----------这里不需要更改-----------
 var i=0
 
 function newUrl(i){
@@ -77,9 +75,9 @@ newUrl(i)
 
 
 ```
-1. Place this script on an image, nft or vox-model
-2. Replace `URL1`,`URL2`,... with your URLs. And set `numMilliSecs` to the desired number of milliseconds.
+1. 将此脚本放置在图像、NFT 或 Vox 模型上。
+2. 用您的 URL 替换 `URL1`、`URL2`，并将 `numMilliSecs` 设置为所需的毫秒数。
 
-This script runs through a list of images/gifs for a given amount of time. So say you have a first gif that lasts 3 seconds, you can set the first number in the list of milliseconds to `3000`. If your second gif is 5.42 seconds, change the second number of milliseconds to `5420`...
+此脚本会在给定的时间内循环播放一系列图像/ GIF。假设您有一个持续 3 秒的 GIF，您可以将毫秒列表中的第一个数字设置为 `3000`。如果您的第二个 GIF 为 5.42 秒，将毫秒列表中的第二个数字更改为 `5420`...
 
-Insert the script on your image feature, refresh, and you're set!
+将脚本插入到您的图像特性中，刷新，完成！

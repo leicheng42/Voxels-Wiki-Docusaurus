@@ -1,12 +1,12 @@
-# Teleport player on click
+# 单击时传送玩家
 
-## Teleport player on click.
-Welcome your visitors as they enter/leave your parcel!
+## 单击时传送玩家。
+欢迎您的访客进入/离开您的地块！
 
-#### Process
+#### 过程
 
-1. Place a vox model for the sake of this example
-2. place the following script on the feature:
+1. 为了本示例，放置一个 Vox 模型
+2. 将以下脚本放在特性上：
 
 ```js
 feature.on('click',e=>{
@@ -14,8 +14,7 @@ feature.on('click',e=>{
 })
 ```
 
-3. if you want this to happen on a trigger instead of click, replace 'click' with 'trigger'
+3. 如果您希望这是由触发器而不是单击发生的，请将 'click' 替换为 'trigger'
 
-#### What happens
-The scripts obtains the player from the click and teleports it to the coordinates.
-
+#### 发生了什么
+脚本从单击中获取玩家并将其传送到指定坐标。

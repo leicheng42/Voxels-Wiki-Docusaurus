@@ -1,108 +1,107 @@
-# Basic GUI API
+# 基本 GUI API
 
 ![[basicgui]example.png](/features/[basicgui]example.png)
 
-## Basic GUI Object
-This section includes properties, functions and events for basic GUIs.
-Examples at [Scripting examples](/docs/Scripting/Examples)
+## 基本 GUI 对象
+本部分包括了基本 GUI 的属性、方法和事件。示例可在[脚本示例](/docs/Scripting/Examples)中找到。
 
-### Constructor - new Gui(options?)
+### 构造函数 - new Gui(options?)
 
-#### Options:
+#### 选项:
 **billBoardMode**
-Whether the GUI should follow the user or not
-billBoardMode = 0 -> No billboard effect
-billBoardMode = 1 -> Follows the user on the X axis (default)
-billBoardMode = 2 -> Follows the user on the Y axis
+确定 GUI 是否应该跟随用户移动。
+billBoardMode = 0 -> 无 billboard 效果
+billBoardMode = 1 -> 在 X 轴上跟随用户（默认）
+billBoardMode = 2 -> 在 Y 轴上跟随用户
 
-eg: `new Gui({billBoardMode:0})`
+例如: `new Gui({billBoardMode:0})`
 
-### Properties
+### 属性
 
-#### ID - `gui.id` 
-- Returns: string, the GUI's unique id.
-- Can be set. eg: `feature.id = 'myvoxId' ` 
+#### ID - `gui.id`
+- 返回: 字符串，GUI 的唯一标识符。
+- 可以设置。例如: `feature.id = 'myvoxId'`
 
-#### Uuid - `gui.uuid` 
-- Returns: string, the GUI's unique uuid. 
+#### Uuid - `gui.uuid`
+- 返回: 字符串，GUI 的唯一 UUID。
 
-#### feature - `gui.feature` 
-- Returns: Feature, the parent feature
+#### feature - `gui.feature`
+- 返回: Feature，父特性
 
 #### showing - `gui.showing`
-- Returns whether the GUI is shoing or not
+- 返回 GUI 是否显示。
 
-#### listOfControls - `gui.listOfControls` 
-- Returns: an array of guiControls.
+#### listOfControls - `gui.listOfControls`
+- 返回: 一个 guiControls 数组。
 
-#### defaultControl - `gui.defaultControl` 
-- Returns an example of default control.
+#### defaultControl - `gui.defaultControl`
+- 返回默认控件的示例。
 
-### Methods
+### 方法
 
-#### addButton(text=null,positionInGrid=[0,0],id=null) - `gui.addButton('My button')` 
-- **Arguments:**
-	- text (optional): a string,
-  - Id (optional): a string,
-  - positionInGrid (optional): An array of 2 integers, the first integer being the row number, and the second being the column number.
-- **Returns:** a guiControl of the button type.
+#### addButton(text=null,positionInGrid=[0,0],id=null) - `gui.addButton('My button')`
+- **参数:**
+	- text（可选）: 一个字符串,
+  - Id（可选）: 一个字符串,
+  - positionInGrid（可选）: 一个包含 2 个整数的数组，第一个整数是行号，第二个是列号。
+- **返回:** 一个按钮类型的 guiControl。
 
-#### addText(text=null,positionInGrid=[0,0],id=null) - `gui.addtext('My text')` 
-- **Arguments:**
-	- text (optional): a string,
-  - positionInGrid (optional): An array of 2 integers, the first integer being the row number, and the second being the column number.
-- **Returns:** a guiControl of the text type.
+#### addText(text=null,positionInGrid=[0,0],id=null) - `gui.addtext('My text')`
+- **参数:**
+	- text（可选）: 一个字符串,
+  - positionInGrid（可选）: 一个包含 2 个整数的数组，第一个整数是行号，第二个是列号。
+- **返回:** 一个文本类型的 guiControl。
 
-#### getControlById(id) - `gui.getControlById('buttonId')` 
-- Arguments: a string
-- Returns: a guiControl or Null
+#### getControlById(id) - `gui.getControlById('buttonId')`
+- 参数: 一个字符串
+- 返回: 一个 guiControl 或 Null
 
-#### getControlByUuid(id) - `gui.getControlByUuid('wdwdw-dwd-wd..')` 
-- Arguments: a string
-- Returns: a guiControl or Null
+#### getControlByUuid(id) - `gui.getControlByUuid('wdwdw-dwd-wd..')`
+- 参数: 一个字符串
+- 返回: 一个 guiControl 或 Null
 
-#### getControlByPosition(array) - `gui.getControlByUuid([1,0])` 
-- Arguments: an array of 2 integer.
-- Returns: a guiControl or Null
+#### getControlByPosition(array) - `gui.getControlByUuid([1,0])`
+- 参数: 一个包含 2 个整数的数组。
+- 返回: 一个 guiControl 或 Null
 
-#### show() - `gui.show()` 
-- Returns: void
+#### show() - `gui.show()`
+- 返回: void
 
-#### destroy() - `gui.destroy()` 
-- Returns: void
+#### destroy() - `gui.destroy()`
+- 返回: void
 
-## guiControl Object
-This section includes properties, functions and events for basic GUIs.
+## guiControl 对象
+本部分包括了基本 GUI 的属性、方法和事件。
 
-### Properties
+### 属性
 
-#### gui - `guiControl.gui` 
-- Returns: a FeatureBasicGui object, the parent GUI
+#### gui - `guiControl.gui`
+- 返回: FeatureBasicGui 对象，父 GUI
 
-#### id - `guiControl.id` 
-- Returns: string, the guiControl's id.
-- Can be set. eg: `control.id = 'myId' ` 
+#### id - `guiControl.id`
+- 返回: 字符串，guiControl 的标识符。
+- 可以设置。例如: `control.id = 'myId'`
 
-#### Uuid - `guiControl.uuid` 
-- Returns: string, the guiControl's unique uuid. 
+#### Uuid - `guiControl.uuid`
+- 返回: 字符串，guiControl 的唯一 UUID。
 
-#### type - `guiControl.type` 
-- Returns: string, the type of guiControl 
-At the moment this can only return `button` or `text`
+#### type - `guiControl.type`
+- 返回: 字符串，guiControl 的类型。
+目前只能返回 `button` 或 `text`。
 
-#### text - `guiControl.text` 
-- Returns: string, the text of the Text or Button control
+#### text - `guiControl.text`
+- 返回: 字符串，Text 或 Button 控件的文本。
 
-#### positionInGrid - `guiControl.positionInGrid` 
-- Returns: an Array of 2 integers, the position of the control in a grid. 
-Default is [0,0]
+#### positionInGrid - `guiControl.positionInGrid`
+- 返回: 一个包含 2 个整数的数组，控件在网格中的位置。
+默认值为 [0,0]
 
-#### summary - `guiControl.summary` 
-- Returns: an object with the basic information of the control.
-- **Useful for console.log in the grid**
+#### summary - `guiControl.summary`
+- 返回: 包含控件基本信息的对象。
+- **在网格中使用 console.log 很有用**
 
-### Methods
+### 方法
 
 #### update() - `guiControl.update()`
-Update the control.
-- Returns void
+更新控件。
+- 返回 void

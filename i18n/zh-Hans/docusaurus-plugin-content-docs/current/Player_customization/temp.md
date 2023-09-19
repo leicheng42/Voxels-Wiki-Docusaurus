@@ -1,341 +1,277 @@
-# Make a wearable (temp)
+# 制作可穿戴物品（临时）
 
-## 1. Requirements
-Wearables live inside a [collection](/docs/Player_customization/temp#h-3-collections), and in order to create a collection, you need to own a [parcel](/docs/Parcels/Buy-a-parcel).
-If you don’t own a parcel, you’ll either need to [submit to a public collection](/docs/Player_customization/temp#submit-to-a-public-collection) or ask someone that owns a parcel to make a collection for you. 
+## 1. 需求
+可穿戴物品位于[集合](/docs/Player_customization/temp#h-3-collections)中，要创建集合，您需要拥有[分区](/docs/Parcels/Buy-a-parcel)。
+如果您没有拥有分区，您可以选择[提交到公共集合](/docs/Player_customization/temp#submit-to-a-public-collection)，或者请求拥有分区的人为您创建一个集合。
 :::caution
-You're allowed to create ONE collection PER parcel owned.
+您只允许在每个拥有的分区上创建一个集合。
 :::
 
-You'll also need Matic or ETH (depending on collection) for every transaction.
-Lastly, there are community guidelines for the wearables - they can’t contain offensive racist, discriminatory, violence-endorsing or NSFW content.
+您还需要Matic或ETH（根据集合的不同）来完成每笔交易。
+最后，请注意可穿戴物品有社区准则，它们不能包含冒犯性、种族歧视、鼓吹暴力或不适宜的内容。
 
-## 2. Creating a vox model
-### Using MagicaVoxel
-To create a vox model, you need [MagicaVoxel](https://ephtracy.github.io/). Download the latest version, install it, then open it up.
+## 2. 创建 Vox 模型
+### 使用 MagicaVoxel
+要创建 Vox 模型，您需要[MagicaVoxel](https://ephtracy.github.io/)。下载最新版本，安装它，然后打开它。
 
-The first step is to set the size to 32x32x32 - you can do this by selecting the 40s on the top right, typing 32 and hitting enter.
+第一步是将大小设置为32x32x32 - 您可以通过在右上角选择40s，输入32并按回车键来完成此操作。
 
 ![magica_size.png](/createawearable/magica_size.png)
 
-You are now ready to use MagicaVoxel to create your own hat, snowboard, t-shirt, etc.
+现在，您可以使用 MagicaVoxel 创建自己的帽子、滑雪板、T恤等物品。
 
 :::info
-When making your item, the size and rotation are not really important since owners will be able to rescale and rotate the wearable when they want to wear it - [click here to see how users can wear and customize their wearables](/docs/Player_customization/Costume_tab).
+在制作物品时，大小和旋转并不是很重要，因为所有者可以在需要穿戴时重新调整可穿戴物品的大小和旋转 - [单击此处查看用户如何穿戴和自定义可穿戴物品](/docs/Player_customization/Costume_tab)。
 :::
 
-### Saving your vox
+### 保存您的 Vox
 
-Once you've made your wearable, save it.
+完成制作可穿戴物品后，请保存它。
 
 ![magica_save.png](/createawearable/magica_save.png)
 
-Make sure the canvas is 32x32x32!
+确保画布是32x32x32！
 
-### Uploading your wearable
-Your item is created and it is now time to upload it for review!
+### 上传您的可穿戴物品
+您的物品已经创建好，现在是上传并审查的时候了！
 
-**You have two choices:**
-1. [Mint your wearable to your collection](/docs/Player_customization/temp#minting-a-wearable) (you'll need to [create a collection](/docs/Player_customization/temp#creating-a-collection) first)
-1. [Submit your wearable to a public collection](/docs/Player_customization/temp#submit-to-a-public-collection)
+**您有两个选择：**
+1. [将您的可穿戴物品铸造到您的集合中](/docs/Player_customization/temp#minting-a-wearable)（您需要[创建一个集合](/docs/Player_customization/temp#creating-a-collection)首先）
+1. [将您的可穿戴物品提交到公共集合](/docs/Player_customization/temp#submit-to-a-public-collection)
 
-The pros of chosing option 2 instead of 1 is that you let someone else manage the collection and that person has to pay the minting fees. 
-However, the collection owner is also eligible for royalty fees from OpenSea transactions.
+选择选项2而不是选项1的优势在于，您可以让其他人管理集合，而该人必须支付铸造费用。
+但是，集合所有者也有资格获得OpenSea交易的版税费用。
 
-### Tips, scripts & tutorials
-MagicaVoxel allows the use of scripts (shaders), has the ability to import certain file types to ease the creation process and can load color palettes, as well as easily create gradients.
+### 提示、脚本和教程
+MagicaVoxel 允许使用脚本（着色器），具有导入某些文件类型的能力以简化创建过程，并且可以加载调色板，以及轻松创建渐变色。
 
-#### Importing
-To import a PNG or JPG, just drag it into MagicaVoxel (clear it beforehand though). You could, for example, import a pixel art face and then extrude it to your liking. If you go this route, you might want to downscale it to 32x32 beforehand (and if you do it in Photoshop, make sure to use Nearest Neighbor for the resample type).
+#### 导入
+要导入 PNG 或 JPG，只需将其拖放到 MagicaVoxel 中（但首先要清除它）。例如，您可以导入像素艺术面部，然后根据您的喜好拉伸它。如果您选择这种方式，您可能需要先将其缩小到32x32（如果您在Photoshop中这样做，请确保使用最近邻居作为重采样类型）。
 
 ![magica_import_png.gif](/createawearable/magica_import_png.gif)
 
-To import an OBJ, drag it into MagicaVoxel. When you import the file, MagicaVoxel may include a hidden layer, which you’ll have to erase - otherwise you won’t be able to import your vox into Cryptovoxels. Look at the GIF below to see how to erase.
+要导入 OBJ，请将其拖放到 MagicaVoxel 中。在导入文件时，MagicaVoxel 可能会包含一个隐藏的图层，您需要将其删除 - 否则您将无法将您的 Vox 导入到 Cryptovoxels 中。查看下面的GIF以了解如何擦除。
 
-![magica_import_obj.gif](/createawearable/magica_import_obj.gif)
+![magica_import_obj.gif](/createawearable/m
 
-#### Shaders and colors
-Shaders go into the shader folder and palettes go into the palette folder. After you've loaded some shaders, they can be accessed either from the right panel or via the console on the bottom. [This site](https://mode-vis.gumroad.com/?sort=newest) offers a lot of different shaders to play with.
+agica_import_obj.gif)
+
+#### 着色器和颜色
+着色器放入着色器文件夹，调色板放入调色板文件夹。加载了一些着色器后，可以通过右侧面板或底部的控制台访问它们。[此网站](https://mode-vis.gumroad.com/?sort=newest) 提供了许多不同的着色器供您使用。
 
 ![magica_shaders.png](/createawearable/magica_shaders.png)
 
-In order to create gradients, hold CTRL+ALT, then click/hold the starting color and drag it to the ending color.
+要创建渐变，按住CTRL+ALT，然后单击/按住起始颜色并将其拖动到结束颜色。
 
 ![magica_gradient.gif](/createawearable/magica_gradient.gif)
 
-#### Trying it on
-Although there is no official feature to try the wearable on first before minting, you can place the vox in your parcel (or a sandbox parcel) and walk into it to somewhat emulate it.
+#### 尝试
+尽管没有官方功能可以在铸造前先尝试可穿戴物品，但您可以将 Vox 放置在您的分区中（或沙盒分区），然后走进去以模拟它。
 
-After dropping the vox in and adjusting the position/scale/rotation, hit C to go into third person and walk into it. It's not perfect, but it works.
+将 Vox 放入并调整位置/比例/旋转后，按C键切换到第三人称视图，然后走进去。这并不是完美的，但它有效。
 
 ![trying_it.gif](/createawearable/trying_it.gif)
 
-Check out the [customization](/docs/Player_customization/Costume_tab) section to see all the ways a player can attach wearables on themselves.
+查看[自定义](/docs/Player_customization/Costume_tab)部分，了解玩家如何将可穿戴物品附加到自己身上的所有方法。
 
-#### Tutorials
-If you're completely new to MagicaVoxel, or just want to go more in depth, check out these resources:
+#### 教程
+如果您对MagicaVoxel完全不熟悉，或者想要更深入了解，可以查看这些资源：
 
-- [Written guide for beginners](https://www.raywenderlich.com/375-magicavoxel-3d-art-tutorial)
-- [Quick start video](https://www.youtube.com/watch?v=J5fK79E_RXE) (icons are from an older version)
-- [Detailed video](https://www.youtube.com/watch?v=uKOBIHSgIwI) (ignore the render part)
-- [Official resources](https://ephtracy.github.io/index.html?page=mv_resource) (lots of good stuff)
+- [初学者书面指南](https://www.raywenderlich.com/375-magicavoxel-3d-art-tutorial)
+- [快速入门视频](https://www.youtube.com/watch?v=J5fK79E_RXE)（图标来自旧版本）
+- [详细视频](https://www.youtube.com/watch?v=uKOBIHSgIwI)（忽略渲染部分）
+- [官方资源](https://ephtracy.github.io/index.html?page=mv_resource)（很多好东西）
 
-## 3. Collections
-A collection is a group of 3D NFTs that are spawnable in-world or wearable.
+## 3. 集合
+一个集合是一组可以在虚拟世界中生成或穿戴的3D NFT。
 
-Having your collection created and whitelisted in cryptovoxels means you can create your own brand of collectibles (in this case wearables) based on the blockchain.
+在Cryptovoxels中创建并加入白名单的集合意味着您可以基于区块链创建自己的品牌收藏品（在本例中是可穿戴物品）。
 
-You can have players wear or place the collectibles of that collection in-world. They will also be able to find your collection and collectibles on the Cryptovoxels website and OpenSea. You'll also be able to manage aspects of your collection from Cryptovoxels & OpenSea.
-
+玩家可以在虚拟世界中佩戴或放置该集合的收藏品。他们还可以在Cryptovoxels网站和OpenSea上找到您的集合和收藏品。您还可以从Cryptovoxels和OpenSea管理您的集合的各个方面。
 :::caution
-You're allowed one collection per parcel owned. If you do not own a parcel, you will have to submit to a public collection. 
-The size of the parcel owned does NOT dictate the amount of wearables you can have in a collection.
+您只允许在拥有的分区上创建一个集合。如果您不拥有分区，您将需要提交到公共集合。
+拥有的分区的大小不决定您可以在集合中拥有多少可穿戴物品。
 :::
 
-### Creating a collection
-1. Go to https://www.cryptovoxels.com/collections
-1. Log into Cryptovoxels and your wallet
-1. Click **Make your own!**
-1. Click **Create a collection**
+### 创建集合
+1. 转到 https://www.cryptovoxels.com/collections
+1. 登录到Cryptovoxels和您的钱包
+1. 单击 **制作您自己的集合！**
+1. 单击 **创建集合**
 
 ![create_collection.png](/createawearable/create_collection.png)
 
-5. Click on the **Create a collection** button
+5. 单击 **创建集合** 按钮
 
 ![create_eligibility.png](/createawearable/create_eligibility.png)
 
-6. Select the **Chain Id** and click the **Next** button
+6. 选择 **Chain Id** 并单击 **下一步** 按钮
 
 ![select_a_chain.png](/createawearable/select_a_chain.png)
 
-7. Your wallet may ask you to switch networks, so click **Switch network** (ignore if you don’t see this message)
+7. 您的钱包可能会要求您切换网络，因此单击 **切换网络**（如果您看不到此消息，请忽略）
 
 ![switch_network.png](/createawearable/switch_network.png)
 
-8. Fill out the collection’s information, click the **Save & Next** button (you can modify the name, description and logo any time via the **⚙Admin** page)
+8. 填写集合的信息，单击 **保存和下一步** 按钮（您可以随时通过 **⚙Admin** 页修改名称、描述和徽标）
 
 ![collection_info2.png](/createawearable/collection_info2.png)
 
-9. Name the contract, click the **I assert…** checkbox and the **Upload And Deploy** button to continue
+9. 命名合同，选中 **I assert…** 复选框，然后单击 **上传并部署** 按钮以继续
 
-10. You’ll need Matic on the Matic Mainnet (or ETH on the Ethereum Mainnet) to proceed with the next step, so once you have some available, click **Confirm**
+10. 您需要在Matic主网上拥有Matic（或在Ethereum主网上拥有ETH）才能继续进行下一步，因此一旦您有可用的Matic，请单击 **确认**
 
 ![confirm_transaction.png](/createawearable/confirm_transaction.png)
 
-11. After it deploys successfully, a confirmation window will pop-up
+11. 成功部署后，将弹出一个确认窗口
 
 ![deployed_contract.png](/createawearable/deployed_contract.png)
 
-12. Fill out the missing info
+12. 填写缺少的信息
 
 ![collection_info.png](/createawearable/collection_info.png)
 
-13. After the required info is added, click the checkbox, then click the **Submit** button
+13. 在添加所需信息后，单击复选框，然后单击 **提交** 按钮
 
-14. All the text should have cleared and a message with a green background should have appeared - click on the link that states **Click here to see it!**
+14. 所有文本应该已清除，并出现了一个带有绿色背景的消息 - 单击其中陈述 **单击此处查看！** 的链接
 
-15. You should now see your collection - click the **⚙Admin** button and bookmark the page
+15. 现在您应该可以看到您的集合 - 单击 **⚙Admin** 按钮并将该页面加为书签
 
 ![admin.png](/createawearable/admin.png)
 
-Congrats - you now have a collection!
+恭喜 - 您现在拥有一个集合！
 
-### Minting a wearable
-Now you're ready to mint! Head to your collection page and make sure you’re signed in (it’ll be something like https://www.cryptovoxels.com/collections/1#). 
-If you're submitting to a public collection, skip the next section.
+### 铸造可穿戴物品
+现在您已准备好铸造了！前往您的集合页面并确保您已登录（它将类似于https://www.cryptovoxels.com/collections/1#）。
+如果您要提交到公共集合，请跳过下一部分。
 
-#### Upload to your collection
+#### 上传到您的集合
 ![mint.png](/createawearable/mint.png)
 
-1. Click the **🏭Mint** button.
-1. Enter the **Name** & **Description** (do not touch the Owner info)
-1. Set the amount of **Issues**
-*Rarity: 1–9 Legendary | 10–99 Epic | 100–999 Rare | ≥1000 Common*
-1. Click the **Choose File** button and select your vox file
-1. Click the checkbox that agrees with the TOS
-1. Click the **Submit** button
-1. Scroll down, your submission will be under *Collectible submissions* - if you do not see it, hit the **Refresh** button
-1. Check to see if your Preview shows an animated gif
+1. 单击 **🏭铸造** 按钮。
+1. 输入 **名称** 和 **描述**（不要触摸所有者信息）
+1. 设置 **发行量**
+*稀有度：1-9 传说 | 10-
+
+99 史诗 | 100-999 稀有 | ≥1000 普通*
+1. 单击 **选择文件** 按钮，然后选择您的vox文件
+1. 单击同意TOS的复选框
+1. 单击 **提交** 按钮
+1. 滚动下来，您的提交将在 *收藏品提交* 下 - 如果看不到，请单击 **刷新** 按钮
+1. 检查您的预览是否显示为动画gif
 
 ![gif_before.png](/createawearable/gif_before.png)
 
-9. If it looks broken, hit the **Refresh gif** button under Actions. You’ll see this window open up afterwards:
+9. 如果看起来破损，点击操作下的 **刷新gif** 按钮。然后您将看到此窗口打开：
 
 ![gif_refresh.png](/createawearable/gif_refresh.png)
 
-10. If you got an **ok**, refresh the browser, then click **🏭Mint** again and scroll down to look back at the submissions
+10. 如果收到 **ok**，刷新浏览器，然后再次单击 **🏭铸造** 并向下滚动以查看提交
 
 ![gif_fixed.png](/createawearable/gif_fixed.png)
 
-11. If everything looks good, click **Mint**. If something looks amiss, click **Reject**.
+11. 如果一切看起来正常，请单击 **铸造**。如果出现异常情况，请单击 **拒绝**。
 
-12. If you mint it, your wallet will pop-up to confirm the transaction, which will require a very tiny amount of Matic (or ETH) - click Confirm to proceed to mint.
+12. 如果铸造，您的钱包将弹出以确认交易，这将需要极小数量的Matic（或ETH） - 单击确认以继续铸造。
 
 ![token_id.png](/createawearable/token_id.png)
 
-13. Under *Collectible submissions*, there will be a link to the right that states **Collectible ready** - click that
+13. 在 *收藏品提交* 下，将有一个右侧的链接，其中写着 **收藏品准备就绪** - 单击该链接
 
 ![collectible_ready.png](/createawearable/collectible_ready.png)
 
-14. You should now see your wearable on the Cryptovoxels page
+14. 现在您应该在Cryptovoxels页面上看到您的可穿戴物品
 
 ![mint_success.png](/createawearable/mint_success.png)
 
-Congratulations, you just minted your first wearable!
+恭喜，您刚刚铸造了您的第一个可穿戴物品！
 
-#### Submit to a public collection
-If you don’t own a Parcel, you can always submit to a public collection.
+#### 提交到公共集合
+如果您不拥有分区，您可以随时提交到公共集合。
 
-1. Head over to https://www.cryptovoxels.com/collections
-1. Click the **Available to public** checkbox
-1. Select a collection
-1. Click the **🏭Submit** button
+1. 前往 https://www.cryptovoxels.com/collections
+1. 单击 **向公众开放** 复选框
+1. 选择一个集合
+1. 单击 **🏭提交** 按钮
 
 ![public_collection.png](/createawearable/public_collection.png)
 
-5. Read the warnings, fill out the info and click the checkbox on the bottom, then click the **Submit** button
-6. You’ll now have to wait for it to get approved by the collection owner — you may want to send them a message through Cryptovoxels / Discord
-7. Once the wearable is minted by the collection owner, you’ll get a message on Cryptovoxels (you’ll see a red dot next to **Inbox** on the top if you get it)
+5. 阅读警告，填写信息并单击底部的复选框，然后单击 **提交** 按钮
+6. 您现在必须等待集合所有者批准它 - 您可能需要通过Cryptovoxels / Discord给他们发送消息
+7. 一旦集合所有者铸造了可穿戴物品，您将在Cryptovoxels上收到一条消息（如果您收到它，您会在顶部看到 **收件箱** 旁边的红点）
 
-### Trading a wearable
-You can transfer wearables either on the Cryptovoxels website or on OpenSea.
+### 交易可穿戴物品
+您可以在Cryptovoxels网站上或在OpenSea上转让可穿戴物品。
 
-#### Trading on Cryptovoxels
-To transfer using the Cryptovoxels website, head to the wearable you want to send [e.g. https://www.cryptovoxels.com/collections/1/1] and click the Transfer button on the bottom. If you don’t see the Transfer button, it either means you need to switch networks on your wallet or that you do not possess any amount of that wearable.
+#### 在Cryptovoxels上交易
+要使用Cryptovoxels网站进行转让，请前往您要发送的可穿戴物品页面（例如https://www.cryptovoxels.com/collections/1/1），然后单击底部的 **转让** 按钮。如果看不到 **转让** 按钮，要么表示您需要在钱包上切换网络，要么表示您不拥有该可穿戴物品的任何数量。
 
 ![transfer_wearable.png](/createawearable/transfer_wearable.png)
 
-A dialog will pop up asking who to transfer to and how many. Fill that out and hit the Transfer button.
+一个对话框将弹出，询问要转让给谁以及数量。填写并单击转让按钮。
 
 ![transfer_to_who.png](/createawearable/transfer_to_who.png)
 
-It’ll then ask to confirm the address - if it looks good, click the **OK** button. Your wallet will pop-up asking to confirm the transaction (Matic or ETH gas), click the **Confirm** button to continue. A dialog will show the transfer in process and then close.
+然后会要求确认地址 - 如果看起来正确，请单击 **确定** 按钮。您的钱包将弹出，要求确认交易（Matic或ETH燃气费），单击 **确认** 按钮以继续。对话框将显示转账过程，然后关闭。
 
-#### Trading on OpenSea
-If you’d prefer to send it over OpenSea, you can do so as well. Head to the wearable on OpenSea and click the Transfer button located on the top right.
+#### 在OpenSea上交易
+如果您希望通过OpenSea发送它，也可以这样做。前往OpenSea上的可
 
-![transfer_opensea.png](/createawearable/transfer_opensea.png)
+穿戴物品页面，然后单击 **列表** 按钮。
 
-If you don't see the transfer button, make sure you're logged in.
+![opensea_list.png](/createawearable/opensea_list.png)
 
-### Selling on OpenSea
+您将被重定向到OpenSea的创建页面。如果您没有帐户，请创建一个。然后按照说明填写信息。
 
-If you want to sell your wearable, you’ll have to price it on OpenSea. Go to an item in your collection on the Cryptovoxels page, then hit the **Buy Now** button.
+在 **属性** 部分，确保您输入 **Cryptovoxels地址** 和 **Parcel ID**（它们将在您购买时提供）。
 
-![selling_wearable.png](/createawearable/selling_wearable.png)
+![opensea_attributes.png](/createawearable/opensea_attributes.png)
 
-:::caution
-On your listing in OpenSea, if you DO NOT see your wearable rotating around, you may have to click the **Refresh metadata** button. If it’s still not visible after waiting a minute, you may have to report this as a bug on the Cryptovoxel’s forum, or possibly wait a little longer.
-:::
+完成后，您可以单击 **下一步** 并继续创建上架。
 
-You should now be on the OpenSea page with your wearable rotating around. Click the Sell button.
+![opensea_create_listing.png](/createawearable/opensea_create_listing.png)
 
-![sell_wearable2.png](/createawearable/sell_wearable2.png)
+一旦您的可穿戴物品在OpenSea上架，其他用户可以在那里找到它并购买。记住，OpenSea上的交易需要燃气费用（ETH）。
 
-Keep in mind - after your wearable is posted for sale, the Sell button shifts downward, under *Listings*.
+### 管理集合
+您可以通过单击 **⚙Admin** 页面上的链接来管理您的集合。从那里，您可以：
 
-![sell_wearable3.png](/createawearable/sell_wearable3.png)
+- 更改集合名称、描述和徽标
+- 管理集合中的所有可穿戴物品
+- 拒绝或批准公共集合提交
+- 更改铸造费用
+- 查看集合中的所有者
 
-The *Sell your item* dialog will pop-up after hitting the **Sell** button. Put the amount, in ETH, for how much you’re going to sell your wearable for. Keep in mind OpenSea will take 2.5%. There may also be royalty fees involved too, but you shouldn’t see that now.
+![admin.png](/createawearable/admin.png)
 
-You can also set an end date to the sale, in case you want it listed for a limited time. If you want, click **Schedule listing** and set the end date.
+请确保您了解每个选项的含义，以便能够管理您的集合。
 
-![sell_item.png](/createawearable/sell_item.png)
+### 更新可穿戴物品
+您可以更新可穿戴物品的元数据，但不可以更新其Vox文件。如果要更新Vox文件，您需要铸造一个新的版本。
 
-Click the **Complete listing** button when ready and your wearable will be listed for sale.
+要更新可穿戴物品的元数据，请按照以下步骤操作：
 
-:::caution
-For Matic/Polygon collections, the ETH you receive will be PoS-WETH. If you don't see it on your wallet, switch networks or go [here](https://wallet.polygon.technology/wallet).
-:::
+1. 前往您的集合页面（https://www.cryptovoxels.com/collections/your_collection_id）
+2. 单击要更新的可穿戴物品
+3. 在可穿戴物品页面上，单击 **⚙Admin** 按钮
 
+![admin_wearable.png](/createawearable/admin_wearable.png)
 
-### Customization & royalties
-You can customize your collection on Cryptovoxels & on OpenSea. You'll also be able to set up royalties for your collection.
+4. 在元数据编辑器中，对需要更新的字段进行更改
+5. 单击 **提交** 按钮以保存更改
+6. 您的钱包将弹出以确认元数据更新交易，确认后即可更新元数据
 
-#### Customizing your collection in Cryptovoxels
-Go to your collection page and click the **⚙Admin** button.
+### 收藏品批准
+如果您已经为其他人的集合提交了可穿戴物品，并且集合所有者批准了它们，您将在Cryptovoxels上接收到一条消息，通知您可穿戴物品已经批准。
 
-Under *Settings* you get the ability to change your **Collection Name**, **Description**, **Cover Color** and **Logo**. 
+在此消息中，您将找到一个链接，可以点击查看已批准的可穿戴物品。
 
-![customize_collection1.png](/createawearable/customize_collection1.png)
+![wearable_approved.png](/createawearable/wearable_approved.png)
 
-Under *Social and interactions* you can add your **Twitter handle**, **OpenSea store**, **In-world store** (if you own a parcel, enter the ID) and **Featured collectible** (enter the ID of the wearable). If you enter this all, you’ll see your Twitter feed and featured collectible on the right hand side on the collection page and two new buttons (**View on Opensea** & **Visit store**) will show.
+通过单击该链接，您将被重定向到可穿戴物品的详情页面。
 
-![customize_collection2.png](/createawearable/customize_collection2.png)
+![wearable_details.png](/createawearable/wearable_details.png)
 
-#### Customizing your collection in OpenSea
-Before we start customizing on OpenSea, we have to let them know you are the actual owner, which won't be instantaneous. Copy the address from your collection’s Admin page.
+您可以从这里查看可穿戴物品的详情以及它们所属的集合。如果您拥有该可穿戴物品，您还可以通过单击底部的 **装备** 按钮来佩戴它。
 
-![customize_opensea1.png](/createawearable/customize_opensea1.png)
-
-On OpenSea go to the [Collection Manager](https://opensea.io/collections), click the **kebab menu** and select **Import an existing smart contract**.
-
-![customize_opensea2.png](/createawearable/customize_opensea2.png)
-
-Click the first button, **Live on a mainnet**, then click the dropdown on the left, select Polygon (for Matic) or ETH, enter your address and click the **Submit** button.
-
-![customize_opensea3.png](/createawearable/customize_opensea3.png)
-
-Once submitted, you have to wait until someone manually connects the collection to your account. You’ll know if you are connected once you are able to edit your collection on the [Collection Manager](https://opensea.io/collections) page.
-
-![customize_opensea4.png](/createawearable/customize_opensea4.png)
-
-Once your account is connected, you’ll be able to edit your collection information, including adding a Logo image, Featured image & Banner image.
-
-![customize_opensea6.png](/createawearable/customize_opensea6.png)
-
-If you scroll down you’ll get to the Royalites section. From here, you can put up to 10% for the fee and enter your payout wallet address.
-
-![customize_opensea5.png](/createawearable/customize_opensea5.png)
-
-Have fun customizing your collection!
-
-### Wearable attributes
-You can add up to three attributes to your wearables. This is optional but useful and fun.
-
-#### Setting up attributes
-
-Go to your collection page and click the **⚙Admin** button, scroll down and go to the *Custom Attributes* section, then click **Add a trait**.
-
-![attributes1.png](/createawearable/attributes1.png)
-
-Click the dropdown menu and select the [type](https://docs.opensea.io/docs/metadata-standards#section-attributes).
-
-![attributes2.png](/createawearable/attributes2.png)
-
-Once you have your attribute(s) set up, click **Save changes**.
-
-![attributes3.png](/createawearable/attributes3.png)
-
-#### Applying attributes to existing wearables
-
-After custom attributes are set in the collection, attributes can be added to existing wearables.
-Go to the wearable’s page on Cryptovoxels and scroll down, then add the info and hit the **Save Attribute** button.
-
-![attributes4.png](/createawearable/attributes4.png)
-
-:::caution
-If you do not want to use one of the attributes for the wearable, click the **Ignore** checkbox in the attribute box.
-:::
-
-#### Applying attributes to new wearables
-After custom attributes are set in the collection, attributes can be added during the wearable upload process.
-
-![attributes5.png](/createawearable/attributes5.png)
-
-#### What it looks like on OpenSea
-Below you can see how it looks like on OpenSea. The **AUTHOR**, **RARITY** & **VOX** Properties were automatically inputted by Cryptovoxels and **TYPE** was manually added by an attribute. Under Stats you can see the **#** & **Generation** that was manually added as well.
-
-![attributes6.png](/createawearable/attributes6.png)
-
-The other benefit of adding attributes is helping people filter and sort through your collection.
-
-![attributes7.png](/createawearable/attributes7.png)
-
-### Rarity levels
-The number of issues of your wearable will dictate its rarity.
-
-**Common** = Greater or equal to 1000 issues
-**Rare** = Greater or equal to 100 issues and smaller than 1000
-**Epic** = Greater or equal to 10 issues and smaller than 100
-**Legendary** = Greater or equal to 1 issues and smaller than 10
+这就是制作、铸造、交易和管理可穿戴物品的基础知识。希望这些信息对您有所帮助，祝您在Cryptovoxels的创作和交易中取得成功！如果您需要进一步的帮助或有其他问题，请随时提问。

@@ -1,149 +1,148 @@
-# Costumes tab
+# 服装选项卡
 
-The Costumes tab is where you can decide what to wear and how to wear it.
-
-:::info
-Each costume can have different [wearables](/docs/Player_customization/Buy-a-Wearable), [skin colors](/docs/Player_customization/Avatar_skin) and have [body parts hidden](/docs/Player_customization/Avatar_skin#transparent-body-part) if you choose to do so. 
-:::
-
-## 1. Make a costume
-Hover over your name or wallet address on the top right bar, then select **[Edit Costume](https://www.cryptovoxels.com/account/costumes)**.
-
-![edit-costume.png](/costume/edit-costume.png)
-
-Add a costume by clicking the **Add costume** button.
-
-![add-costume.png](/costume/add-costume.png)
-
-Click the new costume to select it for editing.
-
-![costume-made.png](/costume/costume-made.png)
-
-After selecting the costume, you should also see the Wearables & Skin tab.
+服装选项卡是您可以决定穿什么和如何穿的地方。
 
 :::info
-You can rename the costume by clicking the 🖊, delete it with ✖ or make it the default with ✔.
+每个服装都可以拥有不同的[可穿戴物品](/docs/Player_customization/Buy-a-Wearable)，[肤色](/docs/Player_customization/Avatar_skin)以及[隐藏身体部分](/docs/Player_customization/Avatar_skin#transparent-body-part)，如果您选择这样做。
 :::
 
-## 2. Get a wearable
-Do you have a wearable? Great! Skip to the next step. 
+## 1. 制作服装
+将鼠标悬停在右上角的姓名或钱包地址上，然后选择**[编辑服装](https://www.cryptovoxels.com/account/costumes)**。
 
-Don't have a wearable? **You can learn how to buy one from [here](/docs/Player_customization/Buy-a-Wearable), or learn how to make one [here](/docs/Player_customization/Create_a_wearable).**
+![编辑服装](/costume/edit-costume.png)
+
+点击**添加服装**按钮添加一个服装。
+
+![添加服装](/costume/add-costume.png)
+
+点击新的服装以选择要进行编辑的服装。
+
+![制作的服装](/costume/costume-made.png)
+
+在选择服装后，您还应该看到可穿戴物品和皮肤选项卡。
 
 :::info
-Cryptovoxels gives one wearable out for free - you should see this link on the bottom of the Wearables tab.
+您可以通过单击🖊重命名服装，通过✖删除服装或通过✔将其设为默认服装。
 :::
 
-## 3. Dress up!
-Each costume can have up to 9 wearables active. You can have many different costumes.
+## 2. 获取可穿戴物品
+您有可穿戴物品吗？太好了！跳到下一步。
 
-![costume-camera-ani.gif](/costume/costume-camera-ani.gif)
+没有可穿戴物品吗？**您可以从[这里](/docs/Player_customization/Buy-a-Wearable)了解如何购买，或者从[这里](/docs/Player_customization/Create_a_wearable)了解如何制作一个。**
 
 :::info
-You can adjust the camera with the mouse. Left or middle click any empty area and the camera will rotate around your avatar. 
-Right click will drag the camera up, down, left & right. The scrollwheel will zoom in and out.
+Cryptovoxels免费提供一个可穿戴物品 - 您应该在可穿戴物品选项卡底部看到此链接。
 :::
 
-### Pick a wearable
-Click the [costume](https://www.cryptovoxels.com/account/costumes) you want to edit. The costume should have » to the left of it.
-Click the **Wearables** tab.
+## 3. 穿上服装！
+每个服装最多可以激活9个可穿戴物品。您可以拥有许多不同的服装。
 
-![wearables-tab.png](/costume/wearables-tab.png)
+![服装-摄像头-动画](/costume/costume-camera-ani.gif)
 
-Click the **Select a Wearable...** button.
+:::info
+您可以使用鼠标调整相机。左键或中键单击任何空白区域，相机将围绕您的角色旋转。右键将拖动相机上下左右。滚轮将放大和缩小。
+:::
 
-![select-wearable.png](/costume/select-wearable.png)
+### 选择一个可穿戴物品
+单击您要编辑的[服装](https://www.cryptovoxels.com/account/costumes)。该服装左侧应该有一个»。
+点击**可穿戴物品**选项卡。
 
-Select a wearable from your list.
+![可穿戴物品选项卡](/costume/wearables-tab.png)
 
-![add-wearable.png](/costume/add-wearable.png)
+单击**选择一个可穿戴物品...**按钮。
 
-### Place the wearable
-After you select a wearable, you'll see it on your avatar.
+![选择可穿戴物品](/costume/select-wearable.png)
 
-![wearable-selected.png](/costume/wearable-selected.png)
+从列表中选择一个可穿戴物品。
 
-To place the wearable where you want it, select the **Bone** dropdown and choose the appropriate bone.
+![添加可穿戴物品](/costume/add-wearable.png)
 
-![wearable-bone.png](/costume/wearable-bone.png)
+### 放置可穿戴物品
+在选择了一个可穿戴物品后，您将在您的角色上看到它。
+
+![已选择可穿戴物品](/costume/wearable-selected.png)
+
+为了将可穿戴物品放在您想要的位置，请选择**骨骼**下拉菜单并选择适当的骨骼。
+
+![可穿戴物品骨骼](/costume/wearable-bone.png)
 
 :::caution
-Attaching the wearable to the correct bone is especially important for animations, like walking or dancing. Don't forget to select the right bone!
+将可穿戴物品连接到正确的骨骼对于动画（如行走或跳舞）尤为重要。不要忘记选择正确的骨骼！
 :::
 
-![costume-wrong.gif](/costume/costume-wrong.gif)
+![服装错误](/costume/costume-wrong.gif)
 
-### Move, rotate & scale
-You can adjust wearables either using the tools or editor.
+### 移动、旋转和缩放
+您可以使用工具或编辑器来调整可穿戴物品。
 
 :::info
-You can quickly place your wearable with the tools, then use the editor to fine-tune it.
+您可以使用工具快速放置可穿戴物品，然后使用编辑器进行微调。
 :::
 
-#### Using the tools
-Click the wearable and the **Position tool** will activate - three arrows will appear.
+#### 使用工具
+单击可穿戴物品，**位置工具**将激活 - 三个箭头将出现。
 
-![wearable-clicked.png](/costume/wearable-clicked.png)
+![单击可穿戴物品](/costume/wearable-clicked.png)
 
-After selecting a wearable, there are three tools you can use:
-- **Position tool** - Lets you move the wearable.
-![tool-pos.png](/costume/tool-pos.png) 
-- **Rotation tool** - Lets you rotate the wearable.
-![tool-rot.png](/costume/tool-rot.png) 
-- **Scale tool** - Lets you scale the wearable.
-![tool-scale.png](/costume/tool-scale.png) 
+在选择可穿戴物品后，有三种工具可供使用：
+- **位置工具** - 允许您移动可穿戴物品。
+![位置工具](/costume/tool-pos.png) 
+- **旋转工具** - 允许您旋转可穿戴物品。
+![旋转工具](/costume/tool-rot.png) 
+- **缩放工具** - 允许您缩放可穿戴物品。
+![缩放工具](/costume/tool-scale.png) 
 
-To use the **Position tool**, click and drag one of the arrows.
-![tool-position.gif](/costume/tool-position.gif =150x)
+要使用**位置工具**，单击并拖动其中一个箭头。
+![位置工具](/costume/tool-position.gif =150x)
 
-To use the **Rotation tool**, click and drag one of the circles.
-![tool-rotation.gif](/costume/tool-rotation.gif =150x)
+要使用**旋转工具**，单击并拖动其中一个圆圈。
+![旋转工具](/costume/tool-rotation.gif =150x)
 
-To use the **Scale tool**, click and drag one of the squares.
-![tool-scale.gif](/costume/tool-scale.gif =150x)
+要使用**缩放工具**，单击并拖动其中一个方块。
+![缩放工具](/costume/tool-scale.gif =150x)
 
 :::info
-The tools are color coded - red is X, green is Y, blue is Z. 
+工具是按颜色编码的 - 红色是X，绿色是Y，蓝色是Z。
 :::
 
+#### 使用编辑器
+使用编辑器，您可以输入数值来调整可穿戴物品，从而获得更好的精度。
+要使用编辑器，首先选择要编辑的可穿戴物品，然后单击**打开编辑器**按钮。
 
-#### Using the editor
-With the editor, you can input values for your wearable, which offers better precision.
-To use the editor, first select the wearable you want to edit, then click the **open editor** button.
+![打开编辑器](/costume/open-editor.png)
 
-![open-editor.png](/costume/open-editor.png)
+打开编辑器后，将出现一个带有9个字段的表格，允许您在位置、旋转和缩放可穿戴物品时输入数值。在悬停在一个框上时，会有上下箭头进行调整。
 
-After opening the editor, a table with 9 fields will appear, which allow you to type in values to adjust the position, rotation and scale of the wearable. 
-There are up and down arrows when hovering over a box to do adjustments as well.
+![编辑器](/costume/editor.png)
 
-![editor.png](/costume/editor.png)
+## 4. 更改服装
 
-## 4. Change costumes
-You can change costumes in the Cryptovoxels world and on the website.
 
-![vox-man.png](/costume/vox-man.png)
+您可以在Cryptovoxels世界和网站上更改服装。
 
-#### Changing in the Cryptovoxels world
-Hover over your name or wallet address on the top right bar, then select **Change Costume**.
-![costume-change1.png](/costume/costume-change1.png)
+![Cryptovoxels服装](/costume/vox-man.png)
 
-Select a costume and your avatar will change instantly.
+#### 在Cryptovoxels世界中更改
+将鼠标悬停在右上角的姓名或钱包地址上，然后选择**更改服装**。
+![更改服装](/costume/costume-change1.png)
 
-![costume-change-ani.gif](/costume/costume-change-ani.gif)
+选择一个服装，您的角色将立即更改。
+
+![更改服装动画](/costume/costume-change-ani.gif)
 
 :::info
-Hit C to put yourself in third person.
+按C键可以将自己置于第三人称视角。
 :::
 
-#### Changing on the Cryptovoxels website
-Go to the [Costumes tab](https://www.cryptovoxels.com/account/costumes) and click the ✔ to the right of the costume you want to change to.
+#### 在Cryptovoxels网站上更改
+前往[服装选项卡](https://www.cryptovoxels.com/account/costumes)并单击要更改的服装右侧的✔。
 
-![costume-default.png](/costume/costume-default.png)
+![默认服装](/costume/costume-default.png)
 
-If it's highlighted and the ✔ button is grayed out, it's now your default costume.
+如果它被突出显示且✔按钮被灰掉，那么它现在是您的默认服装。
 
-![costume-highlighted.png](/costume/costume-highlighted.png)
+![突出显示的服装](/costume/costume-highlighted.png)
 
-After changing your default, refresh Cryptovoxels on your browser (F5).
+更改默认服装后，请刷新您的浏览器上的Cryptovoxels（F5）。
 
-![costume-refresh.gif](/costume/costume-refresh.gif =25%x)
+![刷新服装](/costume/costume-refresh.gif =25%x)

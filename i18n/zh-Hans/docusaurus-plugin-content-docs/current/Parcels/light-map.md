@@ -1,49 +1,47 @@
-# Baking
-Lightmap baking
+# 烘焙
+光照贴图烘焙
 
-## Lightmap Baking
+## 光照贴图烘焙
 
-Lightmapping is the act of using a renderer to accurately measure how light enters and bounces around inside your parcel, and then calculates a 'lightmap', an image that can be rendered in realtime when exploring your parcel. 
+光照贴图烘焙是使用渲染器准确测量光线如何进入并在您的地块内部弹射和反射的过程，然后计算出一个“光照贴图”，这是一个可以在探索您的地块时实时渲染的图像。
 
-The lightmap is expensive (computer speak for slow) to calculate, so we generate the lightmaps on a computer with a Ryzen 7 CPU and RTX 2070 GPU. Once these are calculated, we save the lightmaps on the internet and make them accessible from the web client.
+由于计算光照贴图的过程较为昂贵（计算机术语中意味着较慢），因此我们使用配备 Ryzen 7 CPU 和 RTX 2070 GPU 的计算机生成光照贴图。一旦计算完成，我们将光照贴图保存在互联网上，并从 Web 客户端中提供访问。
 
-That means that all computers (including our favourite potatos) can render high quality lighting inside a parcel.
+这意味着所有的计算机（包括我们钟爱的“土豆”）都可以在地块内呈现高质量的照明效果。
 
-### Examples
+### 示例
 
-![baking.png](/baking.png)
-![baking-2.png](/baking-2.png)
+![烘焙.png](/baking.png)
+![烘焙-2.png](/baking-2.png)
 
-### How to enable
+### 如何启用
 
-1. Go to your parcel in-world
-2. Hit <kbd>Tab</kbd> and go to Tiles
-3. Scroll down the editor
-![baking_menu_editor_v4.25.png](/baking_menu_editor_v4.25.png)
+1. 前往您的地块内
+2. 按下 <kbd>Tab</kbd> 键并转到瓷砖（Tiles）
+3. 向下滚动编辑器
+![烘焙菜单编辑器_v4.25.png](/baking_menu_editor_v4.25.png)
 
-4. Click `Bake ligthmap` and wait a bit.
+4. 点击“烘焙光照贴图”，然后稍等片刻。
 
-If baking doesn't start, there might be a problem with the software that runs on the baking PC (we're going to make it more robust with time), hit us up on twitter or discord and we'll get it started again.
+如果烘焙未能开始，可能是运行在烘焙计算机上的软件出现了问题（我们会随着时间使其更加稳健），请通过 Twitter 或 Discord 联系我们，我们将重新启动它。
 
-We're going to make baking more reliable and robust with time.
+随着时间的推移，我们将使烘焙更加可靠和稳健。
 
-:::caution
-Everytime you edit your parcel the baked lightmap will be cleared and will require a new bake!
-You can also manually clear a lightmap using the same editor:
-![baking_menu_editor_clear_v4.25.png](/baking_menu_editor_clear_v4.25.png)
+:::注意
+每次编辑您的地块后，烘焙的光照贴图将被清除并需要进行新的烘焙！您也可以在同一编辑器中手动清除光照贴图：
+![清除光照贴图_v4.25.png](/baking_menu_editor_clear_v4.25.png)
 :::
 
+### 使用灯笼
 
-### Using Lanterns
+[灯笼](/docs/features/lantern) 是发光的小块。您可以缩放发射器以创建区域光或条形光。您可以使用强度滑块来更改亮度。您还可以更改发射器的颜色。光线是以加法模式建模的，因此如果将强烈的红光和绿光放在一起，它们的综合光将呈橙色。
 
-[Lanterns](/docs/features/lantern) are small emitting blocks. You can scale the emitters to make area lights or strip lights. You can use the strength slider to change the intensity. You can change the color of the emitter too. Light is modelled additively, so if you put a strong red and green light side by side, the combined light will be orange.
+激活光照贴图对于此功能是必要的。
 
-Activating light-mapping is necessary for this feature.
+### 使用玻璃
 
-### Using glass
+光线会通过玻璃传播，没有减弱。我们计划在后期添加彩色（染色）玻璃。
 
-Light flows through glass with no attentuation. We plan to add colored (stained) glass later.
+### 计算了什么
 
-### What is calculated
-
-Currently we only calculate the lighting from the voxel field in your parcel. We ignore any .vox models, polytext, or images. We may add support for baking these in the future, or at least considering them when calculating the lighting.
+目前，我们只计算您地块内的体素场产生的光照。我们忽略了任何 .vox 模型、多边形文本或图像。我们可能会在未来添加对这些元素的支持，或者至少在计算照明时考虑它们。

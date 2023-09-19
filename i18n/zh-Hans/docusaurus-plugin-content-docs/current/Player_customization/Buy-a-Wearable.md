@@ -1,54 +1,48 @@
+# 如何购买可穿戴物品
+探索可穿戴物品，并购买您自己的物品！
 
-# How to buy a wearable.
-Discover wearables, and purchase your own!
+![如何购买可穿戴物品](/tutorials/[how_to_buy_wearable]wearable.png)
 
-![[how_to_buy_wearable]wearable.png](/tutorials/[how_to_buy_wearable]wearable.png)
+## 1. 浏览
+您可以有两种方式浏览可穿戴物品。
 
-## 1. Browse
-There are two ways you can browse wearables.
+### Cryptovoxels 网站
+您可以通过[Cryptovoxels](https://www.cryptovoxels.com/wearables)选项卡在Cryptovoxels网站上浏览可穿戴物品。
 
-### Cryptovoxels website
-You can browse wearables on the Cryptovoxels website via the [Wearables](https://www.cryptovoxels.com/wearables) tab.
+![Cryptovoxels浏览页面](/tutorials/[how_to_buy_a_wearable]cryptovoxels_browse_page_v4.55.gif){.align-center}
 
-![[how_to_buy_a_wearable]cryptovoxels_browse_page_v4.55.gif](/tutorials/[how_to_buy_a_wearable]cryptovoxels_browse_page_v4.55.gif){.align-center}
+单击一个可穿戴物品将带您进入其可穿戴物品页面，在那里您可以找到更多关于可穿戴物品的信息。
 
-Clicking on a wearable will take you to its wearable page where you can find more information about the wearable.
-
-![[how_to_buy_a_wearable]cryptovoxels_wearable_page_v4.55.gif](/tutorials/[how_to_buy_a_wearable]cryptovoxels_wearable_page_v4.55.gif){.align-center}
+![Cryptovoxels可穿戴物品页面](/tutorials/[how_to_buy_a_wearable]cryptovoxels_wearable_page_v4.55.gif){.align-center}
 
 ### Opensea
 
-You can also browse wearables on [Opensea](https://opensea.io/assets/cryptovoxel-wearables).
+您还可以在[Opensea](https://opensea.io/assets/cryptovoxel-wearables)上浏览可穿戴物品。
 
-![[how_to_buy_wearable]opensea_page.gif](/tutorials/[how_to_buy_wearable]opensea_page.gif){.align-center}
+![Opensea页面](/tutorials/[how_to_buy_wearable]opensea_page.gif){.align-center}
 
-
-In opensea you can sort the list of wearables by a small set of criterias.
-The criterias are:
+在Opensea上，您可以按照一小部分标准对可穿戴物品列表进行排序。
+这些标准包括：
 |||
 |---|---|
-|<ul><li> Author</li><li>Rarity</li><ul><li> Legendary; 1<=issues<10 </li><li> Epic; 10<=issues<100 </li><li> Rare; 100<=issues<1000 </li><li> Common; issues>1000 </li></ul><li> Vox url </li><li> Issues </li></ul> | ![[how_to_buy_wearable]sort_opensea-wearable.png](/tutorials/[how_to_buy_wearable]sort_opensea-wearable.png) |
+|<ul><li> 作者</li><li>稀有度</li><ul><li> 传奇; 1 <= 发行量 < 10 </li><li> 史诗; 10 <= 发行量 < 100 </li><li> 稀有; 100 <= 发行量 < 1000 </li><li> 普通; 发行量 > 1000 </li></ul><li> Vox 网址 </li><li> 发行量 </li></ul> | ![Opensea可穿戴物品排序](/tutorials/[how_to_buy_wearable]sort_opensea-wearable.png) |
 
+## 2. 购买
 
+![购买可穿戴物品](/tutorials/[how_to_buy_wearable]buying_a_wearable.gif){.align-center}
 
-## 2. Purchase
+一旦您选择了您的可穿戴物品，您可以通过单击列表中的“购买”按钮来购买它。
 
-![[how_to_buy_wearable]buying_a_wearable.gif](/tutorials/[how_to_buy_wearable]buying_a_wearable.gif){.align-center}
-
-Once you've chosen your wearable, you can buy it by clicking the `Buy` button in one of the listings.
-![[how_to_buy_wearable]list_of_prices.png](/tutorials/[how_to_buy_wearable]list_of_prices.png){.align-center}
+![价格列表](/tutorials/[how_to_buy_wearable]list_of_prices.png){.align-center}
 
 :::caution
-Watch out for the quantity and the price. Sometimes items can be sold in other currencies than **Ξ**.
+注意数量和价格。有时物品可以以其他货币而非**Ξ**出售。
 :::
 
-At that moment a Metamask window should popup asking you to confirm the transaction.
+在那一刻，Metamask 窗口应该弹出，要求您确认交易。
 
-**You should know:**
-- When buying a wearable, you have to pay for transaction fees, so watch your total balance!
+**您应该知道：**
+- 购买可穿戴物品时，您需要支付交易费用，所以要注意您的总余额！
 
-## 3. Wear it
-
-To wear your wearable, you can go to your [Costumer](/docs/Player_customization/Costume_tab).
-
-
+## 3. 穿戴
+要穿戴您的可穿戴物品，您可以前往您的[客户端](/docs/Player_customization/Costume_tab)。

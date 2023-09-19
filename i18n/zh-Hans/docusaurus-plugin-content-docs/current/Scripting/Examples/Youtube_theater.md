@@ -1,22 +1,22 @@
-# Youtube theater
+# YouTube 剧场
 
-## Youtube theater
-Let users share their videos live.
+## YouTube 剧场
+
+让用户实时分享他们的视频。
 
 :::danger
-Since v4.16 the text-input feature is non-existent, therefore this example is not practically doable. However, we are not removing this page as the example could still be useful to curious users.
+自 v4.16 版本以来，文本输入功能已不存在，因此此示例实际上无法实现。然而，我们不会删除此页面，因为对于好奇的用户来说，该示例仍然可能很有用。
 :::
-
 
 ![youtube_theater_example.png](/youtube_theater_example.png)
 
-### Process
+### 过程
 
-1. Place a Youtube feature and scale it
-2. Place a button somewhere and a text input on the wall
-3. Give the youtube feature the id 'video_object'
-4. Give the text input the id 'text_input'
-5. Insert the script below into the button
+1. 放置一个 YouTube 特性并调整其比例。
+2. 在某个位置放置一个按钮，并在墙上放置一个文本输入框。
+3. 给 YouTube 特性分配 ID 为 'video_object'。
+4. 给文本输入框分配 ID 为 'text_input'。
+5. 将下面的脚本插入到按钮中：
 
 ```js
 let image = parcel.getFeatureById('video_object')
@@ -30,7 +30,7 @@ function validateYouTubeUrl(url) {
         if (match && match[2].length == 11) {
             return true;
         } else {
-            alert('not valid');
+            alert('不是有效的链接');
             return false;
         }
     }
@@ -45,10 +45,12 @@ if(validateYouTubeUrl(newurl)){
 }
 })
 ```
-6. The grid
 
-Go to your parcel settings and check the grid box.
+6. 网格
+
+进入您的分区设置并选中网格框。
 ![grid-settings.png](/grid-settings.png)
 
-**What it does**
-Once the youtube url entered and the button pressed, the function `validateYouTubeUrl` is called to check the validity of the URL. If it's a good youtube URL then the video is changed and you can start playing it.
+**功能**
+
+一旦输入了 YouTube 链接并点击了按钮，将调用 `validateYouTubeUrl` 函数来检查 URL 的有效性。如果是一个有效的 YouTube URL，则会更改视频，然后您可以开始播放它。

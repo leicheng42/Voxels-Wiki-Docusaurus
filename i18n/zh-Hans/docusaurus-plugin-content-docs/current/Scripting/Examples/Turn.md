@@ -1,19 +1,19 @@
-# Turn Vox to Face Player
+# 让 Vox 模型面向玩家
 
-## Turn vox to face player
+## 让 Vox 模型面向玩家
 
-A vox model will pick up the first player in the parcel and turn to follow them.
+Vox 模型将跟随分区内的第一个玩家并转身以面向他们。
 
 ![turn-to-face.png](/turn-to-face.png)
 
-#### How to use
+#### 如何使用
 
-1. Create a vox model
-2. Assign a url (sample alien: `https://cdn.discordapp.com/attachments/573736707984457738/733461614107426836/aliem.vox`)
-3. Add this script
-4. Reload the parcel
+1. 创建一个 Vox 模型。
+2. 分配一个网址（示例外星人: `https://cdn.discordapp.com/attachments/573736707984457738/733461614107426836/aliem.vox`）。
+3. 添加此脚本。
+4. 重新加载分区。
 
-#### Script
+#### 脚本
 
 ```js
 setInterval(() => {
@@ -31,8 +31,8 @@ setInterval(() => {
 }, 200)
 ```
 
-#### Improvements
+#### 改进
 
-Refactor to run at 2hz and use the animation API to smoothly animate between rotations.
+重构以以 2hz 运行，并使用动画 API 平滑地在旋转之间进行动画。
 
-> ALL HAIL MATH.ATAN2!
+> 颂扬 `Math.atan2`！

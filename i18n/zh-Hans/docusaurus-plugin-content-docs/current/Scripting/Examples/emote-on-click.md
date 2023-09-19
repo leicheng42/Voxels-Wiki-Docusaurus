@@ -1,23 +1,23 @@
-# Emote on click
+# 单击表情
 
-## Emote emojis on click.
-Make an avatar emote when needed!
+## 单击时表情表情符号。
+在需要时使角色表情！
 
-#### Process
+#### 过程
 
-1. Place a vox model or a button for the sake of this example
-2. place the following script on the feature:
+1. 为了示例的完整性，放置一个体素模型或按钮
+2. 在特征上放置以下脚本：
 
 ```js
 feature.on('click',e=>{
 	e.player.emote('💓')
 })
 
-// For a list of supported emojis
-// use: console.log(emojis)
+// 支持的表情符号列表
+// 使用: console.log(emojis)
 ```
 
-3. if you want this to happen on a trigger instead of click, replace 'click' with 'trigger'
+3. 如果您希望这在触发而不是单击时发生，请将'click'替换为'trigger'
 
-#### What happens
-The scripts obtains the player from the click and generate emotes around the player.
+#### 发生了什么
+脚本从单击事件中获取玩家并在玩家周围生成表情符号。

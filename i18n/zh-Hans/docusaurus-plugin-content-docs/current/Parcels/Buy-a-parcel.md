@@ -1,206 +1,175 @@
-# How to buy a parcel
-How you can buy a Cryptovoxels parcel via primary sale or secondary sale
+如何购买一个地块
+您可以通过首次销售或二次销售购买Cryptovoxels地块的方法
 
-## What is a parcel?
-A parcel is a plot of land that lives inside the Cryptovoxels metaverse.
-Each parcel resides in a different [neighborhood](../The-world/) and has different dimensions.
+什么是地块？
+地块是存在于Cryptovoxels元宇宙内的一块土地。每个地块位于不同的[社区](../The-world/)中，尺寸各异。
 
 ![parcel-empty.gif](/buyingparcel/parcel-empty.gif)
 
-For information on what you can build on your parcel, go [here](/docs/Parcels/Building).
-You can also experiment beforehand using [spaces](/docs/Spaces), which is free.
+有关您可以在地块上建造什么的信息，请参阅[此处](/docs/Parcels/Building)。您还可以免费使用[空间](/docs/Spaces)进行预实验。
 
-## Requirements
-A digital wallet, such as [Metamask](https://metamask.io/).
-You'll also need cryptocurrency to make the purchase (usually ETH or WETH).
+要求
+数字钱包，例如[Metamask](https://metamask.io/)。您还需要加密货币来进行购买（通常是ETH或WETH）。
 
-## Purchasing
-You can buy parcels from Cryptovoxels (primary) or bid on / buy from someone else (secondary).
-**Cryptovoxels has primary sales every week via Dutch auctions.**
+购买
+您可以从Cryptovoxels（首次销售）购买地块，也可以从其他人那里出价购买（二次销售）。
+**Cryptovoxels每周通过荷兰拍卖进行首次销售。**
 
-Parcel sales directly from Cryptovoxels will either be listed by [crvox.eth](https://etherscan.io/address/0x084b1c3c81545d370f3634392de611caabff8148) or [bnolan](https://etherscan.io/address/0x2d891ed45c4c3eab978513df4b92a35cf131d2e2).
+来自Cryptovoxels的地块销售将由[crvox.eth](https://etherscan.io/address/0x084b1c3c81545d370f3634392de611caabff8148)或[bnolan](https://etherscan.io/address/0x2d891ed45c4c3eab978513df4b92a35cf131d2e2)列出。
 
 :::info
-**New parcels are usually listed every Wednesday at 9AM [New Zealand time](https://www.worldtimeserver.com/current_time_in_NZ.aspx).**
-If no sale is planned, an announcement is made on [Twitter](https://twitter.com/cryptovoxels) or in #announcements on [Discord](https://discord.gg/rQVMQax).
+**通常每周三上午9点[新西兰时间](https://www.worldtimeserver.com/current_time_in_NZ.aspx)会列出新的地块。**
+如果没有计划销售，会在[Twitter](https://twitter.com/cryptovoxels)或[Discord](https://discord.gg/rQVMQax)的#announcements中发布公告。
 :::
 
 :::caution
-Make sure your wallet is unlocked and connected to [OpenSea](https://opensea.io/collection/cryptovoxels) as all parcel transactions go through there.
+确保您的钱包已解锁并连接到[OpenSea](https://opensea.io/collection/cryptovoxels)，因为所有地块交易都会通过那里进行。
 :::
 
-### Finding a parcel
-You can see available parcels for sale on the Cryptovoxels site by clicking **[Buy Parcels](https://www.cryptovoxels.com/buy)** on the top bar.
-If there are any available, you can sort by ID, area, height, closing status & price.
+寻找地块
+您可以在Cryptovoxels网站上查看出售的地块，点击顶部栏的**[购买地块](https://www.cryptovoxels.com/buy)**。如果有可用的地块，您可以按ID、面积、高度、结束状态和价格排序。
 
 ![cv-sorting.png](/buyingparcel/cv-sorting.png)
 
-If parcels have been created but auctions haven't started yet, you'll see **Coming soon!** under Closing.
-If auctions have started, you'll see the time left of the auction under Closing.
+如果地块已经创建但尚未开始拍卖，您将在结束状态下看到**即将推出！**。如果已经开始了拍卖，您将在结束状态下看到拍卖的剩余时间。
 
-If you want to check the parcel out in Cryptovoxels, click the address link, then click the **Visit button**.
+如果要在Cryptovoxels中查看地块，请单击地址链接，然后单击**访问按钮**。
 
 ![cv-visiting.gif](/buyingparcel/cv-visiting.gif)
 
-Once you're ready to buy, click the **Buy** button on Cryptovoxels or on OpenSea.
+一旦准备好购买，单击Cryptovoxels上的**购买**按钮或在OpenSea上单击**购买**按钮。
 
-#### Marketplace
-You can also find parcels in Cryptovoxel's [Marketplace](https://www.cryptovoxels.com/marketplace/parcels), though this includes both primary and secondary parcels.
-If a primary parcel is available for sale, you'll see a **For sale!** sign to the left of it.
+市场
+您还可以在Cryptovoxel的[市场](https://www.cryptovoxels.com/marketplace/parcels)中找到地块，尽管其中包括首次销售和二次销售的地块。如果有首次销售的地块可供购买，您将在其左侧看到一个**待售！**标志。
 
 ![cv-marketplace.png](/buyingparcel/cv-marketplace.png)
 
-Click the address to visit the parcel in Cryptovoxels and click the link under Actions if you're interested in buying it.
+单击地址以在Cryptovoxels中访问地块，如果您有兴趣购买，请单击操作下面的链接。
 
-For the parcels that are not listed for sale, but are owned by either crvox.eth or bnolan, you can try making an offer.
-Jump to the [Making an offer](/docs/Parcels/Buy-a-parcel#making-an-offer) section for more information.
+对于尚未列出出售的地块，但由crvox.eth或bnolan拥有的地块，您可以尝试提出要约。有关更多信息，请转到[提出要约](/docs/Parcels/Buy-a-parcel#making-an-offer)部分。
 
-### Dutch auctions
-**A Dutch auction is an auction that starts at a high price and decreases over time.**
-There are usually about **15 to 30 parcels** listed for auction every Wednesday.
+荷兰拍卖
+**荷兰拍卖是以高价开始并随时间递减的拍卖。**通常每周三列出约**15到30块地块**。
 
 ![opensea-dutch-new.png](/buyingparcel/opensea-dutch-new.png)
 
-When an auction starts, all you have to do is hit the **Buy now** button in OpenSea or the **Buy** button on [Cryptovoxels](https://www.cryptovoxels.com/buy).
-Your wallet should pop-up, and once the transaction is confirmed, you have the parcel!
+拍卖开始时，您只需在OpenSea上单击**立即购买**按钮或在[Cryptovoxels](https://www.cryptovoxels.com/buy)上单击**购买**按钮。您的钱包应该会弹出，一旦交易确认完成，您就拥有了地块！
 
-Check out the **[After ownership](/docs/Parcels/Buy-a-parcel#after-ownership)** section once you've acquired your new parcel.
+一旦获得新地块，请查看**[所有权之后](/docs/Parcels/Buy-a-parcel#after-ownership)**部分。
 
-### Classic auctions
-**A Classic auction starts at a low price and increases with bids. The winner is the person who bid the highest at the end of auction.**
-If there is an active auction on a parcel you are interested in, you'll need to place a bid.
+经典拍卖
+**经典拍卖以低价开始，随竞标增加而增加。最终胜出的是在拍卖结束时出价最高的人。**如果您有兴趣的地块正在进行拍卖，您需要提出竞标。
 
-#### Placing a bid
-If a parcel is currently being auctioned, its page on OpenSea will show time left and the current price.
-To place a bid, click the **Place bid** button.
+提出竞标
+如果当前正在拍卖地块，其在OpenSea上的页面将显示剩余时间和当前价格。要提出竞标，请单击**提出竞标**按钮。
 
 ![opensea-auction-new.png](/buyingparcel/opensea-auction-new.png)
 
-Put your amount and click **Place Bid** to make your bid, or click **Convert ETH** if you do not have any WETH.
-If you'd rather convert some WETH ahead of time, read the [next section](/docs/Parcels/Buy-a-parcel-temp#weth).
+输入您的出价金额，然后单击**提出竞标**以提出您的出价，或者如果您没有WETH，则单击**转换ETH**。如果您愿意提前转换一些WETH，请阅读[下一节](/docs/Parcels/Buy-a-parcel-temp#weth)。
 
 ![opensea-placeabid.png](/buyingparcel/opensea-placeabid.png)
 
-After placing a bid, your name will be shown under *Offers*.
-If you're the highest bidder at the end of the auction, you'll be declared the winner!
+提出竞标后，您的名称将显示在*要约*下。如果在拍卖结束时您是最高出价者，您将被宣布为获胜者！
 
-Check out the **[After ownership](/docs/Parcels/Buy-a-parcel-temp#after-ownership)** section once you've acquired your new parcel.
+請在[拍賣的最後10分鐘內](/buyingparcel/opensea-auction-new.png)提出
 
-:::caution
-**Any bids made in the last 10 minutes of an auction will extend the auction by 10 more minutes.**
-:::
+的任何出價都將使拍賣延長10分鐘。
 
-:::caution
-**Watch out!**
-If you place an offer on a parcel, that offer is still valid even when the parcel is sold via auction (i.e. your offer was not accepted).
-In these circumstances, the new owner can easily **resell** the parcel to you right after purchasing it!
-_For example:_ 
--You place an offer of 5 ETH on a parcel (offer was not accepted before auction).
--Parcel goes on auction for 0.9 ETH to 0.6 ETH.
--Someone can win it at 0.9 ETH and resell it to you for 5 ETH
-:::
+請注意！如果您對一塊地块提出要約，則即使該地块通過拍賣出售（即您的要約未被接受），該要約仍然有效。在這種情況下，新擁有者可以在購買後立即輕松**再次出售**地块給您！例如：您對某個地塊提出5 ETH的要約（在拍賣之前未接受要約）。地塊以0.9 ETH至0.6 ETH的價格拍賣。某人以0.9 ETH贏得它，然后以5 ETH的價格將其再次出售給您！
 
-#### WETH
-Most Classic auctions use WETH, so if you only have ETH, you'll need to convert it.
-Luckily OpenSea has a converter you can use (there is a slight fee for this).
+WETH
+大多数经典拍卖使用WETH，因此如果您只有ETH，您需要将其转换为WETH。幸运的是，OpenSea提供了一个可供您使用的转换器（这会产生轻微的费用）。
 
-**To convert your ETH to WETH, go [here](https://opensea.io/account?tab=bids) and click the Wallet icon on the upper right side.**
-From there, click the **⋮** to the right of **ETH**, then click **Wrap** and convert the amount you need.
+要将您的ETH转换为WETH，请转到[这里](https://opensea.io/account?tab=bids)，然后单击右上角的钱包图标。从那里，单击ETH右侧的**⋮**，然后单击**Wrap**并转换所需的金额。
 
 ![opensea-weth2.png](/buyingparcel/opensea-weth2.png)
 
-More information on converting to WETH can be found [here](https://support.opensea.io/hc/en-us/articles/360063498293-What-s-WETH-How-do-I-get-it-).
+有关转换为WETH的更多信息，请参阅[此处](https://support.opensea.io/hc/en-us/articles/360063498293-What-s-WETH-How-do-I-get-it-)。
 
-### Making an offer
-crvox.eth/bnolan will **randomly** accept offers on new parcels just before the auctions start.
+提出要約
+crvox.eth/bnolan會在拍賣開始前**隨機**接受新地塊的要約。
 
-You can try making an offer for the parcels that have **Coming soon!** in the closing status [here](https://www.cryptovoxels.com/buy).
-You can also try making an offer to any parcel listed in the [Marketplace](https://www.cryptovoxels.com/marketplace/parcels) by crvox.eth or bnolan that isn't currently for sale.
+您可以嘗試為[在這裡](https://www.cryptovoxels.com/buy)的結束狀態下標有**即將推出！**的地塊提出要約。您還可以嘗試為在[Marketplace](https://www.cryptovoxels.com/marketplace/parcels)中由crvox.eth或bnolan擁有但目前未出售的任何地塊提出要約。
 
-To make an offer, click the **Make offer** button in OpenSea.
+要提出要約，請在OpenSea中單擊**提出要約**按鈕。
 
 ![opensea-offer.png](/buyingparcel/opensea-offer.png)
 
-If your offer was placed, you'll see your name under *Offers*.
+如果您的要約已提交，您的名稱將顯示在*要約*下。
 
 ![opensea-makeoffer.png](/buyingparcel/opensea-makeoffer.png)
 
-:::caution
-You can keep making offers for no fee, but canceling an offer requires paying gas.
-:::
+您可以免费继续提出要约，但取消要约需要支付燃气费。
 
-### Secondary sales
-If the parcel is **not** being sold by [crvox.eth](https://etherscan.io/address/0x084b1c3c81545d370f3634392de611caabff8148) or [bnolan](https://etherscan.io/address/0x2d891ed45c4c3eab978513df4b92a35cf131d2e2), then it is a secondary sale.
-You can find secondary sales listed on the Cryptovoxels site via Marketplace or OpenSea.
+二次销售
+如果地块**不是**由[crvox.eth](https://etherscan.io/address/0x084b1c3c81545d370f3634392de611caabff8148)或[bnolan](https://etherscan.io/address/0x2d891ed45c4c3eab978513df4b92a35cf131d2e2)出售，那么它是二次销售。您可以通过Marketplace或OpenSea在Cryptovoxels网站上找到二次销售的地块。
 
-Functionally speaking, there is no difference in the parcel if you buy it from the secondary market.
+从功能上讲，如果您从二次市场购买地块，地块没有任何区别。
 
-#### OpenSea
-Go [here](https://opensea.io/collection/cryptovoxels?search[sortAscending]=true&search[sortBy]=PRICE&search[toggles][0]=BUY_NOW) to see what's available for sale, and go [here](https://opensea.io/collection/cryptovoxels?search[sortAscending]=true&search[sortBy]=PRICE&search[toggles][0]=ON_AUCTION) to see what parcels are currently being auctioned (via Classic).
+OpenSea
+请转到[这里](https://opensea.io/collection/cryptovoxels?search[sortAscending]=true&search[sortBy]=PRICE&search[toggles][0]=BUY_NOW)查看可用的出售物品，然后转到[这里](https://opensea.io/collection/cryptovoxels?search[sortAscending]=true&search[sortBy]=PRICE&search[toggles][0]=ON_AUCTION)查看当前正在进行拍卖的地块（通过经典方式）。
 
-#### Cryptovoxels Marketplace
-On the [Cryptovoxels Marketplace](https://www.cryptovoxels.com/marketplace/parcels), you can find both primary and secondary parcels.
+Cryptovoxels Marketplace
+在[Cryptovoxels Marketplace](https://www.cryptovoxels.com/marketplace/parcels)上，您可以找到首次销售和二次销售的地块。
 
-## After ownership
-**Congratulations!**
+拥有地块后
+**恭喜！**
 
-Now we have to update the parcel's ownership! 
-To do that, go to the parcel's page by clicking on **View on Cryptovoxels** in the top right-hand corner in OpenSea.
+现在我们需要更新地块的所有权！要做到这一点，请在OpenSea右上角单击**在Cryptovoxels上查看**，进入地块的页面。
 
 ![opensea-viewoncv.png](/buyingparcel/opensea-viewoncv.png)
 
-On the parcel's page, click the **🐙Update** button.
+在地块页面上，单击右侧的**🐙Update**按钮。
 
 ![parcel-update.png](/buyingparcel/parcel-update.png)
 
-Under Details on the right side of the parcel page, it should now list your name (if not, refresh page).
+在地块页面右侧的详细信息下，现在应该列出您的名称（如果没有，请刷新页面）。
 
 ![parcel-name.png](/buyingparcel/parcel-name.png)
 
-### Building
-Click the **Visit** button on your parcel's page to go to your parcel in Cryptovoxels.
-Learn how to build, place features (including NFTs), and modify the parcel's name / info [here](/docs/Parcels/Building).
+建造
+单击地块页面上的**访问**按钮，前往Cryptovoxels中的地块。了解如何建造、放置特征（包括NFT）以及修改地块的名称/信息，[在这里](/docs/Parcels/Building)。
 
-#### Building template
-You can also start with a template. 
-On your parcel's page, click the **Build...** button and select a template.
+建造模板
+您还可以从模板开始。在您的地块页面上，单击**建造...**按钮，然后选择一个模板。
 
 ![parcel-build.png](/buyingparcel/parcel-build.png)
 
 :::caution
-Building templates replace the entire parcel.
+建造模板会替换整个地块。
 :::
 
-### Events
-You can now set up an event for your parcel!
-Parcel events automatically show up on the front page of the Cryptovoxels site and Explorer.
+事件
+您现在可以为地块设置一个事件！地块事件会自动显示在Cryptovoxels网站和资源管理器的首页。
 
 ![parcel-events.png](/buyingparcel/parcel-events.png)
 
-To create an event, go to your parcel's page and click the **Create/Edit parcel event** button on the right side, under Parcel admin.
+要创建事件，请前往地块页面，然后在右侧的“地块管理员”下方单击**创建/编辑地块事件**按钮。
 
 ![parcel-event.png](/buyingparcel/parcel-event.png)
 
-A window will pop up asking for event details - fill those out.
+一个窗口将弹出，要求填写事件详细信息。
 
 ![parcel-eventinfo.png](/buyingparcel/parcel-eventinfo.png)
 
-Have a great event!
+祝你的活动成功！
 
-### Collaborators
-You can add collaborators to your parcel, granting them the ability to add/edit/erase blocks and features on your parcel.
-They also have the ability to create/edit events.
+合作者
 
-To add a collaborator, go to your parcel's page and click the pen icon under Collaborators, then type in their address or .eth name.
+
+您可以将合作者添加到您的地块，赋予他们在您的地块上添加/编辑/删除方块和特征的能力。他们还有创建/编辑事件的能力。
+
+要添加合作者，请前往您的地块页面，然后在“合作者”下方单击钢笔图标，然后输入他们的地址或.eth名称。
 
 ![parcel-collab.png](/buyingparcel/parcel-collab.png)
 
 :::info
-Collaborators cannot change the parcel's name, toggle grid or sandbox mode, use building templates or sell off your parcel.
+合作者无法更改地块的名称、切换网格或沙盒模式、使用建筑模板或出售您的地块。
 :::
 
-### Sandbox mode
-Sandbox mode makes your parcel editable for everyone.
-To turn this on, click the **Is Sandbox** checkbox in the Parcel admin settings on the right side in your parcel's page.
+沙盒模式
+沙盒模式使您的地块对所有人都可以编辑。
+
+要打开此选项，请单击地块页面右侧的**是否为沙盒**复选框。
 
 ![parcel-sandbox.png](/buyingparcel/parcel-sandbox.png)

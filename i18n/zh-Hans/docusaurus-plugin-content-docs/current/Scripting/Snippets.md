@@ -1,49 +1,49 @@
-# Snippets
-Snippets available for inserting into the script editor
+# 片段
+可插入脚本编辑器的片段
 
-## Snippets:
+## 代码片段：
 
-### Set sign on click
+### 单击时设置标志
 ```js
-/* for more info go to 
+/* 更多信息请参阅 
 /docs/Scripting/Examples/Click-trigger
 */
 
 let textSign = parcel.getFeatureById('triggerResult')
 
 feature.on('click',e=>{
-    textSign.set({text:'Click!'})
+    textSign.set({text:'点击了！'})
 })
 ```
 
-### is Wearing a wearable
+### 是否穿戴可穿戴物品
 
 ```js
 /*
-This checks whether the player is wearing a wearable on player enter
-using '.hasWearable(token_id,collection_id(optional))'
+这将在玩家进入时检查玩家是否穿戴了可穿戴物品
+使用 '.hasWearable(token_id,collection_id(optional))'
 */
 
 parcel.on('playerenter',e=>{
   if(e.player.isAnonymous){
-    // if player is anonymous we can't check if he's got wearables.
+    // 如果玩家是匿名的，我们无法检查他是否有穿戴品。
     return false
   }
-  console.log(e.player.hasWearable(94,1)) // show true or false
+  console.log(e.player.hasWearable(94,1)) // 显示 true 或 false
 })
 
 ```
 
-### Play on player enter
+### 玩家进入时播放
 
 ```js
-// Unnecessary, videos and audio have an `autoplay` function
+// 不必要，视频和音频有一个`autoplay`功能
 parcel.on('playerenter', () => {
   feature.play()
 })
 ```
 
-### Pause on player leave
+### 玩家离开时暂停
 
 ```js
 parcel.on('playerleave', () => {
@@ -51,45 +51,45 @@ parcel.on('playerleave', () => {
 })
 ```
 
-### Welcome/Goodbye message
+### 欢迎/告别信息
 
 ```js
-/* for more info go to 
+/* 更多信息请参阅 
 /docs/Scripting/Examples/welcome_message
 */
 
 let msg = parcel.getFeatureById('welcometxt')
 
 parcel.on('playerenter', event => {
-  msg.set({text:"Welcome"})
+  msg.set({text:"欢迎"})
   feature.set({text:event.name})
 
   console.log(event.name)
 })
 
 parcel.on('playerleave', event => {
-  msg.set({text:"Goodbye"})
+  msg.set({text:"再见"})
   feature.set({text:event.name})
 
   console.log(event.name)
 })
 ```
 
-### Change feature url on timer
+### 在计时器上更改特性网址
 ```js
 
-/* for more info go to 
+/* 更多信息请参阅 
 /docs/Scripting/Examples/loop-images-timer
 */
 
-var url =["URL1",
-"URL2",
-"URL3",
-"URL4"]
+var url =["网址1",
+"网址2",
+"网址3",
+"网址4"]
 
-let numSecs=2 // number of seconds
+let numSecs=2 // 秒数
 
-//-----------Nothing to touch here-----------
+//-----------不要在这里触碰-----------
 i=0
 setInterval(()=>{
   if(i!=url.length){
@@ -101,7 +101,7 @@ setInterval(()=>{
 },numSecs*1000)
 ```
 
-### Delete on click
+### 单击时删除
 
 ```js
 feature.on('click', () => {
@@ -109,13 +109,13 @@ feature.on('click', () => {
 })
 ```
 
-### Youtube theater
+### Youtube 影院
 ```js
-/* for more info go to 
+/* 更多信息请参阅 
 /docs/Scripting/Examples/Youtube_theater
 */
 
-// This code runs best on Grid!
+// 此代码在 Grid 上运行效果最佳！
 
 let image = parcel.getFeatureById('video_object')
 
@@ -128,7 +128,7 @@ function validateYouTubeUrl(url) {
         if (match && match[2].length == 11) {
             return true;
         } else {
-            alert('not valid');
+            alert('无效');
             return false;
         }
     }
@@ -144,10 +144,10 @@ if(validateYouTubeUrl(newurl)){
 })
 ```
 
-### Collidable - button toggle
+### 可碰撞 - 按钮切换
 
 ```js
-/* for more info go to 
+/* 更多信息请参阅 
 /docs/Scripting/Examples/trap_door
 */
 
@@ -168,20 +168,20 @@ feature.on('click',e=>{
 })
 ```
 
-### Collidable - button trigger and revert
+### 可碰撞 - 按钮触发和恢复
 
 ```js
-/* for more info go to 
+/* 更多信息请参阅 
 /docs/Scripting/Examples/trap_door
 */
 
-// Button click will make item non-collidable
-// Item will become collidable 1 seconds later
+// 单击按钮将使项目不可碰撞
+// 项目将在1秒后变为可碰撞
 
 let b = parcel.getFeatureById('trapdoor')
 
 b.set({collidable:true})
-let timeNonCollidable = 1 // time in seconds
+let timeNonCollidable = 1 // 秒数
 
 feature.on('click',e=>{
     b.set({collidable:false})
@@ -190,22 +190,22 @@ feature.on('click',e=>{
 })
 ```
 
-### Pressure plate
+### 压力板
 
 ```js
-/* Place a vox model and give it the following url: */
+/* 放置一个 vox 模型并给它以下网址: */
 // /docs/vox_library/pressure-plate.vox
 
-// Give it a scale of [1, 0.75 1]
+// 将其缩放设置为 [1, 0.75, 1]
 
-// Select `set as trigger` in the editor. no need to edit other settings
+// 在编辑器中选择`设置为触发器`，无需编辑其他设置
 
 feature.on('trigger',e=>{
-    console.log('I have been stepped on')
+    console.log('我被踩了')
 })
 ```
 
-### Teleport on click
+### 单击时传送
 
 ```js
 
@@ -214,11 +214,11 @@ feature.on('click',e=>{
 })
 ```
 
-### get collectibles
+### 获取可收集物品
 
 ```js
 /*
-This returns the collectibles of a player on 'playerenter'
+这将在'playerenter'时返回玩家的可收集物品
 */
 
 parcel.on('playerenter',e=>{
