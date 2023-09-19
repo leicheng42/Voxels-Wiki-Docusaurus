@@ -29,6 +29,8 @@ function BlogPostPageContent({sidebar, children}) {
           />
         ) : undefined
       }>
+      <meta name="referrer" content="never"></meta>
+      <meta data-draft-node="block" data-draft-type="table" data-size="normal" data-row-style="normal"></meta>
       <BlogPostItem>{children}</BlogPostItem>
 
       {(nextItem || prevItem) && (

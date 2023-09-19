@@ -17,7 +17,7 @@ export default class Comment extends PureComponent {
     this.Waline = new Waline({
       el: this._commentRef.current,
       serverURL: 'https://c.leicheng42.com',
-      visitor: true,     // 开启阅读量统计
+      visitor: false,     // 开启阅读量统计
       path: this.props.id,
      })
   }
