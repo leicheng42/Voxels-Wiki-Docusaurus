@@ -1,62 +1,62 @@
-# 脚本
-包括在地块和特性中的脚本函数和事件。
+# 脚本编程
+包括在地块和功能中的脚本函数和事件。
 
-## 脚本
+## 脚本编程
 
-脚本接口允许您在自己的服务器上运行 JavaScript 代码并将更新发送到世界中。连接到该世界的每个人都会看到您脚本化地块的相同视图。您可以在地块上的任何特性中编写脚本，并从该脚本访问其他特性。
+脚本接口允许您在自己的服务器上运行JavaScript代码，并将更新发送到世界中。连接到世界的每个人都会看到您脚本化地块的相同视图。您可以在地块上的任何功能内编写脚本，并从该脚本访问其他功能。
 
-一旦您拥有一个地块，您就可以开始使用特性脚本引擎。Cryptovoxels 中的脚本编写主要基于客户端。也就是说，大多数脚本将由客户端执行，而不是服务器。
+一旦您拥有一个地块，就可以开始使用功能脚本引擎。在Cryptovoxels中，脚本编程主要是基于客户端的。也就是说，大多数脚本将由客户端而不是服务器运行。
 
 层次结构如下：
 
 - 世界
-	- [地块对象](/docs/Scripting/Scripting-Documentation#the-parcel)
-  - [特性对象](/docs/Scripting/Scripting-Documentation#feature-object)
-  - [玩家对象](/docs/Scripting/Scripting-Documentation#player-object)
-  - [基本 GUI 对象](/docs/Scripting/basic-gui-api)
-  - [GUI 控件对象](/docs/Scripting/Scripting-Documentation#guicontrol-object)
-      
-脚本示例：[点击这里](/docs/Scripting/Examples)
+    - [地块对象](/docs/Scripting/Scripting-Documentation#the-parcel)
+    - [功能对象](/docs/Scripting/Scripting-Documentation#feature-object)
+    - [玩家对象](/docs/Scripting/Scripting-Documentation#player-object)
+    - [基本GUI功能对象](/docs/Scripting/basic-gui-api)
+    - [GUI控制对象](/docs/Scripting/Scripting-Documentation#guicontrol-object)
+
+要获取脚本示例：[点击此处](/docs/Scripting/Examples)
 
 :::警告
-更新的文档版本请参阅 [blog.cryptovoxels.com](http://blog.cryptovoxels.com/scripting-bundle/)
+最新的文档可以在[blog.cryptovoxels.com](http://blog.cryptovoxels.com/scripting-bundle/)找到。
 :::
 
 
       
 ### 地块
-本节包括了适用于所有地块的属性、方法和事件。
+此部分包括所有地块通用的属性、函数和事件。
 
 #### 属性
 
-**ID** - `parcel.id = 500` - 返回一个整数，表示地块的ID。
+**ID** - `parcel.id = 500` - 返回一个整数，即地块的ID
 
-**Owner** - `parcel.owner = "0x..."` - 返回一个字符串，表示地块的所有者。
+**拥有者** - `parcel.owner = "0x..."` - 返回一个字符串，即地块的拥有者
 
-**Contributors** - `parcel.contributors = []` - 返回一个数组，表示地块的贡献者列表。
+**贡献者** - `parcel.contributors = []` - 返回一个数组，即地块的贡献者列表
 
-**allowLoggedInOnly** - `parcel.allowLoggedInOnly = false`- 返回一个布尔值；当设置为 true 时，所有未登录的用户将被踢出。
+**allowLoggedInOnly** - `parcel.allowLoggedInOnly = false`- 返回一个布尔值；当设置为true时，所有未登录的用户将被踢出。
 
-**isPrivate** - `parcel.isPrivate = false`- 返回一个布尔值；返回地块是否为私有。当设置为 true 时，不允许进入地块的所有玩家将被踢出。请参阅 [allow,disallow](/docs/Scripting/Scripting-Documentation#allow-wallet-parcel-allow)。
+**isPrivate** - `parcel.isPrivate = false`- 返回一个布尔值；返回地块是否为私人地块的布尔值。当设置为true时，将踢出未被允许进入地块的所有玩家。参见[允许、不允许](/docs/Scripting/Scripting-Documentation#allow-wallet-parcel-allow)。
 
-**allowedWallets** - `parcel.allowedWallets = ["0x..."]`- 返回一个数组；如果地块是私有的，则返回允许进入地块的钱包列表。不能设置，使用 [allow,disallow](/docs/Scripting/Scripting-Documentation#allow-wallet-parcel-allow)。
+**allowedWallets** - `parcel.allowedWallets = ["0x..."]`- 返回一个数组；如果地块是私人地块，则返回允许进入地块的钱包列表。不能设置，请使用[允许、不允许](/docs/Scripting/Scripting-Documentation#allow-wallet-parcel-allow)。
 
 :::信息
-注意：使用 `isPrivate` 将地块设置为私有后，用户仍然需要先进入地块，然后才会被踢出。`isPrivate`、`allow` 和 `disallow` 在自由空间中被禁用。
+注意：使用`isPrivate`将地块设为私人地块仍然需要用户首先进入地块，然后才会被踢出。`isPrivate`、`allow`和`disallow`在免费空间中被禁用。
 :::
 
-#### 方法
+#### 函数
 
 ##### getFeatures - `parcel.getFeatures()`
-- 返回：特性对象列表
+- 返回：一个功能对象列表
 
 ```js
 let features = parcel.getFeatures();
 ```
 
 ##### getFeatureById - `parcel.getFeatureById(id)` 
-- 参数：**id** - 所需特性的id；一个*字符串*
-- 返回：一个特性对象
+- 参数：**id** - 所需功能的id；一个 *字符串*
+- 返回：一个功能对象
 
 ```js
 let door = parcel.getFeatureById('door');
@@ -64,8 +64,8 @@ console.log('door:', door);
 ```
 
 ##### getFeatureByUuid - `parcel.getFeatureByUuid(Uuid)` 
-- 参数：**Uuid** - 所需特性的Uuid；一个*字符串*
-- 返回：一个特性对象
+- 参数：**Uuid** - 所需功能的Uuid；一个 *字符串*
+- 返回：一个功能对象
 
 ```js
 let feature = parcel.getFeatureById('3ed2bdd2-7570-485d-85b3-e5fd950bf3c6');
@@ -73,8 +73,8 @@ console.log('feature:', feature);
 ```
 
 ##### getFeaturesByType - `parcel.getFeaturesByType(type)` 
-- 参数：**type** - 所需特性的类型；一个*字符串*
-- 返回：特性对象列表
+- 参数：**type** - 所需功能类型；一个 *字符串*
+- 返回：一个功能对象列表
 
 ```js
 let allVoxModels = parcel.getFeaturesByType('vox-model');
@@ -94,20 +94,21 @@ let allVoxModels = parcel.getFeaturesByType('vox-model');
 - `'video'`
 
 ##### createFeature - `parcel.createFeature(type)` 
-- 参数：**type** - 所需特性的类型；一个*字符串*
-- 返回：一个特性对象
+- 参数：**type** - 所需功能类型；一个 *字符串*
+- 返回：一个功能对象
 
 ```js
 let newFeature = parcel.createFeature('vox-model');
 ```
 
-> 创建特性时，默认的比例和位置为 [0,0,0]。因此，请记得创建后给它一个位置和比例。要了解如何执行此操作，请滚动到下方的 [特性对象](/docs/Scripting/Scripting-Documentation#feature-object) -:::警告
-属性部分。
+> 当创建功能时，其缩放和位置为[0,0,0]。
+因此，请记得在创建后为其指定位置和缩放。要了解如何操作，请滚动到[功能对象](/docs/Scripting/Scripting-Documentation#feature-object) -:::警告
+属性。
 :::
 
 
 ##### removeFeature - `parcel.removeFeature(f)` 
-- 参数：**f** - 要移除的特性；一个*特性*对象
+- 参数：**f** - 要移除的功能；一个 *功能* 对象
 - 返回：一个事件
 
 ```js
@@ -118,21 +119,21 @@ parcel.removeFeature(chair);
 
 ##### getPlayers - `parcel.getPlayers()` 
 - 参数：无
-- 返回：玩家对象列表。
+- 返回：一个玩家对象列表。
 
 ##### getPlayersWithinParcel - `parcel.getPlayersWithinParcel()` 
 - 参数：无
-- 返回：玩家对象列表。仅限于地块内的玩家
+- 返回：一个玩家对象列表。仅限在地块内的玩家
 
 ##### fetchSnapshots(callback?) - `parcel.fetchSnapshots(callback?)`
-- 参数：（可选）在获取快照时调用的回调函数。回调函数必须有一个参数，它将是一个快照数组。
-- 返回：无
-- **注意**：这在自由空间中不起作用。
+- 参数：（可选）当快照已被获取时调用的回调函数。回调函数必须有一个参数，这个参数将是一个快照的数组。
+- 返回：void
+- **注意**：这在空间中不起作用。
 
 ##### setSnapshot(snapshot_id) - `parcel.setSnapshot(snapshot_id)`
-- 参数：代表所选快照的id的整数。
-- 返回：无
-- **注意**：这在自由空间中不起作用。
+- 参数：表示所选快照的ID的整数。
+- 返回：void
+- **注意**：这在空间中不起作用。
 
 示例： 
 ```js
@@ -141,141 +142,140 @@ function myCallback(snapshots){
 }
 
 feature.on('click',e=>{
+
+
   parcel.fetchSnapshots(myCallback)
 })
 ```
 :::警告
-
-
 **请记住两件事：**
-**一**，通过脚本将您的地块还原到快照后，它不会保存在服务器上。（只有客户端可以看到）。还要注意，您的脚本将消失，因为它将被覆盖。
-**二**，如果您在调用 `setSnapshot` 后编辑地块，它将在服务器上保存快照。
+**第一**，通过脚本将您的地块还原为快照时，它不会保存在服务器上（只有客户端可以看到）。还请注意，您的脚本将消失，因为它将被覆盖。
+**第二**，如果在调用`setSnapshot`之后编辑了地块，它将在服务器上保存快照。
 :::
 
 
 ##### allow(wallet) - `parcel.allow("0x..")` {#allow-wallet-parcel-allow}
-将 `wallet` 添加到地块为私有时允许的钱包列表中。
+将`wallet`添加到私人地块时允许的钱包列表中。
 - 参数：一个钱包地址；
-- 返回：无；
+- 返回：void;
 
 ##### disallow(wallet) - `parcel.disallow("0x..")`
-从地块为私有时允许的钱包列表中移除 `wallet`。
+从私人地块时允许的钱包列表中删除`wallet`。
 - 参数：一个钱包地址；
-- 返回：无；
+- 返回：void;
 
 ##### isWalletAllowedIfPrivate(wallet) - `parcel.isWalletAllowedIfPrivate("0x..")`
-检查 `wallet` 是否在地块为私有时被允许进入内部。
+检查私人地块时`wallet`是否被允许进入。
 - 参数：一个钱包地址；
-- 返回：无；
+- 返回：void;
 
 ### 地块事件
 
 **玩家进入** - `parcel.on('playerenter', (e)=> {})` 
-- 返回：一个事件 `e` 包含一个玩家对象，其中包含了玩家的信息。
+- 返回：一个包含玩家对象及其信息的事件`e`。
 - 例如：`e.player.name -> 返回 "Fayelure"`
 - 当玩家进入地块时触发
 
 **玩家离开** - `parcel.on('playerleave', (e)=> {})` 
-- 返回：一个事件 `e` 包含一个玩家对象，其中包含了玩家的信息。
+- 返回：一个包含玩家对象及其信息的事件`e`。
 - 例如：`e.player.wallet -> 返回 "0xdbw2fr8..."`
 - 当玩家离开地块时触发
 
-**玩家附近** - `parcel.on('playernearby', (e)=> {})` 
-- 返回：一个事件 `e` 包含一个玩家对象，其中包含了玩家的信息。
+**附近的玩家** - `parcel.on('playernearby', (e)=> {})` 
+- 返回：一个包含玩家对象及其信息的事件`e`。
 - 例如：`e.player.name -> 返回 "Fayelure"`
-- 当玩家进入地块周围的街道时触发
+- 当玩家进入围绕地块的街道时触发
 
 **玩家远离** - `parcel.on('playeraway', (e)=> {})` 
-- 返回：一个事件 `e` 包含一个玩家对象，其中包含了玩家的信息。
+- 返回：一个包含玩家对象及其信息的事件`e`。
 - 例如：`e.player.name -> 返回 "Fayelure"`
-- 当玩家离开地块附近/街道区域时触发
+- 当玩家离开地块附近/街道时触发
 
 ### 玩家对象
 
-可以通过 `parcel.getPlayers()` 或 `feature.on('click', e => console.log(e.player))` 获取玩家对象。目前只是一个对象，但将来将成为一个类。
+可以从`parcel.getPlayers()`或`feature.on('click', e => console.log(e.player))`中获取。目前它只是一个对象，但将来会成为一个类。
 
-#### 属性:
+#### 属性：
 
 * `player.name` => 'captainbenis.eth'
 * `player.wallet` => '0x2D891ED45C4C3EAB978513DF4B92a35Cf131d2e2'
-* `player.uuid` => 该玩家实例的 avatar uuid（玩家可能在多个标签页中具有单独的 avatar）
+* `player.uuid` => 该玩家实例的头像UUID（玩家可能在多个选项卡中打开具有单独头像的选项卡）
 
 :::警告
-存在多种欺骗 `player.wallet` 和 `player.name` 的方法，请勿信任或向此地址发送资金。在未来，我们将会加强托管脚本服务器的安全性，并在这方面更新文档。
+有多种方法可以欺骗`player.wallet`和`player.name`，不要相信或向此地址发送资金。在将来为托管脚本服务器加强安全性时，我们将更新这些文档。
 :::
 
-#### 函数:
+#### 函数：
 
 ##### teleportTo(coordinates) - `player.teleportTo(coordinates)`
-- 参数：一个坐标的字符串，例如 `'N@43W,250N,1U'`
-- 返回：无
-- 在地块外的玩家上被禁用
-[查看示例](/docs/Scripting/Examples/teleport-player)
+- 参数：坐标字符串，例如 `'N@43W,250N,1U'`
+- 返回：void
+- 在地块外禁用
 
 ##### hasWearable(tokenId,collectionId?) - `player.hasWearable(tokenId,collectionId)`
-- 参数：一个 `tokenId` 整数，代表可穿戴物品的 token id，以及可穿戴物品所属集合的 id。
-- 返回：true 或 false。
+- 参数：一个整数 `tokenId`，即可穿戴物品的令牌ID，以及可穿戴物品所属集合的ID。
+- 返回：true或false。
 
 ##### emote(emoji) - `player.emote('😋')`
-- 参数：一个字符串；一个由 cryptovoxels 支持的表情符号。有关受支持的表情符号列表，请参阅 [表情符号](/docs/Social#emojis)。
-您也可以在脚本
-
-中找到此列表 `console.log(emojis)`。
-- 返回：无
-- 在地块外的玩家上被禁用
-**注意：此功能限制为 500 毫秒**
+- 参数：一个字符串；一个Cryptovoxels支持的表情符号。 
+有关支持的表情符号列表，请参见[表情符号](/docs/Social#emojis)
+您还可以在脚本中找到该列表`console.log(emojis)`。
+- 返回：void
+- 在地块外禁用
+**注意：此功能受到500毫秒的节流**
 
 ##### animate(animation) - `player.animate('Dance')`
-**此功能已被弃用，因为它过于侵入性。它将不再起作用（2022 年 3 月）**
+**由于它过于侵入性，此功能已被弃用。它将不再起作用（2022年3月）**
 - 参数：一个字符串；动画的名称。
 支持的动画列表如下：
 ```
 Idle, Dance, Wave, Sitting, Spin, Savage, kick, Uprock, Floss, backflip
 ```
-您也可以在脚本中找到此列表 `console.log(animations)`。
-- 返回：无
-- 在地块外的玩家上被禁用
-**注意：此功能限制为 10 秒**
+您还可以在脚本中找到该列表`console.log(animations)`。
+- 返回：void
+- 在地块外禁用
+**注意：此功能受到10秒的节流**
 
 ##### hasEthereumNFT(contract,tokenId,successCallback?,failCallback?) - `player.hasEthereumNFT('0x...',5,(hasNFT)=>.., (reason)=>..`
-- 参数：
-**Contract:** 字符串；交易的合约。
-**tokenId:** 字符串或数字；要检查所有权的代币 ID。
-**successCallback:** 函数；在成功时调用的函数。给定的参数是一个布尔值，指示玩家是否拥有 NFT。例如 `(hasNFT)=>{console.log('player has NFT :',hasNFT})`
-**failCallback:** 函数；在失败时调用的函数。给定的参数是一个字符串，表示 API 失败的原因。
-- 返回：无
+- 参数： 
+**合同：**字符串；交易的合同。
+**tokenId：**字符串或数字；要检查所有权的令牌ID。
+**successCallback：**函数；在成功时将调用的函数。给定的参数是一个布尔值，指示玩家是否拥有NFT。例如`(hasNFT)=>{console.log('玩家拥有NFT：',hasNFT})`
+**failCallback：**函数；在失败时将调用的函数。给定的参数是API失败的原因字符串。
+- 返回：void
 
 ##### kick() - `player.kick()`
 - 参数：无
 - 返回：无
-- 在地块外的玩家上被禁用
+- 在地块外禁用
 
-#### 事件:
+#### 事件：
 
 **move** - `player.on('move', (e)=> {...})` 
-- 返回：一个事件 e。
+- 返回：一个事件e。
 
 **click** - `player.on('click', (e)=> {...})` 
-- 返回：一个事件 e。
+- 返回：一个事件e。
 
 **chat** - `player.on('chat', (e)=> {...})` 
-- 返回：一个事件 e 包含聊天文本。
+- 返回：一个包含聊天文本的事件e。
 
-### 特性对象
-此部分包括所有特性共有的属性、函数和事件。
+### 功能对象
+此部分包括所有功能通用的属性、函数和事件。
+
+
 :::信息
-有关特定于特性的属性和方法，请转到所需的[特性](/docs/features)，然后向下滚动到脚本属性。
-:::
+有关特定于功能的属性和方法，请转到[features](/docs/features)页面。
 
 
 #### 属性
 
 ##### ID - `feature.id` 
-- 返回：一个整数；特性的 ID。
+- 返回：一个整数，功能的ID。
 - 可以设置。例如：`feature.id = 'myvoxId' ` 
 
 ##### 类型 - `feature.type` 
-- 返回：一个字符串；特性的类型。
+- 返回：一个字符串，功能的类型。
 
 类型包括：
 - 'vox-model'
@@ -297,10 +297,10 @@ Idle, Dance, Wave, Sitting, Spin, Savage, kick, Uprock, Floss, backflip
 - 可以设置。例如：`feature.position.set(1, 0.72, 2)`
 	 或 `feature.position.y = 0.72` 
    或 `feature.set({position:[1,0.72,2]})` 
-- 位置在地块空间内（而非世界空间）
-- 位置以米为单位
-:::信息
-请参阅 [脚本示例](/docs/Scripting/Examples/Move-rotate-scale-Feature#h-1-positions) 获取位置示例
+- 位置是在地块空间中（而非世界空间）。
+- 位置以米为单位。
+:::info
+请参阅[脚本示例](/docs/Scripting/Examples/Move-rotate-scale-Feature#h-1-positions)以获取有关位置的示例。
 :::
 
 
@@ -309,384 +309,197 @@ Idle, Dance, Wave, Sitting, Spin, Savage, kick, Uprock, Floss, backflip
 - 可以设置。例如：`feature.scale.set(0.75, 0.75, 0.75)`
 	 或 `feature.scale.y = 0.75` 
    或 `feature.set({scale:[0.75,0.75,0.75]})` 
-:::信息
-请参阅 [脚本示例](/docs/Scripting/Examples/Move-rotate-scale-Feature#h-3-scaling) 获取缩放示例
+:::info
+请参阅[脚本示例](/docs/Scripting/Examples/Move-rotate-scale-Feature#h-3-scaling)以获取有关缩放的示例。
 :::
 
 
 ##### 旋转 - `feature.rotation` 
 - 返回：一个形式为 [x（*double*），y（*double*），z（*double*）] 的矢量。
-- 这是一个代理矢量对象。在其上调用 `set`，例如 `feature.rotation.set(0, 0, 0)`
+- 这是一个代理矢量对象。调用`set`，例如`feature.rotation.set(0, 0, 0)`
 	 或 `feature.rotation.y = 3.14`。 
    或 `feature.set({rotation:[0,3.14,0]})` 
    
-:::信息
-请参阅 [脚本示例](/docs/Scripting/Examples/Move-rotate-scale-Feature#h-2-rotations) 获取旋转示例
+:::info
+请参阅[脚本示例](/docs/Scripting/Examples/Move-rotate-scale-Feature#h-2-rotations)以获取有关旋转的示例。
 :::
    
    
-:::警告
-尽管游戏中的用户界面使用度数，但脚本引擎使用弧度。
-3.14（*pi*）将项目旋转 180 度。
+:::caution
+虽然游戏内用户界面使用度数，但脚本引擎使用弧度。
+3.14（*pi*）将使物品旋转180度。
 :::
 
 
-**注意：** 位置、缩放和旋转都是 `Vector3` 对象，其中 ES6 代理监视 `x`、`y` 和 `z` 的更新。
+**注意：** 位置、缩放和旋转是`Vector3`对象，具有监视`x`、`y`和`z`更新的ES6代理。
 
-- 调用 `feature.position.x = 1` 是有效的。
-- 调用 `feature.position.copyFrom(new Vector3(1, 2, 3))` 是有效的
-- 调用 `feature.position.set(1, 2, 3)` 是有效的。
-- 调用 `feature.position.addInPlace(new Vector3(4, 5, 6))` 是有效的
+- 调用`feature.position.x = 1` 是有效的。
+- 调用`feature.position.copyFrom(new Vector3(1, 2, 3))` 是有效的。
+- 调用`feature.position.set(1, 2, 3)` 是有效的。
+- 调用`feature.position.addInPlace(new Vector3(4, 5, 6))` 是有效的。
 - 等等。
-- 调用 `feature.position = new Vector3()` *不起作用*。
+- 调用`feature.position = new Vector3()` *将不起作用*。
 
 ##### 描述 - `feature.description`
-- 返回：一个包含对象上可以 `set` 的所有属性的字典。 
-- 注意：不要改变返回的对象，假设它是只读的。调用 `set` 以更新描述中的属性。
+- 返回：一个包含可以在对象上`set`的所有属性的字典。 
+- 注意：不要改变返回的对象，假设它是只读的。调用`set`以更新描述中的属性。
 
 #### 方法
 
+##### 克隆 - `feature.clone()` 
+- 返回：一个克隆功能
 
-##### 克隆() - `feature.clone()`
-- 返回：一个克隆的特性
-
-##### 移除() - `feature.remove()`
-从地块中移除特性
+##### 移除 - `feature.remove()` 
+从地块中移除功能
 - 返回：无
 
-##### 设置(dict) - `feature.set({ url: 'http://', ... })`
-
-
-设置多个特性属性
-- 参数：一个包含特性属性的字典对象
+##### 设置 - `feature.set({ url: 'http://', ... })` 
+设置功能的属性
+- 参数：一个包含键值对的对象，例如 {url:'http...'}
 - 返回：无
 
-##### 更新(dict) - `feature.update({ url: 'http://', ... })`
-- 参数：一个包含特性属性的字典对象
-- 返回：无
+##### 获取 - `feature.get('url')` 
+获取功能的属性
+- 返回：任意类型
 
-##### 保存快照() - `feature.saveSnapshot()`
-将特性的当前状态保存到一个快照列表中
-- 返回：快照 ID
+##### 创建动画 - `feature.createAnimation('position')` 
+参见[动画 API](/docs/Scripting/Animation-API)
 
-##### 恢复快照(snapshot_id) - `feature.restoreSnapshot(snapshot_id)`
-恢复指定快照的状态
-- 参数：一个整数；要恢复的快照 ID
-- 返回：无
+##### 开始动画 - `feature.startAnimations([animation])` 
+参见[动画 API](/docs/Scripting/Animation-API)
+
+##### 创建基本GUI(id?,options?) - `feature.createBasicGui('id',...)` 
+参见[GUI API](/docs/Scripting/Scripting-Documentation#Basic-GUI-Object)
+- 返回一个FeatureBasicGui对象。
+
+##### 移除GUI - `feature.removeGUI()` 
+移除此功能上的GUI
 
 #### 事件
 
-**点击** - `feature.on('click', (e)=> {})` 
-- 返回：一个事件 e。
+##### 点击时
+- 获取一个点击事件。可以通过点击`button`或`vox models`获得，也可以通过点击`image`、`vox-model`、`nft-model`、`particle-system`、`megavox`上的触发器获得。
 
-**悬停** - `feature.on('hover', (e)=> {})` 
-- 返回：一个事件 e。
+```js
 
-**悬停停止** - `feature.on('hoverstop', (e)=> {})` 
-- 返回：一个事件 e。
+feature.on('click', (e)=> {
+	console.log(e.player) // 玩家对象
+  console.log(e.point) // 在地块空间中的点击矢量
+  console.log(e.normal) // 在点击面上的法线矢量
+})
+``` 
 
-**移动** - `feature.on('move', (e)=> {})` 
-- 返回：一个事件 e。
+##### 触发时
+- 获取一个触发事件。类似于点击事件。但是，此事件仅由将`isTriggered`设置为`true`并且用户在触发器范围内的功能触发。
 
-**聊天** - `feature.on('chat', (e)=> {})` 
-- 返回：一个事件 e 包含聊天文本。
+```js
 
-**特性被点击** - `feature.on('click', (e)=> {})` 
-- 返回：一个事件 e。
+feature.on('trigger', (e)=> {
+	console.log(e.player) // 玩家对象
+})
+``` 
 
-**特性被悬停** - `feature.on('hover', (e)=> {})` 
-- 返回：一个事件 e。
+### 特定于功能
 
-**特性悬停停止** - `feature.on('hoverstop', (e)=> {})` 
-- 返回：一个事件 e。
+要了解特定于功能的属性，请转到您所需的[功能](/docs/features)并向下滚动到脚本属性。
 
-**特性移动** - `feature.on('move', (e)=> {})` 
-- 返回：一个事件 e。
 
-**特性聊天** - `feature.on('chat', (e)=> {})` 
-- 返回：一个事件 e 包含聊天文本。
-
-### 基本 GUI 对象
-GUI 对象表示 UI 元素。例如按钮、文本输入等。
+### 基本GUI对象
+此部分包括基本GUI的属性、函数和事件。
 
 #### 属性
+
+##### ID - `gui.id` 
+- 返回：字符串，GUI的唯一ID。
+- 可以设置。例如：`feature.id = 'myvoxId' ` 
+
+##### Uuid - `gui.uuid` 
+- 返回：字符串，GUI的唯一UUID。 
+
+##### feature - `gui.feature` 
+- 返回：功能，父功能
+
+##### 显示中 - `gui.showing`
+-
+
+ 返回GUI是否正在显示
+
+##### 控件列表 - `gui.listOfControls` 
+- 返回：guiControls的数组。
+
+##### 默认控件 - `gui.defaultControl` 
+- 返回默认控件的示例。
+
+#### 方法
+
+##### 添加按钮(text=null,positionInGrid=[0,0],id=null) - `gui.addButton('My button')` 
+- **参数:**
+	- text（可选）：一个字符串，
+  - Id（可选）：一个字符串，
+  - positionInGrid（可选）：一个包含2个整数的数组，第一个整数是行号，第二个是列号。
+- **返回:** button类型的guiControl。
+
+##### 添加文本(text=null,positionInGrid=[0,0],id=null) - `gui.addtext('My text')` 
+- **参数:**
+	- text（可选）：一个字符串，
+  - positionInGrid（可选）：一个包含2个整数的数组，第一个整数是行号，第二个是列号。
+- **返回:** text类型的guiControl。
+
+##### 通过ID获取控件(id) - `gui.getControlById('buttonId')` 
+- 参数：一个字符串
+- 返回：一个guiControl或Null
+
+##### 通过Uuid获取控件(id) - `gui.getControlByUuid('wdwdw-dwd-wd..')` 
+- 参数：一个字符串
+- 返回：一个guiControl或Null
+
+##### 通过位置获取控件(array) - `gui.getControlByUuid([1,0])` 
+- 参数：包含2个整数的数组。
+- 返回：一个guiControl或Null
+
+##### 显示 - `gui.show()` 
+- 返回：无
+
+##### 销毁 - `gui.destroy()` 
+- 返回：无
+
+### guiControl对象
+此部分包括基本GUI的属性、函数和事件。
+
+#### 属性
+
+##### gui - `guiControl.gui` 
+- 返回：一个FeatureBasicGui对象，父GUI
 
 ##### ID - `guiControl.id` 
-- 返回：一个整数；GUI 控件的 ID。
-- 可以设置。例如：`guiControl.id = 'myButtonId'` 
+- 返回：字符串，guiControl的ID。
+- 可以设置。例如：`control.id = 'myId' ` 
+
+##### Uuid - `guiControl.uuid` 
+- 返回：字符串，guiControl的唯一UUID。 
 
 ##### 类型 - `guiControl.type` 
-- 返回：一个字符串；GUI 控件的类型。
-
-类型包括：
-- 'button'
-- 'image'
-- 'text'
-- 'input'
-- 'checkbox'
-- 'radio'
-- 'dropdown'
-- 'slider'
-- 'video'
-- 'youtube'
-
-##### 位置 - `guiControl.position` 
-- 返回：一个形式为 [x（*double*），y（*double*）] 的矢量。
-- 可以设置。例如：`guiControl.position.set(0.1, 0.5)`
-	 或 `guiControl.position.y = 0.5` 
-   或 `guiControl.set({position:[0.1,0.5]})` 
-- 位置在屏幕空间内
-- 位置以像素为单位
-:::信息
-请参阅 [脚本示例](/docs/Scripting/Examples/Move-rotate-scale-Gui-Control#h-1-positions) 获取位置示例
-:::
-
-##### 缩放 - `guiControl.scale` 
-- 返回：一个形式为 [x（*double*），y（*double*）] 的矢量。
-- 可以设置。例如：`guiControl.scale.set(0.5, 0.5)`
-	 或 `guiControl.scale.y = 0.5` 
-   或 `guiControl.set({scale:[0.5,0.5]})` 
-:::信息
-请参阅 [脚本示例](/docs/Scripting/Examples/Move-rotate-scale-Gui-Control#h-3-scaling) 获取缩放示例
-:::
-
-
-##### 大小 - `guiControl.size` 
-- 返回：一个形式为 [x（*double*），y（*double*）] 的矢量。
-- 可以设置。例如：`guiControl.size.set(200, 50)`
-	 或 `guiControl.size.y = 50` 
-   或 `guiControl.set({size:[200,50]})` 
-- 大小以像素为单位
-:::信息
-请参阅 [脚本示例](/docs/Scripting/Examples/Move-rotate-scale-Gui-Control#h-2-sizes) 获取大小示例
-:::
-
-
-##### 标题 - `guiControl.title` 
-- 返回：一个字符串；GUI 控件的标题。
+- 返回：字符串，guiControl的类型 
+目前只能返回`button`或`text`
 
 ##### 文本 - `guiControl.text` 
-- 返回：一个字符串；GUI 控件的文本。
+- 返回：字符串，文本或按钮控件的文本
 
-##### 复选框选中状态 - `guiControl.checked` 
-- 返回：一个布尔值；指示复选框是否被选中。
+##### 位置在网格中 - `guiControl.positionInGrid` 
+- 返回：包含2个整数的数组，控件在网格中的位置。 
+默认为[0,0]
 
-##### 下拉菜单选中项 - `guiControl.selected` 
-- 返回：一个整数；指示下拉菜单中选择的选项的索引。
-
-#### 方法
-
-
-##### 克隆() - `guiControl.clone()`
-- 返回：一个克隆的 GUI 控件
-
-##### 移除() - `guiControl.remove()`
-从 GUI 中移除控件
-- 返回：无
-
-##### 设置(dict) - `guiControl.set({ title: 'Title', ... })`
-设置多个 GUI 控件属性
-- 参数：一个包含 GUI 控件属性的字典对象
-- 返回：无
-
-##### 更新(dict) - `guiControl.update({ title: 'Title', ... })`
-- 参数：一个包含 GUI 控件属性的字典对象
-- 返回：无
-
-#### 事件
-
-**点击** - `guiControl.on('click', (e)=> {})` 
-- 返回：一个事件 e。
-
-**悬停** - `guiControl.on('hover', (e)=> {})` 
-- 返回：一个事件 e。
-
-**悬停停止** - `guiControl.on('hoverstop', (e)=> {})` 
-- 返回：一个事件 e。
-
-**输入** - `guiControl.on('input', (e)=> {})` 
-- 返回：一个事件 e 包含输入文本。
-
-**变化** - `guiControl.on('change', (e)=> {})` 
-- 返回：一个事件 e 包含控件的新值。
-
-**点击** - `guiControl.on('click', (e)=> {})` 
-- 返回：一个事件 e。
-
-**悬停** - `guiControl.on('hover', (e)=> {})` 
-- 返回：一个事件 e。
-
-**悬停停止** - `guiControl.on('hoverstop', (e)=> {})` 
-- 返回：一个事件 e。
-
-**输入** - `guiControl.on('input', (e)=> {})` 
-- 返回：一个事件 e
-
- 包含输入文本。
-
-**变化** - `guiControl.on('change', (e)=> {})` 
-- 返回：一个事件 e 包含控件的新值。
-
-### 其他
-
-#### 主机对象
-
-主机对象提供了一些有关游戏状态和设置的信息。
-
-#### 属性
-
-##### 按钮状态 - `host.buttons` 
-- 返回：一个包含当前按钮状态的对象。例如：`{menu: false, mouselook: false, stats: false}`
-
-##### 音频状态 - `host.audio` 
-- 返回：一个包含当前音频状态的对象。例如：`{mute: false}`
-
-##### 光标状态 - `host.cursor` 
-- 返回：一个包含当前光标状态的对象。例如：`{visible: false, locked: false}`
-
-##### 视口尺寸 - `host.viewport` 
-- 返回：一个包含当前视口尺寸的对象。例如：`{width: 800, height: 600}`
-
-##### 时间 - `host.time` 
-- 返回：一个包含当前游戏时间的对象。例如：`{day: 1, month: 12, year: 2022, hour: 12, minute: 30, second: 45}`
-
-##### 位置 - `host.position` 
-- 返回：一个包含当前位置的对象。例如：`{x: 43.123, y: 1.234, z: -234.45}`
+##### 摘要 - `guiControl.summary` 
+- 返回：一个带有控件基本信息的对象。
+- **对于在网格中的console.log很有用**
 
 #### 方法
 
-##### 获取玩家钱包 - `host.getWallet()` 
-- 返回：一个字符串；当前玩家的以太坊钱包地址。
+##### 更新 - `guiControl.update()` 
+更新控件。
+- 返回无
 
-##### 获取当前玩家位置 - `host.getPosition()` 
-- 返回：一个对象；包含当前玩家的位置。例如：`{x: 43.123, y: 1.234, z: -234.45}`
 
-##### 获取指定地块上的所有特性 - `host.getFeatures(parcel_id)` 
-- 参数：一个字符串；地块的 ID。
-- 返回：一个包含所有特性的数组。
-
-##### 获取指定特性的属性 - `host.getFeatureProperties(feature_id)` 
-- 参数：一个字符串；特性的 ID。
-- 返回：一个包含特性属性的对象。
-
-##### 获取指定地块上的所有 GUI 控件 - `host.getGuiControls(parcel_id)` 
-- 参数：一个字符串；地块的 ID。
-- 返回：一个包含所有 GUI 控件的数组。
-
-##### 获取指定 GUI 控件的属性 - `host.getGuiControlProperties(gui_control_id)` 
-- 参数：一个字符串；GUI 控件的 ID。
-- 返回：一个包含 GUI 控件属性的对象。
-
-##### 获取指定地块上的所有玩家 - `host.getPlayers(parcel_id)` 
-- 参数：一个字符串；地块的 ID。
-- 返回：一个包含所有玩家的数组。
-
-##### 获取指定玩家的属性 - `host.getPlayerProperties(player_wallet)` 
-- 参数：一个字符串；玩家的以太坊钱包地址。
-- 返回：一个包含玩家属性的对象。
-
-##### 获取指定地块上的所有特性 - `host.getFeatures(parcel_id)` 
-- 参数：一个字符串；地块的 ID。
-- 返回：一个包含所有特性的数组。
-
-##### 获取指定特性的属性 - `host.getFeatureProperties(feature_id)` 
-- 参数：一个字符串；特性的 ID。
-- 返回：一个包含特性属性的对象。
-
-##### 获取指定地块上的所有 GUI 控件 - `host.getGuiControls(parcel_id)` 
-- 参数：一个字符串；地块的 ID。
-- 返回：一个包含所有 GUI 控件的数组。
-
-##### 获取指定 GUI 控件的属性 - `host.getGuiControlProperties(gui_control_id)` 
-- 参数：一个字符串；GUI 控件的 ID。
-- 返回：一个包含 GUI 控件属性的对象。
-
-### 系统事件
-
-#### 地块事件
-
-**地块被点击** - `host.on('click', (e)=> {})` 
-- 返回：一个事件 e 包含点击位置的坐标。
-
-#### 玩家事件
-
-**玩家进入** - `host.on('playerenter', (e)=> {})` 
-- 返回：一个事件 e 包含一个玩家对象，其中包含了玩家的信息。
-- 例如：`e.player.name -> 返回 "Fayelure"`
-- 当玩家进入地块时触发
-
-**玩家离开** - `host.on('playerleave', (e)=> {})` 
-- 返回：一个事件 e 包含一个玩家对象，其中包含了玩家的信息。
-- 例如：`e.player.wallet -> 返回 "0xdbw2fr8..."`
-- 当玩家离开地块时触发
-
-**玩家附近** - `host.on('playernearby', (e)=> {})` 
-- 返回：一个事件 e 包含一个玩家对象，其中包含了玩家的信息。
-- 例如：`e.player.name -> 返回 "Fayelure"`
-- 当玩家进入地块周围的街道时触发
-
-**玩家远离** - `host.on('playeraway', (e)=> {})` 
-- 返回：一个事件 e 包含一个玩家对象，其中包含了玩家的信息。
-- 例如：`e.player.name -> 返回 "Fayelure"`
-- 当玩家离开地块附近/街道区域时触发
-
-### 事件属性
-
-#### 通用事件属性
-
-##### 停止传播 - `e.stopPropogation()`
-停止事件传播到更高级别的容器或对象。例如，当您希望阻止一个按钮点击事件传播到包含它的面板时，可以使用此方法。
-
-#### 玩家事件属性
-
-##### 玩家对象 - `e.player`
-包含了有关玩家的信息的对象。
-
-**属性:**
-
-* `player.name` => 'captainbenis.eth'
-* `player.wallet` => '0x2D891ED45C4C3EAB978513DF4B92a35Cf131d2e2'
-* `player.uuid` => 该玩家实例的 avatar uuid（玩家可能在多个标签页中具有单独的 avatar）
-
-**函数:**
-
-##### teleportTo(coordinates) - `e.player.teleportTo(coordinates)`
-- 参数：一个坐标的字符串，例如 `'N@43W,250N,1U'`
-- 返回：无
-- 在地块外的玩家
-
-上被禁用
-
-##### getFeatures() - `e.player.getFeatures()`
-- 返回：一个包含所有特性的数组
-
-##### getGuiControls() - `e.player.getGuiControls()`
-- 返回：一个包含所有 GUI 控件的数组
-
-##### getPlayerProperties() - `e.player.getPlayerProperties()`
-- 返回：一个包含玩家属性的对象
-
-#### 地块事件属性
-
-##### 点击位置 - `e.coordinates`
-包含点击位置的坐标。
-
-### 脚本示例
-
-请参阅[脚本示例](/docs/Scripting/Examples)页面获取示例脚本，以了解如何使用这些属性、方法和事件。
-
-### 关于脚本的注意事项
-
-请注意以下事项：
-
-1. 脚本引擎会限制某些功能的使用。例如，一些功能可能会被限制为在地块内执行，或者可能会有最大执行时间限制。这些限制可能会在特定功能的文档中进行说明。
-
-2. 使用脚本时，请确保您的代码逻辑不会导致游戏崩溃或影响其他玩家的游戏体验。避免在循环中执行过于频繁的操作，以免对服务器性能产生负面影响。
-
-3. 请注意，脚本的性能可能会受到各种因素的影响，包括服务器负载、网络延迟等。因此，建议您在编写脚本时采取一些最佳实践，以确保良好的性能和稳定性。
-
-4. 在编写脚本时，建议先在测试环境中进行测试，以确保脚本的行为符合预期。
-
-5. 脚本引擎的功能和接口可能会随着时间的推移而进行更新和扩展。请定期查阅更新的文档以获取最新信息。
-
-希望这份文档对您有所帮助！如果您有任何其他问题或需要进一步的帮助，请随时询问。
+:::caution
+更多最新文档请参阅[blog.cryptovoxels.com](http://blog.cryptovoxels.com/scripting-bundle/)
+:::

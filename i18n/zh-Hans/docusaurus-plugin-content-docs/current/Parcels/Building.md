@@ -20,7 +20,7 @@
 ## 建设工具（侧边栏）
 一旦进入或附近有可以建设的地块，工具栏将会从右侧滑入。
 
-![build-sidebar.png](/building/building-sidebar.png)
+![build-sidebar.png](/building/build-sidebar.png)
 
 **添加** - 使用此选项向地块添加新内容，如方块或功能
 **编辑** - 使用此选项编辑、复制或移动功能，或自定义方块的纹理和色调
