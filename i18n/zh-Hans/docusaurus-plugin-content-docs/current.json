@@ -134,5 +134,21 @@
   "sidebar.docs.doc.Data API": {
     "message": "数据 API",
     "description": "The label for the doc item Data API in sidebar docs, linking to the doc External-API"
+  },
+  "sidebar.tutorial.category.Official Tutorial": {
+    "message": "官方教程",
+    "description": "The label for category Official Tutorial in sidebar tutorial"
+  },
+  "sidebar.tutorial.doc.Voxels Wiki From Raiden INST": {
+    "message": "雷电所的 Voxels Wiki",
+    "description": "The label for the doc item Voxels Wiki From Raiden INST in sidebar tutorial, linking to the doc tutorial/index_1"
+  },
+  "sidebar.tutorial.doc.Introduction": {
+    "message": "介绍",
+    "description": "The label for the doc item Introduction in sidebar tutorial, linking to the doc tutorial/introduction"
+  },
+  "sidebar.tutorial.doc.Raiden INST in Voxels": {
+    "message": "Voxels 里的雷电所",
+    "description": "The label for the doc item Raiden INST in Voxels in sidebar tutorial, linking to the doc tutorial/RaidenINST"
   }
 }
