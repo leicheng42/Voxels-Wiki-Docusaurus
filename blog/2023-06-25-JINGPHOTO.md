@@ -1,3 +1,7 @@
+---
+slug: /2023-06-25-JINGPHOTO
+---
+
 # 「雷电所」在JINGPHOTO
 雷电所RaidenINST 2023-06-25 12:00 发表于上海
 

@@ -1,3 +1,7 @@
+---
+slug: /2023-07-10-Safety-Pit
+---
+
 # 云雲云 | 安全池 Safety Pit 展览回顾
 雷电所RaidenINST 2023-07-10 18:00 发表于上海
 

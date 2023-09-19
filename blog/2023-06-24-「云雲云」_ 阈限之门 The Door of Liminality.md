@@ -1,3 +1,7 @@
+---
+slug: /2023-06-24-The Door of Liminality
+---
+
 # 「云雲云」| 阈限之门 The Door of Liminality
 雷电所RaidenINST 2023-06-24 16:08 发表于浙江
 
