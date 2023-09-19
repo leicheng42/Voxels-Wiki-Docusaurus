@@ -1,106 +1,106 @@
-# Button
-A button, used to trigger scripts.
+# 按钮
+一个按钮，用于触发脚本。
 
-##  Button
-A button depresses and makes a sound when you click on it. Buttons can be used to trigger scripts.
+## 按钮
+当您单击按钮时，按钮会被按下并发出声音。按钮可用于触发脚本。
 
 ![button-feature.png](/button-feature.png)
 
-### Editor
+### 编辑器
 
 ![button-editor.png](/button-editor.png)
 
-#### Color
+#### 颜色
 
-A button can be either red, green, blue, or white.
+按钮可以是红色、绿色、蓝色或白色。
 
-#### Sound
+#### 声音
 
-There are 14 different button press sounds to choose from.
+有14种不同的按钮按下声音可供选择。
 
-## Scripting Properties
-## Scripting Properties {.tabset}
-### color
-`String.`; Options are 'white', 'red', 'green', and 'blue'.
+## 脚本属性
+## 脚本属性 {.tabset}
+### 颜色
+`字符串`；选项包括 'white'、'red'、'green' 和 'blue'。
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('color')
-// returns: "red"
+// 返回: "red"
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'color':"blue"})
 ```
 
-#### default
+#### 默认
 
 `"red"`
 
-### soundId
-`Integer`; can be an integer in the range of 0 - 14.
+### 声音ID
+`整数`；可以是范围在0到14之间的整数。
 
-`'-1'` - None
-`'0'` - ding dong
-`'1'` - pong
-`'2'` - pshlick - sounds like a hydraulic trigger
-`'3'` - breet - sounds like a PC attempting to connect to internet
-`'4'` - claclack - sounds like a someone spamming a keyboard
-`'5'` - tpow Cling - sounds like a ball hitting a racket and then a metal pole
-`'6'` - traarz - sounds like a printer
-`'7'` - wuwuwuwu - sounds like a UFO
-`'8'` - flickfli - sounds like someone going through a paper tray
-`'9'` - pshing dong - sounds like a cymbal and a ding dong
-`'10'` - bzing - sounds like a quick zing (honestly)
-`'11'` - tadaw - sounds like a clown noise
-`'12'` - shplow - sounds like a PVC pipe being hit
-`'13'` - tshlshlsh - sounds like a notes counter
-`'14'` - miaaaaaa - sounds like a cat being harassed
-`'15'` - miaoowww - sounds like a hungry cat
+`'-1'` - 无
+`'0'` - 叮咚
+`'1'` - 咚
+`'2'` - 沙噜 - 声音像液压触发器
+`'3'` - 布里特 - 声音像一台PC尝试连接到互联网
+`'4'` - 卡啦卡啦 - 声音像有人狂按键盘
+`'5'` - 扑哇扑哐 - 声音像球击打球拍然后撞到金属杆
+`'6'` - 特拉尔兹 - 声音像打印机
+`'7'` - 呜呜呜呜 - 声音像UFO
+`'8'` - 扑啪扑啪 - 声音像有人翻看纸盘
+`'9'` - 沙响叮咚 - 声音像铙钹和叮咚
+`'10'` - 嗡嗡 - 声音像快速的嗡嗡声（说实话）
+`'11'` - 塔达 - 声音像小丑的声音
+`'12'` - 嘘嘟 - 声音像 PVC 管被击中
+`'13'` - 嘟嘟嘟 - 声音像一台数钞机
+`'14'` - 喵啊啊啊 - 声音像一只被骚扰的猫
+`'15'` - 喵喵喵 - 声音像一只饥饿的猫
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('soundId')
-// returns: "0"
+// 返回: "0"
 ```
 
-#### set()
+#### 设置()
 
 ```js
 feature.set({'soundId':"-1"})
-//Remember the soundId has to be a String
+//请记住，soundId 必须是字符串
 ```
 
-#### default
+#### 默认
 
 `"0"`
 
-### type
-`String`; 
+### 类型
+`字符串`；
 
-#### get()
+#### 获取()
 
 ```js
 feature.get('type')
-/* or */
+/* 或 */
 feature.type
-// returns: "button"
+// 返回: "button"
 ```
 
-## How to use
-Using the scripting field, you can listen to clicks with
+## 如何使用
+使用脚本字段，您可以监听点击事件
 
 ```js
 feature.on('click',e=>{
-Your action when click here
+点击时执行的操作
 })
 ```
 
-You can also know who clicked the button by doing:
+您还可以通过以下方式知道谁点击了按钮：
 
 ```js
 feature.on('click',e=>{
